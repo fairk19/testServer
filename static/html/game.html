@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<head>
+    <link type="text/css" href="css/game.css" rel="stylesheet"/>
+    <script type="text/javascript" src="js/game.js"></script>
+    <script type="text/javascript" src="js/jquery.scrollTo-min.js"></script>
+</head>
+<body>
+    <div id="carousel" class="carousel slide">
+        <div class="carousel-inner">
+            <div class="item active">
+                <div class="container">
+                    <div class="carousel-caption">
+                        <div class="row">
+                            <div class="span1">
+                                <div id='statistic'></div>
+                                <button id='surrend'>Сдаться</button>
+                            </div>
+                            <div class="span6"> 
+                                <div id="content"> </div>
+                            </div>
+                            <div class="span4 chat"> 
+                                <div>
+                                    <table id="chatHead">
+                                        <tr>
+                                            <td>Имя</td>
+                                            <td>Сообщение</td>
+                                        </tr>
+                                    </table>
+                                    <table id='chat'>
+                                    </table>
+                                </div>
+                                <p>
+                                    <input type="text" name="message" id="msg" />
+                                    <input id="sendButton" class="btn" type="button" value="Отправить"/>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="dragable"></div>
+</body>

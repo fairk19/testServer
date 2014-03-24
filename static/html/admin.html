@@ -1,0 +1,131 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <!--                <link type="text/css" href="css/admin.css" rel="stylesheet"/> -->
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <link href="css/admin.css" rel="stylesheet">
+        <title>Statistics</title>
+        <script type="text/javascript">
+            $(function () {
+            $('#Memory').highcharts({
+            chart: {
+            type: 'spline'
+            },
+                    title: {
+            text: 'Memory',
+                    x: - 20 //center
+            },
+                    yAxis: {
+            title: {
+            text: 'Bytes'
+            },
+                    min: 0,
+                    minorGridLineWidth: 0,
+                    gridLineWidth: 0,
+                    alternateGridColor: null,
+            },
+                    tooltip: {
+            valueSuffix: 'byte'
+            },
+                    plotOptions: {
+            spline: {
+            lineWidth: 4,
+                    states: {
+            hover: {
+            lineWidth: 5
+            }
+            },
+                    marker: {
+            enabled: false
+            }
+            }
+            },
+                    xAxis: {
+            type: 'datetime',
+                    categories: ${Time}
+            },
+                    series: [{
+            name: 'Used Memory',
+                    data: ${MemoryUsage}
+            }, {
+            name: 'Total Memory',
+                    data: ${TotalMemory}
+            }]
+            });
+            });</script>
+        <script type="text/javascript">
+                    $(function () {
+            $('#CCU').highcharts({
+            chart: {
+            type: 'spline'
+            },
+                    title: {
+            text: 'CCU',
+                    x: - 20 //center
+            },
+                    yAxis: {
+            title: {
+            text: 'player(s)'
+            },
+                    min: 0,
+                    minorGridLineWidth: 0,
+                    gridLineWidth: 0,
+                    alternateGridColor: null,
+            },
+                    tooltip: {
+            valueSuffix: 'player(s)'
+            },
+                    plotOptions: {
+            spline: {
+            lineWidth: 4,
+                    states: {
+            hover: {
+            lineWidth: 5
+            }
+            },
+                    marker: {
+            enabled: false
+            }
+            }
+            },
+                    xAxis: {
+            type: 'datetime',
+                    categories: ${Time}
+            },
+                    series: [{
+            name: 'CCU',
+                    data: ${CCU}
+            }]
+            });
+            });</script>
+        <script src="js/highcharts.js"></script>
+        <script src="js/exporting.js"></script>
+    </head>
+    <body onload='setInterval(function(){location.reload(); }, 60000);'>
+        <div id="carousel" class="carousel slide">
+            <div class="carousel-inner">
+                <div class="item active">
+                    <div class="container">
+                        <div class="carousel-caption">
+                            <div class="tabbable">
+                                <ul class="nav nav-tabs">
+                                    <li class="active"><a href="#tab1" data-toggle="tab">Memory</a></li>
+                                    <li><a href="#tab2" data-toggle="tab">CCU</a></li>
+                                </ul>
+                                <div class="tab-content">
+                                    <div class="tab-pane active" id="tab1">
+                                        <div id="Memory" style="min-width: 100%; height: 450px; margin: 0 auto"></div>
+                                    </div>
+                                    <div class="tab-pane" id="tab2">
+                                        <div id="CCU" style="min-width: 100%; height: 450px; margin: 0 auto"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </body>
+</html>

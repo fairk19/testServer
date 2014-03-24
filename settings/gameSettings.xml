@@ -1,0 +1,5 @@
+<class type="resource.GameSettings">
+	<strokeTime>60</strokeTime>
+	<fieldSize>8</fieldSize>
+	<playerSize>3</playerSize>
+</class>

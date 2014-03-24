@@ -1,0 +1,18 @@
+.nav-tabs{
+    padding: 0px 0px 0px 30px;
+    margin-bottom: 0px;
+}
+
+.carousel-caption{
+    margin-top: 0px;
+    width:100%;
+    padding: 100px 0px 0px 0px;
+}
+
+.item .container{
+    width: 100%;
+}
+
+ul{
+    margin: 5px ;
+}

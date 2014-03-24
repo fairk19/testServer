@@ -1,0 +1,106 @@
+body {
+    padding-bottom: 0px;
+    margin: 0;
+    color: #fff;
+    line-height: 0;
+    text-shadow: 0 1px 1px rgba(0,0,0,.4);
+    background-color: #8f8f8f;
+}
+
+p{
+    margin: 0 0 0;
+}
+
+.navbar-wrapper {
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    margin-top: 20px;
+}
+
+.navbar .brand {
+    line-height: 0;
+    padding: 30px 20px 0px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.form-inline{
+    padding: 15px 20px  0px; 
+}
+
+.rating{
+    color: #f00;
+}
+
+.carousel {
+    margin-bottom: 0px;
+    height: 100%;
+}
+
+.carousel .container {
+    position: relative;
+    z-index: 9;
+}
+
+.carousel-control {
+    height: 80px;
+    margin-top: 0;
+    font-size: 100px;
+    text-shadow: 0 1px 1px rgba(0,0,0,.4);
+    background-color: transparent;
+    border: 0;
+}
+
+.carousel img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.carousel-caption {
+    background-color: transparent;
+    position: static;
+    padding: 0 20px;
+    margin-top: 200px;
+}
+
+.carousel-caption h1,
+.carousel-caption .lead {
+    margin: 0;
+    color: #fff;
+    text-shadow: 0 1px 1px rgba(0,0,0,.4);
+}
+
+.navbar .btn {
+    margin-left: 10px;
+    margin-top: 0px;
+}
+
+
+.navbar .collapse .nav {
+    padding: 10px 20px 10px;
+    font-size: 12px;
+}
+
+.muted {
+    position: relative;
+    height: 30px;
+    margin-top: 30px;
+    color: #fff;
+}
+
+.data{
+    padding: 15px 20px  0px; 
+}
+
+.credit{
+    background-color: transparent;
+}
+
+.item span{
+    font-size: 15px;
+}
