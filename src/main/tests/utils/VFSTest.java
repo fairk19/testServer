@@ -1,12 +1,9 @@
 package utils;
 
 import org.testng.Assert;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.BeforeTest;
-import org.testng.annotations.Test;
+import org.testng.annotations.*;
 
-import java.io.File;
+import java.io.*;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -18,13 +15,80 @@ import java.util.Map;
 public class VFSTest {
 
     private Map<String, String> testFilePaths = new HashMap();
+    private void writeFile(String path, String data){
+        try {
+            File file = new File(path);
+
+            if(file.exists()){
+                file.delete();
+                file.createNewFile();
+            }else {
+                file.createNewFile() ;
+            }
+
+            FileWriter fw = new FileWriter(file.getAbsoluteFile());
+            BufferedWriter bw = new BufferedWriter(fw);
+            bw.write(data);
+            bw.close();
+        }catch (IOException e){
+            e.printStackTrace();
+        }
+    }
+    private boolean readFileEqualData(String path, String data){
+
+        BufferedReader br = null;
+        try {
+            String contentTestFile;
+            br = new BufferedReader(new FileReader(path));
+            while ((contentTestFile = br.readLine()) != null){
+                return contentTestFile.equals(data);
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        } finally {
+            try {
+                if (br != null)br.close();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
+        return false;
+    }
+    private void deleteFile(File file){
+        if(!file.exists())
+            return;
+        if(file.isDirectory())
+        {
+            for(File f : file.listFiles())
+            {
+                deleteFile(f);
+            }
+             file.delete();
+        }
+        else
+        {
+            file.delete();
+        }
+    }
 
     @BeforeTest
     public void setUpBeforeTest() throws Exception {
         testFilePaths.put("Error", "/");
-        testFilePaths.put("Error", "/empty");
-        testFilePaths.put("Error", "/testFile");
-        testFilePaths.put("Success", "/testDir/testFile");
+        testFilePaths.put("Error", "/testFileOne");
+        testFilePaths.put("Success", "/testDir/testFileOne");
+
+        File myPath = new File(System.getProperty("user.dir") + "/testDir");
+        myPath.mkdir();
+        myPath.mkdirs();
+
+        this.writeFile(myPath.getPath() + "/testFileOne", "Test read!");
+        this.writeFile(myPath.getPath() + "/testFileTwo", "Test read!");
+    }
+
+    @AfterTest
+    public void setUpAfterTest() throws Exception {
+        File myPath = new File(System.getProperty("user.dir") + "/testDir");
+        this.deleteFile(myPath);
     }
 
     @BeforeMethod
@@ -39,19 +103,29 @@ public class VFSTest {
 
     @Test
     public void testIsExist() throws Exception {
-        Assert.assertTrue(true);
+        String pathFileExist =  "\\testDir\\testFileOne";
+        String pathFileNotExist =  "\\testDir\\testFileThree";
+        Assert.assertTrue(VFS.isExist(pathFileExist));
+        Assert.assertFalse(VFS.isExist(pathFileNotExist));
     }
 
     @Test
     public void testIsFile() throws Exception {
-        Assert.assertTrue(true);
+        String pathIsFile =  "\\testDir\\testFileOne";
+        String pathIsNotFile =  "\\testDir";
+
+        Assert.assertTrue(VFS.isFile(pathIsFile));
+        Assert.assertFalse(VFS.isFile(pathIsNotFile));
 
     }
 
     @Test
     public void testGetAbsolutePath() throws Exception {
-        Assert.assertTrue(true);
+        String absPath = System.getProperty("user.dir") + "\\testDir\\testFileOne";
+        String path = "testDir\\testFileOne";
 
+        Assert.assertTrue(VFS.getAbsolutePath(path).equals(absPath));
+        Assert.assertTrue(VFS.getAbsolutePath(absPath).equals(absPath));
     }
 
     @Test
@@ -63,19 +137,24 @@ public class VFSTest {
     @Test
     public void testGetRelativePath() throws Exception {
         Assert.assertTrue(true);
-
     }
 
     @Test
     public void testWriteToFile() throws Exception {
-        Assert.assertTrue(true);
-
+        String absPath = System.getProperty("user.dir") + "\\testDir\\testFileWrite";
+        String path = "\\testDir\\testFileWrite";
+        this.writeFile(absPath, "begin text");
+        VFS.writeToFile(path, "one text");
+        Assert.assertTrue(this.readFileEqualData(absPath, "one text"));
     }
 
     @Test
     public void testWriteToEndOfFile() throws Exception {
-        Assert.assertTrue(true);
-
+        String absPath = System.getProperty("user.dir") + "\\testDir\\testFileWriteToEnd";
+        String path = "\\testDir\\testFileWriteToEnd";
+        this.writeFile(absPath, "begin text");
+        VFS.writeToEndOfFile(path, " end");
+        Assert.assertTrue(this.readFileEqualData(absPath, "begin text end"));
     }
 
     @Test
@@ -86,7 +165,6 @@ public class VFSTest {
             if (key.equals("Error")){
                 Assert.assertFalse(testText.equals("Test read!"));
             } else {
-                System.out.println(System.err.checkError());
                 Assert.assertTrue(testText.equals("Test read!"));
             }
         }
@@ -94,6 +172,11 @@ public class VFSTest {
 
     @Test
     public void testBfs() throws Exception {
-        List<File> testFiles = VFS.bfs("\\testDirectory");
-     }
+        String absPath = System.getProperty("user.dir") + "\\testDir\\testFileOne";
+        File file = new File(absPath);
+        List<File> testFiles = VFS.bfs("\\testDir");
+        Assert.assertTrue(testFiles.contains(file));
+    }
+
 }
+

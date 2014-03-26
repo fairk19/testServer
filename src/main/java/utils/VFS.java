@@ -9,7 +9,7 @@ import java.util.List;
 import java.util.Queue;
 
 public class VFS{
-	private static String dir=System.getProperty("user.dir")+'/';
+	private static String dir=System.getProperty("user.dir")+'\\';
 
 	public static boolean isExist(String path){
 		File f = new File(System.getProperty("user.dir") + path);
