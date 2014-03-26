@@ -17,7 +17,7 @@ public class ChatWSImpl  extends WebSocketAdapter{
 		if (isNotConnected()) {
 			return; 
 		}
-//		System.out.println(message);
+		System.out.println(message);
 		String sessionId=null,startServerTime=null;
 		String text=null;
 		JSONParser parser = new JSONParser();
