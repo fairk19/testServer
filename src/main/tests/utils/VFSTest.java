@@ -72,7 +72,7 @@ public class VFSTest {
     }
 
     @BeforeTest
-    public void setUpBeforeTest() throws Exception {
+    public void setUp() throws Exception {
         testFilePaths.put("Error", "/");
         testFilePaths.put("Error", "/testFileOne");
         testFilePaths.put("Success", "/testDir/testFileOne");
@@ -86,19 +86,9 @@ public class VFSTest {
     }
 
     @AfterTest
-    public void setUpAfterTest() throws Exception {
+    public void tearDown() throws Exception {
         File myPath = new File(System.getProperty("user.dir") + "/testDir");
         this.deleteFile(myPath);
-    }
-
-    @BeforeMethod
-    public void setUp() throws Exception {
-
-    }
-
-    @AfterMethod
-    public void tearDown() throws Exception {
-
     }
 
     @Test
@@ -129,14 +119,12 @@ public class VFSTest {
     }
 
     @Test
-    public void testGetBytes() throws Exception {
-        Assert.assertTrue(true);
-
-    }
-
-    @Test
     public void testGetRelativePath() throws Exception {
-        Assert.assertTrue(true);
+        String absPath = System.getProperty("user.dir") + "\\testDir\\testFileOne";
+        String path = "testDir\\testFileOne";
+
+        Assert.assertTrue(VFS.getRelativePath(path).equals(path));
+        Assert.assertTrue(VFS.getRelativePath(absPath).equals(path));
     }
 
     @Test

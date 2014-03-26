@@ -18,7 +18,7 @@ public class VFS{
 
 	public static boolean isFile(String path){
 		File f = new File(System.getProperty("user.dir") + path);
-		return f.isFile();		
+		return f.isFile();
 	}
 
 	public static String getAbsolutePath(String path){
@@ -28,27 +28,9 @@ public class VFS{
 			return (dir+path);
 	}
 
-	public static String getBytes(String path) {
-		path=getAbsolutePath(path);
-		try {
-			File f = new File(path);
-			FileReader fr = new FileReader(f);
-			char[] buffer = null;		
-			fr.read(buffer);
-			fr.close();
-			return String.valueOf(buffer);
-		}
-		catch (Exception e) {
-			System.err.println("\nError");
-			System.err.println("VFS, getBytes");
-			System.err.println(e.getMessage());
-		}
-		return null;	
-	}
-
 	public static String getRelativePath(String path){
 		if(isAbsolute(path)){
-			return path.substring(dir.length());
+			return path.substring(dir.length()) ;
 		}
 		else{
 			return path;
@@ -88,9 +70,9 @@ public class VFS{
 			fw = new FileWriter(file);
 			fw.write(data);
 		} catch (Exception e) {
-			System.err.println("\nError");
-			System.err.println("VFS, writeToFile1");
-			System.err.println(e.getMessage());
+			System.out.println("\nError");
+			System.out.println("VFS, writeToFile1");
+			System.out.println(e.getMessage());
 		}
 		finally{
 			if(fw!=null){
@@ -98,9 +80,9 @@ public class VFS{
 					fw.close();
 				}
 				catch(Exception e){
-					System.err.println("\nError");
-					System.err.println("VFS, writeToFile2");
-					System.err.println(e.getMessage());
+					System.out.println("\nError");
+					System.out.println("VFS, writeToFile2");
+					System.out.println(e.getMessage());
 				}
 			}
 		}
@@ -111,14 +93,14 @@ public class VFS{
 		File file = new File(path);
 		FileWriter err = null;
 		try{
-			path=getAbsolutePath(path);
+//			path=getAbsolutePath(path);
 			err=new FileWriter(file,true);
 			err.write(data);
 		}
 		catch(Exception e){
-			System.err.println("\nError");
-			System.err.println("VFS, writeToEndOfFile1");
-			System.err.println(e.getMessage());
+			System.out.println("\nError");
+			System.out.println("VFS, writeToEndOfFile1");
+			System.out.println(e.getMessage());
 		}
 		finally{
 			if(err!=null){
@@ -126,9 +108,9 @@ public class VFS{
 					err.close();
 				}
 				catch(Exception e){
-					System.err.println("\nError");
-					System.err.println("VFS, writeToEndOfFile2");
-					System.err.println(e.getMessage());
+					System.out.println("\nError");
+					System.out.println("VFS, writeToEndOfFile2");
+					System.out.println(e.getMessage());
 				}
 			}
 		}
@@ -148,9 +130,9 @@ public class VFS{
 			}
 		}
 		catch(Exception e){
-			System.err.println("\nError");
-			System.err.println("VFS, readFile1");
-			System.err.println(e.getMessage());
+			System.out.println("\nError");
+			System.out.println("VFS, readFile1");
+			System.out.println(e.getMessage());
 		}
 		finally{
 			if(br!=null){
@@ -158,9 +140,9 @@ public class VFS{
 					br.close();
 				}
 				catch(Exception e){
-					System.err.println("\nError");
-					System.err.println("VFS, readFile2");
-					System.err.println(e.getMessage());
+					System.out.println("\nError");
+					System.out.println("VFS, readFile2");
+					System.out.println(e.getMessage());
 				}
 			}
 			if(fr!=null){
@@ -168,9 +150,9 @@ public class VFS{
 					fr.close();
 				}
 				catch(Exception e){
-					System.err.println("\nError");
-					System.err.println("VFS, readFile3");
-					System.err.println(e.getMessage());
+					System.out.println("\nError");
+					System.out.println("VFS, readFile3");
+					System.out.println(e.getMessage());
 				}
 			}
 		}
