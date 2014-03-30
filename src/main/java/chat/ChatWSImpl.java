@@ -32,7 +32,8 @@ public class ChatWSImpl  extends WebSocketAdapter{
 		catch (Exception ignor){
             ignor.printStackTrace();
 		}
-        System.out.println("start server time: " + startServerTime);
+        System.out.println("my server time: " + startServerTime);
+        System.out.println("start server time:" + UserDataImpl.getStartServerTime());
         System.out.println("check start server time: "+ UserDataImpl.checkServerTime(startServerTime));
 		if((sessionId!=null)&&
                 (startServerTime!=null)&&
