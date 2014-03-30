@@ -14,14 +14,15 @@ public class ChatWSImpl  extends WebSocketAdapter{
 
 	@Override
 	public void onWebSocketText(String message) {
-		if (isNotConnected()) {
-			return; 
-		}
+//		if (isNotConnected()) {
+//			return;
+//		}
 		System.out.println(message);
 		String sessionId=null,startServerTime=null;
 		String text=null;
 		JSONParser parser = new JSONParser();
 		JSONObject json=null;
+        System.out.println("message: " +message);
 		try{
 			json = (JSONObject) parser.parse(message);
 			sessionId=json.get("sessionId").toString();
@@ -29,8 +30,14 @@ public class ChatWSImpl  extends WebSocketAdapter{
 			text=json.get("text").toString();
 		}
 		catch (Exception ignor){
+            ignor.printStackTrace();
 		}
-		if((sessionId!=null)&&(startServerTime!=null)&&(text!=null)&&(!text.equals(""))&&(UserDataImpl.checkServerTime(startServerTime))){
+        System.out.println("start server time: " + startServerTime);
+        System.out.println("check start server time: "+ UserDataImpl.checkServerTime(startServerTime));
+		if((sessionId!=null)&&
+                (startServerTime!=null)&&
+                (text!=null)&&(!text.equals(""))&&
+                (UserDataImpl.checkServerTime(startServerTime))){
 			addMessageToChat(sessionId, text);
 		}
 		else if((sessionId!=null)&&(startServerTime!=null)&&UserDataImpl.checkServerTime(startServerTime)){

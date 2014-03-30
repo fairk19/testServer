@@ -1,2 +1,1 @@
-white
-gameSession.checkStroke(2,6,5,5,4);
+black
