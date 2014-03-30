@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="c701a337-0584-4a33-99d5-3c378750a3f2" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/chat/ChatWSImpl.java" afterPath="$PROJECT_DIR$/src/main/java/chat/ChatWSImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/TestChatWSIpml.java" afterPath="$PROJECT_DIR$/src/test/java/TestChatWSIpml.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/statistic/ccu" afterPath="$PROJECT_DIR$/statistic/ccu" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/statistic/memoryUsage" afterPath="$PROJECT_DIR$/statistic/memoryUsage" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/statistic/time" afterPath="$PROJECT_DIR$/statistic/time" />
@@ -113,7 +112,7 @@
         <option name="CONDITION" value="" />
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/src/main/java/chat/ChatWSImpl.java" line="53" class="chat.ChatWSImpl" package="chat">
+      <breakpoint url="file://$PROJECT_DIR$/src/main/java/chat/ChatWSImpl.java" line="47" class="chat.ChatWSImpl" package="chat">
         <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
         <option name="LOG_EXPRESSION_ENABLED" value="false" />
@@ -156,7 +155,7 @@
       <file leaf-file-name="TestChatWSIpml.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/TestChatWSIpml.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="60" column="24" selection-start="2471" selection-end="2471" vertical-scroll-proportion="0.0" vertical-offset="580" max-vertical-offset="1215">
+            <state line="31" column="9" selection-start="1064" selection-end="1064" vertical-scroll-proportion="0.0" vertical-offset="225" max-vertical-offset="1215">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -175,19 +174,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ChatWSImpl.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="ChatWSImpl.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/chat/ChatWSImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="61" column="66" selection-start="1936" selection-end="1936" vertical-scroll-proportion="-11.407408" vertical-offset="517" max-vertical-offset="990">
+            <state line="30" column="9" selection-start="825" selection-end="825" vertical-scroll-proportion="-0.14164905" vertical-offset="427" max-vertical-offset="900">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GameChatImpl.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="GameChatImpl.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/chat/GameChatImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="55" column="68" selection-start="1728" selection-end="1728" vertical-scroll-proportion="0.53801167" vertical-offset="294" max-vertical-offset="825">
+            <state line="55" column="68" selection-start="1728" selection-end="1728" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="825">
               <folding>
                 <element signature="e#985#998#0" expanded="true" />
               </folding>
@@ -198,7 +197,7 @@
       <file leaf-file-name="UserDataImpl.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/frontend/UserDataImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="83" column="0" selection-start="2331" selection-end="2331" vertical-scroll-proportion="-25.814816" vertical-offset="128" max-vertical-offset="3405">
+            <state line="83" column="0" selection-start="2331" selection-end="2331" vertical-scroll-proportion="-30.555555" vertical-offset="0" max-vertical-offset="3405">
               <folding>
                 <element signature="e#1685#1686#0" expanded="true" />
                 <element signature="e#1714#1715#0" expanded="true" />
@@ -240,8 +239,8 @@
         <option value="$PROJECT_DIR$/src/main/java/gameMechanic/gameCreating/MsgCreateChat.java" />
         <option value="$PROJECT_DIR$/src/main/java/chat/GameChatImpl.java" />
         <option value="$PROJECT_DIR$/src/test/java/TestGameChatImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/chat/ChatWSImpl.java" />
         <option value="$PROJECT_DIR$/src/test/java/TestChatWSIpml.java" />
+        <option value="$PROJECT_DIR$/src/main/java/chat/ChatWSImpl.java" />
       </list>
     </option>
   </component>
@@ -1091,12 +1090,12 @@
       <workItem from="1395689598909" duration="1164000" />
       <workItem from="1395760046433" duration="23128000" />
       <workItem from="1395868696648" duration="1094000" />
-      <workItem from="1396174214427" duration="29347000" />
+      <workItem from="1396174214427" duration="29427000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="58807000" />
+    <option name="totallyTimeSpent" value="58887000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="809" y="24" width="1108" height="1056" extended-state="4" />
@@ -1492,9 +1491,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/TestChatWSIpml.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="31" column="9" selection-start="1064" selection-end="1064" vertical-scroll-proportion="0.0" vertical-offset="225" max-vertical-offset="1215">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/chat/GameChatImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="55" column="68" selection-start="1728" selection-end="1728" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="825">
+          <folding>
+            <element signature="e#985#998#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/frontend/UserDataImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="83" column="0" selection-start="2331" selection-end="2331" vertical-scroll-proportion="-25.814816" vertical-offset="128" max-vertical-offset="3405">
+        <state line="83" column="0" selection-start="2331" selection-end="2331" vertical-scroll-proportion="-30.555555" vertical-offset="0" max-vertical-offset="3405">
           <folding>
             <element signature="e#1685#1686#0" expanded="true" />
             <element signature="e#1714#1715#0" expanded="true" />
@@ -1504,26 +1521,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/chat/ChatWSImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="61" column="66" selection-start="1936" selection-end="1936" vertical-scroll-proportion="-11.407408" vertical-offset="517" max-vertical-offset="990">
+        <state line="30" column="9" selection-start="825" selection-end="825" vertical-scroll-proportion="-0.14164905" vertical-offset="427" max-vertical-offset="900">
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/TestChatWSIpml.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="60" column="24" selection-start="2471" selection-end="2471" vertical-scroll-proportion="0.0" vertical-offset="580" max-vertical-offset="1215">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/chat/GameChatImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="55" column="68" selection-start="1728" selection-end="1728" vertical-scroll-proportion="0.53801167" vertical-offset="294" max-vertical-offset="825">
-          <folding>
-            <element signature="e#985#998#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
