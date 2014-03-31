@@ -1,9 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1a30528c-1d38-43d3-b47f-f586a0192301" name="Default" comment="all branch coverage 4%, utils branch coverage  84%">
+    <list default="true" id="896e1f44-6116-43b8-9705-ff361ffe11de" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/tests/gameClasses/FieldTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/tests/gameMechanic/GameSessionTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/tests/utils/ReflectionHelperTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/tests/resource/ResourceFactoryTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/tests/gameClasses/SnapshotTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/tests/gameClasses/StrokeTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/gameMechanic/GameMechanicImpl.java" afterPath="$PROJECT_DIR$/src/main/java/gameMechanic/GameMechanicImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/gameMechanic/GameSession.java" afterPath="$PROJECT_DIR$/src/main/java/gameMechanic/GameSession.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/utils/ReflectionHelper.java" afterPath="$PROJECT_DIR$/src/main/java/utils/ReflectionHelper.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/resource/ResourceFactory.java" afterPath="$PROJECT_DIR$/src/main/java/resource/ResourceFactory.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/utils/SysInfo.java" afterPath="$PROJECT_DIR$/src/main/java/utils/SysInfo.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/tests/utils/SysInfoTest.java" afterPath="$PROJECT_DIR$/src/main/tests/utils/SysInfoTest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/utils/VFS.java" afterPath="$PROJECT_DIR$/src/main/java/utils/VFS.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/tests/utils/VFSTest.java" afterPath="$PROJECT_DIR$/src/main/tests/utils/VFSTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/statistic/ccu" afterPath="$PROJECT_DIR$/statistic/ccu" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/statistic/time" afterPath="$PROJECT_DIR$/statistic/time" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/statistic/totalMemory" afterPath="$PROJECT_DIR$/statistic/totalMemory" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="java-server.iws" />
@@ -15,14 +31,6 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
-  <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/java-server$SysInfoTest.coverage" NAME="SysInfoTest Coverage Results" MODIFIED="1395689842727" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
-      <FILTER>utils.*</FILTER>
-    </SUITE>
-    <SUITE FILE_PATH="coverage/java-server$Main.coverage" NAME="Main Coverage Results" MODIFIED="1395679191889" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
-      <FILTER>main.*</FILTER>
-    </SUITE>
-  </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
   </component>
@@ -67,7 +75,6 @@
       </breakpoint>
     </breakpoint_any>
     <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
-    <line_breakpoints default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_rules />
     <ui_properties />
   </component>
@@ -77,23 +84,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="VFS.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/utils/VFS.java">
+      <file leaf-file-name="GameSession.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/gameMechanic/GameSession.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="93" column="30" selection-start="2108" selection-end="2108" vertical-scroll-proportion="0.0" vertical-offset="1190" max-vertical-offset="2720">
+            <state line="400" column="94" selection-start="12537" selection-end="12537" vertical-scroll-proportion="0.0" vertical-offset="6430" max-vertical-offset="9520">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="VFSTest.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/tests/utils/VFSTest.java">
+      <file leaf-file-name="GameSessionTest.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/tests/gameMechanic/GameSessionTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="75" column="21" selection-start="1895" selection-end="1895" vertical-scroll-proportion="-1.7878788" vertical-offset="1275" max-vertical-offset="1989">
+            <state line="88" column="38" selection-start="3695" selection-end="3695" vertical-scroll-proportion="0.78855723" vertical-offset="862" max-vertical-offset="1666">
               <folding>
-                <element signature="method#writeFile#0;class#VFSTest#0" expanded="false" />
-                <element signature="method#readFileEqualData#0;class#VFSTest#0" expanded="false" />
-                <element signature="method#deleteFile#0;class#VFSTest#0" expanded="false" />
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -107,48 +112,30 @@
     </FindUsagesManager>
   </component>
   <component name="Git.Settings">
-    <option name="PREVIOUS_COMMIT_AUTHORS">
-      <list>
-        <option value="alexandr" />
-      </list>
-    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/dbService/DBServiceImpl.java" />
-        <option value="$PROJECT_DIR$/static/html/game.html" />
-        <option value="$PROJECT_DIR$/static/html/404.html" />
-        <option value="$PROJECT_DIR$/static/html/admin.html" />
-        <option value="$PROJECT_DIR$/static/html/index (%F0%A6%F0%A5%F0+%F0%A9%D0%C5).html" />
-        <option value="$PROJECT_DIR$/static/html/head.html" />
-        <option value="$PROJECT_DIR$/static/html/index.html" />
-        <option value="$PROJECT_DIR$/static/html/profile.html" />
-        <option value="$PROJECT_DIR$/static/html/reg.html" />
-        <option value="$PROJECT_DIR$/static/html/rules.html" />
-        <option value="$PROJECT_DIR$/static/html/wait.html" />
-        <option value="$PROJECT_DIR$/static/html/template.html" />
         <option value="$PROJECT_DIR$/src/main/java/utils/SysInfo.java" />
-        <option value="$PROJECT_DIR$/src/main/java/frontend/FrontendImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/utils/SysInfoTest.java" />
-        <option value="$PROJECT_DIR$/src/main/tests/SysInfoTest.java" />
-        <option value="$PROJECT_DIR$/src/main/tests/utils/SysInfoTest.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/tests/testDirectory/testFile" />
-        <option value="$PROJECT_DIR$/testDir/testFileTwo" />
-        <option value="$PROJECT_DIR$/testDir/testFileWriteToEnd" />
-        <option value="$PROJECT_DIR$/src/main/tests/utils/VFSTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/utils/VFS.java" />
+        <option value="$PROJECT_DIR$/src/main/java/resource/ResourceFactory.java" />
+        <option value="$PROJECT_DIR$/src/main/java/main/Main.java" />
+        <option value="$PROJECT_DIR$/src/main/tests/utils/SysInfoTest.java" />
+        <option value="$PROJECT_DIR$/src/main/tests/utils/VFSTest.java" />
+        <option value="$PROJECT_DIR$/src/main/tests/resource/ResourceFactoryTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/utils/ReflectionHelper.java" />
+        <option value="$PROJECT_DIR$/src/main/tests/utils/ReflectionHelperTest.java" />
+        <option value="$PROJECT_DIR$/src/main/tests/gameClasses/StrokeTest.java" />
+        <option value="$PROJECT_DIR$/src/main/tests/gameClasses/SnapshotTest.java" />
+        <option value="$PROJECT_DIR$/src/main/tests/gameClasses/FieldTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/gameMechanic/GameMechanicImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/gameMechanic/GameSession.java" />
+        <option value="$PROJECT_DIR$/src/main/tests/gameMechanic/GameSessionTest.java" />
       </list>
     </option>
   </component>
   <component name="MavenImportPreferences">
-    <option name="generalSettings">
-      <MavenGeneralSettings>
-        <option name="mavenHome" value="C:\Program Files\apache-maven-3.2.1" />
-      </MavenGeneralSettings>
-    </option>
     <option name="importingSettings">
       <MavenImportingSettings>
         <option name="importAutomatically" value="true" />
@@ -186,8 +173,8 @@
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="1382" />
-    <option name="height" value="744" />
+    <option name="width" value="1296" />
+    <option name="height" value="1000" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -198,7 +185,7 @@
     <OptionsSetting value="true" id="Edit" />
     <OptionsSetting value="true" id="Undo Check Out" />
     <OptionsSetting value="true" id="Get Latest Version" />
-    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="2" id="Add" />
     <ConfirmationsSetting value="0" id="Remove" />
   </component>
   <component name="ProjectReloadState">
@@ -258,8 +245,26 @@
               <option name="myItemId" value="tests" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+          </PATH>
+          <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="utils" />
+              <option name="myItemId" value="java-server" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="testServer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -285,7 +290,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="utils" />
+              <option name="myItemId" value="gameMechanic" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -308,6 +313,24 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gameClasses" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java-server" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="testServer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="settings" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -325,66 +348,64 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="recentsLimit" value="5" />
     <property name="dynamic.classpath" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="FullScreen" value="false" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="TestNG" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.includeInheritedMembers" value="false" />
-    <property name="SearchEverywhereHistory" value="&#10;for" />
-    <property name="options.lastSelected" value="MavenSettings" />
-    <property name="options.splitter.main.proportions" value="0.3" />
-    <property name="options.splitter.details.proportions" value="0.2" />
-    <property name="options.searchVisible" value="true" />
+    <property name="FullScreen" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="gameMechanic" />
+      <recent name="gameClasses" />
       <recent name="utils" />
-    </key>
-    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
-      <recent name="utils" />
-      <recent name="" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\testServer\statistic" />
-      <recent name="C:\testServer\testDir" />
-      <recent name="C:\server\src\main\java\utils" />
-      <recent name="C:\server\src\main\tests" />
+      <recent name="resource" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.VFSTest">
-    <configuration default="false" name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.GameSessionTest">
+    <configuration default="false" name="ResourceFactoryTest" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="main.*" />
+          <option name="PATTERN" value="resource.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="MAIN_CLASS_NAME" value="main.Main" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <module name="java-server" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" value="resource" />
+      <option name="MAIN_CLASS_NAME" value="resource.ResourceFactoryTest" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
       <option name="ENV_VARIABLES" />
       <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="java-server" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
       <envs />
-      <RunnerSettings RunnerId="Cover" />
+      <properties />
+      <listeners />
       <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="" />
+        <option name="DEBUG_PORT" value="53570" />
         <option name="TRANSPORT" value="0" />
         <option name="LOCAL" value="true" />
       </RunnerSettings>
       <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Cover" />
       <ConfigurationWrapper RunnerId="Debug" />
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
-    <configuration default="false" name="SysInfoTest" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="ReflectionHelperTest" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="utils.*" />
@@ -396,7 +417,7 @@
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="SUITE_NAME" />
       <option name="PACKAGE_NAME" value="utils" />
-      <option name="MAIN_CLASS_NAME" value="utils.SysInfoTest" />
+      <option name="MAIN_CLASS_NAME" value="utils.ReflectionHelperTest" />
       <option name="METHOD_NAME" />
       <option name="GROUP_NAME" />
       <option name="TEST_OBJECT" value="CLASS" />
@@ -415,16 +436,14 @@
       <envs />
       <properties />
       <listeners />
-      <RunnerSettings RunnerId="Cover" />
       <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Cover" />
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
-    <configuration default="false" name="VFSTest" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="SnapshotTest" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="utils.*" />
+          <option name="PATTERN" value="gameClasses.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -432,8 +451,8 @@
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="SUITE_NAME" />
-      <option name="PACKAGE_NAME" value="utils" />
-      <option name="MAIN_CLASS_NAME" value="utils.VFSTest" />
+      <option name="PACKAGE_NAME" value="gameClasses" />
+      <option name="MAIN_CLASS_NAME" value="gameClasses.SnapshotTest" />
       <option name="METHOD_NAME" />
       <option name="GROUP_NAME" />
       <option name="TEST_OBJECT" value="CLASS" />
@@ -453,6 +472,82 @@
       <properties />
       <listeners />
       <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="FieldTest" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="gameClasses.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="java-server" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" value="gameClasses" />
+      <option name="MAIN_CLASS_NAME" value="gameClasses.FieldTest" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="GameSessionTest" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="gameMechanic.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="java-server" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" value="gameMechanic" />
+      <option name="MAIN_CLASS_NAME" value="gameMechanic.GameSessionTest" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="50348" />
+        <option name="TRANSPORT" value="0" />
+        <option name="LOCAL" value="true" />
+      </RunnerSettings>
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Debug" />
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
@@ -689,16 +784,56 @@
       <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
       <method />
     </configuration>
-    <list size="3">
-      <item index="0" class="java.lang.String" itemvalue="Application.Main" />
-      <item index="1" class="java.lang.String" itemvalue="TestNG.SysInfoTest" />
-      <item index="2" class="java.lang.String" itemvalue="TestNG.VFSTest" />
+    <configuration default="false" name="StrokeTest" type="TestNG" factoryName="TestNG" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="gameClasses.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="java-server" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" value="gameClasses" />
+      <option name="MAIN_CLASS_NAME" value="gameClasses.StrokeTest" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <list size="6">
+      <item index="0" class="java.lang.String" itemvalue="TestNG.StrokeTest" />
+      <item index="1" class="java.lang.String" itemvalue="TestNG.ResourceFactoryTest" />
+      <item index="2" class="java.lang.String" itemvalue="TestNG.ReflectionHelperTest" />
+      <item index="3" class="java.lang.String" itemvalue="TestNG.SnapshotTest" />
+      <item index="4" class="java.lang.String" itemvalue="TestNG.FieldTest" />
+      <item index="5" class="java.lang.String" itemvalue="TestNG.GameSessionTest" />
     </list>
     <recent_temporary>
-      <list size="3">
-        <item index="0" class="java.lang.String" itemvalue="TestNG.VFSTest" />
-        <item index="1" class="java.lang.String" itemvalue="TestNG.SysInfoTest" />
-        <item index="2" class="java.lang.String" itemvalue="Application.Main" />
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="TestNG.GameSessionTest" />
+        <item index="1" class="java.lang.String" itemvalue="TestNG.FieldTest" />
+        <item index="2" class="java.lang.String" itemvalue="TestNG.SnapshotTest" />
+        <item index="3" class="java.lang.String" itemvalue="TestNG.ReflectionHelperTest" />
+        <item index="4" class="java.lang.String" itemvalue="TestNG.ResourceFactoryTest" />
       </list>
     </recent_temporary>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
@@ -709,86 +844,52 @@
   <component name="ShelveChangesManager" show_recycled="false" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="1a30528c-1d38-43d3-b47f-f586a0192301" name="Default" comment="" />
-      <created>1395568089319</created>
-      <updated>1395568089319</updated>
-      <workItem from="1395568091106" duration="5687000" />
-      <workItem from="1395577010455" duration="4994000" />
-      <workItem from="1395670229927" duration="141000" />
-      <workItem from="1395670423013" duration="5510000" />
-      <workItem from="1395681308268" duration="7367000" />
-      <workItem from="1395693839464" duration="976000" />
-      <workItem from="1395734649083" duration="7248000" />
-      <workItem from="1395774625011" duration="2795000" />
-      <workItem from="1395827602280" duration="4401000" />
-      <workItem from="1395846971011" duration="64000" />
-      <workItem from="1395847066735" duration="4559000" />
+      <changelist id="896e1f44-6116-43b8-9705-ff361ffe11de" name="Default" comment="" />
+      <created>1396084038281</created>
+      <updated>1396084038281</updated>
+      <workItem from="1396084039938" duration="15253000" />
+      <workItem from="1396106342779" duration="6423000" />
+      <workItem from="1396115984981" duration="903000" />
+      <workItem from="1396168694711" duration="11329000" />
+      <workItem from="1396191048993" duration="2380000" />
+      <workItem from="1396259082454" duration="8720000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="43742000" />
+    <option name="totallyTimeSpent" value="45008000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="false" />
+    <frame x="-8" y="-8" width="1296" height="1000" extended-state="7" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32977462" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3270869" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39976275" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3270869" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32977462" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32858837" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.14199395" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.1365105" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20241691" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31175467" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
-    </layout>
-    <layout-to-restore>
-      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
-      <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25444266" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32977462" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23505655" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4128114" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32977462" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39976275" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32858837" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-    </layout-to-restore>
+    </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
     <option name="RECENTLY_FILTERED_USER_GROUPS">
@@ -802,9 +903,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="all branch coverage 1%, utils branch coverage  16%" />
-    <MESSAGE value="all branch coverage 4%, utils branch coverage  84%" />
-    <option name="LAST_COMMIT_MESSAGE" value="all branch coverage 4%, utils branch coverage  84%" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -814,177 +912,95 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/utils/VFS.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/gameMechanic/GameSession.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="65" selection-start="279" selection-end="279" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3128">
+        <state line="187" column="9" selection-start="5666" selection-end="5666" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="9724">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/tests/utils/VFSTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/tests/gameMechanic/GameSessionTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="99" column="45" selection-start="2324" selection-end="2324" vertical-scroll-proportion="0.0" vertical-offset="1683" max-vertical-offset="1768">
+        <state line="25" column="49" selection-start="708" selection-end="708" vertical-scroll-proportion="0.0" vertical-offset="425" max-vertical-offset="1785">
           <folding>
-            <element signature="method#writeFile#0;class#VFSTest#0" expanded="false" />
-            <element signature="method#readFileEqualData#0;class#VFSTest#0" expanded="false" />
-            <element signature="method#deleteFile#0;class#VFSTest#0" expanded="false" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/css/admin.css">
+    <entry file="file://$PROJECT_DIR$/src/main/java/gameMechanic/GameSession.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="796" />
+        <state line="180" column="22" selection-start="5356" selection-end="5356" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="9724">
+          <folding />
+        </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/js/game.js">
+    <entry file="file://$PROJECT_DIR$/src/main/tests/gameMechanic/GameSessionTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="4692" max-vertical-offset="11016" />
+        <state line="85" column="0" selection-start="3679" selection-end="3679" vertical-scroll-proportion="0.0" vertical-offset="1445" max-vertical-offset="1598">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/js/bootstrap.min.js">
+    <entry file="file://$PROJECT_DIR$/src/main/java/gameMechanic/GameMechanicImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="505" />
+        <state line="17" column="13" selection-start="371" selection-end="371" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3740">
+          <folding />
+        </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/base/Frontend.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/gameMechanic/GameSession.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="16" selection-start="275" selection-end="275" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="238" />
+        <state line="78" column="48" selection-start="2178" selection-end="2178" vertical-scroll-proportion="0.0" vertical-offset="1326" max-vertical-offset="9707">
+          <folding />
+        </state>
       </provider>
     </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/lib/idea.jar!/resources/html5-schema/common.rnc">
+    <entry file="file://$PROJECT_DIR$/src/main/tests/utils/ReflectionHelperTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="132" column="23" selection-start="3392" selection-end="3392" vertical-scroll-proportion="-3.908911" vertical-offset="4218" max-vertical-offset="8228" />
+        <state line="52" column="65" selection-start="1299" selection-end="1299" vertical-scroll-proportion="0.0" vertical-offset="850" max-vertical-offset="952" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/html/temp.html">
+    <entry file="file://$PROJECT_DIR$/src/main/java/utils/SAXHandler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="796" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/html/footer.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="796" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/html/404.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="15" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="374" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/html/admin.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="15" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="2329" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/html/profile.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="15" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="492" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/html/reg.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="15" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="492" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/html/rules.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="15" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="1003" />
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/eclipse/jetty/jetty-server/9.0.0.v20130308/jetty-server-9.0.0.v20130308.jar!/org/eclipse/jetty/server/handler/HandlerWrapper.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="16" selection-start="831" selection-end="831" vertical-scroll-proportion="-9.0" vertical-offset="81" max-vertical-offset="527" />
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/eclipse/jetty/jetty-server/9.0.0.v20130308/jetty-server-9.0.0.v20130308.jar!/org/eclipse/jetty/server/HttpChannel.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="60" column="16" selection-start="3005" selection-end="3005" vertical-scroll-proportion="0.35154393" vertical-offset="855" max-vertical-offset="1700" />
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/eclipse/jetty/jetty-server/9.0.0.v20130308/jetty-server-9.0.0.v20130308.jar!/org/eclipse/jetty/server/Server.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="67" column="16" selection-start="3464" selection-end="3464" vertical-scroll-proportion="0.33484164" vertical-offset="974" max-vertical-offset="1649" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/utils/CookieDescriptor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="13" selection-start="113" selection-end="113" vertical-scroll-proportion="0.08323134" vertical-offset="0" max-vertical-offset="817" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/html/wait.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="15" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="493" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dbService/UserDataSet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="50" column="16" selection-start="1005" selection-end="1005" vertical-scroll-proportion="0.0" vertical-offset="510" max-vertical-offset="1377" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/main/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="45" column="34" selection-start="1402" selection-end="1402" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="952" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/statistic/memoryUsage">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="796" />
+        <state line="30" column="32" selection-start="817" selection-end="817" vertical-scroll-proportion="0.0" vertical-offset="510" max-vertical-offset="663" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/statistic/totalMemory">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="796" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/statistic/time">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="796" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/statistic/ccu">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="796" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/js/template.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="796" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/css/head.css">
-      <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="817" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/html/template.html">
+    <entry file="file://$PROJECT_DIR$/src/main/java/frontend/FrontendImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="24" selection-start="564" selection-end="564" vertical-scroll-proportion="-11.115385" vertical-offset="0" max-vertical-offset="544" />
+        <state line="47" column="49" selection-start="1255" selection-end="1296" vertical-scroll-proportion="0.0" vertical-offset="216" max-vertical-offset="4369" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/html/game.html">
+    <entry file="file://$PROJECT_DIR$/src/main/java/utils/SysInfo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="15" vertical-scroll-proportion="2.2692308" vertical-offset="59" max-vertical-offset="850" />
+        <state line="23" column="0" selection-start="577" selection-end="577" vertical-scroll-proportion="0.0" vertical-offset="165" max-vertical-offset="1088" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/html/head.html">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/testng/testng/6.8.7/testng-6.8.7-sources.jar!/org/testng/internal/Invoker.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="6" selection-start="86" selection-end="86" vertical-scroll-proportion="0.08596713" vertical-offset="0" max-vertical-offset="816" />
+        <state line="731" column="0" selection-start="28881" selection-end="28881" vertical-scroll-proportion="0.33190578" vertical-offset="11473" max-vertical-offset="32266" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/html/index.html">
+    <entry file="file://$PROJECT_DIR$/statistic/MemoryUsage">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="15" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="595" />
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="526" />
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/eclipse/jetty/jetty-server/9.0.0.v20130308/jetty-server-9.0.0.v20130308.jar!/org/eclipse/jetty/server/handler/HandlerList.class">
+    <entry file="file://$PROJECT_DIR$/src/main/java/utils/TemplateHelper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="16" selection-start="314" selection-end="314" vertical-scroll-proportion="0.30769232" vertical-offset="0" max-vertical-offset="442" />
+        <state line="37" column="33" selection-start="961" selection-end="961" vertical-scroll-proportion="0.5826193" vertical-offset="0" max-vertical-offset="817" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/resource/Resource.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/utils/VFS.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="17" selection-start="36" selection-end="36" vertical-scroll-proportion="0.04161567" vertical-offset="0" max-vertical-offset="817" />
+        <state line="16" column="5" selection-start="410" selection-end="410" vertical-scroll-proportion="0.14565483" vertical-offset="0" max-vertical-offset="817" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/resource/TimeSettings.java">
@@ -992,96 +1008,149 @@
         <state line="2" column="13" selection-start="32" selection-end="32" vertical-scroll-proportion="0.04161567" vertical-offset="0" max-vertical-offset="817" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/messageSystem/MessageSystemImpl.java">
+    <entry file="jar://C:/Program Files/Java/jdk1.7.0_51/src.zip!/javax/xml/parsers/SAXParserFactory.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="13" selection-start="253" selection-end="253" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="663" />
+        <state line="191" column="30" selection-start="6701" selection-end="6701" vertical-scroll-proportion="0.33333334" vertical-offset="2520" max-vertical-offset="7531" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/utils/SHA2.java">
+    <entry file="jar://C:/Program Files/Java/jdk1.7.0_51/src.zip!/javax/xml/parsers/SAXParser.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="13" selection-start="113" selection-end="113" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="629" />
+        <state line="317" column="16" selection-start="11428" selection-end="11428" vertical-scroll-proportion="0.33292535" vertical-offset="4505" max-vertical-offset="8925" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/utils/SAXHandler.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/main/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="13" selection-start="104" selection-end="104" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="646" />
+        <state line="80" column="29" selection-start="2688" selection-end="2715" vertical-scroll-proportion="0.73745173" vertical-offset="434" max-vertical-offset="952" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dbLite.sql">
+    <entry file="file://$PROJECT_DIR$/src/main/java/resource/GameSettings.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="758" />
+        <state line="18" column="15" selection-start="410" selection-end="410" vertical-scroll-proportion="0.374541" vertical-offset="0" max-vertical-offset="817" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
+    <entry file="jar://C:/Program Files/Java/jdk1.7.0_51/src.zip!/org/xml/sax/helpers/DefaultHandler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="21" selection-start="1067" selection-end="1067" vertical-scroll-proportion="0.0" vertical-offset="1493" max-vertical-offset="2312">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/utils/TimeHelper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="13" selection-start="203" selection-end="203" vertical-scroll-proportion="0.0" vertical-offset="65" max-vertical-offset="884" />
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.7.0_51/src.zip!/java/lang/System.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="703" column="25" selection-start="28925" selection-end="28925" vertical-scroll-proportion="0.33333334" vertical-offset="10981" max-vertical-offset="19992" />
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.7.0_51/jre/lib/plugin.jar!/netscape/security/ForbiddenTargetException.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="796" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/utils/SysInfo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="36" selection-start="573" selection-end="573" vertical-scroll-proportion="0.06965174" vertical-offset="250" max-vertical-offset="1054" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/utils/TemplateHelper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="23" selection-start="709" selection-end="709" vertical-scroll-proportion="0.374541" vertical-offset="0" max-vertical-offset="817" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/tests/utils/SysInfoTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="32" selection-start="470" selection-end="470" vertical-scroll-proportion="0.4369645" vertical-offset="0" max-vertical-offset="817" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/frontend/FrontendImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="47" column="28" selection-start="1275" selection-end="1275" vertical-scroll-proportion="0.21144278" vertical-offset="204" max-vertical-offset="4369" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/chat/ChatWSImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="13" selection-start="225" selection-end="225" vertical-scroll-proportion="0.031021899" vertical-offset="51" max-vertical-offset="986">
-          <folding />
-        </state>
+        <state line="294" column="16" selection-start="9734" selection-end="9734" vertical-scroll-proportion="0.33204633" vertical-offset="4163" max-vertical-offset="7786" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/resource/ResourceFactory.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="35" selection-start="666" selection-end="666" vertical-scroll-proportion="0.5151515" vertical-offset="0" max-vertical-offset="986">
+        <state line="12" column="13" selection-start="227" selection-end="227" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="952" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/utils/SAXHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="30" column="32" selection-start="817" selection-end="817" vertical-scroll-proportion="0.0" vertical-offset="56" max-vertical-offset="646" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/utils/ReflectionHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="23" selection-start="289" selection-end="289" vertical-scroll-proportion="0.33292535" vertical-offset="0" max-vertical-offset="817" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/gameClasses/Stroke.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="51" column="82" selection-start="1138" selection-end="1138" vertical-scroll-proportion="0.5618115" vertical-offset="408" max-vertical-offset="1887">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/utils/VFS.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/gameMechanic/Stroke/MsgDoneSnapshot.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="93" column="30" selection-start="2108" selection-end="2108" vertical-scroll-proportion="0.0" vertical-offset="1190" max-vertical-offset="2720">
+        <state line="10" column="18" selection-start="211" selection-end="211" vertical-scroll-proportion="0.18888889" vertical-offset="0" max-vertical-offset="540" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/frontend/WebSocketImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="141" column="73" selection-start="4352" selection-end="4352" vertical-scroll-proportion="0.5422277" vertical-offset="1614" max-vertical-offset="2431" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/gameClasses/Snapshot.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="60" column="22" selection-start="1493" selection-end="1493" vertical-scroll-proportion="0.6523868" vertical-offset="487" max-vertical-offset="1802">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/tests/gameClasses/SnapshotTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="40" column="73" selection-start="1242" selection-end="1242" vertical-scroll-proportion="0.749082" vertical-offset="0" max-vertical-offset="901" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/tests/resource/ResourceFactoryTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="75" column="62" selection-start="1964" selection-end="1964" vertical-scroll-proportion="0.7919217" vertical-offset="509" max-vertical-offset="1326" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/tests/gameClasses/FieldTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="28" column="43" selection-start="588" selection-end="588" vertical-scroll-proportion="0.52019584" vertical-offset="0" max-vertical-offset="817" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/settings/gameSettings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="8" selection-start="128" selection-end="128" vertical-scroll-proportion="0.08323134" vertical-offset="0" max-vertical-offset="817">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/gameMechanic/GameMechanicImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="139" column="106" selection-start="4456" selection-end="4456" vertical-scroll-proportion="0.0" vertical-offset="1895" max-vertical-offset="3451">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/tests/utils/VFSTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="75" column="21" selection-start="1895" selection-end="1895" vertical-scroll-proportion="-1.7878788" vertical-offset="1275" max-vertical-offset="1989">
+        <state line="70" column="5" selection-start="1785" selection-end="1785" vertical-scroll-proportion="-0.41615668" vertical-offset="1428" max-vertical-offset="2890">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/tests/utils/ReflectionHelperTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="52" column="65" selection-start="1299" selection-end="1299" vertical-scroll-proportion="0.85312116" vertical-offset="0" max-vertical-offset="850">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/tests/utils/SysInfoTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="67" column="46" selection-start="1944" selection-end="1944" vertical-scroll-proportion="0.375765" vertical-offset="696" max-vertical-offset="1513">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/tests/gameClasses/StrokeTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="56" column="63" selection-start="1671" selection-end="1671" vertical-scroll-proportion="1.0820073" vertical-offset="0" max-vertical-offset="1037">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/gameClasses/Field.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="30" column="18" selection-start="467" selection-end="467" vertical-scroll-proportion="0.0" vertical-offset="135" max-vertical-offset="986">
           <folding>
-            <element signature="method#writeFile#0;class#VFSTest#0" expanded="false" />
-            <element signature="method#readFileEqualData#0;class#VFSTest#0" expanded="false" />
-            <element signature="method#deleteFile#0;class#VFSTest#0" expanded="false" />
+            <element signature="e#453#454#0" expanded="true" />
+            <element signature="e#471#472#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/gameMechanic/GameSession.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="400" column="94" selection-start="12537" selection-end="12537" vertical-scroll-proportion="0.0" vertical-offset="6430" max-vertical-offset="9520">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/tests/gameMechanic/GameSessionTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="88" column="38" selection-start="3695" selection-end="3695" vertical-scroll-proportion="0.78855723" vertical-offset="862" max-vertical-offset="1666">
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -4,7 +4,6 @@ import org.testng.Assert;
 import org.testng.annotations.*;
 
 import java.io.*;
-import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -95,6 +94,7 @@ public class VFSTest {
     public void testIsExist() throws Exception {
         String pathFileExist =  "\\testDir\\testFileOne";
         String pathFileNotExist =  "\\testDir\\testFileThree";
+
         Assert.assertTrue(VFS.isExist(pathFileExist));
         Assert.assertFalse(VFS.isExist(pathFileNotExist));
     }
