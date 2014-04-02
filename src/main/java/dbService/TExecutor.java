@@ -79,6 +79,7 @@ public class TExecutor {
 			System.err.println("\nError");
 			System.err.println("TExecutor, addUser");
 			System.err.println(e.getMessage());
+            e.printStackTrace();
 		}
 		finally{
 			try{
@@ -118,7 +119,17 @@ public class TExecutor {
 		}
 		return user;
 	}
-
+    public static void deleteUser(Connection connection, String login) {
+        PreparedStatement stmt = null;
+        String query = "DELETE FROM Users WHERE nickname = ?";
+        try {
+            stmt = connection.prepareStatement(query);
+            stmt.setString(1,login);
+            ResultSet resultSet = stmt.getResultSet();
+        } catch(Exception  e) {
+            e.printStackTrace();
+        }
+    }
 	public static void updateUser(Connection connection, String login, 
 			int rating, int winQuantity, int loseQuantity ){
 		PreparedStatement stmt=null;

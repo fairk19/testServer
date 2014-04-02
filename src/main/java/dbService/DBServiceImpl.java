@@ -75,14 +75,17 @@ public class DBServiceImpl implements DataAccessObject{
 			TExecutor.updateUser(connection, login, rating, winQuantity, loseQuantity);
 		}
 	}
+    public void deleteUsers(String login) {
+        int rows = TExecutor.findUser(connection, login);
+        if (rows != 0)
+            TExecutor.deleteUser(connection, login);
+            
 
-	public void updateAI(String table, int[] fields, String winner, int whiteQuantity, int blackQuantity){
-		TExecutor.findPosition(connection, table, fields, whiteQuantity, blackQuantity);
-	}
+    }
+
 	
 	public void run(){
 		try{
-			//			Driver driver = (Driver) Class.forName("org.sqlite.JDBC").newInstance();
 			Driver driver = (Driver) Class.forName("com.mysql.jdbc.Driver").newInstance();
 			DriverManager.registerDriver(driver);
 		}

@@ -44,10 +44,13 @@ public class TestGameChatImpl {
         GameChatImpl.sendMessage(null, null);
     }
 
-    @Test(timeOut = 100)
+    @Test(timeOut = 500, expectedExceptions = Exception.class)
     public void testRun() {
         gameChat.run();
     }
+
+
+
     @AfterMethod
     public void tearDown() {
 
