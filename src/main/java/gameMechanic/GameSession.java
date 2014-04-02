@@ -24,7 +24,7 @@ public class GameSession{
 	private Field[][] currentPositions;
 	private StringBuilder log = new StringBuilder();
     public static enum codeError{idEqualLastStroke, isOdd, isBorder,
-        fieldTypeNotEqualPlayerColor, notCheckEating, notMakeUsualStroke, success}
+        fieldTypeNotEqualPlayerColor, notCheckEating, notMakeUsualStroke, fieldTypeNotEqualNothing, success}
 	final private GameSettings settings;
 
 	static{
@@ -108,9 +108,11 @@ public class GameSession{
 			if(!checkEating(from_x, from_y, to_x, to_y)){
 				return codeError.notCheckEating;
 			}
+            System.out.println("EATING TRUE");
 			changeId=!makeEatingStroke(from_x, from_y, to_x, to_y);
 		}
 		else{
+            System.out.println("EATING FALSE");
 			if(!makeUsualStroke(from_x, from_y, to_x, to_y)){
 				return codeError.notMakeUsualStroke;
 			}
@@ -205,10 +207,13 @@ public class GameSession{
 	private boolean makeUsualStroke(int from_x, int from_y, int to_x, int to_y){
 		checker myColor = getFieldType(from_x, from_y);
 		if(canEat(myColor)){
+            System.out.println("CAN EAT TRUE");
 			return false;
 		}
 		move(from_x, from_y, to_x, to_y);
+        System.out.println("MOVE");
 		if(becameKing(to_x, to_y)){
+            System.out.println("BECAME KING TRUE");
 			makeKing(to_x, to_y);
 		}
 		return true;
@@ -372,7 +377,7 @@ public class GameSession{
 		if(!inBorder(to_x)||!inBorder(to_y)||!inBorder(from_x)||!inBorder(from_y))
 			return codeError.isBorder;
 		if(getFieldType(to_x, to_y)!=checker.nothing){
-			return codeError.fieldTypeNotEqualPlayerColor;
+			return codeError.fieldTypeNotEqualNothing;
 		}
 		return codeError.success;
 	}
@@ -394,20 +399,32 @@ public class GameSession{
 	}
 
 	private boolean pawnEating(int from_x, int from_y, int to_x, int to_y){
-		if((abs(from_x-to_x)!=2)||(abs(from_y-to_y)!=2))
-			return false;
+		if((abs(from_x-to_x)!=2)||(abs(from_y-to_y)!=2)){
+            System.out.println("NOT PAWN_EATING");
+            return false;
+        }
 		checker myColor=getFieldType(from_x, from_y), anotherColor=getAnotherColor(myColor);
 		int on_x=normal(to_x-from_x), on_y=normal(to_y-from_y);
+        System.out.println("FIELD TYPE: " + getFieldType(from_x+on_x,from_y+on_y));
+        System.out.println("ANOTHER COLOR: " + anotherColor);
+        System.out.println("FIELD IS EMPTY: " + fieldIsEmpty(to_x,to_y));
 		return (getFieldType(from_x+on_x,from_y+on_y)==anotherColor)&&fieldIsEmpty(to_x,to_y);
 	}
 	
 	private boolean eating(int from_x, int from_y, int to_x, int to_y){
-		if((abs(from_x-to_x)<2)||(abs(from_y-to_y)<2))
-			return false;
-		if(fieldIsKing(from_x, from_y))
+		if((abs(from_x-to_x)<2)||(abs(from_y-to_y)<2)){
+            System.out.println("NOT EATING");
+            return false;
+        }
+
+		if(fieldIsKing(from_x, from_y)){
+            System.out.println("FIELD IS KING");
 			return kingEating(from_x, from_y, to_x, to_y);
-		else
+        }
+		else {
+            System.out.println("FIELD IS NOT KING");
 			return pawnEating(from_x, from_y, to_x, to_y);
+        }
 	}
 	
 	private boolean canMoveRightUp(int x, int y){
