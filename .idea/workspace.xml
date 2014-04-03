@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c701a337-0584-4a33-99d5-3c378750a3f2" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/dbService/DBServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/dbService/DBServiceImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/dbService/TExecutor.java" afterPath="$PROJECT_DIR$/src/main/java/dbService/TExecutor.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/TestDBServiceImpl.java" afterPath="$PROJECT_DIR$/src/test/java/TestDBServiceImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/statistic/ccu" afterPath="$PROJECT_DIR$/statistic/ccu" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/statistic/memoryUsage" afterPath="$PROJECT_DIR$/statistic/memoryUsage" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/statistic/time" afterPath="$PROJECT_DIR$/statistic/time" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/statistic/totalMemory" afterPath="$PROJECT_DIR$/statistic/totalMemory" />
     </list>
     <ignored path="java-server.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -145,21 +139,6 @@
         <option name="CONDITION" value="" />
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/src/test/java/TestDBServiceImpl.java" line="27" class="TestDBServiceImpl" package="">
-        <option name="ENABLED" value="true" />
-        <option name="LOG_ENABLED" value="false" />
-        <option name="LOG_EXPRESSION_ENABLED" value="false" />
-        <option name="REMOVE_AFTER_HIT" value="false" />
-        <option name="SUSPEND_POLICY" value="SuspendAll" />
-        <option name="SUSPEND" value="true" />
-        <option name="COUNT_FILTER_ENABLED" value="false" />
-        <option name="COUNT_FILTER" value="0" />
-        <option name="CONDITION_ENABLED" value="true" />
-        <option name="CLASS_FILTERS_ENABLED" value="false" />
-        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="" />
-        <option name="LOG_MESSAGE" value="" />
-      </breakpoint>
     </line_breakpoints>
     <breakpoint_rules />
     <ui_properties />
@@ -173,7 +152,7 @@
       <file leaf-file-name="Main.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/main/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="74" column="39" selection-start="2535" selection-end="2535" vertical-scroll-proportion="0.0" vertical-offset="288" max-vertical-offset="840">
+            <state line="74" column="39" selection-start="2535" selection-end="2535" vertical-scroll-proportion="0.0" vertical-offset="304" max-vertical-offset="840">
               <folding />
             </state>
           </provider>
@@ -182,11 +161,26 @@
       <file leaf-file-name="DBServiceImpl.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/dbService/DBServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="45" column="9" selection-start="1573" selection-end="1573" vertical-scroll-proportion="0.0" vertical-offset="260" max-vertical-offset="1575">
-              <folding>
-                <element signature="e#1836#2432#0" expanded="true" />
-                <element signature="e#2427#2428#0" expanded="true" />
-              </folding>
+            <state line="89" column="38" selection-start="2739" selection-end="2739" vertical-scroll-proportion="0.0" vertical-offset="872" max-vertical-offset="1530">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MsgUpdateUsers.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/dbService/MsgUpdateUsers.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="16" column="18" selection-start="374" selection-end="374" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="300">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MsgToDBService.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/messageSystem/MsgToDBService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="16" column="12" selection-start="321" selection-end="321" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="345">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -194,7 +188,7 @@
       <file leaf-file-name="TestDBServiceImpl.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/TestDBServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="42" selection-start="698" selection-end="698" vertical-scroll-proportion="0.4375" vertical-offset="135" max-vertical-offset="615">
+            <state line="57" column="9" selection-start="1680" selection-end="1680" vertical-scroll-proportion="0.4262295" vertical-offset="621" max-vertical-offset="1530">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -205,7 +199,7 @@
       <file leaf-file-name="TExecutor.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/dbService/TExecutor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="136" column="38" selection-start="3406" selection-end="3406" vertical-scroll-proportion="0.0" vertical-offset="1864" max-vertical-offset="2490">
+            <state line="136" column="28" selection-start="3390" selection-end="3396" vertical-scroll-proportion="-6.259259" vertical-offset="1826" max-vertical-offset="2490">
               <folding>
                 <marker date="1396455816179" expanded="true" signature="908:1001" placeholder="INSERT INTO ..." />
                 <marker date="1396455816179" expanded="true" signature="1517:1565" placeholder="SELECT COUNT..Users..." />
@@ -241,8 +235,8 @@
         <option value="$PROJECT_DIR$/src/main/java/chat/GameChatImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/dbService/UserDataSet.java" />
         <option value="$PROJECT_DIR$/src/main/java/dbService/DBServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/test/java/TestDBServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/dbService/TExecutor.java" />
+        <option value="$PROJECT_DIR$/src/test/java/TestDBServiceImpl.java" />
       </list>
     </option>
   </component>
@@ -314,9 +308,9 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="266" />
+    <option name="x" value="32" />
     <option name="y" value="24" />
-    <option name="width" value="1100" />
+    <option name="width" value="1092" />
     <option name="height" value="744" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
@@ -347,8 +341,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -707,6 +699,8 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -716,7 +710,7 @@
     <property name="MemberChooser.sorted" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="MemberChooser.copyJavadoc" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../../SecondTerm/JavaFirstTerm/java/myTanks2D/current/myDz3_2" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="recentsLimit" value="5" />
     <property name="dynamic.classpath" value="false" />
@@ -1180,14 +1174,15 @@
       <workItem from="1395868696648" duration="1094000" />
       <workItem from="1396174214427" duration="38888000" />
       <workItem from="1396441593451" duration="10346000" />
+      <workItem from="1396527239437" duration="4239000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="78694000" />
+    <option name="totallyTimeSpent" value="82933000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="266" y="24" width="1100" height="744" extended-state="4" />
+    <frame x="32" y="24" width="1092" height="744" extended-state="4" />
     <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1195,7 +1190,7 @@
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25083613" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.46153846" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.38127092" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1210,8 +1205,8 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.28383458" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2784091" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1521739" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27767175" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.0" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.28383458" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -1240,20 +1235,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/settings/gameSettings.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="892">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/settings/rating.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="819">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/settings/timeSettings.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="3" column="0" selection-start="72" selection-end="72" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="135">
@@ -1331,11 +1312,6 @@
         <state line="168" column="0" selection-start="5655" selection-end="5655" vertical-scroll-proportion="0.0" vertical-offset="2121" max-vertical-offset="5715" />
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/testng/testng/6.1.1/testng-6.1.1-sources.jar!/org/testng/Reporter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="0" selection-start="1413" selection-end="1413" vertical-scroll-proportion="0.0" vertical-offset="396" max-vertical-offset="2100" />
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/testng/testng/6.1.1/testng-6.1.1-sources.jar!/org/testng/internal/TestResult.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="153" column="0" selection-start="3381" selection-end="3381" vertical-scroll-proportion="0.0" vertical-offset="1862" max-vertical-offset="3900" />
@@ -1350,11 +1326,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/utils/TimeHelper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="0" selection-start="381" selection-end="381" vertical-scroll-proportion="0.0" vertical-offset="73" max-vertical-offset="780">
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
+        <state line="20" column="0" selection-start="381" selection-end="381" vertical-scroll-proportion="0.0" vertical-offset="73" max-vertical-offset="780" />
       </provider>
     </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/mockito/mockito-all/1.8.4/mockito-all-1.8.4-sources.jar!/org/mockito/internal/creation/MethodInterceptorFilter.java">
@@ -1373,8 +1345,8 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="80" column="0" selection-start="2250" selection-end="2250" vertical-scroll-proportion="0.12820514" vertical-offset="690" max-vertical-offset="3405">
           <folding>
-            <element signature="e#1685#1686#0" expanded="true" />
-            <element signature="e#1714#1715#0" expanded="true" />
+            <element signature="e#1685#1686#0" expanded="false" />
+            <element signature="e#1714#1715#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1413,9 +1385,7 @@
     </entry>
     <entry file="jar:///usr/lib/jvm/jdk1.7.0_25/src.zip!/java/sql/DriverManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="541" column="25" selection-start="19810" selection-end="19810" vertical-scroll-proportion="0.39473686" vertical-offset="7245" max-vertical-offset="8865">
-          <folding />
-        </state>
+        <state line="541" column="25" selection-start="19810" selection-end="19810" vertical-scroll-proportion="0.39473686" vertical-offset="7245" max-vertical-offset="8865" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/base/MessageSystem.java">
@@ -1427,26 +1397,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="0" selection-start="42" selection-end="42" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="180">
-          <folding />
-        </state>
+        <state line="6" column="0" selection-start="42" selection-end="42" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="180" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/gameMechanic/gameCreating/MsgCreateChat.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="42" selection-start="184" selection-end="184" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="345">
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
+        <state line="7" column="42" selection-start="184" selection-end="184" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="345" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/chat/GameChatImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="20" column="23" selection-start="405" selection-end="405" vertical-scroll-proportion="0.0" vertical-offset="568" max-vertical-offset="1020">
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#405#432#0" expanded="true" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#405#432#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1463,72 +1427,47 @@
     </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/testng/testng/6.1.1/testng-6.1.1-sources.jar!/org/testng/SuiteRunner.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="111" column="0" selection-start="3933" selection-end="3933" vertical-scroll-proportion="0.0" vertical-offset="1195" max-vertical-offset="9060">
-          <folding />
-        </state>
+        <state line="111" column="0" selection-start="3933" selection-end="3933" vertical-scroll-proportion="0.0" vertical-offset="1195" max-vertical-offset="9060" />
       </provider>
     </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/testng/testng/6.1.1/testng-6.1.1-sources.jar!/org/testng/remote/RemoteTestNG.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="111" column="0" selection-start="3747" selection-end="3747" vertical-scroll-proportion="0.33110368" vertical-offset="1176" max-vertical-offset="3705">
-          <folding />
-        </state>
+        <state line="111" column="0" selection-start="3747" selection-end="3747" vertical-scroll-proportion="0.33110368" vertical-offset="1176" max-vertical-offset="3705" />
       </provider>
     </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/testng/testng/6.1.1/testng-6.1.1-sources.jar!/org/testng/TestRunner.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="156" column="0" selection-start="6169" selection-end="6169" vertical-scroll-proportion="0.30844155" vertical-offset="1495" max-vertical-offset="25380">
-          <folding />
-        </state>
+        <state line="156" column="0" selection-start="6169" selection-end="6169" vertical-scroll-proportion="0.30844155" vertical-offset="1495" max-vertical-offset="25380" />
       </provider>
     </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/testng/testng/6.1.1/testng-6.1.1-sources.jar!/org/testng/internal/TestNGClassFinder.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="119" column="0" selection-start="4282" selection-end="4282" vertical-scroll-proportion="0.30844155" vertical-offset="1405" max-vertical-offset="3735">
-          <folding />
-        </state>
+        <state line="119" column="0" selection-start="4282" selection-end="4282" vertical-scroll-proportion="0.30844155" vertical-offset="1405" max-vertical-offset="3735" />
       </provider>
     </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/testng/testng/6.1.1/testng-6.1.1-sources.jar!/org/testng/internal/ClassImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="180" column="0" selection-start="5180" selection-end="5180" vertical-scroll-proportion="0.3084112" vertical-offset="2151" max-vertical-offset="2715">
-          <folding />
-        </state>
+        <state line="180" column="0" selection-start="5180" selection-end="5180" vertical-scroll-proportion="0.3084112" vertical-offset="2151" max-vertical-offset="2715" />
       </provider>
     </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/testng/testng/6.1.1/testng-6.1.1-sources.jar!/org/testng/internal/ClassHelper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="283" column="0" selection-start="8891" selection-end="8891" vertical-scroll-proportion="0.28787878" vertical-offset="3820" max-vertical-offset="8625">
-          <folding />
-        </state>
+        <state line="283" column="0" selection-start="8891" selection-end="8891" vertical-scroll-proportion="0.28787878" vertical-offset="3820" max-vertical-offset="8625" />
       </provider>
     </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/testng/testng/6.1.1/testng-6.1.1-sources.jar!/org/testng/internal/ObjectFactoryImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="22" selection-start="1032" selection-end="1032" vertical-scroll-proportion="0.70553935" vertical-offset="253" max-vertical-offset="705">
-          <folding />
-        </state>
+        <state line="36" column="22" selection-start="1032" selection-end="1032" vertical-scroll-proportion="0.70553935" vertical-offset="253" max-vertical-offset="705" />
       </provider>
     </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/testng/testng/6.1.1/testng-6.1.1-sources.jar!/org/testng/internal/MethodInvocationHelper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="79" column="0" selection-start="3089" selection-end="3089" vertical-scroll-proportion="0.0" vertical-offset="726" max-vertical-offset="3915">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/testng/testng/6.1.1/testng-6.1.1-sources.jar!/org/testng/internal/Invoker.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1165" column="0" selection-start="46616" selection-end="46616" vertical-scroll-proportion="0.0" vertical-offset="16713" max-vertical-offset="27435">
-          <folding />
-        </state>
+        <state line="79" column="0" selection-start="3089" selection-end="3089" vertical-scroll-proportion="0.0" vertical-offset="726" max-vertical-offset="3915" />
       </provider>
     </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/testng/testng/6.1.1/testng-6.1.1-sources.jar!/org/testng/internal/TestMethodWorker.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="124" column="0" selection-start="4151" selection-end="4151" vertical-scroll-proportion="0.0" vertical-offset="1533" max-vertical-offset="4245">
-          <folding />
-        </state>
+        <state line="124" column="0" selection-start="4151" selection-end="4151" vertical-scroll-proportion="0.0" vertical-offset="1533" max-vertical-offset="4245" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/frontend/FrontendImpl.java">
@@ -1540,9 +1479,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/frontend/newOrLoginUser/MsgAddUser.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="23" selection-start="407" selection-end="407" vertical-scroll-proportion="0.34303534" vertical-offset="0" max-vertical-offset="481">
-          <folding />
-        </state>
+        <state line="14" column="23" selection-start="407" selection-end="407" vertical-scroll-proportion="0.34303534" vertical-offset="0" max-vertical-offset="481" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/dbService/TResultHandler.java">
@@ -1561,7 +1498,53 @@
     </entry>
     <entry file="jar:///usr/lib/jvm/jdk1.7.0_25/src.zip!/java/sql/Statement.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="357" column="10" selection-start="16115" selection-end="16115" vertical-scroll-proportion="0.33333334" vertical-offset="4891" max-vertical-offset="15690">
+        <state line="357" column="10" selection-start="16115" selection-end="16115" vertical-scroll-proportion="0.33333334" vertical-offset="4891" max-vertical-offset="15690" />
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/testng/testng/6.1.1/testng-6.1.1-sources.jar!/org/testng/Reporter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="41" column="31" selection-start="1412" selection-end="1412" vertical-scroll-proportion="0.0" vertical-offset="438" max-vertical-offset="2100">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/messageSystem/MsgToDBService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="12" selection-start="321" selection-end="321" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="345">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/testng/testng/6.1.1/testng-6.1.1-sources.jar!/org/testng/internal/Invoker.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="620" column="0" selection-start="24559" selection-end="24559" vertical-scroll-proportion="0.33076924" vertical-offset="8554" max-vertical-offset="27435">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dbService/MsgUpdateUsers.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="18" selection-start="374" selection-end="374" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="300">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dbService/TExecutor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="136" column="28" selection-start="3390" selection-end="3396" vertical-scroll-proportion="-6.259259" vertical-offset="1826" max-vertical-offset="2490">
+          <folding>
+            <marker date="1396455816179" expanded="true" signature="908:1001" placeholder="INSERT INTO ..." />
+            <marker date="1396455816179" expanded="true" signature="1517:1565" placeholder="SELECT COUNT..Users..." />
+            <marker date="1396455816179" expanded="true" signature="2242:2328" placeholder="SELECT id,ra..Users..." />
+            <marker date="1396455816179" expanded="true" signature="2942:2978" placeholder="DELETE FROM ..." />
+            <marker date="1396455816179" expanded="true" signature="3390:3491" placeholder="UPDATE Users..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dbService/DBServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="89" column="38" selection-start="2739" selection-end="2739" vertical-scroll-proportion="0.0" vertical-offset="872" max-vertical-offset="1530">
           <folding />
         </state>
       </provider>
@@ -1573,32 +1556,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dbService/DBServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="45" column="9" selection-start="1573" selection-end="1573" vertical-scroll-proportion="0.0" vertical-offset="260" max-vertical-offset="1575">
-          <folding>
-            <element signature="e#1836#2432#0" expanded="true" />
-            <element signature="e#2427#2428#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dbService/TExecutor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="136" column="38" selection-start="3406" selection-end="3406" vertical-scroll-proportion="0.0" vertical-offset="1864" max-vertical-offset="2490">
-          <folding>
-            <marker date="1396455816179" expanded="true" signature="908:1001" placeholder="INSERT INTO ..." />
-            <marker date="1396455816179" expanded="true" signature="1517:1565" placeholder="SELECT COUNT..Users..." />
-            <marker date="1396455816179" expanded="true" signature="2242:2328" placeholder="SELECT id,ra..Users..." />
-            <marker date="1396455816179" expanded="true" signature="2942:2978" placeholder="DELETE FROM ..." />
-            <marker date="1396455816179" expanded="true" signature="3390:3491" placeholder="UPDATE Users..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/TestDBServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="42" selection-start="698" selection-end="698" vertical-scroll-proportion="0.4375" vertical-offset="135" max-vertical-offset="615">
+        <state line="57" column="9" selection-start="1680" selection-end="1680" vertical-scroll-proportion="0.4262295" vertical-offset="621" max-vertical-offset="1530">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
