@@ -50,28 +50,21 @@ public class TestDBServiceImpl {
         login = "user";
         password = "passwd";
         users = new ArrayList<UserDataSet>();
+            System.out.println(login);
+            dbService.addUDS(login, password);
+            users.add(dbService.getUDS(login,password));
 
-        for(int i = 0; i < 5; i++) {
-            System.out.println(login+i);
-            dbService.addUDS(login+i, password+i);
-            users.add(dbService.getUDS(login+i,password+i));
-        }
 
     }
 
     @Test(groups = "testUpdateUsers")
     public void testDeleteUDS() {
         dbService.updateUsers(users);
-//        ListIterator li = users.listIterator();
-//        while(li.hasNext()) {
-//            li.next();
-//            Assert.assertEquals();
-        }
+        Assert.assertEquals(dbService.getUDS(login, password).getNick(), users.get(1).getNick());
     }
 
     @AfterGroups("testUpdateUsers")
     public void tearDownDeleteUDS() {
-
     }
 
 //    @BeforeGroups("testDeleteUDS")

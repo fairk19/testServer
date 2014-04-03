@@ -188,7 +188,7 @@
       <file leaf-file-name="TestDBServiceImpl.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/TestDBServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="57" column="9" selection-start="1680" selection-end="1680" vertical-scroll-proportion="0.4262295" vertical-offset="621" max-vertical-offset="1530">
+            <state line="54" column="49" selection-start="1615" selection-end="1615" vertical-scroll-proportion="1.363806" vertical-offset="79" max-vertical-offset="1425">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -1174,12 +1174,12 @@
       <workItem from="1395868696648" duration="1094000" />
       <workItem from="1396174214427" duration="38888000" />
       <workItem from="1396441593451" duration="10346000" />
-      <workItem from="1396527239437" duration="4239000" />
+      <workItem from="1396527239437" duration="5283000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="82933000" />
+    <option name="totallyTimeSpent" value="83977000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="32" y="24" width="1092" height="744" extended-state="4" />
@@ -1529,19 +1529,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dbService/TExecutor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="136" column="28" selection-start="3390" selection-end="3396" vertical-scroll-proportion="-6.259259" vertical-offset="1826" max-vertical-offset="2490">
-          <folding>
-            <marker date="1396455816179" expanded="true" signature="908:1001" placeholder="INSERT INTO ..." />
-            <marker date="1396455816179" expanded="true" signature="1517:1565" placeholder="SELECT COUNT..Users..." />
-            <marker date="1396455816179" expanded="true" signature="2242:2328" placeholder="SELECT id,ra..Users..." />
-            <marker date="1396455816179" expanded="true" signature="2942:2978" placeholder="DELETE FROM ..." />
-            <marker date="1396455816179" expanded="true" signature="3390:3491" placeholder="UPDATE Users..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/dbService/DBServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="89" column="38" selection-start="2739" selection-end="2739" vertical-scroll-proportion="0.0" vertical-offset="872" max-vertical-offset="1530">
@@ -1556,9 +1543,22 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dbService/TExecutor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="136" column="28" selection-start="3390" selection-end="3396" vertical-scroll-proportion="-6.259259" vertical-offset="1826" max-vertical-offset="2490">
+          <folding>
+            <marker date="1396455816179" expanded="true" signature="908:1001" placeholder="INSERT INTO ..." />
+            <marker date="1396455816179" expanded="true" signature="1517:1565" placeholder="SELECT COUNT..Users..." />
+            <marker date="1396455816179" expanded="true" signature="2242:2328" placeholder="SELECT id,ra..Users..." />
+            <marker date="1396455816179" expanded="true" signature="2942:2978" placeholder="DELETE FROM ..." />
+            <marker date="1396455816179" expanded="true" signature="3390:3491" placeholder="UPDATE Users..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/TestDBServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="57" column="9" selection-start="1680" selection-end="1680" vertical-scroll-proportion="0.4262295" vertical-offset="621" max-vertical-offset="1530">
+        <state line="54" column="49" selection-start="1615" selection-end="1615" vertical-scroll-proportion="1.363806" vertical-offset="79" max-vertical-offset="1425">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
