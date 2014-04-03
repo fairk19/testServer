@@ -3,16 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="c701a337-0584-4a33-99d5-3c378750a3f2" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/dbService/DBServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/dbService/DBServiceImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/chat/GameChatImpl.java" afterPath="$PROJECT_DIR$/src/main/java/chat/GameChatImpl.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/dbService/TExecutor.java" afterPath="$PROJECT_DIR$/src/main/java/dbService/TExecutor.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/TestChatWSIpml.java" afterPath="$PROJECT_DIR$/src/test/java/TestChatWSIpml.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/TestDBServiceImpl.java" afterPath="$PROJECT_DIR$/src/test/java/TestDBServiceImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/TestGameChatImpl.java" afterPath="$PROJECT_DIR$/src/test/java/TestGameChatImpl.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/statistic/ccu" afterPath="$PROJECT_DIR$/statistic/ccu" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/statistic/memoryUsage" afterPath="$PROJECT_DIR$/statistic/memoryUsage" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/statistic/time" afterPath="$PROJECT_DIR$/statistic/time" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/statistic/totalMemory" afterPath="$PROJECT_DIR$/statistic/totalMemory" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="java-server.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -149,7 +145,7 @@
         <option name="CONDITION" value="" />
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/src/test/java/TestDBServiceImpl.java" line="33" class="TestDBServiceImpl" package="">
+      <breakpoint url="file://$PROJECT_DIR$/src/test/java/TestDBServiceImpl.java" line="27" class="TestDBServiceImpl" package="">
         <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
         <option name="LOG_EXPRESSION_ENABLED" value="false" />
@@ -177,46 +173,28 @@
       <file leaf-file-name="Main.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/main/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="74" column="39" selection-start="2535" selection-end="2535" vertical-scroll-proportion="0.0" vertical-offset="330" max-vertical-offset="840">
+            <state line="74" column="39" selection-start="2535" selection-end="2535" vertical-scroll-proportion="0.0" vertical-offset="288" max-vertical-offset="840">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DBServiceImpl.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="DBServiceImpl.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/dbService/DBServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="81" column="12" selection-start="2310" selection-end="2310" vertical-scroll-proportion="0.61538464" vertical-offset="702" max-vertical-offset="1590">
+            <state line="45" column="9" selection-start="1573" selection-end="1573" vertical-scroll-proportion="0.0" vertical-offset="260" max-vertical-offset="1575">
               <folding>
-                <element signature="e#894#1490#0" expanded="true" />
-                <element signature="e#1485#1486#0" expanded="true" />
+                <element signature="e#1836#2432#0" expanded="true" />
+                <element signature="e#2427#2428#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MsgAddUser.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/frontend/newOrLoginUser/MsgAddUser.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="18" selection-start="312" selection-end="312" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="480">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FrontendImpl.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/frontend/FrontendImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="171" column="35" selection-start="6039" selection-end="6039" vertical-scroll-proportion="0.0" vertical-offset="2084" max-vertical-offset="3810">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TestDBServiceImpl.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="TestDBServiceImpl.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/TestDBServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="33" column="31" selection-start="942" selection-end="942" vertical-scroll-proportion="0.0" vertical-offset="231" max-vertical-offset="720">
+            <state line="23" column="42" selection-start="698" selection-end="698" vertical-scroll-proportion="0.4375" vertical-offset="135" max-vertical-offset="615">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -227,14 +205,13 @@
       <file leaf-file-name="TExecutor.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/dbService/TExecutor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="127" column="54" selection-start="3141" selection-end="3141" vertical-scroll-proportion="0.0" vertical-offset="1602" max-vertical-offset="3345">
+            <state line="136" column="38" selection-start="3406" selection-end="3406" vertical-scroll-proportion="0.0" vertical-offset="1864" max-vertical-offset="2490">
               <folding>
-                <marker date="1396454230307" expanded="true" signature="908:1001" placeholder="INSERT INTO ..." />
-                <marker date="1396454230307" expanded="true" signature="1517:1565" placeholder="SELECT COUNT..Users..." />
-                <marker date="1396454230307" expanded="true" signature="2242:2328" placeholder="SELECT id,ra..Users..." />
-                <marker date="1396454230307" expanded="true" signature="2942:2978" placeholder="DELETE FROM ..." />
-                <marker date="1396454230307" expanded="true" signature="3391:3492" placeholder="UPDATE Users..." />
-                <marker date="1396454230307" expanded="true" signature="4546:4587" placeholder="SELECT COUNT..missingValue..." />
+                <marker date="1396455816179" expanded="true" signature="908:1001" placeholder="INSERT INTO ..." />
+                <marker date="1396455816179" expanded="true" signature="1517:1565" placeholder="SELECT COUNT..Users..." />
+                <marker date="1396455816179" expanded="true" signature="2242:2328" placeholder="SELECT id,ra..Users..." />
+                <marker date="1396455816179" expanded="true" signature="2942:2978" placeholder="DELETE FROM ..." />
+                <marker date="1396455816179" expanded="true" signature="3390:3491" placeholder="UPDATE Users..." />
               </folding>
             </state>
           </provider>
@@ -263,9 +240,9 @@
         <option value="$PROJECT_DIR$/src/test/java/TestGameChatImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/chat/GameChatImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/dbService/UserDataSet.java" />
+        <option value="$PROJECT_DIR$/src/main/java/dbService/DBServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/test/java/TestDBServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/dbService/TExecutor.java" />
-        <option value="$PROJECT_DIR$/src/main/java/dbService/DBServiceImpl.java" />
       </list>
     </option>
   </component>
@@ -749,7 +726,7 @@
       <recent name="$PROJECT_DIR$/src/test" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.TestDBServiceImpl.test">
+  <component name="RunManager" selected="TestNG.TestDBServiceImpl">
     <configuration default="false" name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -1162,9 +1139,9 @@
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="TestNG.TestDBServiceImpl.test" />
-        <item index="1" class="java.lang.String" itemvalue="TestNG.TestDBServiceImpl" />
-        <item index="2" class="java.lang.String" itemvalue="Application.Main" />
+        <item index="0" class="java.lang.String" itemvalue="TestNG.TestDBServiceImpl" />
+        <item index="1" class="java.lang.String" itemvalue="Application.Main" />
+        <item index="2" class="java.lang.String" itemvalue="TestNG.TestDBServiceImpl.test" />
         <item index="3" class="java.lang.String" itemvalue="TestNG.TestGameChatImpl" />
         <item index="4" class="java.lang.String" itemvalue="TestNG.TestChatWSIpml" />
       </list>
@@ -1202,12 +1179,12 @@
       <workItem from="1395760046433" duration="23128000" />
       <workItem from="1395868696648" duration="1094000" />
       <workItem from="1396174214427" duration="38888000" />
-      <workItem from="1396441593451" duration="8567000" />
+      <workItem from="1396441593451" duration="10346000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="76915000" />
+    <option name="totallyTimeSpent" value="78694000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="266" y="24" width="1100" height="744" extended-state="4" />
@@ -1234,7 +1211,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.28383458" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2784091" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.11371238" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1521739" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.28383458" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -1263,21 +1240,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/dbService/TResultHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="6" selection-start="88" selection-end="88" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="195">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nginx.conf">
-      <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="15" selection-start="618" selection-end="618" vertical-scroll-proportion="-7.0784316" vertical-offset="89" max-vertical-offset="930" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/settings/gameSettings.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="892">
@@ -1456,13 +1418,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar:///usr/lib/jvm/jdk1.7.0_25/src.zip!/java/sql/ResultSet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="147" column="17" selection-start="5997" selection-end="5997" vertical-scroll-proportion="0.33240998" vertical-offset="1575" max-vertical-offset="61785">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/base/MessageSystem.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="6" column="17" selection-start="107" selection-end="107" vertical-scroll-proportion="0.1659292" vertical-offset="0" max-vertical-offset="452">
@@ -1576,36 +1531,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/main/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="74" column="39" selection-start="2535" selection-end="2535" vertical-scroll-proportion="0.0" vertical-offset="330" max-vertical-offset="840">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dbService/TExecutor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="127" column="54" selection-start="3141" selection-end="3141" vertical-scroll-proportion="0.0" vertical-offset="1602" max-vertical-offset="3345">
-          <folding>
-            <marker date="1396454230307" expanded="true" signature="908:1001" placeholder="INSERT INTO ..." />
-            <marker date="1396454230307" expanded="true" signature="1517:1565" placeholder="SELECT COUNT..Users..." />
-            <marker date="1396454230307" expanded="true" signature="2242:2328" placeholder="SELECT id,ra..Users..." />
-            <marker date="1396454230307" expanded="true" signature="2942:2978" placeholder="DELETE FROM ..." />
-            <marker date="1396454230307" expanded="true" signature="3391:3492" placeholder="UPDATE Users..." />
-            <marker date="1396454230307" expanded="true" signature="4546:4587" placeholder="SELECT COUNT..missingValue..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/TestDBServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="31" selection-start="942" selection-end="942" vertical-scroll-proportion="0.0" vertical-offset="231" max-vertical-offset="720">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/frontend/FrontendImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="171" column="35" selection-start="6039" selection-end="6039" vertical-scroll-proportion="0.0" vertical-offset="2084" max-vertical-offset="3810">
@@ -1615,17 +1540,67 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/frontend/newOrLoginUser/MsgAddUser.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="18" selection-start="312" selection-end="312" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="480">
+        <state line="14" column="23" selection-start="407" selection-end="407" vertical-scroll-proportion="0.34303534" vertical-offset="0" max-vertical-offset="481">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dbService/TResultHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="6" selection-start="88" selection-end="88" vertical-scroll-proportion="0.21008404" vertical-offset="0" max-vertical-offset="357">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/lib/jvm/jdk1.7.0_25/src.zip!/java/sql/ResultSet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="147" column="17" selection-start="5997" selection-end="5997" vertical-scroll-proportion="0.33333334" vertical-offset="1696" max-vertical-offset="61785">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/lib/jvm/jdk1.7.0_25/src.zip!/java/sql/Statement.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="357" column="10" selection-start="16115" selection-end="16115" vertical-scroll-proportion="0.33333334" vertical-offset="4891" max-vertical-offset="15690">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/main/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="74" column="39" selection-start="2535" selection-end="2535" vertical-scroll-proportion="0.0" vertical-offset="288" max-vertical-offset="840">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/dbService/DBServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="81" column="12" selection-start="2310" selection-end="2310" vertical-scroll-proportion="0.61538464" vertical-offset="702" max-vertical-offset="1590">
+        <state line="45" column="9" selection-start="1573" selection-end="1573" vertical-scroll-proportion="0.0" vertical-offset="260" max-vertical-offset="1575">
           <folding>
-            <element signature="e#894#1490#0" expanded="true" />
-            <element signature="e#1485#1486#0" expanded="true" />
+            <element signature="e#1836#2432#0" expanded="true" />
+            <element signature="e#2427#2428#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dbService/TExecutor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="136" column="38" selection-start="3406" selection-end="3406" vertical-scroll-proportion="0.0" vertical-offset="1864" max-vertical-offset="2490">
+          <folding>
+            <marker date="1396455816179" expanded="true" signature="908:1001" placeholder="INSERT INTO ..." />
+            <marker date="1396455816179" expanded="true" signature="1517:1565" placeholder="SELECT COUNT..Users..." />
+            <marker date="1396455816179" expanded="true" signature="2242:2328" placeholder="SELECT id,ra..Users..." />
+            <marker date="1396455816179" expanded="true" signature="2942:2978" placeholder="DELETE FROM ..." />
+            <marker date="1396455816179" expanded="true" signature="3390:3491" placeholder="UPDATE Users..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/TestDBServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="42" selection-start="698" selection-end="698" vertical-scroll-proportion="0.4375" vertical-offset="135" max-vertical-offset="615">
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>

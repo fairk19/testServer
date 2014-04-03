@@ -21,22 +21,15 @@ public class TestDBServiceImpl {
         dbService = new DBServiceImpl(mockedMS);
         login = "user1";
         password = "passwd1";
-        (new Thread(dbService)).start();
-        try{
-            Thread.sleep(500);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
         dbService.addUDS(login, password);
     }
     @Test
     public void test() {
         System.out.println("nick"+dbService.getUDS(login, password).getNick());
         Assert.assertEquals(login, dbService.getUDS(login, password).getNick());
-
     }
     @AfterTest
     public void tearDown() {
-
+        dbService.deleteUser(login);
     }
 }
