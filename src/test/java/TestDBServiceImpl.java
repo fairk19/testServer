@@ -1,6 +1,7 @@
 import base.MessageSystem;
 import dbService.DBServiceImpl;
 import dbService.UserDataSet;
+import org.junit.Ignore;
 import org.testng.Assert;
 import org.testng.annotations.*;
 
@@ -15,6 +16,7 @@ import static org.mockito.Mockito.mock;
  */
 public class TestDBServiceImpl {
     private MessageSystem mockedMS = mock(MessageSystem.class);
+    private String url = "jdbc:mysql://localhost:3306/qualityTestDB?user=root&password=110708";
     private DBServiceImpl dbService;
     private String login;
     private String password;
@@ -22,18 +24,14 @@ public class TestDBServiceImpl {
     @BeforeClass
     public void setUp() {
         dbService = new DBServiceImpl(mockedMS);
-//        login = "user1";
-//        password = "passwd1";
-//        dbService.addUDS(login, password);
     }
+
     @BeforeGroups("testAddUDS")
     public void setUpAddUDS() {
-//        dbService = new DBServiceImpl(mockedMS);
         login = "user1";
         password = "passwd1";
         dbService.addUDS(login, password);
     }
-
     @Test(groups = "testAddUDS")
     public void testAddUDS() {
         System.out.println("nick"+dbService.getUDS(login, password).getNick());
@@ -45,42 +43,92 @@ public class TestDBServiceImpl {
     }
 
 
+
     @BeforeGroups("testUpdateUsers")
-    public void setUpDeleteUDS() {
+    public void setUpUpdateUDS() {
         login = "user";
         password = "passwd";
         users = new ArrayList<UserDataSet>();
-            System.out.println(login);
-            dbService.addUDS(login, password);
-            users.add(dbService.getUDS(login,password));
-
-
+        System.out.println(login);
+        dbService.addUDS(login, password);
+        users.add(dbService.getUDS(login,password));
     }
 
     @Test(groups = "testUpdateUsers")
-    public void testDeleteUDS() {
+    public void testUpdateUDS() {
         dbService.updateUsers(users);
-        Assert.assertEquals(dbService.getUDS(login, password).getNick(), users.get(1).getNick());
+        Assert.assertEquals(dbService.getUDS(login, password).getNick(), users.get(0).getNick());
     }
 
     @AfterGroups("testUpdateUsers")
-    public void tearDownDeleteUDS() {
+    public void tearDownUpdateUDS() {
+        dbService.deleteUser(login);
     }
 
-//    @BeforeGroups("testDeleteUDS")
-//    public void setUpDeleteUDS() {
-//
-//    }
-//
-//    @Test(groups = "testDeleteUDS")
-//    public void testDeleteUDS() {
-//
-//    }
-//
-//    @AfterGroups("testDeleteUDS")
-//    public void tearDownDeleteUDS() {
-//
-//    }
+
+
+    @BeforeGroups("testGetNoneExistUDS")
+    public void setUpGEtNoneExistUDS() {
+        login = "asdfsdafsdf";
+        password = "12345";
+    }
+
+    @Test(groups = "testGetNoneExistUDS")
+    public void testGetNoneExistUDS(){
+        Assert.assertNull(dbService.getUDS(login, password));
+    }
+    @AfterGroups("testGetNoneExistUDS")
+    public void tearDownGetNoneExistUDS() {
+
+    }
+
+
+
+    @BeforeGroups("testAddExistsUDS")
+    public void setUpAddExistsUDS(){
+        login = "user1";
+        password = "passwd1";
+        dbService.addUDS(login, password);
+    }
+    @Test(groups = "testAddExistsUDS")
+    public void testAddExistsUDS() {
+        Assert.assertFalse(dbService.addUDS(login, password));
+    }
+    @AfterGroups("testAddExistsUDS")
+    public void tearDownAddExistsUDS() {
+
+    }
+
+
+
+    @BeforeGroups("testDeleteNoneExistsUDS")
+    public void setUpDeleteNoneExistsUDS() {
+        login = ";lkjas;djf;kjsdf;kjkjhkjhkd";
+        password = "hkhkjhkh;hasdfn,mncxzoin";
+    }
+    @Test(groups = "testDeleteNoneExistsUDS")
+    public void testDeleteNoneExistsUDS() {
+        Assert.assertFalse(dbService.deleteUser(login));
+    }
+    @AfterGroups("testDeleteNoneExistsUDS")
+    public void tearDownDeleteNoneExistsUDS() {
+
+    }
+
+
+    @BeforeGroups("testRun")
+    public void setUpRun() {
+
+    }
+
+    @Test(groups = "testRun", timeOut = 500, expectedExceptions = Exception.class)
+    public void testRun() {
+        dbService.run();
+    }
+    @AfterGroups("testRun")
+    public void tearDownRun(){
+
+    }
 
 //    @AfterTest
 //    public void tearDown() {

@@ -17,7 +17,6 @@ public class DBServiceImpl implements DataAccessObject{
 	private final MessageSystem messageSystem;
 	private final Address address;
 	private Connection connection;
-
 	public DBServiceImpl(MessageSystem msgSystem){
 		address=new Address();
 		messageSystem = msgSystem;
@@ -97,10 +96,11 @@ public class DBServiceImpl implements DataAccessObject{
 			TExecutor.updateUser(connection, login, rating, winQuantity, loseQuantity);
 		}
 	}
-    public void deleteUser(String login) {
+    public boolean deleteUser(String login) {
         int rows = TExecutor.findUser(connection, login);
         if (rows != 0)
             TExecutor.deleteUser(connection, login);
+        return (rows != 0);
     }
 
 	
@@ -111,4 +111,5 @@ public class DBServiceImpl implements DataAccessObject{
 			TimeHelper.sleep(200);
 		}
 	}
+
 }
