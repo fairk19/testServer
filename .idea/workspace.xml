@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="896e1f44-6116-43b8-9705-ff361ffe11de" name="Default" comment="">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/statistic/MemoryUsage" afterPath="$PROJECT_DIR$/statistic/MemoryUsage" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/gameMechanic/GameSession.java" afterPath="$PROJECT_DIR$/src/main/java/gameMechanic/GameSession.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/tests/gameMechanic/GameSessionTest.java" afterPath="$PROJECT_DIR$/src/main/tests/gameMechanic/GameSessionTest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/statistic/ccu" afterPath="$PROJECT_DIR$/statistic/ccu" />
@@ -75,7 +74,7 @@
       <file leaf-file-name="GameSession.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/gameMechanic/GameSession.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="408" column="59" selection-start="12916" selection-end="12916" vertical-scroll-proportion="0.0" vertical-offset="7570" max-vertical-offset="9809">
+            <state line="546" column="16" selection-start="16548" selection-end="16548" vertical-scroll-proportion="0.0" vertical-offset="8930" max-vertical-offset="9877">
               <folding />
             </state>
           </provider>
@@ -84,7 +83,7 @@
       <file leaf-file-name="GameSessionTest.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/tests/gameMechanic/GameSessionTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="88" column="92" selection-start="3830" selection-end="3830" vertical-scroll-proportion="0.57575756" vertical-offset="1173" max-vertical-offset="1734">
+            <state line="114" column="34" selection-start="5752" selection-end="5752" vertical-scroll-proportion="0.93939394" vertical-offset="1411" max-vertical-offset="2091">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -807,22 +806,27 @@
       <workItem from="1396191048993" duration="2380000" />
       <workItem from="1396259082454" duration="8720000" />
       <workItem from="1396457024582" duration="24000" />
-      <workItem from="1396457073141" duration="2813000" />
+      <workItem from="1396457073141" duration="2935000" />
+      <workItem from="1396522030297" duration="9895000" />
+      <workItem from="1396604747104" duration="451000" />
+      <workItem from="1396605310204" duration="599000" />
+      <workItem from="1396606032749" duration="1857000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="47845000" />
+    <option name="totallyTimeSpent" value="60769000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32977462" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3270869" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39976275" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -835,14 +839,13 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.13595167" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.14048338" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23489426" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.41226575" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19864048" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5349233" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32858837" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -867,6 +870,54 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/main/java/gameMechanic/GameSession.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="93" column="21" selection-start="2636" selection-end="2636" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="10115">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/tests/gameMechanic/GameSessionTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="83" column="55" selection-start="3825" selection-end="3825" vertical-scroll-proportion="0.0" vertical-offset="1411" max-vertical-offset="1836">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/gameMechanic/GameSession.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="93" column="21" selection-start="2636" selection-end="2636" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="10115">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/tests/gameMechanic/GameSessionTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="99" column="47" selection-start="4813" selection-end="4813" vertical-scroll-proportion="0.0" vertical-offset="1683" max-vertical-offset="1836">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/gameMechanic/GameSession.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="408" column="59" selection-start="12916" selection-end="12916" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="10047">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/tests/gameMechanic/GameSessionTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="88" column="92" selection-start="3830" selection-end="3830" vertical-scroll-proportion="0.0" vertical-offset="1496" max-vertical-offset="1734">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/gameMechanic/GameSession.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="394" column="0" selection-start="12162" selection-end="12162" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="9758">
@@ -1100,19 +1151,26 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/gameClasses/Field.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="18" selection-start="467" selection-end="467" vertical-scroll-proportion="0.0" vertical-offset="135" max-vertical-offset="986" />
+        <state line="30" column="20" selection-start="469" selection-end="469" vertical-scroll-proportion="0.54545456" vertical-offset="204" max-vertical-offset="1020" />
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.7.0_17/src.zip!/java/lang/System.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="53" column="19" selection-start="1207" selection-end="1207" vertical-scroll-proportion="0.33333334" vertical-offset="119" max-vertical-offset="20009">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/gameMechanic/GameSession.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="408" column="59" selection-start="12916" selection-end="12916" vertical-scroll-proportion="0.0" vertical-offset="7570" max-vertical-offset="9809">
+        <state line="546" column="16" selection-start="16548" selection-end="16548" vertical-scroll-proportion="0.0" vertical-offset="8930" max-vertical-offset="9877">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/tests/gameMechanic/GameSessionTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="88" column="92" selection-start="3830" selection-end="3830" vertical-scroll-proportion="0.57575756" vertical-offset="1173" max-vertical-offset="1734">
+        <state line="114" column="34" selection-start="5752" selection-end="5752" vertical-scroll-proportion="0.93939394" vertical-offset="1411" max-vertical-offset="2091">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

@@ -20,53 +20,41 @@ public class GameSessionTest {
     private final int id1 = 1;
     private final int id2 = 2;
 
+    private void kingSteps(GameSession gameSession){
+        GameSession.codeError codeError = this.gameSession.checkStroke(this.id1, 6, 5, 7, 4);
+        Assert.assertTrue(codeError.equals(GameSession.codeError.success));
+        codeError = this.gameSession.checkStroke(this.id2, 0, 5, 1, 4);
+        Assert.assertTrue(codeError.equals(GameSession.codeError.success));
+        codeError = this.gameSession.checkStroke(this.id1, 5, 6, 6, 5);
+        Assert.assertTrue(codeError.equals(GameSession.codeError.success));
+        codeError = this.gameSession.checkStroke(this.id2, 4, 5, 5, 4);
+        Assert.assertTrue(codeError.equals(GameSession.codeError.success));
+        codeError = this.gameSession.checkStroke(this.id1, 4, 5, 5, 4);
+        Assert.assertTrue(codeError.equals(GameSession.codeError.success));
+        codeError = this.gameSession.checkStroke(this.id2, 1, 4, 3, 2);
+        Assert.assertTrue(codeError.equals(GameSession.codeError.success));
+        codeError = this.gameSession.checkStroke(this.id1, 3, 6, 5, 4);
+        Assert.assertTrue(codeError.equals(GameSession.codeError.success));
+        codeError = this.gameSession.checkStroke(this.id2, 3, 6, 4, 5);
+        Assert.assertTrue(codeError.equals(GameSession.codeError.success));
+        codeError = this.gameSession.checkStroke(this.id1, 5, 4, 6, 3);
+        Assert.assertTrue(codeError.equals(GameSession.codeError.success));
+        codeError = this.gameSession.checkStroke(this.id2, 2, 5, 3, 4);
+        Assert.assertTrue(codeError.equals(GameSession.codeError.success));
+        codeError = this.gameSession.checkStroke(this.id1, 6, 3, 7, 2);
+        Assert.assertTrue(codeError.equals(GameSession.codeError.success));
+        codeError = this.gameSession.checkStroke(this.id2, 2, 7, 3, 6);
+        Assert.assertTrue(codeError.equals(GameSession.codeError.success));
+        codeError = this.gameSession.checkStroke(this.id1, 7, 2, 5, 0);
+        Assert.assertTrue(codeError.equals(GameSession.codeError.success));
+        codeError = this.gameSession.checkStroke(this.id2, 4, 5, 2, 3);
+        Assert.assertTrue(codeError.equals(GameSession.codeError.success));
+    }
     @BeforeMethod
     public void setUp() throws Exception {
         this.gameSession = new GameSession(id1, id2);
         this.clazz = this.gameSession.getClass();
     }
-
-//    @Test
-//    public void testGameSession() throws Exception{
-//
-//        Field currentPositionsField = clazz.getDeclaredField("currentPositions");
-//        currentPositionsField.setAccessible(true);
-//        gameClasses.Field[][] currentPosition = (gameClasses.Field[][])currentPositionsField.get(this.gameSession);
-//        Field settingsField = clazz.getDeclaredField("settings");
-//        settingsField.setAccessible(true);
-//        GameSettings gameSettings = (GameSettings)settingsField.get(this.gameSession);
-//        int emptyField = gameSettings.getFieldSize()/2;
-//
-//        Assert.assertTrue(currentPosition.length == gameSettings.getFieldSize());
-//        for(int i = 0; i < gameSettings.getFieldSize(); i++){
-//            Assert.assertTrue(currentPosition[emptyField][i].getType().equals(gameClasses.Field.checker.nothing));
-//        }
-//        for(int i = 0; i < gameSettings.getFieldSize(); i+=2)
-//            Assert.assertTrue(currentPosition[0][i].getType().equals(gameClasses.Field.checker.white));
-//
-//        for(int i = 1; i < gameSettings.getFieldSize(); i+=2){
-//            Assert.assertTrue(currentPosition[gameSettings.getFieldSize()-1][i].getType().equals(gameClasses.Field.checker.black));
-//        }
-//
-//    }
-//
-//    @Test
-//    public void testAnotherColor() throws Exception{
-//        Class[] paramTypes = new Class[] {checker.class};
-//        Method method = this.clazz.getDeclaredMethod("getAnotherColor", paramTypes);
-//        method.setAccessible(true);
-//        Object[] args = new Object[] {checker.black};
-//        checker testColor = (checker)method.invoke(this.gameSession, args);
-//        Assert.assertTrue(testColor.equals(checker.white));
-//
-//        args = new Object[] {checker.white};
-//        testColor = (checker)method.invoke(this.gameSession, args);
-//        Assert.assertTrue(testColor.equals(checker.black));
-//
-//        args = new Object[] {checker.nothing};
-//        testColor = (checker)method.invoke(this.gameSession, args);
-//        Assert.assertTrue(testColor.equals(checker.nothing));
-//    }
 
     @Test
     public void testCheckStroke() throws Exception {
@@ -90,7 +78,40 @@ public class GameSessionTest {
 
         this.gameSession = new GameSession(id1, id2);
         codeError = this.gameSession.checkStroke(this.id1, 0, 5, 2, 3);
-        //сходить шашками и привести к состоянию, когда можно есть
+        Assert.assertTrue(codeError.equals(GameSession.codeError.success));
+
+        this.gameSession = new GameSession(id1, id2);
+        this.gameSession.checkStroke(this.id1, 0, 5, 1, 4);
+        this.gameSession.checkStroke(this.id2, 6, 5, 7, 4);
+        this.gameSession.checkStroke(this.id1, 2, 5, 3, 4);
+        codeError = this.gameSession.checkStroke(this.id2, 7, 4, 5, 2);
+        Assert.assertTrue(codeError.equals(GameSession.codeError.success));
+
+        this.gameSession = new GameSession(id1, id2);
+        this.gameSession.checkStroke(this.id1, 0, 5, 1, 4);
+        this.gameSession.checkStroke(this.id2, 6, 5, 7, 4);
+        this.gameSession.checkStroke(this.id1, 2, 5, 3, 4);
+        codeError = this.gameSession.checkStroke(this.id2, 7, 4, 3, 4);
+        Assert.assertTrue(codeError.equals(GameSession.codeError.notMakeUsualStroke));
+
+        this.gameSession = new GameSession(id1, id2);
+        codeError = this.gameSession.checkStroke(this.id2, 0, 5, 1, 4);
+        Assert.assertTrue(codeError.equals(GameSession.codeError.idEqualLastStroke));
+
+        this.gameSession = new GameSession(id1, id2);
+        kingSteps(this.gameSession);
+        codeError = this.gameSession.checkStroke(this.id1, 5, 0, 1, 4);
+        Assert.assertTrue(codeError.equals(GameSession.codeError.notCheckEating));
+
+        this.gameSession = new GameSession(id1, id2);
+        kingSteps(this.gameSession);
+        codeError = this.gameSession.checkStroke(this.id1, 5, 0, 3, 2);
         System.out.println(codeError);
+    }
+    @Test
+    public void testGetNext() throws Exception {
+        this.gameSession = new GameSession(this.id1, this.id2);
+        char color = this.gameSession.getNext();
+        System.out.println(color);
     }
 }

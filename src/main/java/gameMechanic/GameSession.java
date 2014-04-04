@@ -109,7 +109,7 @@ public class GameSession{
 				return codeError.notCheckEating;
 			}
             System.out.println("EATING TRUE");
-			changeId=!makeEatingStroke(from_x, from_y, to_x, to_y);
+			changeId =! makeEatingStroke(from_x, from_y, to_x, to_y);
 		}
 		else{
             System.out.println("EATING FALSE");
@@ -211,7 +211,6 @@ public class GameSession{
 			return false;
 		}
 		move(from_x, from_y, to_x, to_y);
-        System.out.println("MOVE");
 		if(becameKing(to_x, to_y)){
             System.out.println("BECAME KING TRUE");
 			makeKing(to_x, to_y);
@@ -334,6 +333,7 @@ public class GameSession{
 	}
 
 	private void move(int from_x, int from_y, int to_x, int to_y){
+        System.out.println("MOVE");
 		currentPositions[to_y][to_x].make(currentPositions[from_y][from_x]);
 		clearField(from_x,from_y);
 	}
@@ -347,10 +347,14 @@ public class GameSession{
 		int x=from_x, y=from_y;
 		for(int counter=1; counter<abs(to_x-from_x);counter++){
 			x+=on_x; y+=on_y;
-			if(getFieldType(x,y)==checker.black)
+			if(getFieldType(x,y)==checker.black){
+                System.out.println("BLACK QUANTITY");
 				blackQuantity--;
-			else if(getFieldType(x,y)==checker.white)
+            }
+			else if(getFieldType(x,y)==checker.white){
+                System.out.println("WHITE QUANTITY");
 				whiteQuantity--;
+            }
 			clearField(x,y);
 		}
 		move(from_x,from_y,to_x,to_y);
@@ -400,7 +404,7 @@ public class GameSession{
 
 	private boolean pawnEating(int from_x, int from_y, int to_x, int to_y){
 		if((abs(from_x-to_x)!=2)||(abs(from_y-to_y)!=2)){
-            System.out.println("NOT PAWN_EATING");
+            System.out.println("NOT PAWN EATING");
             return false;
         }
 		checker myColor=getFieldType(from_x, from_y), anotherColor=getAnotherColor(myColor);
