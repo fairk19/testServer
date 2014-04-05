@@ -14,6 +14,9 @@ public class ChatWSImpl  extends WebSocketAdapter{
 
 	@Override
 	public void onWebSocketText(String message) {
+        if (isNotConnected()) {
+            return;
+        }
 		System.out.println(message);
 		String sessionId=null,startServerTime=null;
 		String text=null;

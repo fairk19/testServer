@@ -227,7 +227,7 @@ public class FrontendImpl extends AbstractHandler implements Frontend{
 		baseRequest.setHandled(true);
 		if(newUser(sessionId, strStartServerTime)){
 			userSession=new UserDataSet();
-			sessionId=SHA2.getSHA2(String.valueOf(creatorSessionId.incrementAndGet()));
+//			sessionId=SHA2.getSHA2(String.valueOf(creatorSessionId.incrementAndGet()));
 			strStartServerTime=UserDataImpl.getStartServerTime();
 			UserDataImpl.putSessionIdAndUserSession(sessionId, userSession);
 		}
@@ -239,7 +239,7 @@ public class FrontendImpl extends AbstractHandler implements Frontend{
 			if(!isStatic(target)){
 				sendPage("404.html",userSession,response);
 			}
-			return;	
+			return;
 		}
 		userSession.visit();
 		stat=getStatus(request, target, stat, sessionId);
