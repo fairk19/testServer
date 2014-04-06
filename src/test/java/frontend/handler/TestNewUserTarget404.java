@@ -1,27 +1,35 @@
+package frontend.handler;
+
 import base.MessageSystem;
+import com.google.common.io.Files;
 import frontend.FrontendImpl;
 import frontend.UserDataImpl;
+import org.eclipse.jetty.server.Request;
 import org.testng.Assert;
+import org.testng.annotations.AfterGroups;
 import org.testng.annotations.BeforeGroups;
 import org.testng.annotations.Test;
-
-import org.eclipse.jetty.server.Request;
+import utils.SHA2;
 import utils.TemplateHelper;
-import utils.TimeHelper;
 
 import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-
 import java.io.File;
 import java.io.IOException;
 import java.io.PrintWriter;
 
-import static org.mockito.Mockito.*;
+import static java.nio.charset.Charset.defaultCharset;
+import static org.mockito.Mockito.mock;
+import static org.mockito.Mockito.when;
+
 /**
- * Created by vanik on 30.03.14.
+ * Created by vanik on 06.04.14.
  */
-public class TestFrontendImpl {
+
+
+
+public class TestNewUserTarget404 {
     private MessageSystem mockedMS = mock (MessageSystem.class);
     private FrontendImpl frontend;
     private String target;
@@ -32,15 +40,18 @@ public class TestFrontendImpl {
     private String sessionIdValue = "123";
     private String START_SERVER_TIME_FIELD = "startServerTime";
     private String startServerTimeValue = UserDataImpl.getStartServerTime();
-    @BeforeGroups("handle")
-    public void  setUpHandle() {
+
+    private File returnedPage;
+    private File expectedPage;
+
+
+
+    @BeforeGroups("handleNewUserTarget404")
+    public void  setUpHandleNewUserTarget404() {
         frontend = new FrontendImpl(mockedMS);
         response = mock(HttpServletResponse.class);
         request = mock(HttpServletRequest.class);
-//        try {
-//            when(response.getWriter()).thenReturn(new PrintWriter());
-//        } catch (IOException e) {}
-        target = "/rules";
+        target = "/notFound";
         baseRequest = mock(Request.class);
         Cookie mockedCookieSessionId = mock(Cookie.class);
         when(mockedCookieSessionId.getName()).thenReturn(SESSION_ID_FIELD);
@@ -49,28 +60,33 @@ public class TestFrontendImpl {
         when(mockedCookieServerTime.getName()).thenReturn(START_SERVER_TIME_FIELD);
         when(mockedCookieServerTime.getValue()).thenReturn(startServerTimeValue);
         try {
-            PrintWriter writer = new PrintWriter("somefile.txt");
+            PrintWriter writer = new PrintWriter("returnedPage.html");
             when(response.getWriter()).thenReturn(writer);
         } catch (IOException e) {
             e.printStackTrace();
         }
-
-
-//        Cookie[] arrCookiesExists = {new Cookie(SESSION_ID_FIELD,sessionId),
-//                               new Cookie("startServerTime", queryTime)
-//                              };
         Cookie[] arrCookies = {mockedCookieSessionId, mockedCookieServerTime};
         when(request.getCookies()).thenReturn(arrCookies);
         TemplateHelper.init();
     }
 
-    @Test(groups = "handle")
-    public void testHandle() {
+    @Test(groups = "handleNewUserTarget404")
+    public void testHandleNewUserTarget404() throws IOException {
         frontend.handle(target,baseRequest,request,response);
-//        File returnedPage = new File("somefile.txt");
-//        System.out.println(returnedPage.compareTo(new File("./static/html/rules.html")));
-//        returnedPage.compareTo(new File("./static/html/rules.html"));
+
+        returnedPage = new File("returnedPage.html");
+        expectedPage = new File("./static/html/404.html");
+
+        String returnedPageAsString = new String();
+        returnedPageAsString = Files.toString(returnedPage, defaultCharset());
+        sessionIdValue = SHA2.getSHA2(String.valueOf(frontend.getCreatorSessionId().intValue()));
+
+        Assert.assertTrue(returnedPageAsString.contains(Files.toString(expectedPage, defaultCharset())));
         Assert.assertNotNull(UserDataImpl.getUserSessionBySessionId(sessionIdValue));
-        Assert.assertEquals(UserDataImpl.getUserSessionBySessionId(sessionIdValue).getLastVisit(),startServerTimeValue);
+    }
+
+    @AfterGroups("handleNewUserTarget404")
+    public void tearDownHandleNewUserTarget404() {
+        returnedPage.delete();
     }
 }

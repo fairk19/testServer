@@ -42,6 +42,7 @@ public class FrontendImpl extends AbstractHandler implements Frontend{
 	public Address getAddress(){
 		return address;
 	}
+    public AtomicInteger getCreatorSessionId() {return creatorSessionId; }
 
 	private void getStatistic(HttpServletResponse response, UserDataSet userSession){
 		Map<String,String> data= new HashMap<String,String>();
@@ -227,7 +228,7 @@ public class FrontendImpl extends AbstractHandler implements Frontend{
 		baseRequest.setHandled(true);
 		if(newUser(sessionId, strStartServerTime)){
 			userSession=new UserDataSet();
-//			sessionId=SHA2.getSHA2(String.valueOf(creatorSessionId.incrementAndGet()));
+			sessionId=SHA2.getSHA2(String.valueOf(creatorSessionId.incrementAndGet()));
 			strStartServerTime=UserDataImpl.getStartServerTime();
 			UserDataImpl.putSessionIdAndUserSession(sessionId, userSession);
 		}
