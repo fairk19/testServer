@@ -137,7 +137,7 @@ public class GameMechanicImpl implements GameMechanic{
 			sendResultStroke(gameSession, gameSession.getAnotherId(id));
 			return resp;
 		}
-		if(gameSession.checkStroke(id, from_x, from_y, to_x, to_y)){
+		if(gameSession.checkStroke(id, from_x, from_y, to_x, to_y).equals(GameSession.codeError.success)){
 			stroke.setStatus("true");
 			stroke.setNext(gameSession.getNext());
 			resp.put(id, stroke);

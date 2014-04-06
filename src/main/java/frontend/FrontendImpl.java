@@ -59,7 +59,7 @@ public class FrontendImpl extends AbstractHandler implements Frontend{
 		data.put("rating", String.valueOf(userSession.getRating()));
 		try {
 			TemplateHelper.renderTemplate("template.html", data, response.getWriter());
-		} catch (IOException ignor) {
+		} catch (IOException e) {
 		}
 	}
 
@@ -91,11 +91,13 @@ public class FrontendImpl extends AbstractHandler implements Frontend{
 	}
 
 	private boolean isStatic(String target){
-		if(target.length()<4)
-			return false;
-		else if(target.length()==4)
-			return target.substring(0, 4).equals("/js/");
-		else return (((target.substring(0, 5)).equals("/img/"))||((target.substring(0, 5)).equals("/css/")));
+//		if(target.length()<4)
+//			return false;
+//		else if(target.length()==4)
+//			return target.substring(0, 4).equals("/js/");
+//		else return (((target.substring(0, 5)).equals("/img/"))||((target.substring(0, 5)).equals("/css/")));
+
+        return true;
 	}
 
 	private boolean newUser(String strSessionId, String strStartServerTime){
@@ -120,7 +122,7 @@ public class FrontendImpl extends AbstractHandler implements Frontend{
 			}
 			TemplateHelper.renderTemplate("template.html", data, response.getWriter());
 		} 
-		catch (IOException ignor) {
+		catch (IOException e) {
 		}
 	}
 
@@ -224,7 +226,8 @@ public class FrontendImpl extends AbstractHandler implements Frontend{
 		String sessionId=cookie.getCookieByName("sessionId");
 		String strStartServerTime=cookie.getCookieByName("startServerTime");
 		UserDataSet userSession;
-		baseRequest.setHandled(true);
+//		baseRequest.setHandled(true);
+
 		if(newUser(sessionId, strStartServerTime)){
 			userSession=new UserDataSet();
 			sessionId=SHA2.getSHA2(String.valueOf(creatorSessionId.incrementAndGet()));
@@ -239,7 +242,7 @@ public class FrontendImpl extends AbstractHandler implements Frontend{
 			if(!isStatic(target)){
 				sendPage("404.html",userSession,response);
 			}
-			return;	
+			return;
 		}
 		userSession.visit();
 		stat=getStatus(request, target, stat, sessionId);
