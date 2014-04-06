@@ -1,9 +1,6 @@
 package utils;
 
-import java.io.BufferedReader;
-import java.io.File;
-import java.io.FileReader;
-import java.io.FileWriter;
+import java.io.*;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Queue;
@@ -60,7 +57,7 @@ public class VFS{
 		FileWriter fw=null;
 		try {
 			File file=new File(path);
-			file.delete();
+            file.getParentFile().mkdirs();
 			fw = new FileWriter(file);
 			fw.write(data);
 		} catch (Exception e) {

@@ -134,6 +134,10 @@ public class VFSTest {
         this.writeFile(absPath, "begin text");
         VFS.writeToFile(path, "one text");
         Assert.assertTrue(this.readFileEqualData(absPath, "one text"));
+
+        path = "/testDir/testDir1/testDir2/testFileWrite";
+        VFS.writeToFile(path, "one text");
+        Assert.assertTrue(this.readFileEqualData(absPath, "one text"));
     }
 
     @Test
