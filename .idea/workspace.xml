@@ -1,7 +1,127 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c701a337-0584-4a33-99d5-3c378750a3f2" name="Default" comment="" />
+    <list default="true" id="c701a337-0584-4a33-99d5-3c378750a3f2" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/log/Вс 2014 04 06 at 02 48 02 PM MSK/3.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/log/Вс 2014 04 06 at 02 48 24 PM MSK/3.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/log/Вс 2014 04 06 at 02 49 09 PM MSK/3.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/log/Вс 2014 04 06 at 02 50 57 PM MSK/3.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/log/Вс 2014 04 06 at 02 53 33 PM MSK/3.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/log/Вс 2014 04 06 at 02 54 32 PM MSK/3.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/log/Вс 2014 04 06 at 02 54 44 PM MSK/3.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/log/Вс 2014 04 06 at 02 55 16 PM MSK/3.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/log/Вс 2014 04 06 at 02 55 32 PM MSK/3.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/log/Вс 2014 04 06 at 02 56 06 PM MSK/3.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/log/Вс 2014 04 06 at 02 56 21 PM MSK/3.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/log/Вс 2014 04 06 at 02 56 53 PM MSK/3.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/log/Вс 2014 04 06 at 02 58 30 PM MSK/3.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/log/Вс 2014 04 06 at 02 03 36 PM MSK/9.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/log/Вс 2014 04 06 at 02 03 56 PM MSK/9.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/log/Вс 2014 04 06 at 02 04 21 PM MSK/9.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/log/Вс 2014 04 06 at 02 04 37 PM MSK/9.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/log/Вс 2014 04 06 at 02 16 31 PM MSK/9.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/log/Вс 2014 04 06 at 02 16 43 PM MSK/9.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/log/Вс 2014 04 06 at 02 19 36 PM MSK/9.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/log/Вс 2014 04 06 at 02 41 48 PM MSK/9.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/log/Вс 2014 04 06 at 02 41 57 PM MSK/9.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/log/Вс 2014 04 06 at 02 44 33 PM MSK/9.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/log/Вс 2014 04 06 at 02 46 07 PM MSK/9.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/log/Вс 2014 04 06 at 02 47 14 PM MSK/9.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/log/Вс 2014 04 06 at 02 58 55 PM MSK/9.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/log/Вс 2014 04 06 at 02 59 04 PM MSK/9.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/log/Вс 2014 04 06 at 03 00 45 PM MSK/9.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/log/Вс 2014 04 06 at 03 01 45 PM MSK/9.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/log/Вс 2014 04 06 at 03 02 44 PM MSK/9.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/log/Вс 2014 04 06 at 03 07 10 PM MSK/9.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/log/Вс 2014 04 06 at 03 07 20 PM MSK/9.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/tests/gameClasses/FieldTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/tests/gameMechanic/GameSessionTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__asm_asm_3_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__asm_asm_tree_3_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__classworlds_classworlds_1_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_beust_jcommander_1_27.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_jcraft_jsch_0_1_27.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_beanutils_commons_beanutils_1_7_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_cli_commons_cli_1_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_collections_commons_collections_3_2.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_digester_commons_digester_1_6.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_lang_commons_lang_2_4.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_logging_commons_logging_1_0_4.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_validator_commons_validator_1_2_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__jtidy_jtidy_4aug2000r7_dev.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__log4j_log4j_1_2_9.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_sourceforge_cobertura_cobertura_1_9_4_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_ant_ant_1_7_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_ant_ant_launcher_1_7_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_doxia_doxia_core_1_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_doxia_doxia_decoration_model_1_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_doxia_doxia_module_apt_1_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_doxia_doxia_module_fml_1_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_doxia_doxia_module_xdoc_1_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_doxia_doxia_module_xhtml_1_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_doxia_doxia_sink_api_1_0_alpha_9.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_doxia_doxia_site_renderer_1_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_maven_artifact_2_0_8.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_maven_artifact_manager_2_0_8.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_maven_core_2_0_8.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_maven_error_diagnostics_2_0_8.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_maven_model_2_0_8.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_maven_monitor_2_0_8.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_maven_plugin_api_2_0_8.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_maven_plugin_descriptor_2_0_8.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_maven_plugin_parameter_documenter_2_0_8.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_maven_plugin_registry_2_0_8.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_maven_profile_2_0_8.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_maven_project_2_0_8.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_maven_repository_metadata_2_0_8.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_maven_settings_2_0_8.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_reporting_maven_reporting_api_2_0_8.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_reporting_maven_reporting_impl_2_0_4_2.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_shared_maven_invoker_2_0_11.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_wagon_wagon_file_1_0_beta_2.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_wagon_wagon_http_lightweight_1_0_beta_2.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_wagon_wagon_http_shared_1_0_beta_2.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_wagon_wagon_provider_api_1_0_beta_2.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_wagon_wagon_ssh_1_0_beta_2.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_wagon_wagon_ssh_common_1_0_beta_2.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_wagon_wagon_ssh_external_1_0_beta_2.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_velocity_velocity_1_5.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_mojo_cobertura_maven_plugin_2_5_2.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_plexus_plexus_container_default_1_0_alpha_9_stable_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_plexus_plexus_i18n_1_0_beta_7.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_plexus_plexus_interactivity_api_1_0_alpha_4.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_plexus_plexus_utils_2_0_2.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_plexus_plexus_velocity_1_1_7.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_testng_testng_6_8_7.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_yaml_snakeyaml_1_12.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__oro_oro_2_0_8.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__urbanophile_java_getopt_1_0_9.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__xml_apis_xml_apis_1_0_b2.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/statistic/MemoryUsage" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/tests/utils/ReflectionHelperTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/tests/resource/ResourceFactoryTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/tests/gameClasses/SnapshotTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/tests/gameClasses/StrokeTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/tests/utils/SysInfoTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/tests/utils/VFSTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/jquery.min.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/dbService/DBServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/dbService/DBServiceImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/frontend/FrontendImpl.java" afterPath="$PROJECT_DIR$/src/main/java/frontend/FrontendImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/gameMechanic/GameMechanicImpl.java" afterPath="$PROJECT_DIR$/src/main/java/gameMechanic/GameMechanicImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/gameMechanic/GameSession.java" afterPath="$PROJECT_DIR$/src/main/java/gameMechanic/GameSession.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/utils/ReflectionHelper.java" afterPath="$PROJECT_DIR$/src/main/java/utils/ReflectionHelper.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/resource/ResourceFactory.java" afterPath="$PROJECT_DIR$/src/main/java/resource/ResourceFactory.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/utils/SysInfo.java" afterPath="$PROJECT_DIR$/src/main/java/utils/SysInfo.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/utils/VFS.java" afterPath="$PROJECT_DIR$/src/main/java/utils/VFS.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/statistic/ccu" afterPath="$PROJECT_DIR$/statistic/ccu" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/html/template.html" afterPath="$PROJECT_DIR$/static/html/template.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/statistic/time" afterPath="$PROJECT_DIR$/statistic/time" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/statistic/totalMemory" afterPath="$PROJECT_DIR$/statistic/totalMemory" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
     <ignored path="java-server.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -287,7 +407,7 @@
         <option name="CONDITION" value="" />
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/src/main/java/frontend/FrontendImpl.java" line="228" class="frontend.FrontendImpl" package="frontend">
+      <breakpoint url="file://$PROJECT_DIR$/src/main/java/frontend/FrontendImpl.java" line="231" class="frontend.FrontendImpl" package="frontend">
         <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
         <option name="LOG_EXPRESSION_ENABLED" value="false" />
@@ -302,7 +422,7 @@
         <option name="CONDITION" value="" />
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/src/main/java/frontend/FrontendImpl.java" line="67" class="frontend.FrontendImpl" package="frontend">
+      <breakpoint url="file://$PROJECT_DIR$/src/main/java/frontend/FrontendImpl.java" line="69" class="frontend.FrontendImpl" package="frontend">
         <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
         <option name="LOG_EXPRESSION_ENABLED" value="false" />
@@ -317,7 +437,7 @@
         <option name="CONDITION" value="" />
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/src/main/java/frontend/FrontendImpl.java" line="264" class="frontend.FrontendImpl" package="frontend">
+      <breakpoint url="file://$PROJECT_DIR$/src/main/java/frontend/FrontendImpl.java" line="267" class="frontend.FrontendImpl" package="frontend">
         <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
         <option name="LOG_EXPRESSION_ENABLED" value="false" />
@@ -345,11 +465,10 @@
       <file leaf-file-name="FrontendImpl.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/frontend/FrontendImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="245" column="29" selection-start="8779" selection-end="8779" vertical-scroll-proportion="0.7575221" vertical-offset="2872" max-vertical-offset="3825">
+            <state line="247" column="28" selection-start="8782" selection-end="8782" vertical-scroll-proportion="0.7575221" vertical-offset="2902" max-vertical-offset="3870">
               <folding>
                 <element signature="e#1159#1160#0" expanded="true" />
                 <element signature="e#1185#1186#0" expanded="true" />
-                <element signature="e#3783#3799#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -368,7 +487,12 @@
         <entry file="jar://$MAVEN_REPOSITORY$/org/mockito/mockito-all/1.8.4/mockito-all-1.8.4-sources.jar!/org/mockito/internal/creation/MethodInterceptorFilter.java">
           <provider selected="true" editor-type-id="text-editor">
             <state line="35" column="0" selection-start="1431" selection-end="1431" vertical-scroll-proportion="0.0" vertical-offset="142" max-vertical-offset="915">
-              <folding />
+              <folding>
+                <element signature="e#0#2752#0" expanded="false" />
+                <element signature="imports" expanded="false" />
+                <element signature="e#2111#2112#0" expanded="false" />
+                <element signature="e#2141#2142#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -398,7 +522,10 @@
         <entry file="jar://$MAVEN_REPOSITORY$/org/mockito/mockito-all/1.8.4/mockito-all-1.8.4-sources.jar!/org/mockito/internal/util/ObjectMethodsGuru.java">
           <provider selected="true" editor-type-id="text-editor">
             <state line="26" column="0" selection-start="835" selection-end="835" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="465">
-              <folding />
+              <folding>
+                <element signature="e#0#1137#0" expanded="false" />
+                <element signature="imports" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -478,7 +605,6 @@
         <option value="$PROJECT_DIR$/somefile.txt" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/somefile2.txt" />
-        <option value="$PROJECT_DIR$/src/main/java/frontend/FrontendImpl.java" />
         <option value="$PROJECT_DIR$/src/test/java/TestFrontendImpl.java" />
         <option value="$PROJECT_DIR$/src/test/java/frontend/TestFrontendImpl.java" />
         <option value="$PROJECT_DIR$/src/test/java/frontend/handler/TestFrontendImpl.java" />
@@ -486,6 +612,7 @@
         <option value="$PROJECT_DIR$/src/test/java/frontend/handler/TestNewUserTarget404.java" />
         <option value="$PROJECT_DIR$/src/test/java/frontend/handler/TestNewUserTargetRules.java" />
         <option value="$PROJECT_DIR$/src/test/java/frontend/handler/TestNotNewUserTargetRules.java" />
+        <option value="$PROJECT_DIR$/src/main/java/frontend/FrontendImpl.java" />
       </list>
     </option>
   </component>
@@ -1194,12 +1321,12 @@
       <workItem from="1396708129070" duration="10298000" />
       <workItem from="1396719282945" duration="12485000" />
       <workItem from="1396778633571" duration="4262000" />
-      <workItem from="1396786105567" duration="10578000" />
+      <workItem from="1396786105567" duration="11178000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="137791000" />
+    <option name="totallyTimeSpent" value="138391000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="436" y="24" width="1512" height="1056" extended-state="4" />
@@ -1333,10 +1460,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="234" column="0" selection-start="9914" selection-end="9914" vertical-scroll-proportion="0.0" vertical-offset="2477" max-vertical-offset="11145">
           <folding>
-            <element signature="e#6547#6548#0" expanded="true" />
-            <element signature="e#6584#6585#0" expanded="true" />
-            <element signature="e#6637#6638#0" expanded="true" />
-            <element signature="e#6667#6668#0" expanded="true" />
+            <element signature="e#6547#6548#0" expanded="false" />
+            <element signature="e#6584#6585#0" expanded="false" />
+            <element signature="e#6637#6638#0" expanded="false" />
+            <element signature="e#6667#6668#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1591,14 +1718,22 @@
     <entry file="jar://$MAVEN_REPOSITORY$/org/mockito/mockito-all/1.8.4/mockito-all-1.8.4-sources.jar!/org/mockito/internal/util/ObjectMethodsGuru.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="26" column="0" selection-start="835" selection-end="835" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="465">
-          <folding />
+          <folding>
+            <element signature="e#0#1137#0" expanded="false" />
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/mockito/mockito-all/1.8.4/mockito-all-1.8.4-sources.jar!/org/mockito/internal/creation/MethodInterceptorFilter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="35" column="0" selection-start="1431" selection-end="1431" vertical-scroll-proportion="0.0" vertical-offset="142" max-vertical-offset="915">
-          <folding />
+          <folding>
+            <element signature="e#0#2752#0" expanded="false" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#2111#2112#0" expanded="false" />
+            <element signature="e#2141#2142#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1622,11 +1757,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/frontend/FrontendImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="245" column="29" selection-start="8779" selection-end="8779" vertical-scroll-proportion="0.7575221" vertical-offset="2872" max-vertical-offset="3825">
+        <state line="247" column="28" selection-start="8782" selection-end="8782" vertical-scroll-proportion="0.7575221" vertical-offset="2902" max-vertical-offset="3870">
           <folding>
             <element signature="e#1159#1160#0" expanded="true" />
             <element signature="e#1185#1186#0" expanded="true" />
-            <element signature="e#3783#3799#0" expanded="true" />
           </folding>
         </state>
       </provider>

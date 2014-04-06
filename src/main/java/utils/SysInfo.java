@@ -6,6 +6,8 @@ import java.util.Map;
 import frontend.UserDataImpl;
 
 public class SysInfo implements Runnable{
+
+    private int timeOut = 10000;
 	private Runtime runtime = Runtime.getRuntime();
 	private String lastDate;
 	private static Map<String, String> data =
@@ -39,7 +41,7 @@ public class SysInfo implements Runnable{
 			}
 		}
 		while (true){
-			TimeHelper.sleep(10000);
+			TimeHelper.sleep(this.timeOut);
 			for(String service:data.keySet()){
 				lastDate=TimeHelper.getTime();
 				if(service.equals("MemoryUsage")){

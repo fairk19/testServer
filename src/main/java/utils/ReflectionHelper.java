@@ -9,8 +9,7 @@ public class ReflectionHelper{
 			return Class.forName(className).newInstance();
 		}
 		catch(Exception e){
-			System.err.println("ReflectionHelper, createInstance");
-			System.err.println(e.getMessage());
+			e.printStackTrace();
 		}
 		return null;
 	}
@@ -28,8 +27,6 @@ public class ReflectionHelper{
 			field.setAccessible(false);
 		} 
 		catch (Exception e) {
-			System.err.println("ReflectionHelper, setFieldValue");
-//			System.err.println(e.getMessage());
 			e.printStackTrace();
 		}
 	}

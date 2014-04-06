@@ -105,7 +105,6 @@ public class DBServiceImpl implements DataAccessObject{
 
 	
 	public void run(){
-
 		while(true){
 			messageSystem.execForAbonent(this);
 			TimeHelper.sleep(200);
