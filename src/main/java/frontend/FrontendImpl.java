@@ -91,15 +91,13 @@ public class FrontendImpl extends AbstractHandler implements Frontend{
 				||(target.equals("/admin"))||(target.equals("/rules"))||(target.equals("/logout"))||(target.equals("/reg")));
 	}
 
-	private boolean isStatic(String target){
-//		if(target.length()<4)
-//			return false;
-//		else if(target.length()==4)
-//			return target.substring(0, 4).equals("/js/");
-//		else return (((target.substring(0, 5)).equals("/img/"))||((target.substring(0, 5)).equals("/css/")));
-
-        return true;
-	}
+//    private boolean isStatic(String target){
+//        if(target.length()<4)
+//            return false;
+//        else if(target.length()==4)
+//            return target.substring(0, 4).equals("/js/");
+//        else return (((target.substring(0, 5)).equals("/img/"))||((target.substring(0, 5)).equals("/css/")));
+//    }
 
 	private boolean newUser(String strSessionId, String strStartServerTime){
 		return((strSessionId==null)||(strStartServerTime==null)
@@ -227,7 +225,7 @@ public class FrontendImpl extends AbstractHandler implements Frontend{
 		String sessionId=cookie.getCookieByName("sessionId");
 		String strStartServerTime=cookie.getCookieByName("startServerTime");
 		UserDataSet userSession;
-//		baseRequest.setHandled(true);
+		baseRequest.setHandled(true);
 
 		if(newUser(sessionId, strStartServerTime)){
 			userSession=new UserDataSet();
@@ -240,9 +238,9 @@ public class FrontendImpl extends AbstractHandler implements Frontend{
 			userSession=UserDataImpl.getUserSessionBySessionId(sessionId);
 		}
 		if(!inWeb(target)){
-			if(!isStatic(target)){
+//			if(!isStatic(target)){
 				sendPage("404.html",userSession,response);
-			}
+//			}
 			return;
 		}
 		userSession.visit();

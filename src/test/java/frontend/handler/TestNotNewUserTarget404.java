@@ -10,14 +10,12 @@ import org.testng.Assert;
 import org.testng.annotations.AfterGroups;
 import org.testng.annotations.BeforeGroups;
 import org.testng.annotations.Test;
-
+import utils.SHA2;
 import utils.TemplateHelper;
-import utils.TimeHelper;
 
 import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-
 import java.io.File;
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -27,9 +25,9 @@ import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
 
 /**
- * Created by vanik on 06.04.14.
+ * Created by vanik on 07.04.14.
  */
-public class TestNotNewUserTargetRules {
+public class TestNotNewUserTarget404 {
     private MessageSystem mockedMS = mock (MessageSystem.class);
     private FrontendImpl frontend;
     private String target;
@@ -46,13 +44,12 @@ public class TestNotNewUserTargetRules {
 
 
 
-
-    @BeforeGroups("handleNewUserTargetRules")
-    public void  setUpHandleNewUserTargetRules() {
+    @BeforeGroups("handleNewUserTarget404")
+    public void  setUpHandleNewUserTarget404() {
         frontend = new FrontendImpl(mockedMS);
         response = mock(HttpServletResponse.class);
         request = mock(HttpServletRequest.class);
-        target = "/rules";
+        target = "/notFound";
         baseRequest = mock(Request.class);
         Cookie mockedCookieSessionId = mock(Cookie.class);
         when(mockedCookieSessionId.getName()).thenReturn(SESSION_ID_FIELD);
@@ -73,21 +70,22 @@ public class TestNotNewUserTargetRules {
         UserDataImpl.putSessionIdAndUserSession(sessionIdValue, new UserDataSet());
     }
 
-    @Test(groups = "handleNewUserTargetRules")
-    public void testHandleNewUserTargetRules() throws IOException {
+    @Test(groups = "handleNewUserTarget404")
+    public void testHandleNewUserTarget404() throws IOException {
         frontend.handle(target,baseRequest,request,response);
 
         returnedPage = new File("returnedPage.html");
-        expectedPage = new File("./static/html/rules.html");
+        expectedPage = new File("./static/html/404.html");
 
         String returnedPageAsString = new String();
         returnedPageAsString = Files.toString(returnedPage, defaultCharset());
+
         Assert.assertTrue(returnedPageAsString.contains(Files.toString(expectedPage, defaultCharset())));
         Assert.assertNotNull(UserDataImpl.getUserSessionBySessionId(sessionIdValue));
     }
 
-    @AfterGroups("handleNewUserTargetRules")
-    public void tearDownHandleNewUserTargetRules() {
+    @AfterGroups("handleNewUserTarget404")
+    public void tearDownHandleNewUserTarget404() {
         returnedPage.delete();
     }
 }

@@ -16,7 +16,7 @@ import static org.mockito.Mockito.mock;
  */
 public class TestDBServiceImpl {
     private MessageSystem mockedMS = mock(MessageSystem.class);
-    private String url = "jdbc:mysql://localhost:3306/qualityTestDB?user=root&password=110708";
+//    private String url = "jdbc:mysql://localhost:3306/qualityTestDB?user=root&password=110708";
     private DBServiceImpl dbService;
     private String login;
     private String password;

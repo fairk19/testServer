@@ -1,16 +1,16 @@
 package frontend.handler;
 
 import base.MessageSystem;
-import com.google.common.io.Files;
-import dbService.UserDataSet;
 import frontend.FrontendImpl;
 import frontend.UserDataImpl;
-import org.eclipse.jetty.server.Request;
 import org.testng.Assert;
 import org.testng.annotations.AfterGroups;
 import org.testng.annotations.BeforeGroups;
 import org.testng.annotations.Test;
 
+import org.eclipse.jetty.server.Request;
+import utils.SHA2;
+import utils.SysInfo;
 import utils.TemplateHelper;
 import utils.TimeHelper;
 
@@ -21,15 +21,17 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.File;
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.nio.charset.Charset;
+
+import com.google.common.io.Files;
+
 
 import static java.nio.charset.Charset.defaultCharset;
-import static org.mockito.Mockito.mock;
-import static org.mockito.Mockito.when;
-
+import static org.mockito.Mockito.*;
 /**
- * Created by vanik on 06.04.14.
+ * Created by vanik on 30.03.14.
  */
-public class TestNotNewUserTargetRules {
+public class TestNewUserTargetAdmin {
     private MessageSystem mockedMS = mock (MessageSystem.class);
     private FrontendImpl frontend;
     private String target;
@@ -44,15 +46,12 @@ public class TestNotNewUserTargetRules {
     private File returnedPage;
     private File expectedPage;
 
-
-
-
     @BeforeGroups("handleNewUserTargetRules")
     public void  setUpHandleNewUserTargetRules() {
         frontend = new FrontendImpl(mockedMS);
         response = mock(HttpServletResponse.class);
         request = mock(HttpServletRequest.class);
-        target = "/rules";
+        target = "/admin";
         baseRequest = mock(Request.class);
         Cookie mockedCookieSessionId = mock(Cookie.class);
         when(mockedCookieSessionId.getName()).thenReturn(SESSION_ID_FIELD);
@@ -68,26 +67,44 @@ public class TestNotNewUserTargetRules {
         }
         Cookie[] arrCookies = {mockedCookieSessionId, mockedCookieServerTime};
         when(request.getCookies()).thenReturn(arrCookies);
-        when(request.getMethod()).thenReturn("GET");
         TemplateHelper.init();
-        UserDataImpl.putSessionIdAndUserSession(sessionIdValue, new UserDataSet());
+        SysInfo sysInfo = new SysInfo();
     }
 
     @Test(groups = "handleNewUserTargetRules")
     public void testHandleNewUserTargetRules() throws IOException {
         frontend.handle(target,baseRequest,request,response);
 
-        returnedPage = new File("returnedPage.html");
-        expectedPage = new File("./static/html/rules.html");
+        sessionIdValue = SHA2.getSHA2(String.valueOf(frontend.getCreatorSessionId().intValue()));
+        Assert.assertNotNull(UserDataImpl.getUserSessionBySessionId(sessionIdValue));
 
+
+        returnedPage = new File("returnedPage.html");
         String returnedPageAsString = new String();
         returnedPageAsString = Files.toString(returnedPage, defaultCharset());
+
+        expectedPage = new File("./statistic/ccu");
         Assert.assertTrue(returnedPageAsString.contains(Files.toString(expectedPage, defaultCharset())));
-        Assert.assertNotNull(UserDataImpl.getUserSessionBySessionId(sessionIdValue));
+
+        expectedPage = new File("./statistic/memoryUsage");
+        Assert.assertTrue(returnedPageAsString.contains(Files.toString(expectedPage, defaultCharset())));
+
+        expectedPage = new File("./statistic/time");
+        Assert.assertTrue(returnedPageAsString.contains(Files.toString(expectedPage, defaultCharset())));
+
+        expectedPage = new File("./statistic/totalMemory");
+        Assert.assertTrue(returnedPageAsString.contains(Files.toString(expectedPage, defaultCharset())));
+
     }
 
     @AfterGroups("handleNewUserTargetRules")
     public void tearDownHandleNewUserTargetRules() {
         returnedPage.delete();
     }
+
+
+
+
+
+
 }

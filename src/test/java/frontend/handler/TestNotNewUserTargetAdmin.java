@@ -10,14 +10,12 @@ import org.testng.Assert;
 import org.testng.annotations.AfterGroups;
 import org.testng.annotations.BeforeGroups;
 import org.testng.annotations.Test;
-
+import utils.SysInfo;
 import utils.TemplateHelper;
-import utils.TimeHelper;
 
 import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-
 import java.io.File;
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -27,9 +25,9 @@ import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
 
 /**
- * Created by vanik on 06.04.14.
+ * Created by vanik on 07.04.14.
  */
-public class TestNotNewUserTargetRules {
+public class TestNotNewUserTargetAdmin {
     private MessageSystem mockedMS = mock (MessageSystem.class);
     private FrontendImpl frontend;
     private String target;
@@ -52,7 +50,7 @@ public class TestNotNewUserTargetRules {
         frontend = new FrontendImpl(mockedMS);
         response = mock(HttpServletResponse.class);
         request = mock(HttpServletRequest.class);
-        target = "/rules";
+        target = "/admin";
         baseRequest = mock(Request.class);
         Cookie mockedCookieSessionId = mock(Cookie.class);
         when(mockedCookieSessionId.getName()).thenReturn(SESSION_ID_FIELD);
@@ -71,6 +69,7 @@ public class TestNotNewUserTargetRules {
         when(request.getMethod()).thenReturn("GET");
         TemplateHelper.init();
         UserDataImpl.putSessionIdAndUserSession(sessionIdValue, new UserDataSet());
+        SysInfo sysInfo = new SysInfo();
     }
 
     @Test(groups = "handleNewUserTargetRules")
@@ -78,10 +77,21 @@ public class TestNotNewUserTargetRules {
         frontend.handle(target,baseRequest,request,response);
 
         returnedPage = new File("returnedPage.html");
-        expectedPage = new File("./static/html/rules.html");
-
         String returnedPageAsString = new String();
         returnedPageAsString = Files.toString(returnedPage, defaultCharset());
+
+        expectedPage = new File("./statistic/ccu");
+        Assert.assertTrue(returnedPageAsString.contains(Files.toString(expectedPage, defaultCharset())));
+
+        expectedPage = new File("./statistic/memoryUsage");
+        Assert.assertTrue(returnedPageAsString.contains(Files.toString(expectedPage, defaultCharset())));
+
+        expectedPage = new File("./statistic/time");
+        Assert.assertTrue(returnedPageAsString.contains(Files.toString(expectedPage, defaultCharset())));
+
+        expectedPage = new File("./statistic/totalMemory");
+        Assert.assertTrue(returnedPageAsString.contains(Files.toString(expectedPage, defaultCharset())));
+
         Assert.assertTrue(returnedPageAsString.contains(Files.toString(expectedPage, defaultCharset())));
         Assert.assertNotNull(UserDataImpl.getUserSessionBySessionId(sessionIdValue));
     }
