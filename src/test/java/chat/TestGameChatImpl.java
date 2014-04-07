@@ -1,3 +1,5 @@
+package chat;
+
 import base.GameChat;
 import base.MessageSystem;
 import chat.GameChatImpl;

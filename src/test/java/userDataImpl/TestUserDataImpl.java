@@ -18,9 +18,7 @@ import org.testng.annotations.Test;
 
 import java.net.Socket;
 
-import static org.mockito.Mockito.mock;
-import static org.mockito.Mockito.verify;
-import static org.mockito.Mockito.when;
+import static org.mockito.Mockito.*;
 
 /**
  * Created by vanik on 07.04.14.
@@ -50,11 +48,8 @@ public class TestUserDataImpl {
     @Test( groups = "CheckServerTime")
     public void testCheckServerTime() {
         String unCorrectValue = "1231dfa";
-//        String correctValue = startServerTime
         Assert.assertTrue(UserDataImpl.checkServerTime(startServerTime));
         Assert.assertFalse(UserDataImpl.checkServerTime(unCorrectValue));
-
-//        Assert.assertEquals(UserDataImpl.checkServerTime(unCorrectValue), unCorrectValue);
     }
 
 
@@ -79,6 +74,43 @@ public class TestUserDataImpl {
         UserDataImpl.removeUserFromLogInUsers(sessionId1);
         UserDataImpl.removeUserFromLogInUsers(sessionId2);
     }
+
+
+
+
+
+
+
+    @BeforeGroups("PutSessionIdAndChatWS")
+    public void setUpPutSessionIdAndChatWS() {
+        sessionId1 = "sessionId1";
+        chatWS = mock(ChatWSImpl.class);
+
+        sessionId2 = "sessionId2";
+
+        userDataSet1 = mock(UserDataSet.class);
+        UserDataImpl.putLogInUser(sessionId1, userDataSet1);
+
+    }
+
+    @Test(groups = "PutSessionIdAndChatWS")
+    public void testPutSessionIdAndChatWS() {
+        UserDataImpl.putSessionIdAndChatWS(sessionId1,chatWS);
+        verify(userDataSet1).visit();
+        UserDataImpl.putSessionIdAndChatWS(sessionId2, chatWS);
+        verify(userDataSet2, never()).visit();
+    }
+
+    @AfterGroups("PutSessionIdAndChatWS")
+    public void tearDownPutSessionIdAndChatWS() {
+
+    }
+
+
+
+
+
+
 
 
 
@@ -137,8 +169,127 @@ public class TestUserDataImpl {
 
     @AfterGroups("PartyEnd")
     public void tearDownPartyEnd() {
+        UserDataImpl.clearSessionIdAndrUserSession();
+    }
+
+
+
+
+    @BeforeGroups("PartyEndFirstIsNull")
+    public void setUpPartyEndFirstIsNull() {
+        mockedMS = mock(MessageSystem.class);
+        chatWS = mock(ChatWSImpl.class);
+        userDataImpl = new UserDataImpl(mockedMS);
+        userID1 = 1;
+        userID2 = 2;
+
+        sessionId1 = "sessionId1";
+        userDataSet1 = mock(UserDataSet.class);
+        when(userDataSet1.getId()).thenReturn(userID1);
+        UserDataImpl.putLogInUser(sessionId1, userDataSet1);
+        UserDataImpl.putSessionIdAndChatWS(sessionId1, chatWS);
+
+
+        sessionId2 = "sessionId2";
+        userDataSet2 = mock(UserDataSet.class);
+        when(userDataSet2.getId()).thenReturn(userID2);
+        UserDataImpl.putSessionIdAndUserSession(sessionId2,userDataSet2);
+        UserDataImpl.putSessionIdAndChatWS(sessionId2, chatWS);
+        UserDataImpl.putLogInUser(sessionId1, userDataSet1);
+
 
     }
+
+    @Test(groups = "PartyEndFirstIsNull")
+    public void testPartyEndFirstIsNull() {
+        userDataImpl.partyEnd(userID1, userID2);
+        verify(mockedMS).getAddressByName("DBService");
+    }
+
+    @AfterGroups("PartyEndFirstIsNull")
+    public void tearDownPartyEndFirstIsNull() {
+        UserDataImpl.clearSessionIdAndrUserSession();
+    }
+
+
+
+
+
+    @BeforeGroups("PartyEndSecondIsNull")
+    public void setUpPartyEndSecondIsNull() {
+        mockedMS = mock(MessageSystem.class);
+        chatWS = mock(ChatWSImpl.class);
+        userDataImpl = new UserDataImpl(mockedMS);
+        userID1 = 1;
+        userID2 = 2;
+
+        sessionId1 = "sessionId1";
+        userDataSet1 = mock(UserDataSet.class);
+        when(userDataSet1.getId()).thenReturn(userID1);
+        UserDataImpl.putSessionIdAndUserSession(sessionId1,userDataSet1);
+        UserDataImpl.putLogInUser(sessionId1, userDataSet1);
+        UserDataImpl.putSessionIdAndChatWS(sessionId1, chatWS);
+
+
+        sessionId2 = "sessionId2";
+        userDataSet2 = mock(UserDataSet.class);
+        when(userDataSet2.getId()).thenReturn(userID2);
+        UserDataImpl.putSessionIdAndChatWS(sessionId2, chatWS);
+        UserDataImpl.putLogInUser(sessionId1, userDataSet1);
+
+
+    }
+
+    @Test(groups = "PartyEndSecondIsNull")
+    public void testPartyEndSecondIsNull() {
+        userDataImpl.partyEnd(userID1, userID2);
+        verify(mockedMS).getAddressByName("DBService");
+    }
+
+    @AfterGroups("PartyEndSecondIsNull")
+    public void tearDownPartyEndSecondIsNull() {
+        UserDataImpl.clearSessionIdAndrUserSession();
+    }
+
+
+
+    @BeforeGroups("PartyEndAllIsNull")
+    public void setUpPartyEndPartyEndAllIsNull() {
+        mockedMS = mock(MessageSystem.class);
+        chatWS = mock(ChatWSImpl.class);
+        userDataImpl = new UserDataImpl(mockedMS);
+        userID1 = 1;
+        userID2 = 2;
+
+        sessionId1 = "sessionId1";
+        userDataSet1 = mock(UserDataSet.class);
+        when(userDataSet1.getId()).thenReturn(userID1);
+        UserDataImpl.putLogInUser(sessionId1, userDataSet1);
+        UserDataImpl.putSessionIdAndChatWS(sessionId1, chatWS);
+
+
+        sessionId2 = "sessionId2";
+        userDataSet2 = mock(UserDataSet.class);
+        when(userDataSet2.getId()).thenReturn(userID2);
+        UserDataImpl.putSessionIdAndChatWS(sessionId2, chatWS);
+        UserDataImpl.putLogInUser(sessionId1, userDataSet1);
+
+
+    }
+
+    @Test(groups = "PartyEndAllIsNull")
+    public void testPartyEndAllIsNull() {
+        userDataImpl.partyEnd(userID1, userID2);
+        verify(mockedMS,never()).getAddressByName("DBService");
+    }
+
+    @AfterGroups("PartyEndAllIsNull")
+    public void tearDownPartyEndAllIsNull() {
+        UserDataImpl.clearSessionIdAndrUserSession();
+    }
+
+
+
 
 //    @BeforeGroups("GetWSBySessionId")
 //    public void setUpGetWSBySessionId() {

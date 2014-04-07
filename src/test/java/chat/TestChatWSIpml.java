@@ -1,3 +1,5 @@
+package chat;
+
 import base.UserData;
 import chat.ChatWSImpl;
 import chat.GameChatImpl;
