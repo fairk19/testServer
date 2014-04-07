@@ -6,9 +6,7 @@ import frontend.FrontendImpl;
 import frontend.UserDataImpl;
 import org.eclipse.jetty.server.Request;
 import org.testng.Assert;
-import org.testng.annotations.AfterGroups;
-import org.testng.annotations.BeforeGroups;
-import org.testng.annotations.Test;
+import org.testng.annotations.*;
 import utils.SHA2;
 import utils.TemplateHelper;
 
@@ -20,17 +18,15 @@ import java.io.IOException;
 import java.io.PrintWriter;
 
 import static java.nio.charset.Charset.defaultCharset;
-import static org.mockito.Mockito.mock;
-import static org.mockito.Mockito.when;
+import static org.mockito.Mockito.*;
 
 /**
- * Created by vanik on 06.04.14.
+ * Created by vanik on 07.04.14.
  */
-
-
-
-public class TestNewUserTarget404 {
+public class TestNUTargetMainPage {
     private MessageSystem mockedMS = mock (MessageSystem.class);
+    private Cookie mockedCookieSessionId;
+    private Cookie mockedCookieServerTime;
     private FrontendImpl frontend;
     private String target;
     private Request baseRequest;
@@ -41,24 +37,25 @@ public class TestNewUserTarget404 {
     private String START_SERVER_TIME_FIELD = "startServerTime";
     private String startServerTimeValue = UserDataImpl.getStartServerTime();
 
+
+
     private File returnedPage;
     private File expectedPage;
 
-
-
-    @BeforeGroups("handleNewUserTarget404")
-    public void  setUpHandleNewUserTarget404() {
+    @BeforeMethod
+    public void  setUpHandleNewUserTargetMainPage() {
         frontend = new FrontendImpl(mockedMS);
         response = mock(HttpServletResponse.class);
         request = mock(HttpServletRequest.class);
-        target = "/notFound";
+        target = "/";
         baseRequest = mock(Request.class);
-        Cookie mockedCookieSessionId = mock(Cookie.class);
+        mockedCookieSessionId = mock(Cookie.class);
         when(mockedCookieSessionId.getName()).thenReturn(SESSION_ID_FIELD);
         when(mockedCookieSessionId.getValue()).thenReturn(sessionIdValue);
-        Cookie mockedCookieServerTime = mock(Cookie.class);
+        mockedCookieServerTime = mock(Cookie.class);
         when(mockedCookieServerTime.getName()).thenReturn(START_SERVER_TIME_FIELD);
         when(mockedCookieServerTime.getValue()).thenReturn(startServerTimeValue);
+
         try {
             PrintWriter writer = new PrintWriter("returnedPage.html");
             when(response.getWriter()).thenReturn(writer);
@@ -70,12 +67,12 @@ public class TestNewUserTarget404 {
         TemplateHelper.init();
     }
 
-    @Test(groups = "handleNewUserTarget404")
-    public void testHandleNewUserTarget404() throws IOException {
+    @Test
+    public void testHandleNewUserTargetMainPage() throws IOException {
         frontend.handle(target,baseRequest,request,response);
 
         returnedPage = new File("returnedPage.html");
-        expectedPage = new File("./static/html/404.html");
+        expectedPage = new File("./static/html/index.html");
 
         String returnedPageAsString = new String();
         returnedPageAsString = Files.toString(returnedPage, defaultCharset());
@@ -85,8 +82,9 @@ public class TestNewUserTarget404 {
         Assert.assertNotNull(UserDataImpl.getUserSessionBySessionId(sessionIdValue));
     }
 
-    @AfterGroups("handleNewUserTarget404")
-    public void tearDownHandleNewUserTarget404() {
+    @AfterMethod
+    public void tearDownHandleNewUserTargetMainPage() {
         returnedPage.delete();
     }
+
 }

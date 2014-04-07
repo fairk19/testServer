@@ -7,29 +7,27 @@ import frontend.FrontendImpl;
 import frontend.UserDataImpl;
 import org.eclipse.jetty.server.Request;
 import org.testng.Assert;
-import org.testng.annotations.AfterGroups;
-import org.testng.annotations.BeforeGroups;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
-
 import utils.TemplateHelper;
-import utils.TimeHelper;
 
 import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-
 import java.io.File;
 import java.io.IOException;
 import java.io.PrintWriter;
 
 import static java.nio.charset.Charset.defaultCharset;
 import static org.mockito.Mockito.mock;
+import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
 
 /**
- * Created by vanik on 06.04.14.
+ * Created by vanik on 07.04.14.
  */
-public class TestNotNewUserTargetRules {
+public class TestRegUserTargetGame {
     private MessageSystem mockedMS = mock (MessageSystem.class);
     private FrontendImpl frontend;
     private String target;
@@ -47,12 +45,12 @@ public class TestNotNewUserTargetRules {
 
 
 
-    @BeforeGroups("handleNewUserTargetRules")
-    public void  setUpHandleNewUserTargetRules() {
+    @BeforeMethod
+    public void  setUp() {
         frontend = new FrontendImpl(mockedMS);
         response = mock(HttpServletResponse.class);
         request = mock(HttpServletRequest.class);
-        target = "/rules";
+        target = "/game";
         baseRequest = mock(Request.class);
         Cookie mockedCookieSessionId = mock(Cookie.class);
         when(mockedCookieSessionId.getName()).thenReturn(SESSION_ID_FIELD);
@@ -73,21 +71,14 @@ public class TestNotNewUserTargetRules {
         UserDataImpl.putSessionIdAndUserSession(sessionIdValue, new UserDataSet());
     }
 
-    @Test(groups = "handleNewUserTargetRules")
-    public void testHandleNewUserTargetRules() throws IOException {
+    @Test
+    public void test() throws IOException {
         frontend.handle(target,baseRequest,request,response);
-
-        returnedPage = new File("returnedPage.html");
-        expectedPage = new File("./static/html/rules.html");
-
-        String returnedPageAsString = new String();
-        returnedPageAsString = Files.toString(returnedPage, defaultCharset());
-        Assert.assertTrue(returnedPageAsString.contains(Files.toString(expectedPage, defaultCharset())));
-        Assert.assertNotNull(UserDataImpl.getUserSessionBySessionId(sessionIdValue));
+        verify(response).setStatus(HttpServletResponse.SC_MOVED_TEMPORARILY);
+        verify(response).addHeader("Location", "/");
     }
 
-    @AfterGroups("handleNewUserTargetRules")
-    public void tearDownHandleNewUserTargetRules() {
-        returnedPage.delete();
+    @AfterMethod
+    public void tearDown() {
     }
 }

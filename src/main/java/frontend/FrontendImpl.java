@@ -91,14 +91,6 @@ public class FrontendImpl extends AbstractHandler implements Frontend{
 				||(target.equals("/admin"))||(target.equals("/rules"))||(target.equals("/logout"))||(target.equals("/reg")));
 	}
 
-//    private boolean isStatic(String target){
-//        if(target.length()<4)
-//            return false;
-//        else if(target.length()==4)
-//            return target.substring(0, 4).equals("/js/");
-//        else return (((target.substring(0, 5)).equals("/img/"))||((target.substring(0, 5)).equals("/css/")));
-//    }
-
 	private boolean newUser(String strSessionId, String strStartServerTime){
 		return((strSessionId==null)||(strStartServerTime==null)
 				||(!UserDataImpl.checkServerTime(strStartServerTime))
@@ -238,9 +230,7 @@ public class FrontendImpl extends AbstractHandler implements Frontend{
 			userSession=UserDataImpl.getUserSessionBySessionId(sessionId);
 		}
 		if(!inWeb(target)){
-//			if(!isStatic(target)){
-				sendPage("404.html",userSession,response);
-//			}
+		    sendPage("404.html",userSession,response);
 			return;
 		}
 		userSession.visit();

@@ -64,26 +64,26 @@ public class UserDataSet{
 		return postStatus;
 	}
 
+    public void setId(int id) { this.id = id; }
+
 	public void setColor(String col){
 		color=col;
 	}
-	
+
 	public String getColor(){
 		return color;
 	}
-	
+
 	public int getRating(){
 		return rating;
 	}
-	
+
 	public int getWinQuantity(){
 		return winQuantity;
 	}
-	
-	public int getLoseQuantity(){
+    public int getLoseQuantity(){
 		return loseQuantity;
 	}
-	
 	public void lose(int diff){
 		loseQuantity++;
 		rating-=diff;

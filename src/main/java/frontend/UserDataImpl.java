@@ -76,6 +76,9 @@ public class UserDataImpl implements UserData{
 	public static void putSessionIdAndUserSession(String sessionId, UserDataSet userSession){
 		sessionIdToUserSession.put(sessionId, userSession);
 	}
+    public static void removeSessionIdAndUserSession(String sessionId) {
+        sessionIdToUserSession.remove(sessionId);
+    }
 
 	public static UserDataSet getLogInUserBySessionId(String sessionId){
 		if(logInUsers.get(sessionId)!=null){

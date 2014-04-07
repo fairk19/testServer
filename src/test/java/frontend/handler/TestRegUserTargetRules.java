@@ -7,15 +7,15 @@ import frontend.FrontendImpl;
 import frontend.UserDataImpl;
 import org.eclipse.jetty.server.Request;
 import org.testng.Assert;
-import org.testng.annotations.AfterGroups;
-import org.testng.annotations.BeforeGroups;
-import org.testng.annotations.Test;
-import utils.SysInfo;
+import org.testng.annotations.*;
+
 import utils.TemplateHelper;
+import utils.TimeHelper;
 
 import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+
 import java.io.File;
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -25,9 +25,9 @@ import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
 
 /**
- * Created by vanik on 07.04.14.
+ * Created by vanik on 06.04.14.
  */
-public class TestNotNewUserTargetAdmin {
+public class TestRegUserTargetRules {
     private MessageSystem mockedMS = mock (MessageSystem.class);
     private FrontendImpl frontend;
     private String target;
@@ -45,12 +45,12 @@ public class TestNotNewUserTargetAdmin {
 
 
 
-    @BeforeGroups("handleNewUserTargetRules")
-    public void  setUpHandleNewUserTargetRules() {
+    @BeforeMethod
+    public void  setUpHandleNotNewUserTargetRules() {
         frontend = new FrontendImpl(mockedMS);
         response = mock(HttpServletResponse.class);
         request = mock(HttpServletRequest.class);
-        target = "/admin";
+        target = "/rules";
         baseRequest = mock(Request.class);
         Cookie mockedCookieSessionId = mock(Cookie.class);
         when(mockedCookieSessionId.getName()).thenReturn(SESSION_ID_FIELD);
@@ -69,35 +69,23 @@ public class TestNotNewUserTargetAdmin {
         when(request.getMethod()).thenReturn("GET");
         TemplateHelper.init();
         UserDataImpl.putSessionIdAndUserSession(sessionIdValue, new UserDataSet());
-        SysInfo sysInfo = new SysInfo();
     }
 
-    @Test(groups = "handleNewUserTargetRules")
-    public void testHandleNewUserTargetRules() throws IOException {
+    @Test
+    public void testHandleNotNewUserTargetRules() throws IOException {
         frontend.handle(target,baseRequest,request,response);
 
         returnedPage = new File("returnedPage.html");
+        expectedPage = new File("./static/html/rules.html");
+
         String returnedPageAsString = new String();
         returnedPageAsString = Files.toString(returnedPage, defaultCharset());
-
-        expectedPage = new File("./statistic/ccu");
-        Assert.assertTrue(returnedPageAsString.contains(Files.toString(expectedPage, defaultCharset())));
-
-        expectedPage = new File("./statistic/memoryUsage");
-        Assert.assertTrue(returnedPageAsString.contains(Files.toString(expectedPage, defaultCharset())));
-
-        expectedPage = new File("./statistic/time");
-        Assert.assertTrue(returnedPageAsString.contains(Files.toString(expectedPage, defaultCharset())));
-
-        expectedPage = new File("./statistic/totalMemory");
-        Assert.assertTrue(returnedPageAsString.contains(Files.toString(expectedPage, defaultCharset())));
-
         Assert.assertTrue(returnedPageAsString.contains(Files.toString(expectedPage, defaultCharset())));
         Assert.assertNotNull(UserDataImpl.getUserSessionBySessionId(sessionIdValue));
     }
 
-    @AfterGroups("handleNewUserTargetRules")
-    public void tearDownHandleNewUserTargetRules() {
+    @AfterMethod
+    public void tearDownHandleNotNewUserTargetRules() {
         returnedPage.delete();
     }
 }
