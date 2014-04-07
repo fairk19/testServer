@@ -48,7 +48,9 @@ public class UserDataImpl implements UserData{
 		address=new Address();
 		messageSystem.addService(this,"UserData");
 	}
-
+    public static void removeUserFromLogInUsers(String sessionId) {
+        logInUsers.remove(sessionId);
+    }
 	public Address getAddress(){
 		return address;
 	}
@@ -81,9 +83,7 @@ public class UserDataImpl implements UserData{
     }
 
 	public static UserDataSet getLogInUserBySessionId(String sessionId){
-		if(logInUsers.get(sessionId)!=null){
 			logInUsers.get(sessionId).visit();
-		}
 		return logInUsers.get(sessionId);
 	}
 
