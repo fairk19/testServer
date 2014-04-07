@@ -17,6 +17,7 @@ import org.testng.annotations.BeforeGroups;
 import org.testng.annotations.Test;
 
 import java.net.Socket;
+import java.rmi.Remote;
 
 import static org.mockito.Mockito.*;
 
@@ -39,6 +40,59 @@ public class TestUserDataImpl {
     private Session mockedSession;
     private RemoteEndpoint mockedRemote ;
     private MessageSystem mockedMS;
+    private ChatWSImpl mockedChatWSImpl;
+
+
+
+
+    @BeforeGroups("")
+    public void setUp() {
+
+    }
+
+    @Test(groups = "")
+    public void test() {
+
+    }
+
+    @AfterGroups("")
+    public void tearDown() {
+
+    }
+
+
+
+
+    @BeforeGroups("GetChatWSBySessionId")
+    public void setUpGetChatWSBySessionId() {
+        sessionId1 = "sessionId1";
+        sessionId2 = "sessionasdflkjlkj";
+
+        mockedRemote = mock(RemoteEndpoint.class);
+
+        mockedSession = mock(Session.class);
+        when(mockedSession.getRemote()).thenReturn(mockedRemote);
+
+        mockedChatWSImpl = mock(ChatWSImpl.class);
+        when(mockedChatWSImpl.getSession()).thenReturn(mockedSession);
+        UserDataImpl.putSessionIdAndChatWS(sessionId1, mockedChatWSImpl);
+    }
+
+    @Test(groups = "GetChatWSBySessionId")
+    public void testGetChatWSBySessionId() {
+        RemoteEndpoint returnedRemote = UserDataImpl.getChatWSBySessionId(sessionId1);
+
+        Assert.assertEquals(returnedRemote, mockedRemote);
+        verify(mockedChatWSImpl).getSession();
+        verify(mockedSession).getRemote();
+
+        Assert.assertNull(UserDataImpl.getChatWSBySessionId(sessionId2));
+    }
+
+    @AfterGroups("GetChatWSBySessionId")
+    public void tearDownGetChatWSBySessionId() {
+
+    }
 
     @BeforeGroups("CheckServerTime")
     public void setUpCheckServerTime() {
@@ -436,48 +490,14 @@ public class TestUserDataImpl {
 
 
 
-//    @BeforeGroups("GetWSBySessionId")
-//    public void setUpGetWSBySessionId() {
-//        ws = mock(WebSocketImpl.class);
-//        remoteEndPoint = mock(RemoteEndpoint.class);
-//        session  = mock(Session.class);
-//        when(session.)
-//        when(ws.getSession().getRemote()).thenReturn(remoteEndPoint);
-//        sessionId1 = "sessionId1";
-//        UserDataImpl.putSessionIdAndWS(sessionId1, ws);
-//
-//    }
-//
-//    @Test(groups = "GetWSBySessionId")
-//    public void testGetWSBySessionId() {
-//        UserDataImpl.getWSBySessionId(sessionId1);
-//        verify(ws).getSession().getRemote();
-//    }
-//
-//    @AfterGroups("GetWSBySessionId")
-//    public void tearDownGetWSBySessionId() {
-//
-//    }
 
 
 
 
 
 
-    @BeforeGroups("")
-    public void setUp() {
 
-    }
 
-    @Test(groups = "")
-    public void test() {
-
-    }
-
-    @AfterGroups("")
-    public void tearDown() {
-
-    }
 
 
 }
