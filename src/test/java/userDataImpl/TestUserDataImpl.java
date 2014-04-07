@@ -35,9 +35,9 @@ public class TestUserDataImpl {
     private int userID1;
     private int userID2;
     private ChatWSImpl chatWS;
-    private WebSocketImpl ws;
-    private Socket socket;
-    private RemoteEndpoint remoteEndPoint;
+    private WebSocketImpl mockedWSImpl;
+    private Session mockedSession;
+    private RemoteEndpoint mockedRemote ;
     private MessageSystem mockedMS;
 
     @BeforeGroups("CheckServerTime")
@@ -111,26 +111,171 @@ public class TestUserDataImpl {
 
 
 
+    @BeforeGroups("UpdateUserId")
+    public void setUpUpdateUserId() {
+        mockedMS = mock(MessageSystem.class);
+        userDataImpl = new UserDataImpl(mockedMS);
+        userID = 1;
+
+        sessionId1 = "sessionId1";
+        userDataSet1 = mock(UserDataSet.class);
+        when(userDataSet1.getId()).thenReturn(userID);
+        UserDataImpl.putSessionIdAndUserSession(sessionId1, userDataSet);
+        UserDataImpl.putLogInUser(sessionId1, userDataSet1);
+
+        sessionId2 = "sessionId2";
+        userDataSet2 = mock(UserDataSet.class);
+        when(userDataSet2.getId()).thenReturn(userID);
+        UserDataImpl.putSessionIdAndUserSession(sessionId2, userDataSet2);
+
+        System.out.println("before 1= " + userDataSet1.hashCode());
+        System.out.println("before 2= " + userDataSet2.hashCode());
+    }
+
+    @Test(groups = "UpdateUserId")
+    public void testUpdateUserId() {
+        userDataImpl.updateUserId(sessionId2, userDataSet2);
+        System.out.println("after 1= " + userDataSet1.hashCode());
+        System.out.println("after 2= " + userDataSet2.hashCode());
+        verify(userDataSet2).makeLike(userDataSet2);
+        verify(userDataSet2).setPostStatus(0);
+    }
+
+    @AfterGroups("UpdateUserId")
+    public void tearDownUpdateUserId() {
+        UserDataImpl.clearSessionIdAndrUserSession();
+    }
+
+
+
+
+
+
+    @BeforeGroups("UpdateUserIdOldUserIsNull")
+    public void setUpUpdateUserIdOldUserIsNull() {
+        mockedMS = mock(MessageSystem.class);
+        userDataImpl = new UserDataImpl(mockedMS);
+        userID = 1;
+
+        sessionId1 = "sessionId1";
+        userDataSet1 = mock(UserDataSet.class);
+        when(userDataSet1.getId()).thenReturn(userID);
+        UserDataImpl.putSessionIdAndUserSession(sessionId1, userDataSet);
+
+        sessionId2 = "sessionId2";
+        userDataSet2 = mock(UserDataSet.class);
+        when(userDataSet2.getId()).thenReturn(userID);
+        UserDataImpl.putSessionIdAndUserSession(sessionId2, userDataSet2);
+
+    }
+
+    @Test(groups = "UpdateUserIdOldUserIsNull")
+    public void testUpdateUserIdOldUserIsNull() {
+        userDataImpl.updateUserId(sessionId2, userDataSet2);
+        Assert.assertNull(UserDataImpl.getLogInUserBySessionId(sessionId1));
+        verify(userDataSet2).makeLike(userDataSet2);
+        verify(userDataSet2).setPostStatus(0);
+    }
+
+    @AfterGroups("UpdateUserId")
+    public void tearDownUpdateUserIdOldUserIsNull() {
+        UserDataImpl.clearSessionIdAndrUserSession();
+    }
+
+
+
+
+
+    @BeforeGroups("UpdateUserIdNewUserIsNull")
+    public void setUpUpdateUserIdNewUserIsNull() {
+        mockedMS = mock(MessageSystem.class);
+        userDataImpl = new UserDataImpl(mockedMS);
+
+        sessionId1 = "sessionId1";
+        userDataSet1 = mock(UserDataSet.class);
+        UserDataImpl.putSessionIdAndUserSession(sessionId1, userDataSet1);
+
+        userDataSet2 = null;
+
+
+    }
+
+    @Test(groups = "UpdateUserIdNewUserIsNull")
+    public void testUpUpdateUserIdNewUserIsNull() {
+        userDataImpl.updateUserId(sessionId1, userDataSet2);
+        verify(userDataSet1).setPostStatus(0);
+    }
+
+    @AfterGroups("UpdateUserIdNewUserIsNull")
+    public void tearDownUpdateUserIdNewUserIsNull() {
+        UserDataImpl.clearSessionIdAndrUserSession();
+    }
+
+
+
+
+
+
+    @BeforeGroups("GetWSBySessionId")
+    public void setUpGetWSBySessionId() {
+        sessionId1 = "sessionId1";
+        sessionId2 = "sessionId2";
+
+        mockedRemote = mock(RemoteEndpoint.class);
+
+        mockedSession = mock(Session.class);
+        when(mockedSession.getRemote()).thenReturn(mockedRemote);
+
+        mockedWSImpl = mock(WebSocketImpl.class);
+        when(mockedWSImpl.getSession()).thenReturn(mockedSession);
+        UserDataImpl.putSessionIdAndWS(sessionId1, mockedWSImpl);
+
+    }
+
+    @Test(groups = "GetWSBySessionId")
+    public void testGetWSBySessionId() {
+        RemoteEndpoint returnedRemote = UserDataImpl.getWSBySessionId(sessionId1);
+
+        Assert.assertEquals(returnedRemote, mockedRemote);
+        verify(mockedWSImpl).getSession();
+        verify(mockedSession).getRemote();
+
+        Assert.assertNull(UserDataImpl.getWSBySessionId(sessionId2));
+    }
+
+    @AfterGroups("GetWSBySessionId")
+    public void tearDownGetWSBySessionId() {
+
+    }
+
+
 
 
 
     @BeforeGroups("GetLogInUserBySessionId")
     public void setUpGetLogInUserBySessionId() {
         sessionId1 = "sessionId1";
-        userID = 1;
-        userDataSet = new UserDataSet(userID, "user1", 1, 1, 1);
+        userDataSet = mock(UserDataSet.class);
         UserDataImpl.putLogInUser(sessionId1, userDataSet);
+        sessionId2 = "lalkjljf";
     }
 
     @Test(groups = "GetLogInUserBySessionId")
     public void testGetLogInUserBySessionId() {
-        Assert.assertEquals(UserDataImpl.getLogInUserBySessionId(sessionId1), userDataSet);
+        UserDataSet returnedUDS = UserDataImpl.getLogInUserBySessionId(sessionId1);
+        verify(userDataSet).visit();
+        Assert.assertEquals(returnedUDS, userDataSet);
+        Assert.assertNull(UserDataImpl.getLogInUserBySessionId(sessionId2));
     }
 
     @AfterGroups("GetLogInUserBySessionId")
     public void tearDownGetLogInUserBySessionId() {
-        UserDataImpl.removeUserFromLogInUsers(sessionId1);
+        UserDataImpl.clearSessionIdAndrUserSession();
     }
+
+
+
+
 
 
 

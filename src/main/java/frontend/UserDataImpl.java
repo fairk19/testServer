@@ -86,7 +86,9 @@ public class UserDataImpl implements UserData{
     }
 
 	public static UserDataSet getLogInUserBySessionId(String sessionId){
-			logInUsers.get(sessionId).visit();
+		if(logInUsers.get(sessionId) != null) {
+            logInUsers.get(sessionId).visit();
+        }
 		return logInUsers.get(sessionId);
 	}
 
