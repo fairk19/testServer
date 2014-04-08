@@ -46,6 +46,24 @@ public class TestDBServiceImpl {
 
 
 
+    @BeforeGroups("testAddExistsUDS")
+    public void setUpAddExistsUDS(){
+        login = "user1";
+        password = "passwd1";
+        dbService.addUDS(login, password);
+    }
+    @Test(groups = "testAddExistsUDS")
+    public void testAddExistsUDS() {
+        Assert.assertFalse(dbService.addUDS(login, password));
+    }
+    @AfterGroups("testAddExistsUDS")
+    public void tearDownAddExistsUDS() {
+        dbService.deleteUser(login);
+    }
+
+
+
+
     @BeforeGroups("testUpdateUsers")
     public void setUpUpdateUDS() {
         login = "user";
@@ -84,22 +102,6 @@ public class TestDBServiceImpl {
 
     }
 
-
-
-    @BeforeGroups("testAddExistsUDS")
-    public void setUpAddExistsUDS(){
-        login = "user1";
-        password = "passwd1";
-        dbService.addUDS(login, password);
-    }
-    @Test(groups = "testAddExistsUDS")
-    public void testAddExistsUDS() {
-        Assert.assertFalse(dbService.addUDS(login, password));
-    }
-    @AfterGroups("testAddExistsUDS")
-    public void tearDownAddExistsUDS() {
-
-    }
 
 
 

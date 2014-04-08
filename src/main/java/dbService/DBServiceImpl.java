@@ -44,6 +44,7 @@ public class DBServiceImpl implements DataAccessObject{
             System.exit(-1);
         }
 	}
+    public Connection getConnction() {return connection ;}
 
 	public MessageSystem getMessageSystem(){
 		return messageSystem;

@@ -70,7 +70,7 @@ public class GameMechanicImpl implements GameMechanic{
 		}
 	}
 
-	private void createGame(String sessionIdWhite, String sessionIdBlack, 
+	public void createGame(String sessionIdWhite, String sessionIdBlack,
 			Map<String, String> sessionIdToColor, Map<String, UserDataSet> users){
 		int userIdWhite=users.get(sessionIdWhite).getId();
 		int userIdBlack=users.get(sessionIdBlack).getId();
@@ -101,13 +101,16 @@ public class GameMechanicImpl implements GameMechanic{
 
 	public Map<String,String> createGames(Map<String,UserDataSet> users){
 		Map<String,String> sessionIdToColor=new HashMap<String,String>();
-		if(users.size()==0)
-			return sessionIdToColor;
+		if(users.size()==0){
+            return sessionIdToColor;
+        }
 		String sessionIdWhite,sessionIdBlack;
 		removeRepeatUsers(users);
 		removeAlreadyInGameUsers(users);
-		if(users.size()%2==1)
-			moveUser(users);
+		if(users.size()%2==1){
+            moveUser(users);
+        }
+
 		String[] keys = Caster.castKeysToStrings(users);
 		for(int count=0;count<users.size()/2;count++){
 			if(randomMod2()==1){
@@ -132,13 +135,15 @@ public class GameMechanicImpl implements GameMechanic{
 		String status=stroke.getStatus();
 		Map<Integer,Stroke> resp=new HashMap<Integer,Stroke>();
 		if(gameSession==null)
-			return resp;
+        {
+            return resp;
+        }
 		if(status.equals("lose")){
 			sendResultStroke(gameSession, gameSession.getAnotherId(id));
 			return resp;
 		}
 		if(gameSession.checkStroke(id, from_x, from_y, to_x, to_y).equals(GameSession.codeError.success)){
-			stroke.setStatus("true");
+            stroke.setStatus("true");
 			stroke.setNext(gameSession.getNext());
 			resp.put(id, stroke);
 			resp.put(gameSession.getAnotherId(id),stroke.getInverse());

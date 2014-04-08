@@ -265,7 +265,7 @@ public class GameSession{
 		return pawnCanEatRightUp(x,y)||pawnCanEatLeftUp(x,y)||pawnCanEatRightDown(x,y)||pawnCanEatLeftDown(x,y);
 	}
 
-	private boolean kingCanEatRightUp(int x, int y){
+	public boolean kingCanEatRightUp(int x, int y){
 		checker myColor=getFieldType(x,y), anotherColor=getAnotherColor(myColor);
 		for(int counter=1;counter<settings.getFieldSize();counter++){
 			if((x+counter>=settings.getFieldSize()-2)||(y+counter>=settings.getFieldSize()-2)
@@ -278,12 +278,13 @@ public class GameSession{
 		return false;
 	}
 
-	private boolean kingCanEatLeftUp(int x, int y){
+	public boolean kingCanEatLeftUp(int x, int y){
 		checker myColor=getFieldType(x,y), anotherColor=getAnotherColor(myColor);
 		for(int counter=1;counter<settings.getFieldSize();counter++){
 			if((x-counter<=1)||(y+counter>=settings.getFieldSize()-2)
-					||(getFieldType(x-counter,y+counter)==myColor))
+					||(getFieldType(x-counter,y+counter)==myColor)){
 				return false;
+            }
 			if(getFieldType(x-counter,y+counter)==anotherColor){
 				return fieldIsEmpty(x-counter-1,y+counter+1);
 			}
@@ -291,7 +292,7 @@ public class GameSession{
 		return false;
 	}
 
-	private boolean kingCanEatRightDown(int x, int y){
+	public boolean kingCanEatRightDown(int x, int y){
 		checker myColor=getFieldType(x,y), anotherColor=getAnotherColor(myColor);
 		for(int counter=1;counter<settings.getFieldSize();counter++){
 			if((x+counter>=settings.getFieldSize()-2)||(y+counter<=1)
@@ -306,7 +307,7 @@ public class GameSession{
 		return false;
 	}
 
-	private boolean kingCanEatLeftDown(int x, int y){
+	public boolean kingCanEatLeftDown(int x, int y){
 		checker myColor=getFieldType(x,y), anotherColor=getAnotherColor(myColor);
 		for(int counter=1;counter<settings.getFieldSize();counter++){
 			if((x-counter<=1)||(y-counter<=1)||(getFieldType(x-counter,y-counter)==myColor))
@@ -484,7 +485,7 @@ public class GameSession{
 		return getWinnerId(TimeHelper.getCurrentTime());
 	}
 
-	private int getWinnerId(long currentTime){
+	public int getWinnerId(long currentTime){
 		if(blackLose()||whiteWin(currentTime))
 			return whiteId;
 		else if (whiteLose()||blackWin(currentTime))
@@ -579,6 +580,16 @@ public class GameSession{
 		return blackQuantity;
 	}
 
-    public int getIdLog() { return id; }
+    public void setWhiteQuantity(int whiteQuantity){
+        this.whiteQuantity = whiteQuantity;
+    }
+
+    public void setBlackQuantity(int blackQuantity){
+        this.blackQuantity = blackQuantity;
+    }
+
+    public int getIdLog() {
+        return id;
+    }
 }
 //Черная клетка, если координаты один. четности

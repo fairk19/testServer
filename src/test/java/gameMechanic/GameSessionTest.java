@@ -1,6 +1,7 @@
 package gameMechanic;
 
 import gameClasses.Snapshot;
+import org.omg.CosNaming._NamingContextExtStub;
 import org.testng.Assert;
 import org.testng.annotations.*;
 import java.io.BufferedReader;
@@ -211,6 +212,7 @@ public class GameSessionTest {
         Method kingCanEatLeftUpMethod = clazz.getDeclaredMethod("kingCanEatLeftUp", paramTypes);
         kingCanEatLeftUpMethod.setAccessible(true);
         args = new Object[] {2, 1};
+         currentPositions[1][2].setType(checker.black);
         Boolean kingCanEatLeftUp = (Boolean)kingCanEatLeftUpMethod.invoke(this.gameSession, args);
         Assert.assertFalse(kingCanEatLeftUp);
 
@@ -222,12 +224,11 @@ public class GameSessionTest {
         Assert.assertFalse(kingCanEatRightDown);
 
         paramTypes = new Class[] { int.class, int.class};
-        Method kingCanEatLeftDownMethod = clazz.getDeclaredMethod("kingCanEatRightDown", paramTypes);
+        Method kingCanEatLeftDownMethod = clazz.getDeclaredMethod("kingCanEatLeftDown", paramTypes);
         kingCanEatLeftDownMethod.setAccessible(true);
         args = new Object[] {3, 2};
         Boolean kingCanEatLeftDown = (Boolean)kingCanEatLeftDownMethod.invoke(this.gameSession, args);
         Assert.assertFalse(kingCanEatLeftDown);
-
     }
 
     @Test
@@ -279,5 +280,17 @@ public class GameSessionTest {
         Assert.assertTrue(snapshotId1.toString().contains("\"color\":\"w\""));
         Snapshot snapshotId2 = this.gameSession.getSnapshot(2);
         Assert.assertTrue(snapshotId2.toString().contains("\"color\":\"b\""));
+    }
+
+    @Test
+    public void testGetWinnerId() throws Exception{
+        Assert.assertTrue(this.gameSession.getWinnerId() == 0);
+
+        this.gameSession.setBlackQuantity(0);
+        Assert.assertTrue(this.gameSession.getWinnerId() == 1);
+
+        this.gameSession.setBlackQuantity(20);
+        this.gameSession.setWhiteQuantity(0);
+        Assert.assertTrue(this.gameSession.getWinnerId() == 2);
     }
 }
