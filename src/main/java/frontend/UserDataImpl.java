@@ -48,6 +48,16 @@ public class UserDataImpl implements UserData{
 		address=new Address();
 		messageSystem.addService(this,"UserData");
 	}
+
+
+    public static void clearAllMaps() {
+        sessionIdToUserSession.clear();
+        logInUsers.clear();
+        wantToPlay.clear();
+        sessionIdToWS.clear();
+        sessionIdToChatWS.clear();
+    }
+
     public static void removeUserFromLogInUsers(String sessionId) {
         logInUsers.remove(sessionId);
     }
@@ -173,7 +183,7 @@ public class UserDataImpl implements UserData{
 		}
 	}
 
-	private void removeUser(String sessionId){
+	public void removeUser(String sessionId){
 		sessionIdToUserSession.remove(sessionId);
 		logInUsers.remove(sessionId);
 		wantToPlay.remove(sessionId);
@@ -187,7 +197,7 @@ public class UserDataImpl implements UserData{
 		messageSystem.putMsg(to, msg);
 	}
 
-	private void keepAlive(String sessionId){
+	public void keepAlive(String sessionId){
 		try{
 			if(sessionIdToWS.get(sessionId)!=null){
 				getWSBySessionId(sessionId).sendString("1");
@@ -198,7 +208,7 @@ public class UserDataImpl implements UserData{
 		}
 	}
 
-	private void checkUsers(int keepAlive){
+	public void checkUsers(int keepAlive){
 		for(String sessionId:sessionIdToUserSession.keySet()){
 			if(exitedUser(getUserSessionBySessionId(sessionId)))
 				removeUser(sessionId);
@@ -210,6 +220,8 @@ public class UserDataImpl implements UserData{
 
 	private boolean exitedUser(UserDataSet userSession){
 		long curTime = TimeHelper.getCurrentTime();
+        System.out.println(userSession.getLastVisit());
+        System.out.println(TimeSettings.getExitTime());
 		return (curTime-userSession.getLastVisit()>TimeSettings.getExitTime());
 	}
 

@@ -10,11 +10,17 @@ import frontend.WebSocketImpl;
 import org.eclipse.jetty.server.Authentication;
 import org.eclipse.jetty.websocket.api.RemoteEndpoint;
 import org.eclipse.jetty.websocket.api.Session;
+import org.junit.runner.RunWith;
+import org.powermock.api.mockito.PowerMockito;
+import org.powermock.core.classloader.annotations.PrepareForTest;
 import org.testng.Assert;
 import org.testng.annotations.AfterGroups;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeGroups;
 import org.testng.annotations.Test;
+import org.testng.internal.thread.ThreadTimeoutException;
+import resource.TimeSettings;
+import utils.TimeHelper;
 
 import java.net.Socket;
 import java.rmi.Remote;
@@ -41,7 +47,11 @@ public class TestUserDataImpl {
     private RemoteEndpoint mockedRemote ;
     private MessageSystem mockedMS;
     private ChatWSImpl mockedChatWSImpl;
-
+    private int count;
+    private TimeSettings timeSettings;
+    private int maxExitTime;
+    private String sessionId;
+    private long currentTime;
 
 
 
@@ -59,6 +69,176 @@ public class TestUserDataImpl {
     public void tearDown() {
 
     }
+
+
+
+
+
+
+
+    @BeforeGroups("CheckUsers")
+    public void setUpCheckUsers() {
+        UserDataImpl.clearAllMaps();
+        count = 10;
+        maxExitTime = TimeSettings.getExitTime();
+        sessionId = "sessionId";
+        sessionId2 = "sessionId2";
+
+        mockedMS = mock(MessageSystem.class);
+        userDataImpl = new UserDataImpl(mockedMS);
+
+
+        userDataSet = mock(UserDataSet.class);
+        when(userDataSet.getLastVisit()).
+                thenReturn(TimeHelper.getCurrentTime() - maxExitTime * 2);
+        UserDataImpl.putSessionIdAndUserSession(sessionId, userDataSet);
+
+        userDataSet2 = mock(UserDataSet.class);
+        when(userDataSet2.getLastVisit()).
+                thenReturn(TimeHelper.getCurrentTime() - maxExitTime / 2);
+        UserDataImpl.putSessionIdAndUserSession(sessionId2, userDataSet2);
+
+    }
+
+
+    @Test(groups = "CheckUsers")
+    public void testCheckUsers() {
+        userDataImpl.checkUsers(count);
+        Assert.assertNull(UserDataImpl.getUserSessionBySessionId(sessionId));
+        Assert.assertNotNull(UserDataImpl.getUserSessionBySessionId(sessionId2));
+    }
+
+    @AfterGroups("CheckUsers")
+    public void tearDownCheckUsers() {
+        UserDataImpl.clearAllMaps();
+    }
+
+
+
+
+
+
+    @BeforeGroups("CheckUsersKeepAliveEqualsOne")
+    public void setUpCheckUsersKeepAliveEqualsOne() {
+        UserDataImpl.clearAllMaps();
+        count = 1;
+        maxExitTime = TimeSettings.getExitTime();
+        sessionId = "sessionId";
+
+        mockedMS = mock(MessageSystem.class);
+        userDataImpl = new UserDataImpl(mockedMS);
+
+
+        userDataSet = mock(UserDataSet.class);
+        when(userDataSet.getLastVisit()).
+                thenReturn(TimeHelper.getCurrentTime() - maxExitTime / 2);
+        UserDataImpl.putSessionIdAndUserSession(sessionId, userDataSet);
+
+        mockedWSImpl = mock(WebSocketImpl.class);
+        UserDataImpl.putSessionIdAndWS(sessionId, mockedWSImpl);
+    }
+
+
+    @Test(groups = "CheckUsersKeepAliveEqualsOne")
+    public void testCheckUsersKeepAliveEqualsOne() {
+        userDataImpl.checkUsers(count);
+        verify(mockedWSImpl).getSession();
+        Assert.assertNotNull(UserDataImpl.getUserSessionBySessionId(sessionId));
+
+    }
+
+    @AfterGroups("CheckUsersKeepAliveEqualsOne")
+    public void tearDownCheckUsersKeepAliveEqualsOne() {
+        UserDataImpl.clearAllMaps();
+    }
+
+
+
+
+    @BeforeGroups("KeepAliveWSIsNull")
+    public void setUpKeepAliveWSIsNull() {
+        UserDataImpl.clearAllMaps();
+        count = 1;
+        maxExitTime = TimeSettings.getExitTime();
+        sessionId = "sessionId";
+
+        mockedMS = mock(MessageSystem.class);
+        userDataImpl = new UserDataImpl(mockedMS);
+
+        mockedWSImpl = mock(WebSocketImpl.class);
+//        UserDataImpl.putSessionIdAndWS(sessionId, mockedWSImpl);
+
+
+    }
+
+
+    @Test(groups = "KeepAliveWSIsNull")
+    public void testKeepAliveWSIsNull() {
+        userDataImpl.keepAlive(sessionId);
+        verify(mockedWSImpl, never()).getSession();
+        Assert.assertNull(UserDataImpl.getWSBySessionId(sessionId));
+
+    }
+
+    @AfterGroups("KeepAliveWSIsNull")
+    public void tearDownKeepAliveWSIsNull() {
+        UserDataImpl.clearAllMaps();
+    }
+
+
+
+
+
+
+    @BeforeGroups("CreateGamesNoUsersWantToPlay")
+    public void setUpCreateNoUsersWantToPlay() {
+        UserDataImpl.clearAllMaps();
+
+
+        mockedMS = mock(MessageSystem.class);
+        userDataImpl = new UserDataImpl(mockedMS);
+
+    }
+
+    @Test(groups = "CreateGamesNoUsersWantToPlay", timeOut = 500, expectedExceptions = ThreadTimeoutException.class)
+    public void testCreateGamesNoUsersWantToPlay() throws InterruptedException{
+        userDataImpl.run();
+        verify(mockedMS,never()).getAddressByName("GameMechanic");
+    }
+
+    @AfterGroups("CreateGamesNoUsersWantToPlay")
+    public void tearDownCreateGamesNoUsersWantToPlay() {
+        UserDataImpl.clearAllMaps();
+    }
+
+
+
+
+    @BeforeGroups("CreateGames")
+    public void setUpCreateGames() {
+        UserDataImpl.clearAllMaps();
+
+
+        mockedMS = mock(MessageSystem.class);
+        userDataImpl = new UserDataImpl(mockedMS);
+
+        sessionId1 = "sessionId1";
+        userDataSet1 = mock(UserDataSet.class);
+        UserDataImpl.playerWantToPlay(sessionId1, userDataSet1);
+
+    }
+
+    @Test(groups = "CreateGames", timeOut = 500, expectedExceptions = ThreadTimeoutException.class)
+    public void testCreateGames() throws InterruptedException{
+        userDataImpl.run();
+        verify(mockedMS).getAddressByName("GameMechanic");
+    }
+
+    @AfterGroups("CreateGames")
+    public void tearDownCreateGames() {
+        UserDataImpl.clearAllMaps();
+    }
+
 
 
 
