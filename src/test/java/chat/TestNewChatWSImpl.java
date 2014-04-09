@@ -1,6 +1,5 @@
 package chat;
 
-import base.GameChat;
 import base.MessageSystem;
 import dbService.UserDataSet;
 import frontend.UserDataImpl;
@@ -12,7 +11,6 @@ import org.testng.annotations.BeforeGroups;
 import org.testng.annotations.Test;
 
 import java.util.List;
-import java.util.Vector;
 
 import static org.mockito.Mockito.*;
 
@@ -53,7 +51,63 @@ public class TestNewChatWSImpl {
     }
 
 
+    @BeforeGroups("OnWebSocketTextThereAreNoChatForThisSessionId")
+    public void setUpOnWebSocketTextThereAreNoChatForThisSessionId() {
+        UserDataImpl.clearAllMaps();
+        GameChatImpl.clearAllMaps();
 
+        sessionId = "sessionId";
+        sessionId1 = "sessionId1";
+        sessionId2 = "sessionId2";
+
+        text = "textForTest";
+        connection = true;
+        nick1 = "nick1";
+
+        mockedRemoteEndpoint = mock(RemoteEndpoint.class);
+
+        mockedSession = mock(Session.class);
+        when(mockedSession.isOpen()).thenReturn(connection);
+        when(mockedSession.getRemote()).thenReturn(mockedRemoteEndpoint);
+
+        userDataSet1 = mock(UserDataSet.class);
+        when(userDataSet1.getNick()).thenReturn(nick1);
+        UserDataImpl.putLogInUser(sessionId1, userDataSet1);
+
+
+
+        startServerTime = UserDataImpl.getStartServerTime();
+        JSONObject js = new JSONObject();
+        js.put("sessionId", sessionId1);
+        js.put("startServerTime", startServerTime);
+        js.put("text", text);
+        message = js.toJSONString();
+        chatWS = new ChatWSImpl();
+        chatWS.onWebSocketConnect(mockedSession);
+
+        mockedMS = mock(MessageSystem.class);
+        gameChat = new GameChatImpl(mockedMS);
+        gameChat.createChat(sessionId2, sessionId);
+
+        UserDataImpl.putSessionIdAndChatWS(sessionId1, chatWS);
+        UserDataImpl.putSessionIdAndChatWS(sessionId2, chatWS);
+
+    }
+
+    @Test(groups = "OnWebSocketTextThereAreNoChatForThisSessionId")
+    public void testOnWebSocketTextThereAreNoChatForThisSessionId() {
+        chatWS.onWebSocketText(message);
+        verify(userDataSet1,atLeastOnce()).visit();
+        verify(mockedSession, never()).getRemote();
+    }
+
+
+
+    @AfterGroups("OnWebSocketTextThereAreNoChatForThisSessionId")
+    public void tearDownOnWebSocketTextThereAreNoChatForThisSessionId() {
+        UserDataImpl.clearAllMaps();
+        GameChatImpl.clearAllMaps();
+    }
 
 
     @BeforeGroups("OnWebSocketTextAddMessageUserIsNull")
@@ -76,7 +130,6 @@ public class TestNewChatWSImpl {
 
         userDataSet1 = mock(UserDataSet.class);
         when(userDataSet1.getNick()).thenReturn(nick1);
-//        UserDataImpl.putLogInUser(sessionId1, userDataSet1);
 
         startServerTime = UserDataImpl.getStartServerTime();
         JSONObject js = new JSONObject();
@@ -247,7 +300,7 @@ public class TestNewChatWSImpl {
         JSONObject js = new JSONObject();
         js.put("sessionId", sessionId1);
         js.put("startServerTime", startServerTime);
-//        js.put("text", text);
+
         message = js.toJSONString();
         chatWS = new ChatWSImpl();
         chatWS.onWebSocketConnect(mockedSession);
