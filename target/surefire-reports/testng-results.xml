@@ -1,0 +1,1932 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="7" total="104" passed="97">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Command line suite" duration-ms="5288" started-at="2014-04-09T20:26:55Z" finished-at="2014-04-09T20:27:00Z">
+    <groups>
+      <group name="">
+        <method signature="TestWebSocketImpl.test()[pri:0, instance:frontend.handler.TestWebSocketImpl@173ceeb6]" name="test" class="frontend.handler.TestWebSocketImpl"/>
+        <method signature="TestNewWSImpl.test()[pri:0, instance:chat.TestNewWSImpl@26767bef]" name="test" class="chat.TestNewWSImpl"/>
+        <method signature="TestUserDataImpl.test()[pri:0, instance:userDataImpl.TestUserDataImpl@3f75c03e]" name="test" class="userDataImpl.TestUserDataImpl"/>
+      </group> <!--  -->
+      <group name="OnWebSocketTextCoordinatesAreIncorrect4">
+        <method signature="TestWebSocketImpl.testOnWebSocketTextCoordinatesAreIncorrect4()[pri:0, instance:frontend.handler.TestWebSocketImpl@173ceeb6]" name="testOnWebSocketTextCoordinatesAreIncorrect4" class="frontend.handler.TestWebSocketImpl"/>
+      </group> <!-- OnWebSocketTextCoordinatesAreIncorrect4 -->
+      <group name="TargetWaitAndPostStatusZero">
+        <method signature="TestRegUserTargetRegPost.testTargetWaitAndPostStatusZero()[pri:0, instance:frontend.handler.TestRegUserTargetRegPost@15b39190]" name="testTargetWaitAndPostStatusZero" class="frontend.handler.TestRegUserTargetRegPost"/>
+      </group> <!-- TargetWaitAndPostStatusZero -->
+      <group name="OnWebSocketTextCoordinatesAreIncorrect3">
+        <method signature="TestWebSocketImpl.testOnWebSocketTextCoordinatesAreIncorrect3()[pri:0, instance:frontend.handler.TestWebSocketImpl@173ceeb6]" name="testOnWebSocketTextCoordinatesAreIncorrect3" class="frontend.handler.TestWebSocketImpl"/>
+      </group> <!-- OnWebSocketTextCoordinatesAreIncorrect3 -->
+      <group name="KeepAliveWSIsNull">
+        <method signature="TestUserDataImpl.testKeepAliveWSIsNull()[pri:0, instance:userDataImpl.TestUserDataImpl@3f75c03e]" name="testKeepAliveWSIsNull" class="userDataImpl.TestUserDataImpl"/>
+      </group> <!-- KeepAliveWSIsNull -->
+      <group name="OnWebSocketTextCoordinatesAreIncorrect2">
+        <method signature="TestWebSocketImpl.testOnWebSocketTextCoordinatesAreIncorrect2()[pri:0, instance:frontend.handler.TestWebSocketImpl@173ceeb6]" name="testOnWebSocketTextCoordinatesAreIncorrect2" class="frontend.handler.TestWebSocketImpl"/>
+      </group> <!-- OnWebSocketTextCoordinatesAreIncorrect2 -->
+      <group name="CheckUsersKeepAliveEqualsOne">
+        <method signature="TestUserDataImpl.testCheckUsersKeepAliveEqualsOne()[pri:0, instance:userDataImpl.TestUserDataImpl@3f75c03e]" name="testCheckUsersKeepAliveEqualsOne" class="userDataImpl.TestUserDataImpl"/>
+      </group> <!-- CheckUsersKeepAliveEqualsOne -->
+      <group name="OnWebSocketTextCoordinatesAreIncorrect1">
+        <method signature="TestWebSocketImpl.testOnWebSocketTextCoordinatesAreIncorrect1()[pri:0, instance:frontend.handler.TestWebSocketImpl@173ceeb6]" name="testOnWebSocketTextCoordinatesAreIncorrect1" class="frontend.handler.TestWebSocketImpl"/>
+      </group> <!-- OnWebSocketTextCoordinatesAreIncorrect1 -->
+      <group name="handleNewUserTarget404">
+        <method signature="TestRegUserTarget404.testHandleNewUserTarget404()[pri:0, instance:frontend.handler.TestRegUserTarget404@2cc29ba3]" name="testHandleNewUserTarget404" class="frontend.handler.TestRegUserTarget404"/>
+      </group> <!-- handleNewUserTarget404 -->
+      <group name="testUpdateUsers">
+        <method signature="TestDBServiceImpl.testUpdateUDS()[pri:0, instance:dbService.TestDBServiceImpl@1ba5cfae]" name="testUpdateUDS" class="dbService.TestDBServiceImpl"/>
+      </group> <!-- testUpdateUsers -->
+      <group name="OnWebSocketTextCoordinatesAreIncorrectAndSessionIdIsNull">
+        <method signature="TestWebSocketImpl.testOnWebSocketTextCoordinatesAreIncorrectAndSessionIdIsNull()[pri:0, instance:frontend.handler.TestWebSocketImpl@173ceeb6]" name="testOnWebSocketTextCoordinatesAreIncorrectAndSessionIdIsNull" class="frontend.handler.TestWebSocketImpl"/>
+      </group> <!-- OnWebSocketTextCoordinatesAreIncorrectAndSessionIdIsNull -->
+      <group name="PartyEndFirstIsNull">
+        <method signature="TestUserDataImpl.testPartyEndFirstIsNull()[pri:0, instance:userDataImpl.TestUserDataImpl@3f75c03e]" name="testPartyEndFirstIsNull" class="userDataImpl.TestUserDataImpl"/>
+      </group> <!-- PartyEndFirstIsNull -->
+      <group name="StatusReadyTargetGame">
+        <method signature="TestRegUserTargetRegPost.testStatusReadyTargetGame()[pri:0, instance:frontend.handler.TestRegUserTargetRegPost@15b39190]" name="testStatusReadyTargetGame" class="frontend.handler.TestRegUserTargetRegPost"/>
+      </group> <!-- StatusReadyTargetGame -->
+      <group name="testAddExistsUDS">
+        <method signature="TestDBServiceImpl.testAddExistsUDS()[pri:0, instance:dbService.TestDBServiceImpl@1ba5cfae]" name="testAddExistsUDS" class="dbService.TestDBServiceImpl"/>
+      </group> <!-- testAddExistsUDS -->
+      <group name="StatusReadyTargetMainPage">
+        <method signature="TestRegUserTargetRegPost.testStatusReadyTargetMainPage()[pri:0, instance:frontend.handler.TestRegUserTargetRegPost@15b39190]" name="testStatusReadyTargetMainPage" class="frontend.handler.TestRegUserTargetRegPost"/>
+      </group> <!-- StatusReadyTargetMainPage -->
+      <group name="PutSessionIdAndChatWS">
+        <method signature="TestUserDataImpl.testPutSessionIdAndChatWS()[pri:0, instance:userDataImpl.TestUserDataImpl@3f75c03e]" name="testPutSessionIdAndChatWS" class="userDataImpl.TestUserDataImpl"/>
+      </group> <!-- PutSessionIdAndChatWS -->
+      <group name="OnWebSocketTextCoordinatesAreOk">
+        <method signature="TestWebSocketImpl.testOnWebSocketTextCoordinatesAreOk()[pri:0, instance:frontend.handler.TestWebSocketImpl@173ceeb6]" name="testOnWebSocketTextCoordinatesAreOk" class="frontend.handler.TestWebSocketImpl"/>
+      </group> <!-- OnWebSocketTextCoordinatesAreOk -->
+      <group name="PartyEndSecondIsNull">
+        <method signature="TestUserDataImpl.testPartyEndSecondIsNull()[pri:0, instance:userDataImpl.TestUserDataImpl@3f75c03e]" name="testPartyEndSecondIsNull" class="userDataImpl.TestUserDataImpl"/>
+      </group> <!-- PartyEndSecondIsNull -->
+      <group name="testGetNoneExistUDS">
+        <method signature="TestDBServiceImpl.testGetNoneExistUDS()[pri:0, instance:dbService.TestDBServiceImpl@1ba5cfae]" name="testGetNoneExistUDS" class="dbService.TestDBServiceImpl"/>
+      </group> <!-- testGetNoneExistUDS -->
+      <group name="testAfterRun">
+        <method signature="SysInfoTest.testRunAfterCall()[pri:0, instance:utils.SysInfoTest@7f3f6786]" name="testRunAfterCall" class="utils.SysInfoTest"/>
+      </group> <!-- testAfterRun -->
+      <group name="NickAndPasswordAreNotNull">
+        <method signature="TestRegUserTargetRegPost.testNickAndPasswordAreNotNull()[pri:0, instance:frontend.handler.TestRegUserTargetRegPost@15b39190]" name="testNickAndPasswordAreNotNull" class="frontend.handler.TestRegUserTargetRegPost"/>
+      </group> <!-- NickAndPasswordAreNotNull -->
+      <group name="GetWSBySessionId">
+        <method signature="TestUserDataImpl.testGetWSBySessionId()[pri:0, instance:userDataImpl.TestUserDataImpl@3f75c03e]" name="testGetWSBySessionId" class="userDataImpl.TestUserDataImpl"/>
+      </group> <!-- GetWSBySessionId -->
+      <group name="OnWebSocketTextAddNewWebSocket">
+        <method signature="TestWebSocketImpl.testOnWebSocketTextAddNewWebSocket()[pri:0, instance:frontend.handler.TestWebSocketImpl@173ceeb6]" name="testOnWebSocketTextAddNewWebSocket" class="frontend.handler.TestWebSocketImpl"/>
+      </group> <!-- OnWebSocketTextAddNewWebSocket -->
+      <group name="testDeleteNoneExistsUDS">
+        <method signature="TestDBServiceImpl.testDeleteNoneExistsUDS()[pri:0, instance:dbService.TestDBServiceImpl@1ba5cfae]" name="testDeleteNoneExistsUDS" class="dbService.TestDBServiceImpl"/>
+      </group> <!-- testDeleteNoneExistsUDS -->
+      <group name="PartyEnd">
+        <method signature="TestUserDataImpl.testPartyEnd()[pri:0, instance:userDataImpl.TestUserDataImpl@3f75c03e]" name="testPartyEnd" class="userDataImpl.TestUserDataImpl"/>
+      </group> <!-- PartyEnd -->
+      <group name="CheckUsers">
+        <method signature="TestUserDataImpl.testCheckUsers()[pri:0, instance:userDataImpl.TestUserDataImpl@3f75c03e]" name="testCheckUsers" class="userDataImpl.TestUserDataImpl"/>
+      </group> <!-- CheckUsers -->
+      <group name="readResource">
+        <method signature="ResourceFactoryTest.testGetResource()[pri:0, instance:resource.ResourceFactoryTest@3ff9ddb5]" name="testGetResource" class="resource.ResourceFactoryTest"/>
+      </group> <!-- readResource -->
+      <group name="handleNewUserTargetRules">
+        <method signature="TestRegUserTargetAdmin.testHandleNewUserTargetRules()[pri:0, instance:frontend.handler.TestRegUserTargetAdmin@42d0850]" name="testHandleNewUserTargetRules" class="frontend.handler.TestRegUserTargetAdmin"/>
+      </group> <!-- handleNewUserTargetRules -->
+      <group name="OnWebSocketTextThereAreNoConnect">
+        <method signature="TestNewWSImpl.testOnWebSocketTextThereAreNoConnect()[pri:0, instance:chat.TestNewWSImpl@26767bef]" name="testOnWebSocketTextThereAreNoConnect" class="chat.TestNewWSImpl"/>
+      </group> <!-- OnWebSocketTextThereAreNoConnect -->
+      <group name="OnWebSocketTextCoordinatesAreOkSessionIdIsNull">
+        <method signature="TestWebSocketImpl.testOnWebSocketTextCoordinatesAreOkSessionIdIsNull()[pri:0, instance:frontend.handler.TestWebSocketImpl@173ceeb6]" name="testOnWebSocketTextCoordinatesAreOkSessionIdIsNull" class="frontend.handler.TestWebSocketImpl"/>
+      </group> <!-- OnWebSocketTextCoordinatesAreOkSessionIdIsNull -->
+      <group name="testSteps">
+        <method signature="GameSessionTest.testCheckStroke()[pri:0, instance:gameMechanic.GameSessionTest@7ef73d69]" name="testCheckStroke" class="gameMechanic.GameSessionTest"/>
+      </group> <!-- testSteps -->
+      <group name="FindUser">
+        <method signature="TestTExecutor.testFindUser()[pri:0, instance:dbService.TestTExecutor@4421972b]" name="testFindUser" class="dbService.TestTExecutor"/>
+      </group> <!-- FindUser -->
+      <group name="GetChatWSBySessionId">
+        <method signature="TestUserDataImpl.testGetChatWSBySessionId()[pri:0, instance:userDataImpl.TestUserDataImpl@3f75c03e]" name="testGetChatWSBySessionId" class="userDataImpl.TestUserDataImpl"/>
+      </group> <!-- GetChatWSBySessionId -->
+      <group name="OnWebSocketTextServerTimeIsNotCorrect">
+        <method signature="TestWebSocketImpl.testOnWebSocketText()[pri:0, instance:frontend.handler.TestWebSocketImpl@173ceeb6]" name="testOnWebSocketText" class="frontend.handler.TestWebSocketImpl"/>
+      </group> <!-- OnWebSocketTextServerTimeIsNotCorrect -->
+      <group name="UpdateUsersColor">
+        <method signature="TestWebSocketImpl.testUpdateUsersColor()[pri:0, instance:frontend.handler.TestWebSocketImpl@173ceeb6]" name="testUpdateUsersColor" class="frontend.handler.TestWebSocketImpl"/>
+      </group> <!-- UpdateUsersColor -->
+      <group name="OnWebSocketTextCoordinatesAreIncorrectButServerTimeIsOk">
+        <method signature="TestWebSocketImpl.testOnWebSocketTextCoordinatesAreIncorrectButServerTimeIsOk()[pri:0, instance:frontend.handler.TestWebSocketImpl@173ceeb6]" name="testOnWebSocketTextCoordinatesAreIncorrectButServerTimeIsOk" class="frontend.handler.TestWebSocketImpl"/>
+      </group> <!-- OnWebSocketTextCoordinatesAreIncorrectButServerTimeIsOk -->
+      <group name="PartyEndAllIsNull">
+        <method signature="TestUserDataImpl.testPartyEndAllIsNull()[pri:0, instance:userDataImpl.TestUserDataImpl@3f75c03e]" name="testPartyEndAllIsNull" class="userDataImpl.TestUserDataImpl"/>
+      </group> <!-- PartyEndAllIsNull -->
+      <group name="NickAndPasswd=null">
+        <method signature="TestRegUserTargetRegPost.testRegNickAndPasswdAreNull()[pri:0, instance:frontend.handler.TestRegUserTargetRegPost@15b39190]" name="testRegNickAndPasswdAreNull" class="frontend.handler.TestRegUserTargetRegPost"/>
+      </group> <!-- NickAndPasswd=null -->
+      <group name="UpdateUserId">
+        <method signature="TestUserDataImpl.testUpdateUserId()[pri:0, instance:userDataImpl.TestUserDataImpl@3f75c03e]" name="testUpdateUserId" class="userDataImpl.TestUserDataImpl"/>
+      </group> <!-- UpdateUserId -->
+      <group name="CheckServerTime">
+        <method signature="TestUserDataImpl.testCheckServerTime()[pri:0, instance:userDataImpl.TestUserDataImpl@3f75c03e]" name="testCheckServerTime" class="userDataImpl.TestUserDataImpl"/>
+      </group> <!-- CheckServerTime -->
+      <group name="testRun">
+        <method signature="SysInfoTest.testRunCall()[pri:0, instance:utils.SysInfoTest@7f3f6786]" name="testRunCall" class="utils.SysInfoTest"/>
+        <method signature="TestDBServiceImpl.testRun()[pri:0, instance:dbService.TestDBServiceImpl@1ba5cfae]" name="testRun" class="dbService.TestDBServiceImpl"/>
+      </group> <!-- testRun -->
+      <group name="OnWebSocketTextThereAreNoConnection">
+        <method signature="TestWebSocketImpl.testOnWebSocketTextThereAreNoConnection()[pri:0, instance:frontend.handler.TestWebSocketImpl@173ceeb6]" name="testOnWebSocketTextThereAreNoConnection" class="frontend.handler.TestWebSocketImpl"/>
+      </group> <!-- OnWebSocketTextThereAreNoConnection -->
+      <group name="StatusReadyTargetProfile">
+        <method signature="TestRegUserTargetRegPost.testStatusReadyTargetProfile()[pri:0, instance:frontend.handler.TestRegUserTargetRegPost@15b39190]" name="testStatusReadyTargetProfile" class="frontend.handler.TestRegUserTargetRegPost"/>
+      </group> <!-- StatusReadyTargetProfile -->
+      <group name="WebSocketImpl">
+        <method signature="TestWebSocketImpl.testWebSocketImpl()[pri:0, instance:frontend.handler.TestWebSocketImpl@173ceeb6]" name="testWebSocketImpl" class="frontend.handler.TestWebSocketImpl"/>
+      </group> <!-- WebSocketImpl -->
+      <group name="RegNickAndPasswordAreNull">
+        <method signature="TestRegUserTargetRegPost.testRegNickAndPasswordAreNull()[pri:0, instance:frontend.handler.TestRegUserTargetRegPost@15b39190]" name="testRegNickAndPasswordAreNull" class="frontend.handler.TestRegUserTargetRegPost"/>
+      </group> <!-- RegNickAndPasswordAreNull -->
+      <group name="UpdateUserIdNewUserIsNull">
+        <method signature="TestUserDataImpl.testUpUpdateUserIdNewUserIsNull()[pri:0, instance:userDataImpl.TestUserDataImpl@3f75c03e]" name="testUpUpdateUserIdNewUserIsNull" class="userDataImpl.TestUserDataImpl"/>
+      </group> <!-- UpdateUserIdNewUserIsNull -->
+      <group name="StatusReadyTargetLogout">
+        <method signature="TestRegUserTargetRegPost.testStatusReadyTargetLogout()[pri:0, instance:frontend.handler.TestRegUserTargetRegPost@15b39190]" name="testStatusReadyTargetLogout" class="frontend.handler.TestRegUserTargetRegPost"/>
+      </group> <!-- StatusReadyTargetLogout -->
+      <group name="GetSessionIdByUserId">
+        <method signature="TestUserDataImpl.testGetSessionIdByUserId()[pri:0, instance:userDataImpl.TestUserDataImpl@3f75c03e]" name="testGetSessionIdByUserId" class="userDataImpl.TestUserDataImpl"/>
+      </group> <!-- GetSessionIdByUserId -->
+      <group name="GetLogInUserBySessionId">
+        <method signature="TestUserDataImpl.testGetLogInUserBySessionId()[pri:0, instance:userDataImpl.TestUserDataImpl@3f75c03e]" name="testGetLogInUserBySessionId" class="userDataImpl.TestUserDataImpl"/>
+      </group> <!-- GetLogInUserBySessionId -->
+      <group name="RegNickAndPasswordAreNotNull">
+        <method signature="TestRegUserTargetRegPost.testRegNickAndPasswordAreNotNull()[pri:0, instance:frontend.handler.TestRegUserTargetRegPost@15b39190]" name="testRegNickAndPasswordAreNotNull" class="frontend.handler.TestRegUserTargetRegPost"/>
+      </group> <!-- RegNickAndPasswordAreNotNull -->
+      <group name="CreateGames">
+        <method signature="TestUserDataImpl.testCreateGames()[pri:0, instance:userDataImpl.TestUserDataImpl@3f75c03e]" name="testCreateGames" class="userDataImpl.TestUserDataImpl"/>
+      </group> <!-- CreateGames -->
+      <group name="StatusReadyTargetReg">
+        <method signature="TestRegUserTargetRegPost.testStatusReadyTargetReg()[pri:0, instance:frontend.handler.TestRegUserTargetRegPost@15b39190]" name="testStatusReadyTargetReg" class="frontend.handler.TestRegUserTargetRegPost"/>
+      </group> <!-- StatusReadyTargetReg -->
+      <group name="CreateGamesNoUsersWantToPlay">
+        <method signature="TestUserDataImpl.testCreateGamesNoUsersWantToPlay()[pri:0, instance:userDataImpl.TestUserDataImpl@3f75c03e]" name="testCreateGamesNoUsersWantToPlay" class="userDataImpl.TestUserDataImpl"/>
+      </group> <!-- CreateGamesNoUsersWantToPlay -->
+      <group name="UpdateUserIdOldUserIsNull">
+        <method signature="TestUserDataImpl.testUpdateUserIdOldUserIsNull()[pri:0, instance:userDataImpl.TestUserDataImpl@3f75c03e]" name="testUpdateUserIdOldUserIsNull" class="userDataImpl.TestUserDataImpl"/>
+      </group> <!-- UpdateUserIdOldUserIsNull -->
+      <group name="testAddUDS">
+        <method signature="TestDBServiceImpl.testAddUDS()[pri:0, instance:dbService.TestDBServiceImpl@1ba5cfae]" name="testAddUDS" class="dbService.TestDBServiceImpl"/>
+      </group> <!-- testAddUDS -->
+      <group name="TargetWait">
+        <method signature="TestRegUserTargetRegPost.testTargetWait()[pri:0, instance:frontend.handler.TestRegUserTargetRegPost@15b39190]" name="testTargetWait" class="frontend.handler.TestRegUserTargetRegPost"/>
+      </group> <!-- TargetWait -->
+    </groups>
+    <test name="Command line test" duration-ms="5288" started-at="2014-04-09T20:26:55Z" finished-at="2014-04-09T20:27:00Z">
+      <class name="utils.VFSTest">
+        <test-method status="PASS" signature="testBfs()[pri:0, instance:utils.VFSTest@5ae99cbb]" name="testBfs" duration-ms="1" started-at="2014-04-09T23:26:58Z" finished-at="2014-04-09T23:26:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBfs -->
+        <test-method status="PASS" signature="testGetAbsolutePath()[pri:0, instance:utils.VFSTest@5ae99cbb]" name="testGetAbsolutePath" duration-ms="1" started-at="2014-04-09T23:26:58Z" finished-at="2014-04-09T23:26:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetAbsolutePath -->
+        <test-method status="PASS" signature="testIsExist()[pri:0, instance:utils.VFSTest@5ae99cbb]" name="testIsExist" duration-ms="1" started-at="2014-04-09T23:26:58Z" finished-at="2014-04-09T23:26:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testIsExist -->
+        <test-method status="PASS" signature="testGetRelativePath()[pri:0, instance:utils.VFSTest@5ae99cbb]" name="testGetRelativePath" duration-ms="0" started-at="2014-04-09T23:26:58Z" finished-at="2014-04-09T23:26:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetRelativePath -->
+        <test-method status="PASS" signature="testIsFile()[pri:0, instance:utils.VFSTest@5ae99cbb]" name="testIsFile" duration-ms="1" started-at="2014-04-09T23:26:58Z" finished-at="2014-04-09T23:26:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testIsFile -->
+        <test-method status="PASS" signature="testReadFile()[pri:0, instance:utils.VFSTest@5ae99cbb]" name="testReadFile" duration-ms="5" started-at="2014-04-09T23:26:58Z" finished-at="2014-04-09T23:26:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testReadFile -->
+        <test-method status="PASS" signature="testWriteToEndOfFile()[pri:0, instance:utils.VFSTest@5ae99cbb]" name="testWriteToEndOfFile" duration-ms="2" started-at="2014-04-09T23:26:58Z" finished-at="2014-04-09T23:26:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testWriteToEndOfFile -->
+        <test-method status="PASS" signature="testWriteToFile()[pri:0, instance:utils.VFSTest@5ae99cbb]" name="testWriteToFile" duration-ms="4" started-at="2014-04-09T23:26:58Z" finished-at="2014-04-09T23:26:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testWriteToFile -->
+      </class> <!-- utils.VFSTest -->
+      <class name="frontend.handler.TestRegUserTarget404">
+        <test-method status="PASS" signature="setUpHandleNewUserTarget404()[pri:0, instance:frontend.handler.TestRegUserTarget404@2cc29ba3]" name="setUpHandleNewUserTarget404" is-config="true" duration-ms="6" started-at="2014-04-09T23:26:59Z" finished-at="2014-04-09T23:26:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpHandleNewUserTarget404 -->
+        <test-method status="PASS" signature="testHandleNewUserTarget404()[pri:0, instance:frontend.handler.TestRegUserTarget404@2cc29ba3]" name="testHandleNewUserTarget404" duration-ms="8" started-at="2014-04-09T23:26:59Z" finished-at="2014-04-09T23:26:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testHandleNewUserTarget404 -->
+        <test-method status="PASS" signature="tearDownHandleNewUserTarget404()[pri:0, instance:frontend.handler.TestRegUserTarget404@2cc29ba3]" name="tearDownHandleNewUserTarget404" is-config="true" duration-ms="1" started-at="2014-04-09T23:26:59Z" finished-at="2014-04-09T23:26:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownHandleNewUserTarget404 -->
+      </class> <!-- frontend.handler.TestRegUserTarget404 -->
+      <class name="dbService.TestTExecutor">
+        <test-method status="PASS" signature="setUpFindUser()[pri:0, instance:dbService.TestTExecutor@4421972b]" name="setUpFindUser" is-config="true" duration-ms="108" started-at="2014-04-09T23:26:59Z" finished-at="2014-04-09T23:26:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpFindUser -->
+        <test-method status="PASS" signature="testFindUser()[pri:0, instance:dbService.TestTExecutor@4421972b]" name="testFindUser" duration-ms="6" started-at="2014-04-09T23:26:59Z" finished-at="2014-04-09T23:26:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testFindUser -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:dbService.TestTExecutor@4421972b]" name="tearDown" is-config="true" duration-ms="46" started-at="2014-04-09T23:26:59Z" finished-at="2014-04-09T23:26:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- dbService.TestTExecutor -->
+      <class name="gameClasses.StrokeTest">
+        <test-method status="PASS" signature="testInstance()[pri:0, instance:gameClasses.StrokeTest@a9cafe0]" name="testInstance" duration-ms="1" started-at="2014-04-09T23:26:59Z" finished-at="2014-04-09T23:26:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testInstance -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:gameClasses.StrokeTest@a9cafe0]" name="setUp" is-config="true" duration-ms="0" started-at="2014-04-09T23:26:59Z" finished-at="2014-04-09T23:26:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:gameClasses.StrokeTest@a9cafe0]" name="tearDown" is-config="true" duration-ms="0" started-at="2014-04-09T23:26:59Z" finished-at="2014-04-09T23:26:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- gameClasses.StrokeTest -->
+      <class name="messageSystem.MsgToGameMechanicTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:messageSystem.MsgToGameMechanicTest@5e5aefe]" name="setUp" is-config="true" duration-ms="1" started-at="2014-04-09T23:26:56Z" finished-at="2014-04-09T23:26:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="testExec()[pri:0, instance:messageSystem.MsgToGameMechanicTest@5e5aefe]" name="testExec" duration-ms="52" started-at="2014-04-09T23:26:56Z" finished-at="2014-04-09T23:26:56Z">
+          <exception class="org.testng.internal.thread.ThreadTimeoutException">
+            <message>
+              <![CDATA[Method org.testng.internal.TestNGMethod.testExec() didn't finish within the time-out 50]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.internal.thread.ThreadTimeoutException: Method org.testng.internal.TestNGMethod.testExec() didn't finish within the time-out 50
+	at java.lang.Thread.sleep(Native Method)
+	at utils.TimeHelper.sleep(TimeHelper.java:14)
+	at gameMechanic.GameMechanicImpl.run(GameMechanicImpl.java:217)
+	at messageSystem.MsgToGameMechanicTest.testExec(MsgToGameMechanicTest.java:42)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.InvokeMethodRunnable.runOne(InvokeMethodRunnable.java:46)
+	at org.testng.internal.InvokeMethodRunnable.run(InvokeMethodRunnable.java:37)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:334)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:166)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:722)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.internal.thread.ThreadTimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testExec -->
+      </class> <!-- messageSystem.MsgToGameMechanicTest -->
+      <class name="frontend.handler.TestNUTargetMainPage">
+        <test-method status="PASS" signature="setUpHandleNewUserTargetMainPage()[pri:0, instance:frontend.handler.TestNUTargetMainPage@3595ecae]" name="setUpHandleNewUserTargetMainPage" is-config="true" duration-ms="7" started-at="2014-04-09T23:26:58Z" finished-at="2014-04-09T23:26:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpHandleNewUserTargetMainPage -->
+        <test-method status="PASS" signature="testHandleNewUserTargetMainPage()[pri:0, instance:frontend.handler.TestNUTargetMainPage@3595ecae]" name="testHandleNewUserTargetMainPage" duration-ms="9" started-at="2014-04-09T23:26:58Z" finished-at="2014-04-09T23:26:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testHandleNewUserTargetMainPage -->
+        <test-method status="PASS" signature="tearDownHandleNewUserTargetMainPage()[pri:0, instance:frontend.handler.TestNUTargetMainPage@3595ecae]" name="tearDownHandleNewUserTargetMainPage" is-config="true" duration-ms="0" started-at="2014-04-09T23:26:58Z" finished-at="2014-04-09T23:26:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownHandleNewUserTargetMainPage -->
+      </class> <!-- frontend.handler.TestNUTargetMainPage -->
+      <class name="utils.ReflectionHelperTest">
+        <test-method status="PASS" signature="testCreateInstance()[pri:0, instance:utils.ReflectionHelperTest@1f30e79e]" name="testCreateInstance" duration-ms="7" started-at="2014-04-09T23:26:56Z" finished-at="2014-04-09T23:26:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCreateInstance -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:utils.ReflectionHelperTest@1f30e79e]" name="tearDown" is-config="true" duration-ms="0" started-at="2014-04-09T23:26:56Z" finished-at="2014-04-09T23:26:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="testSetFieldValue()[pri:0, instance:utils.ReflectionHelperTest@1f30e79e]" name="testSetFieldValue" duration-ms="1" started-at="2014-04-09T23:26:56Z" finished-at="2014-04-09T23:26:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSetFieldValue -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:utils.ReflectionHelperTest@1f30e79e]" name="tearDown" is-config="true" duration-ms="0" started-at="2014-04-09T23:26:56Z" finished-at="2014-04-09T23:26:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- utils.ReflectionHelperTest -->
+      <class name="frontend.handler.TestRegUserTargetGame">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:frontend.handler.TestRegUserTargetGame@2439a391]" name="setUp" is-config="true" duration-ms="4" started-at="2014-04-09T23:26:59Z" finished-at="2014-04-09T23:26:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="test()[pri:0, instance:frontend.handler.TestRegUserTargetGame@2439a391]" name="test" duration-ms="4" started-at="2014-04-09T23:26:59Z" finished-at="2014-04-09T23:26:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:frontend.handler.TestRegUserTargetGame@2439a391]" name="tearDown" is-config="true" duration-ms="0" started-at="2014-04-09T23:26:59Z" finished-at="2014-04-09T23:26:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- frontend.handler.TestRegUserTargetGame -->
+      <class name="gameMechanic.GameMechanicImplTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:gameMechanic.GameMechanicImplTest@1c78014a]" name="setUp" is-config="true" duration-ms="1" started-at="2014-04-09T23:27:00Z" finished-at="2014-04-09T23:27:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="testCheckStroke()[pri:0, instance:gameMechanic.GameMechanicImplTest@1c78014a]" name="testCheckStroke" duration-ms="1" started-at="2014-04-09T23:27:00Z" finished-at="2014-04-09T23:27:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCheckStroke -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:gameMechanic.GameMechanicImplTest@1c78014a]" name="setUp" is-config="true" duration-ms="1" started-at="2014-04-09T23:27:00Z" finished-at="2014-04-09T23:27:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="testCheckStrokeLose()[pri:0, instance:gameMechanic.GameMechanicImplTest@1c78014a]" name="testCheckStrokeLose" duration-ms="28" started-at="2014-04-09T23:27:00Z" finished-at="2014-04-09T23:27:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCheckStrokeLose -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:gameMechanic.GameMechanicImplTest@1c78014a]" name="setUp" is-config="true" duration-ms="4" started-at="2014-04-09T23:27:00Z" finished-at="2014-04-09T23:27:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="testCreateGames()[pri:0, instance:gameMechanic.GameMechanicImplTest@1c78014a]" name="testCreateGames" duration-ms="1" started-at="2014-04-09T23:27:00Z" finished-at="2014-04-09T23:27:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCreateGames -->
+      </class> <!-- gameMechanic.GameMechanicImplTest -->
+      <class name="frontend.handler.TestNUTarget404">
+        <test-method status="PASS" signature="setUpHandleNewUserTarget404()[pri:0, instance:frontend.handler.TestNUTarget404@59c0fef4]" name="setUpHandleNewUserTarget404" is-config="true" duration-ms="4" started-at="2014-04-09T23:27:00Z" finished-at="2014-04-09T23:27:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpHandleNewUserTarget404 -->
+        <test-method status="FAIL" signature="testHandleNewUserTarget404()[pri:0, instance:frontend.handler.TestNUTarget404@59c0fef4]" name="testHandleNewUserTarget404" duration-ms="5" started-at="2014-04-09T23:27:00Z" finished-at="2014-04-09T23:27:00Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected object to not be null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected object to not be null
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.assertNotNull(Assert.java:404)
+	at org.testng.Assert.assertNotNull(Assert.java:389)
+	at frontend.handler.TestNUTarget404.testHandleNewUserTarget404(TestNUTarget404.java:83)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testHandleNewUserTarget404 -->
+        <test-method status="PASS" signature="tearDownHandleNewUserTarget404()[pri:0, instance:frontend.handler.TestNUTarget404@59c0fef4]" name="tearDownHandleNewUserTarget404" is-config="true" duration-ms="0" started-at="2014-04-09T23:27:00Z" finished-at="2014-04-09T23:27:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownHandleNewUserTarget404 -->
+      </class> <!-- frontend.handler.TestNUTarget404 -->
+      <class name="frontend.handler.TestWebSocketImpl">
+        <test-method status="PASS" signature="test()[pri:0, instance:frontend.handler.TestWebSocketImpl@173ceeb6]" name="test" duration-ms="0" started-at="2014-04-09T23:26:58Z" finished-at="2014-04-09T23:26:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test -->
+        <test-method status="PASS" signature="setUpOnWebSocketTextServerTimeIsNotCorrect()[pri:0, instance:frontend.handler.TestWebSocketImpl@173ceeb6]" name="setUpOnWebSocketTextServerTimeIsNotCorrect" is-config="true" duration-ms="25" started-at="2014-04-09T23:26:58Z" finished-at="2014-04-09T23:26:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpOnWebSocketTextServerTimeIsNotCorrect -->
+        <test-method status="PASS" signature="testOnWebSocketText()[pri:0, instance:frontend.handler.TestWebSocketImpl@173ceeb6]" name="testOnWebSocketText" duration-ms="3" started-at="2014-04-09T23:26:58Z" finished-at="2014-04-09T23:26:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testOnWebSocketText -->
+        <test-method status="PASS" signature="tearDownOnWebSocketTextServerTimeIsNotCorrect()[pri:0, instance:frontend.handler.TestWebSocketImpl@173ceeb6]" name="tearDownOnWebSocketTextServerTimeIsNotCorrect" is-config="true" duration-ms="1" started-at="2014-04-09T23:26:58Z" finished-at="2014-04-09T23:26:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownOnWebSocketTextServerTimeIsNotCorrect -->
+        <test-method status="PASS" signature="setUpOnWebSocketTextAddNewWebSocket()[pri:0, instance:frontend.handler.TestWebSocketImpl@173ceeb6]" name="setUpOnWebSocketTextAddNewWebSocket" is-config="true" duration-ms="11" started-at="2014-04-09T23:26:58Z" finished-at="2014-04-09T23:26:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpOnWebSocketTextAddNewWebSocket -->
+        <test-method status="PASS" signature="testOnWebSocketTextAddNewWebSocket()[pri:0, instance:frontend.handler.TestWebSocketImpl@173ceeb6]" name="testOnWebSocketTextAddNewWebSocket" duration-ms="4" started-at="2014-04-09T23:26:58Z" finished-at="2014-04-09T23:26:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testOnWebSocketTextAddNewWebSocket -->
+        <test-method status="PASS" signature="tearDownOnWebSocketTextAddNewWebSocket()[pri:0, instance:frontend.handler.TestWebSocketImpl@173ceeb6]" name="tearDownOnWebSocketTextAddNewWebSocket" is-config="true" duration-ms="0" started-at="2014-04-09T23:26:58Z" finished-at="2014-04-09T23:26:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownOnWebSocketTextAddNewWebSocket -->
+        <test-method status="PASS" signature="setUpOnWebSocketTextCoordinatesAreIncorrect1()[pri:0, instance:frontend.handler.TestWebSocketImpl@173ceeb6]" name="setUpOnWebSocketTextCoordinatesAreIncorrect1" is-config="true" duration-ms="1" started-at="2014-04-09T23:26:58Z" finished-at="2014-04-09T23:26:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpOnWebSocketTextCoordinatesAreIncorrect1 -->
+        <test-method status="PASS" signature="tearDownOnWebSocketTextCoordinatesAreIncorrect1()[pri:0, instance:frontend.handler.TestWebSocketImpl@173ceeb6]" name="tearDownOnWebSocketTextCoordinatesAreIncorrect1" is-config="true" duration-ms="0" started-at="2014-04-09T23:26:58Z" finished-at="2014-04-09T23:26:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownOnWebSocketTextCoordinatesAreIncorrect1 -->
+        <test-method status="PASS" signature="testOnWebSocketTextCoordinatesAreIncorrect1()[pri:0, instance:frontend.handler.TestWebSocketImpl@173ceeb6]" name="testOnWebSocketTextCoordinatesAreIncorrect1" duration-ms="0" started-at="2014-04-09T23:26:58Z" finished-at="2014-04-09T23:26:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testOnWebSocketTextCoordinatesAreIncorrect1 -->
+        <test-method status="PASS" signature="setUpOnWebSocketTextCoordinatesAreIncorrect2()[pri:0, instance:frontend.handler.TestWebSocketImpl@173ceeb6]" name="setUpOnWebSocketTextCoordinatesAreIncorrect2" is-config="true" duration-ms="1" started-at="2014-04-09T23:26:58Z" finished-at="2014-04-09T23:26:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpOnWebSocketTextCoordinatesAreIncorrect2 -->
+        <test-method status="PASS" signature="testOnWebSocketTextCoordinatesAreIncorrect2()[pri:0, instance:frontend.handler.TestWebSocketImpl@173ceeb6]" name="testOnWebSocketTextCoordinatesAreIncorrect2" duration-ms="0" started-at="2014-04-09T23:26:58Z" finished-at="2014-04-09T23:26:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testOnWebSocketTextCoordinatesAreIncorrect2 -->
+        <test-method status="PASS" signature="tearDownOnWebSocketTextCoordinatesAreIncorrect2()[pri:0, instance:frontend.handler.TestWebSocketImpl@173ceeb6]" name="tearDownOnWebSocketTextCoordinatesAreIncorrect2" is-config="true" duration-ms="1" started-at="2014-04-09T23:26:58Z" finished-at="2014-04-09T23:26:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownOnWebSocketTextCoordinatesAreIncorrect2 -->
+        <test-method status="PASS" signature="setUpOnWebSocketTextCoordinatesAreIncorrect3()[pri:0, instance:frontend.handler.TestWebSocketImpl@173ceeb6]" name="setUpOnWebSocketTextCoordinatesAreIncorrect3" is-config="true" duration-ms="1" started-at="2014-04-09T23:26:58Z" finished-at="2014-04-09T23:26:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpOnWebSocketTextCoordinatesAreIncorrect3 -->
+        <test-method status="PASS" signature="testOnWebSocketTextCoordinatesAreIncorrect3()[pri:0, instance:frontend.handler.TestWebSocketImpl@173ceeb6]" name="testOnWebSocketTextCoordinatesAreIncorrect3" duration-ms="1" started-at="2014-04-09T23:26:58Z" finished-at="2014-04-09T23:26:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testOnWebSocketTextCoordinatesAreIncorrect3 -->
+        <test-method status="PASS" signature="setUpOnWebSocketTextCoordinatesAreIncorrect4()[pri:0, instance:frontend.handler.TestWebSocketImpl@173ceeb6]" name="setUpOnWebSocketTextCoordinatesAreIncorrect4" is-config="true" duration-ms="2" started-at="2014-04-09T23:26:58Z" finished-at="2014-04-09T23:26:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpOnWebSocketTextCoordinatesAreIncorrect4 -->
+        <test-method status="PASS" signature="tearDownOnWebSocketTextCoordinatesAreIncorrect3()[pri:0, instance:frontend.handler.TestWebSocketImpl@173ceeb6]" name="tearDownOnWebSocketTextCoordinatesAreIncorrect3" is-config="true" duration-ms="0" started-at="2014-04-09T23:26:58Z" finished-at="2014-04-09T23:26:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownOnWebSocketTextCoordinatesAreIncorrect3 -->
+        <test-method status="PASS" signature="testOnWebSocketTextCoordinatesAreIncorrect4()[pri:0, instance:frontend.handler.TestWebSocketImpl@173ceeb6]" name="testOnWebSocketTextCoordinatesAreIncorrect4" duration-ms="0" started-at="2014-04-09T23:26:58Z" finished-at="2014-04-09T23:26:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testOnWebSocketTextCoordinatesAreIncorrect4 -->
+        <test-method status="PASS" signature="tearDownOnWebSocketTextCoordinatesAreIncorrect4()[pri:0, instance:frontend.handler.TestWebSocketImpl@173ceeb6]" name="tearDownOnWebSocketTextCoordinatesAreIncorrect4" is-config="true" duration-ms="0" started-at="2014-04-09T23:26:58Z" finished-at="2014-04-09T23:26:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownOnWebSocketTextCoordinatesAreIncorrect4 -->
+        <test-method status="PASS" signature="setUpOnWebSocketTextCoordinatesAreIncorrectAndSessionIdIsNull()[pri:0, instance:frontend.handler.TestWebSocketImpl@173ceeb6]" name="setUpOnWebSocketTextCoordinatesAreIncorrectAndSessionIdIsNull" is-config="true" duration-ms="1" started-at="2014-04-09T23:26:58Z" finished-at="2014-04-09T23:26:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpOnWebSocketTextCoordinatesAreIncorrectAndSessionIdIsNull -->
+        <test-method status="PASS" signature="testOnWebSocketTextCoordinatesAreIncorrectAndSessionIdIsNull()[pri:0, instance:frontend.handler.TestWebSocketImpl@173ceeb6]" name="testOnWebSocketTextCoordinatesAreIncorrectAndSessionIdIsNull" duration-ms="0" started-at="2014-04-09T23:26:58Z" finished-at="2014-04-09T23:26:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testOnWebSocketTextCoordinatesAreIncorrectAndSessionIdIsNull -->
+        <test-method status="PASS" signature="tearDownOnWebSocketTextCoordinatesAreIncorrectAndSessionIdIsNull()[pri:0, instance:frontend.handler.TestWebSocketImpl@173ceeb6]" name="tearDownOnWebSocketTextCoordinatesAreIncorrectAndSessionIdIsNull" is-config="true" duration-ms="0" started-at="2014-04-09T23:26:58Z" finished-at="2014-04-09T23:26:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownOnWebSocketTextCoordinatesAreIncorrectAndSessionIdIsNull -->
+        <test-method status="PASS" signature="setUpOnWebSocketTextCoordinatesAreIncorrectButServerTimeIsOk()[pri:0, instance:frontend.handler.TestWebSocketImpl@173ceeb6]" name="setUpOnWebSocketTextCoordinatesAreIncorrectButServerTimeIsOk" is-config="true" duration-ms="1" started-at="2014-04-09T23:26:58Z" finished-at="2014-04-09T23:26:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpOnWebSocketTextCoordinatesAreIncorrectButServerTimeIsOk -->
+        <test-method status="PASS" signature="testOnWebSocketTextCoordinatesAreIncorrectButServerTimeIsOk()[pri:0, instance:frontend.handler.TestWebSocketImpl@173ceeb6]" name="testOnWebSocketTextCoordinatesAreIncorrectButServerTimeIsOk" duration-ms="0" started-at="2014-04-09T23:26:58Z" finished-at="2014-04-09T23:26:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testOnWebSocketTextCoordinatesAreIncorrectButServerTimeIsOk -->
+        <test-method status="PASS" signature="setUpOnWebSocketTextCoordinatesAreOk()[pri:0, instance:frontend.handler.TestWebSocketImpl@173ceeb6]" name="setUpOnWebSocketTextCoordinatesAreOk" is-config="true" duration-ms="1" started-at="2014-04-09T23:26:58Z" finished-at="2014-04-09T23:26:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpOnWebSocketTextCoordinatesAreOk -->
+        <test-method status="PASS" signature="tearDownOnWebSocketTextCoordinatesAreIncorrectButServerTimeIsOk()[pri:0, instance:frontend.handler.TestWebSocketImpl@173ceeb6]" name="tearDownOnWebSocketTextCoordinatesAreIncorrectButServerTimeIsOk" is-config="true" duration-ms="0" started-at="2014-04-09T23:26:58Z" finished-at="2014-04-09T23:26:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownOnWebSocketTextCoordinatesAreIncorrectButServerTimeIsOk -->
+        <test-method status="PASS" signature="testOnWebSocketTextCoordinatesAreOk()[pri:0, instance:frontend.handler.TestWebSocketImpl@173ceeb6]" name="testOnWebSocketTextCoordinatesAreOk" duration-ms="4" started-at="2014-04-09T23:26:58Z" finished-at="2014-04-09T23:26:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testOnWebSocketTextCoordinatesAreOk -->
+        <test-method status="PASS" signature="setUpOnWebSocketTextCoordinatesAreOkSessionIdIsNull()[pri:0, instance:frontend.handler.TestWebSocketImpl@173ceeb6]" name="setUpOnWebSocketTextCoordinatesAreOkSessionIdIsNull" is-config="true" duration-ms="2" started-at="2014-04-09T23:26:58Z" finished-at="2014-04-09T23:26:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpOnWebSocketTextCoordinatesAreOkSessionIdIsNull -->
+        <test-method status="PASS" signature="tearDownOnWebSocketTextCoordinatesAreOk()[pri:0, instance:frontend.handler.TestWebSocketImpl@173ceeb6]" name="tearDownOnWebSocketTextCoordinatesAreOk" is-config="true" duration-ms="0" started-at="2014-04-09T23:26:58Z" finished-at="2014-04-09T23:26:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownOnWebSocketTextCoordinatesAreOk -->
+        <test-method status="PASS" signature="testOnWebSocketTextCoordinatesAreOkSessionIdIsNull()[pri:0, instance:frontend.handler.TestWebSocketImpl@173ceeb6]" name="testOnWebSocketTextCoordinatesAreOkSessionIdIsNull" duration-ms="1" started-at="2014-04-09T23:26:58Z" finished-at="2014-04-09T23:26:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testOnWebSocketTextCoordinatesAreOkSessionIdIsNull -->
+        <test-method status="PASS" signature="setUpOnWebSocketTextThereAreNoConnection()[pri:0, instance:frontend.handler.TestWebSocketImpl@173ceeb6]" name="setUpOnWebSocketTextThereAreNoConnection" is-config="true" duration-ms="2" started-at="2014-04-09T23:26:58Z" finished-at="2014-04-09T23:26:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpOnWebSocketTextThereAreNoConnection -->
+        <test-method status="PASS" signature="tearDownOnWebSocketTextCoordinatesAreOkSessionIdIsNull()[pri:0, instance:frontend.handler.TestWebSocketImpl@173ceeb6]" name="tearDownOnWebSocketTextCoordinatesAreOkSessionIdIsNull" is-config="true" duration-ms="0" started-at="2014-04-09T23:26:58Z" finished-at="2014-04-09T23:26:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownOnWebSocketTextCoordinatesAreOkSessionIdIsNull -->
+        <test-method status="PASS" signature="testOnWebSocketTextThereAreNoConnection()[pri:0, instance:frontend.handler.TestWebSocketImpl@173ceeb6]" name="testOnWebSocketTextThereAreNoConnection" duration-ms="0" started-at="2014-04-09T23:26:58Z" finished-at="2014-04-09T23:26:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testOnWebSocketTextThereAreNoConnection -->
+        <test-method status="PASS" signature="setUpUpdateUsersColor()[pri:0, instance:frontend.handler.TestWebSocketImpl@173ceeb6]" name="setUpUpdateUsersColor" is-config="true" duration-ms="11" started-at="2014-04-09T23:26:58Z" finished-at="2014-04-09T23:26:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpUpdateUsersColor -->
+        <test-method status="PASS" signature="tearDownOnWebSocketTextThereAreNoConnection()[pri:0, instance:frontend.handler.TestWebSocketImpl@173ceeb6]" name="tearDownOnWebSocketTextThereAreNoConnection" is-config="true" duration-ms="0" started-at="2014-04-09T23:26:58Z" finished-at="2014-04-09T23:26:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownOnWebSocketTextThereAreNoConnection -->
+        <test-method status="PASS" signature="testUpdateUsersColor()[pri:0, instance:frontend.handler.TestWebSocketImpl@173ceeb6]" name="testUpdateUsersColor" duration-ms="3" started-at="2014-04-09T23:26:58Z" finished-at="2014-04-09T23:26:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testUpdateUsersColor -->
+        <test-method status="PASS" signature="tearDownUpdateUsersColor()[pri:0, instance:frontend.handler.TestWebSocketImpl@173ceeb6]" name="tearDownUpdateUsersColor" is-config="true" duration-ms="0" started-at="2014-04-09T23:26:58Z" finished-at="2014-04-09T23:26:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownUpdateUsersColor -->
+        <test-method status="PASS" signature="setUpWebSocketImpl()[pri:0, instance:frontend.handler.TestWebSocketImpl@173ceeb6]" name="setUpWebSocketImpl" is-config="true" duration-ms="1" started-at="2014-04-09T23:26:58Z" finished-at="2014-04-09T23:26:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpWebSocketImpl -->
+        <test-method status="PASS" signature="testWebSocketImpl()[pri:0, instance:frontend.handler.TestWebSocketImpl@173ceeb6]" name="testWebSocketImpl" duration-ms="1" started-at="2014-04-09T23:26:58Z" finished-at="2014-04-09T23:26:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testWebSocketImpl -->
+        <test-method status="PASS" signature="tearDownWebSocketImpl()[pri:0, instance:frontend.handler.TestWebSocketImpl@173ceeb6]" name="tearDownWebSocketImpl" is-config="true" duration-ms="0" started-at="2014-04-09T23:26:58Z" finished-at="2014-04-09T23:26:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownWebSocketImpl -->
+      </class> <!-- frontend.handler.TestWebSocketImpl -->
+      <class name="utils.SysInfoTest">
+        <test-method status="PASS" signature="testRunCall()[pri:0, instance:utils.SysInfoTest@7f3f6786]" name="testRunCall" duration-ms="55" started-at="2014-04-09T23:26:56Z" finished-at="2014-04-09T23:26:56Z">
+          <exception class="org.testng.internal.thread.ThreadTimeoutException">
+            <message>
+              <![CDATA[Method org.testng.internal.TestNGMethod.testRunCall() didn't finish within the time-out 50]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.internal.thread.ThreadTimeoutException: Method org.testng.internal.TestNGMethod.testRunCall() didn't finish within the time-out 50
+	at java.lang.Thread.sleep(Native Method)
+	at utils.TimeHelper.sleep(TimeHelper.java:14)
+	at utils.SysInfo.run(SysInfo.java:44)
+	at utils.SysInfoTest.testRunCall(SysInfoTest.java:73)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.InvokeMethodRunnable.runOne(InvokeMethodRunnable.java:46)
+	at org.testng.internal.InvokeMethodRunnable.run(InvokeMethodRunnable.java:37)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:334)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:166)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:722)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.internal.thread.ThreadTimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testRunCall -->
+        <test-method status="PASS" signature="testRunAfterCall()[pri:0, instance:utils.SysInfoTest@7f3f6786]" name="testRunAfterCall" duration-ms="0" depends-on-groups="testRun" started-at="2014-04-09T23:27:00Z" finished-at="2014-04-09T23:27:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testRunAfterCall -->
+        <test-method status="PASS" signature="testGetStat()[pri:0, instance:utils.SysInfoTest@7f3f6786]" name="testGetStat" duration-ms="2" depends-on-groups="testAfterRun" started-at="2014-04-09T23:27:00Z" finished-at="2014-04-09T23:27:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetStat -->
+      </class> <!-- utils.SysInfoTest -->
+      <class name="chat.TestChatWSIpml">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:chat.TestChatWSIpml@40199011]" name="setUp" is-config="true" duration-ms="26" started-at="2014-04-09T23:26:57Z" finished-at="2014-04-09T23:26:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="testAddMessageToChat()[pri:0, instance:chat.TestChatWSIpml@40199011]" name="testAddMessageToChat" duration-ms="12" started-at="2014-04-09T23:26:57Z" finished-at="2014-04-09T23:26:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAddMessageToChat -->
+        <test-method status="PASS" signature="shutDown()[pri:0, instance:chat.TestChatWSIpml@40199011]" name="shutDown" is-config="true" duration-ms="0" started-at="2014-04-09T23:26:57Z" finished-at="2014-04-09T23:26:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shutDown -->
+        <test-method status="PASS" signature="shutDown()[pri:0, instance:chat.TestChatWSIpml@40199011]" name="shutDown" is-config="true" duration-ms="0" started-at="2014-04-09T23:26:57Z" finished-at="2014-04-09T23:26:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shutDown -->
+        <test-method status="PASS" signature="testConstructor()[pri:0, instance:chat.TestChatWSIpml@40199011]" name="testConstructor" duration-ms="0" started-at="2014-04-09T23:26:57Z" finished-at="2014-04-09T23:26:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testConstructor -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:chat.TestChatWSIpml@40199011]" name="setUp" is-config="true" duration-ms="0" started-at="2014-04-09T23:26:57Z" finished-at="2014-04-09T23:26:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:chat.TestChatWSIpml@40199011]" name="setUp" is-config="true" duration-ms="0" started-at="2014-04-09T23:26:57Z" finished-at="2014-04-09T23:26:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="testOnWebSocketText()[pri:0, instance:chat.TestChatWSIpml@40199011]" name="testOnWebSocketText" duration-ms="12" started-at="2014-04-09T23:26:57Z" finished-at="2014-04-09T23:26:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testOnWebSocketText -->
+        <test-method status="PASS" signature="shutDown()[pri:0, instance:chat.TestChatWSIpml@40199011]" name="shutDown" is-config="true" duration-ms="0" started-at="2014-04-09T23:26:57Z" finished-at="2014-04-09T23:26:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shutDown -->
+      </class> <!-- chat.TestChatWSIpml -->
+      <class name="gameClasses.SnapshotTest">
+        <test-method status="PASS" signature="testToStringTest()[pri:0, instance:gameClasses.SnapshotTest@3ffaab5]" name="testToStringTest" duration-ms="0" started-at="2014-04-09T23:26:59Z" finished-at="2014-04-09T23:26:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testToStringTest -->
+        <test-method status="PASS" signature="testToString()[pri:0, instance:gameClasses.SnapshotTest@3ffaab5]" name="testToString" duration-ms="0" started-at="2014-04-09T23:26:59Z" finished-at="2014-04-09T23:26:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testToString -->
+      </class> <!-- gameClasses.SnapshotTest -->
+      <class name="frontend.handler.TestRegUserTargetAdmin">
+        <test-method status="PASS" signature="setUpHandleNewUserTargetRules()[pri:0, instance:frontend.handler.TestRegUserTargetAdmin@42d0850]" name="setUpHandleNewUserTargetRules" is-config="true" duration-ms="5" started-at="2014-04-09T23:26:58Z" finished-at="2014-04-09T23:26:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpHandleNewUserTargetRules -->
+        <test-method status="FAIL" signature="testHandleNewUserTargetRules()[pri:0, instance:frontend.handler.TestRegUserTargetAdmin@42d0850]" name="testHandleNewUserTargetRules" duration-ms="7" started-at="2014-04-09T23:26:58Z" finished-at="2014-04-09T23:26:58Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at frontend.handler.TestRegUserTargetAdmin.testHandleNewUserTargetRules(TestRegUserTargetAdmin.java:84)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testHandleNewUserTargetRules -->
+        <test-method status="PASS" signature="tearDownHandleNewUserTargetRules()[pri:0, instance:frontend.handler.TestRegUserTargetAdmin@42d0850]" name="tearDownHandleNewUserTargetRules" is-config="true" duration-ms="1" started-at="2014-04-09T23:26:58Z" finished-at="2014-04-09T23:26:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownHandleNewUserTargetRules -->
+      </class> <!-- frontend.handler.TestRegUserTargetAdmin -->
+      <class name="frontend.handler.TestRegUserTargetRegPost">
+        <test-method status="PASS" signature="setUpNickAndPasswordAreNotNull()[pri:0, instance:frontend.handler.TestRegUserTargetRegPost@15b39190]" name="setUpNickAndPasswordAreNotNull" is-config="true" duration-ms="9" started-at="2014-04-09T23:26:58Z" finished-at="2014-04-09T23:26:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpNickAndPasswordAreNotNull -->
+        <test-method status="PASS" signature="testNickAndPasswordAreNotNull()[pri:0, instance:frontend.handler.TestRegUserTargetRegPost@15b39190]" name="testNickAndPasswordAreNotNull" duration-ms="22" started-at="2014-04-09T23:26:58Z" finished-at="2014-04-09T23:26:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testNickAndPasswordAreNotNull -->
+        <test-method status="PASS" signature="tearDownNickAndPasswordAreNotNull()[pri:0, instance:frontend.handler.TestRegUserTargetRegPost@15b39190]" name="tearDownNickAndPasswordAreNotNull" is-config="true" duration-ms="1" started-at="2014-04-09T23:26:58Z" finished-at="2014-04-09T23:26:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownNickAndPasswordAreNotNull -->
+        <test-method status="PASS" signature="setUpRegNickAndPasswdAreNull()[pri:0, instance:frontend.handler.TestRegUserTargetRegPost@15b39190]" name="setUpRegNickAndPasswdAreNull" is-config="true" duration-ms="4" started-at="2014-04-09T23:26:58Z" finished-at="2014-04-09T23:26:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpRegNickAndPasswdAreNull -->
+        <test-method status="PASS" signature="testRegNickAndPasswdAreNull()[pri:0, instance:frontend.handler.TestRegUserTargetRegPost@15b39190]" name="testRegNickAndPasswdAreNull" duration-ms="5" started-at="2014-04-09T23:26:58Z" finished-at="2014-04-09T23:26:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testRegNickAndPasswdAreNull -->
+        <test-method status="PASS" signature="tearDownRegNickAndPasswdAreNull()[pri:0, instance:frontend.handler.TestRegUserTargetRegPost@15b39190]" name="tearDownRegNickAndPasswdAreNull" is-config="true" duration-ms="1" started-at="2014-04-09T23:26:58Z" finished-at="2014-04-09T23:26:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownRegNickAndPasswdAreNull -->
+        <test-method status="PASS" signature="setUpRegNickAndPasswordAreNotNull()[pri:0, instance:frontend.handler.TestRegUserTargetRegPost@15b39190]" name="setUpRegNickAndPasswordAreNotNull" is-config="true" duration-ms="6" started-at="2014-04-09T23:26:58Z" finished-at="2014-04-09T23:26:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpRegNickAndPasswordAreNotNull -->
+        <test-method status="PASS" signature="testRegNickAndPasswordAreNotNull()[pri:0, instance:frontend.handler.TestRegUserTargetRegPost@15b39190]" name="testRegNickAndPasswordAreNotNull" duration-ms="9" started-at="2014-04-09T23:26:58Z" finished-at="2014-04-09T23:26:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testRegNickAndPasswordAreNotNull -->
+        <test-method status="PASS" signature="tearDownRegDownNickAndPasswordAreNotNull()[pri:0, instance:frontend.handler.TestRegUserTargetRegPost@15b39190]" name="tearDownRegDownNickAndPasswordAreNotNull" is-config="true" duration-ms="0" started-at="2014-04-09T23:26:58Z" finished-at="2014-04-09T23:26:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownRegDownNickAndPasswordAreNotNull -->
+        <test-method status="PASS" signature="setUpRegNickAndPasswordAreNull()[pri:0, instance:frontend.handler.TestRegUserTargetRegPost@15b39190]" name="setUpRegNickAndPasswordAreNull" is-config="true" duration-ms="8" started-at="2014-04-09T23:26:58Z" finished-at="2014-04-09T23:26:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpRegNickAndPasswordAreNull -->
+        <test-method status="PASS" signature="testRegNickAndPasswordAreNull()[pri:0, instance:frontend.handler.TestRegUserTargetRegPost@15b39190]" name="testRegNickAndPasswordAreNull" duration-ms="9" started-at="2014-04-09T23:26:58Z" finished-at="2014-04-09T23:26:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testRegNickAndPasswordAreNull -->
+        <test-method status="PASS" signature="tearDownRegDownNickAndPasswordAreNull()[pri:0, instance:frontend.handler.TestRegUserTargetRegPost@15b39190]" name="tearDownRegDownNickAndPasswordAreNull" is-config="true" duration-ms="0" started-at="2014-04-09T23:26:58Z" finished-at="2014-04-09T23:26:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownRegDownNickAndPasswordAreNull -->
+        <test-method status="PASS" signature="setUpStatusReadyTargetGame()[pri:0, instance:frontend.handler.TestRegUserTargetRegPost@15b39190]" name="setUpStatusReadyTargetGame" is-config="true" duration-ms="6" started-at="2014-04-09T23:26:58Z" finished-at="2014-04-09T23:26:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpStatusReadyTargetGame -->
+        <test-method status="FAIL" signature="testStatusReadyTargetGame()[pri:0, instance:frontend.handler.TestRegUserTargetRegPost@15b39190]" name="testStatusReadyTargetGame" duration-ms="11" started-at="2014-04-09T23:26:58Z" finished-at="2014-04-09T23:26:58Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at frontend.handler.TestRegUserTargetRegPost.testStatusReadyTargetGame(TestRegUserTargetRegPost.java:400)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testStatusReadyTargetGame -->
+        <test-method status="PASS" signature="tearDownStatusReadyTargetGame()[pri:0, instance:frontend.handler.TestRegUserTargetRegPost@15b39190]" name="tearDownStatusReadyTargetGame" is-config="true" duration-ms="1" started-at="2014-04-09T23:26:58Z" finished-at="2014-04-09T23:26:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownStatusReadyTargetGame -->
+        <test-method status="PASS" signature="setUpStatusReadyTargetLogout()[pri:0, instance:frontend.handler.TestRegUserTargetRegPost@15b39190]" name="setUpStatusReadyTargetLogout" is-config="true" duration-ms="9" started-at="2014-04-09T23:26:58Z" finished-at="2014-04-09T23:26:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpStatusReadyTargetLogout -->
+        <test-method status="PASS" signature="testStatusReadyTargetLogout()[pri:0, instance:frontend.handler.TestRegUserTargetRegPost@15b39190]" name="testStatusReadyTargetLogout" duration-ms="6" started-at="2014-04-09T23:26:58Z" finished-at="2014-04-09T23:26:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testStatusReadyTargetLogout -->
+        <test-method status="PASS" signature="tearDownStatusReadyTargetLogout()[pri:0, instance:frontend.handler.TestRegUserTargetRegPost@15b39190]" name="tearDownStatusReadyTargetLogout" is-config="true" duration-ms="1" started-at="2014-04-09T23:26:58Z" finished-at="2014-04-09T23:26:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownStatusReadyTargetLogout -->
+        <test-method status="PASS" signature="setUpStatusReadyTargetMainPage()[pri:0, instance:frontend.handler.TestRegUserTargetRegPost@15b39190]" name="setUpStatusReadyTargetMainPage" is-config="true" duration-ms="7" started-at="2014-04-09T23:26:58Z" finished-at="2014-04-09T23:26:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpStatusReadyTargetMainPage -->
+        <test-method status="PASS" signature="testStatusReadyTargetMainPage()[pri:0, instance:frontend.handler.TestRegUserTargetRegPost@15b39190]" name="testStatusReadyTargetMainPage" duration-ms="6" started-at="2014-04-09T23:26:58Z" finished-at="2014-04-09T23:26:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testStatusReadyTargetMainPage -->
+        <test-method status="PASS" signature="tearDownStatusReadyTargetMainPage()[pri:0, instance:frontend.handler.TestRegUserTargetRegPost@15b39190]" name="tearDownStatusReadyTargetMainPage" is-config="true" duration-ms="1" started-at="2014-04-09T23:26:58Z" finished-at="2014-04-09T23:26:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownStatusReadyTargetMainPage -->
+        <test-method status="PASS" signature="setUpStatusReadyTargetProfile()[pri:0, instance:frontend.handler.TestRegUserTargetRegPost@15b39190]" name="setUpStatusReadyTargetProfile" is-config="true" duration-ms="6" started-at="2014-04-09T23:26:58Z" finished-at="2014-04-09T23:26:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpStatusReadyTargetProfile -->
+        <test-method status="PASS" signature="testStatusReadyTargetProfile()[pri:0, instance:frontend.handler.TestRegUserTargetRegPost@15b39190]" name="testStatusReadyTargetProfile" duration-ms="6" started-at="2014-04-09T23:26:58Z" finished-at="2014-04-09T23:26:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testStatusReadyTargetProfile -->
+        <test-method status="PASS" signature="tearDownStatusReadyTargetProfile()[pri:0, instance:frontend.handler.TestRegUserTargetRegPost@15b39190]" name="tearDownStatusReadyTargetProfile" is-config="true" duration-ms="1" started-at="2014-04-09T23:26:58Z" finished-at="2014-04-09T23:26:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownStatusReadyTargetProfile -->
+        <test-method status="PASS" signature="setUpStatusReadyTargetReg()[pri:0, instance:frontend.handler.TestRegUserTargetRegPost@15b39190]" name="setUpStatusReadyTargetReg" is-config="true" duration-ms="5" started-at="2014-04-09T23:26:58Z" finished-at="2014-04-09T23:26:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpStatusReadyTargetReg -->
+        <test-method status="PASS" signature="testStatusReadyTargetReg()[pri:0, instance:frontend.handler.TestRegUserTargetRegPost@15b39190]" name="testStatusReadyTargetReg" duration-ms="3" started-at="2014-04-09T23:26:58Z" finished-at="2014-04-09T23:26:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testStatusReadyTargetReg -->
+        <test-method status="PASS" signature="tearDownStatusReadyTargetReg()[pri:0, instance:frontend.handler.TestRegUserTargetRegPost@15b39190]" name="tearDownStatusReadyTargetReg" is-config="true" duration-ms="0" started-at="2014-04-09T23:26:58Z" finished-at="2014-04-09T23:26:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownStatusReadyTargetReg -->
+        <test-method status="PASS" signature="setUpTargetWait()[pri:0, instance:frontend.handler.TestRegUserTargetRegPost@15b39190]" name="setUpTargetWait" is-config="true" duration-ms="4" started-at="2014-04-09T23:26:58Z" finished-at="2014-04-09T23:26:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpTargetWait -->
+        <test-method status="PASS" signature="testTargetWait()[pri:0, instance:frontend.handler.TestRegUserTargetRegPost@15b39190]" name="testTargetWait" duration-ms="30" started-at="2014-04-09T23:26:58Z" finished-at="2014-04-09T23:26:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testTargetWait -->
+        <test-method status="PASS" signature="tearDownTargetWait()[pri:0, instance:frontend.handler.TestRegUserTargetRegPost@15b39190]" name="tearDownTargetWait" is-config="true" duration-ms="1" started-at="2014-04-09T23:26:58Z" finished-at="2014-04-09T23:26:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownTargetWait -->
+        <test-method status="PASS" signature="setUpTargetWaitAndPostStatusZero()[pri:0, instance:frontend.handler.TestRegUserTargetRegPost@15b39190]" name="setUpTargetWaitAndPostStatusZero" is-config="true" duration-ms="5" started-at="2014-04-09T23:26:58Z" finished-at="2014-04-09T23:26:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpTargetWaitAndPostStatusZero -->
+        <test-method status="PASS" signature="testTargetWaitAndPostStatusZero()[pri:0, instance:frontend.handler.TestRegUserTargetRegPost@15b39190]" name="testTargetWaitAndPostStatusZero" duration-ms="4" started-at="2014-04-09T23:26:58Z" finished-at="2014-04-09T23:26:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testTargetWaitAndPostStatusZero -->
+        <test-method status="PASS" signature="tearDownTargetWaitAndPostStatusZero()[pri:0, instance:frontend.handler.TestRegUserTargetRegPost@15b39190]" name="tearDownTargetWaitAndPostStatusZero" is-config="true" duration-ms="1" started-at="2014-04-09T23:26:58Z" finished-at="2014-04-09T23:26:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownTargetWaitAndPostStatusZero -->
+      </class> <!-- frontend.handler.TestRegUserTargetRegPost -->
+      <class name="messageSystem.AddressServiceImplTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:messageSystem.AddressServiceImplTest@43b64611]" name="setUp" is-config="true" duration-ms="3" started-at="2014-04-09T23:26:55Z" finished-at="2014-04-09T23:26:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="testGetAddressByName()[pri:0, instance:messageSystem.AddressServiceImplTest@43b64611]" name="testGetAddressByName" duration-ms="4" started-at="2014-04-09T23:26:55Z" finished-at="2014-04-09T23:26:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetAddressByName -->
+      </class> <!-- messageSystem.AddressServiceImplTest -->
+      <class name="gameMechanic.GameSessionTest">
+        <test-method status="PASS" signature="setUpBeforeTest()[pri:0, instance:gameMechanic.GameSessionTest@7ef73d69]" name="setUpBeforeTest" is-config="true" duration-ms="102" started-at="2014-04-09T23:26:55Z" finished-at="2014-04-09T23:26:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpBeforeTest -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:utils.ReflectionHelperTest@1f30e79e]" name="setUp" is-config="true" duration-ms="1" started-at="2014-04-09T23:26:55Z" finished-at="2014-04-09T23:26:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:resource.ResourceFactoryTest@3ff9ddb5]" name="setUp" is-config="true" duration-ms="2" started-at="2014-04-09T23:26:55Z" finished-at="2014-04-09T23:26:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="setUpBeforeTest()[pri:0, instance:utils.SysInfoTest@7f3f6786]" name="setUpBeforeTest" is-config="true" duration-ms="2" started-at="2014-04-09T23:26:55Z" finished-at="2014-04-09T23:26:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpBeforeTest -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:gameClasses.SnapshotTest@3ffaab5]" name="setUp" is-config="true" duration-ms="0" started-at="2014-04-09T23:26:55Z" finished-at="2014-04-09T23:26:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:utils.VFSTest@5ae99cbb]" name="setUp" is-config="true" duration-ms="2" started-at="2014-04-09T23:26:55Z" finished-at="2014-04-09T23:26:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="testCheckStroke()[pri:0, instance:gameMechanic.GameSessionTest@7ef73d69]" name="testCheckStroke" duration-ms="67" started-at="2014-04-09T23:26:55Z" finished-at="2014-04-09T23:26:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCheckStroke -->
+        <test-method status="PASS" signature="testGetFields()[pri:0, instance:gameMechanic.GameSessionTest@7ef73d69]" name="testGetFields" duration-ms="5" started-at="2014-04-09T23:26:55Z" finished-at="2014-04-09T23:26:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetFields -->
+        <test-method status="PASS" signature="testGetNext()[pri:0, instance:gameMechanic.GameSessionTest@7ef73d69]" name="testGetNext" duration-ms="1" started-at="2014-04-09T23:26:55Z" finished-at="2014-04-09T23:26:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetNext -->
+        <test-method status="PASS" signature="testGetSnapshot()[pri:0, instance:gameMechanic.GameSessionTest@7ef73d69]" name="testGetSnapshot" duration-ms="4" started-at="2014-04-09T23:26:55Z" finished-at="2014-04-09T23:26:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetSnapshot -->
+        <test-method status="PASS" signature="testGetWinnerId()[pri:0, instance:gameMechanic.GameSessionTest@7ef73d69]" name="testGetWinnerId" duration-ms="1" started-at="2014-04-09T23:26:55Z" finished-at="2014-04-09T23:26:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetWinnerId -->
+        <test-method status="PASS" signature="testSaveAILog()[pri:0, instance:gameMechanic.GameSessionTest@7ef73d69]" name="testSaveAILog" duration-ms="2" depends-on-groups="testSteps" started-at="2014-04-09T23:27:00Z" finished-at="2014-04-09T23:27:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSaveAILog -->
+        <test-method status="PASS" signature="testSaveLog()[pri:0, instance:gameMechanic.GameSessionTest@7ef73d69]" name="testSaveLog" duration-ms="15" depends-on-groups="testSteps" started-at="2014-04-09T23:27:00Z" finished-at="2014-04-09T23:27:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSaveLog -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:gameMechanic.GameSessionTest@7ef73d69]" name="tearDown" is-config="true" duration-ms="2" started-at="2014-04-09T23:27:00Z" finished-at="2014-04-09T23:27:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:resource.ResourceFactoryTest@3ff9ddb5]" name="tearDown" is-config="true" duration-ms="2" started-at="2014-04-09T23:27:00Z" finished-at="2014-04-09T23:27:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:utils.VFSTest@5ae99cbb]" name="tearDown" is-config="true" duration-ms="15" started-at="2014-04-09T23:27:00Z" finished-at="2014-04-09T23:27:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- gameMechanic.GameSessionTest -->
+      <class name="frontend.handler.TestNUTargetRules">
+        <test-method status="PASS" signature="setUpHandleNewUserTargetRules()[pri:0, instance:frontend.handler.TestNUTargetRules@3541fcda]" name="setUpHandleNewUserTargetRules" is-config="true" duration-ms="4" started-at="2014-04-09T23:27:00Z" finished-at="2014-04-09T23:27:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpHandleNewUserTargetRules -->
+        <test-method status="FAIL" signature="testHandleNewUserTargetRules()[pri:0, instance:frontend.handler.TestNUTargetRules@3541fcda]" name="testHandleNewUserTargetRules" duration-ms="3" started-at="2014-04-09T23:27:00Z" finished-at="2014-04-09T23:27:00Z">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+	at frontend.FrontendImpl.getStatus(FrontendImpl.java:68)
+	at frontend.FrontendImpl.handle(FrontendImpl.java:237)
+	at frontend.handler.TestNUTargetRules.testHandleNewUserTargetRules(TestNUTargetRules.java:72)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testHandleNewUserTargetRules -->
+        <test-method status="FAIL" signature="tearDownHandleNewUserTargetRules()[pri:0, instance:frontend.handler.TestNUTargetRules@3541fcda]" name="tearDownHandleNewUserTargetRules" is-config="true" duration-ms="0" started-at="2014-04-09T23:27:00Z" finished-at="2014-04-09T23:27:00Z">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+	at frontend.handler.TestNUTargetRules.tearDownHandleNewUserTargetRules(TestNUTargetRules.java:87)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:786)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownHandleNewUserTargetRules -->
+      </class> <!-- frontend.handler.TestNUTargetRules -->
+      <class name="dbService.TestDBServiceImpl">
+        <test-method status="PASS" signature="setUpRun()[pri:0, instance:dbService.TestDBServiceImpl@1ba5cfae]" name="setUpRun" is-config="true" duration-ms="0" started-at="2014-04-09T23:26:56Z" finished-at="2014-04-09T23:26:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpRun -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:dbService.TestDBServiceImpl@1ba5cfae]" name="setUp" is-config="true" duration-ms="30" started-at="2014-04-09T23:26:56Z" finished-at="2014-04-09T23:26:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="testRun()[pri:0, instance:dbService.TestDBServiceImpl@1ba5cfae]" name="testRun" duration-ms="501" started-at="2014-04-09T23:26:56Z" finished-at="2014-04-09T23:26:56Z">
+          <exception class="org.testng.internal.thread.ThreadTimeoutException">
+            <message>
+              <![CDATA[Method org.testng.internal.TestNGMethod.testRun() didn't finish within the time-out 500]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.internal.thread.ThreadTimeoutException: Method org.testng.internal.TestNGMethod.testRun() didn't finish within the time-out 500
+	at java.lang.Object.getClass(Native Method)
+	at org.mockito.internal.creation.cglib.CGLIBHacker.reflectOnCreateInfo(CGLIBHacker.java:37)
+	at org.mockito.internal.creation.cglib.CGLIBHacker.setMockitoNamingPolicy(CGLIBHacker.java:20)
+	at org.mockito.internal.creation.MethodInterceptorFilter.intercept(MethodInterceptorFilter.java:41)
+	at base.MessageSystem$$EnhancerByMockitoWithCGLIB$$4e4aaa08.execForAbonent(<generated>)
+	at dbService.DBServiceImpl.run(DBServiceImpl.java:104)
+	at dbService.TestDBServiceImpl.testRun(TestDBServiceImpl.java:130)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.InvokeMethodRunnable.runOne(InvokeMethodRunnable.java:46)
+	at org.testng.internal.InvokeMethodRunnable.run(InvokeMethodRunnable.java:37)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:334)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:166)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:722)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.internal.thread.ThreadTimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testRun -->
+        <test-method status="PASS" signature="tearDownRun()[pri:0, instance:dbService.TestDBServiceImpl@1ba5cfae]" name="tearDownRun" is-config="true" duration-ms="0" started-at="2014-04-09T23:26:56Z" finished-at="2014-04-09T23:26:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownRun -->
+        <test-method status="PASS" signature="setUpAddExistsUDS()[pri:0, instance:dbService.TestDBServiceImpl@1ba5cfae]" name="setUpAddExistsUDS" is-config="true" duration-ms="110" started-at="2014-04-09T23:26:56Z" finished-at="2014-04-09T23:26:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpAddExistsUDS -->
+        <test-method status="PASS" signature="testAddExistsUDS()[pri:0, instance:dbService.TestDBServiceImpl@1ba5cfae]" name="testAddExistsUDS" duration-ms="2" started-at="2014-04-09T23:26:56Z" finished-at="2014-04-09T23:26:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAddExistsUDS -->
+        <test-method status="PASS" signature="tearDownAddExistsUDS()[pri:0, instance:dbService.TestDBServiceImpl@1ba5cfae]" name="tearDownAddExistsUDS" is-config="true" duration-ms="165" started-at="2014-04-09T23:26:56Z" finished-at="2014-04-09T23:26:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownAddExistsUDS -->
+        <test-method status="PASS" signature="setUpAddUDS()[pri:0, instance:dbService.TestDBServiceImpl@1ba5cfae]" name="setUpAddUDS" is-config="true" duration-ms="112" started-at="2014-04-09T23:26:57Z" finished-at="2014-04-09T23:26:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpAddUDS -->
+        <test-method status="PASS" signature="testAddUDS()[pri:0, instance:dbService.TestDBServiceImpl@1ba5cfae]" name="testAddUDS" duration-ms="6" started-at="2014-04-09T23:26:57Z" finished-at="2014-04-09T23:26:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAddUDS -->
+        <test-method status="PASS" signature="tearDownAddUDS()[pri:0, instance:dbService.TestDBServiceImpl@1ba5cfae]" name="tearDownAddUDS" is-config="true" duration-ms="49" started-at="2014-04-09T23:26:57Z" finished-at="2014-04-09T23:26:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownAddUDS -->
+        <test-method status="PASS" signature="testDeleteNoneExistsUDS()[pri:0, instance:dbService.TestDBServiceImpl@1ba5cfae]" name="testDeleteNoneExistsUDS" duration-ms="2" started-at="2014-04-09T23:26:57Z" finished-at="2014-04-09T23:26:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDeleteNoneExistsUDS -->
+        <test-method status="PASS" signature="setUpDeleteNoneExistsUDS()[pri:0, instance:dbService.TestDBServiceImpl@1ba5cfae]" name="setUpDeleteNoneExistsUDS" is-config="true" duration-ms="0" started-at="2014-04-09T23:26:57Z" finished-at="2014-04-09T23:26:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpDeleteNoneExistsUDS -->
+        <test-method status="PASS" signature="tearDownDeleteNoneExistsUDS()[pri:0, instance:dbService.TestDBServiceImpl@1ba5cfae]" name="tearDownDeleteNoneExistsUDS" is-config="true" duration-ms="1" started-at="2014-04-09T23:26:57Z" finished-at="2014-04-09T23:26:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownDeleteNoneExistsUDS -->
+        <test-method status="PASS" signature="setUpGEtNoneExistUDS()[pri:0, instance:dbService.TestDBServiceImpl@1ba5cfae]" name="setUpGEtNoneExistUDS" is-config="true" duration-ms="0" started-at="2014-04-09T23:26:57Z" finished-at="2014-04-09T23:26:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpGEtNoneExistUDS -->
+        <test-method status="PASS" signature="testGetNoneExistUDS()[pri:0, instance:dbService.TestDBServiceImpl@1ba5cfae]" name="testGetNoneExistUDS" duration-ms="2" started-at="2014-04-09T23:26:57Z" finished-at="2014-04-09T23:26:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetNoneExistUDS -->
+        <test-method status="PASS" signature="setUpUpdateUDS()[pri:0, instance:dbService.TestDBServiceImpl@1ba5cfae]" name="setUpUpdateUDS" is-config="true" duration-ms="86" started-at="2014-04-09T23:26:57Z" finished-at="2014-04-09T23:26:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpUpdateUDS -->
+        <test-method status="PASS" signature="tearDownGetNoneExistUDS()[pri:0, instance:dbService.TestDBServiceImpl@1ba5cfae]" name="tearDownGetNoneExistUDS" is-config="true" duration-ms="0" started-at="2014-04-09T23:26:57Z" finished-at="2014-04-09T23:26:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownGetNoneExistUDS -->
+        <test-method status="PASS" signature="testUpdateUDS()[pri:0, instance:dbService.TestDBServiceImpl@1ba5cfae]" name="testUpdateUDS" duration-ms="4" started-at="2014-04-09T23:26:57Z" finished-at="2014-04-09T23:26:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testUpdateUDS -->
+        <test-method status="PASS" signature="tearDownUpdateUDS()[pri:0, instance:dbService.TestDBServiceImpl@1ba5cfae]" name="tearDownUpdateUDS" is-config="true" duration-ms="61" started-at="2014-04-09T23:26:57Z" finished-at="2014-04-09T23:26:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownUpdateUDS -->
+      </class> <!-- dbService.TestDBServiceImpl -->
+      <class name="chat.TestNewWSImpl">
+        <test-method status="PASS" signature="tearDownOnWebSocketTextThereAreNoConnect()[pri:0, instance:chat.TestNewWSImpl@26767bef]" name="tearDownOnWebSocketTextThereAreNoConnect" is-config="true" duration-ms="0" started-at="2014-04-09T23:26:59Z" finished-at="2014-04-09T23:26:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownOnWebSocketTextThereAreNoConnect -->
+        <test-method status="PASS" signature="setUpOnWebSocketTextThereAreNoConnect()[pri:0, instance:chat.TestNewWSImpl@26767bef]" name="setUpOnWebSocketTextThereAreNoConnect" is-config="true" duration-ms="0" started-at="2014-04-09T23:26:59Z" finished-at="2014-04-09T23:26:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpOnWebSocketTextThereAreNoConnect -->
+        <test-method status="PASS" signature="testOnWebSocketTextThereAreNoConnect()[pri:0, instance:chat.TestNewWSImpl@26767bef]" name="testOnWebSocketTextThereAreNoConnect" duration-ms="0" started-at="2014-04-09T23:26:59Z" finished-at="2014-04-09T23:26:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testOnWebSocketTextThereAreNoConnect -->
+        <test-method status="PASS" signature="test()[pri:0, instance:chat.TestNewWSImpl@26767bef]" name="test" duration-ms="0" started-at="2014-04-09T23:26:59Z" finished-at="2014-04-09T23:26:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test -->
+      </class> <!-- chat.TestNewWSImpl -->
+      <class name="resource.ResourceFactoryTest">
+        <test-method status="PASS" signature="testGetResource()[pri:0, instance:resource.ResourceFactoryTest@3ff9ddb5]" name="testGetResource" duration-ms="10" started-at="2014-04-09T23:26:56Z" finished-at="2014-04-09T23:26:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetResource -->
+        <test-method status="PASS" signature="testRating()[pri:0, instance:resource.ResourceFactoryTest@3ff9ddb5]" name="testRating" duration-ms="0" depends-on-groups="readResource" started-at="2014-04-09T23:27:00Z" finished-at="2014-04-09T23:27:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testRating -->
+      </class> <!-- resource.ResourceFactoryTest -->
+      <class name="frontend.handler.TestNUTargetGame">
+        <test-method status="PASS" signature="setUpHandleNewUserTargetMainPage()[pri:0, instance:frontend.handler.TestNUTargetGame@da27335]" name="setUpHandleNewUserTargetMainPage" is-config="true" duration-ms="4" started-at="2014-04-09T23:26:59Z" finished-at="2014-04-09T23:26:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpHandleNewUserTargetMainPage -->
+        <test-method status="FAIL" signature="testHandleNewUserTargetMainPage()[pri:0, instance:frontend.handler.TestNUTargetGame@da27335]" name="testHandleNewUserTargetMainPage" duration-ms="2" started-at="2014-04-09T23:26:59Z" finished-at="2014-04-09T23:26:59Z">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+	at frontend.FrontendImpl.getStatus(FrontendImpl.java:68)
+	at frontend.FrontendImpl.handle(FrontendImpl.java:237)
+	at frontend.handler.TestNUTargetGame.testHandleNewUserTargetMainPage(TestNUTargetGame.java:77)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testHandleNewUserTargetMainPage -->
+        <test-method status="PASS" signature="tearDownHandleNewUserTargetMainPage()[pri:0, instance:frontend.handler.TestNUTargetGame@da27335]" name="tearDownHandleNewUserTargetMainPage" is-config="true" duration-ms="0" started-at="2014-04-09T23:26:59Z" finished-at="2014-04-09T23:26:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownHandleNewUserTargetMainPage -->
+      </class> <!-- frontend.handler.TestNUTargetGame -->
+      <class name="frontend.newOrLoginUser.MsgAddUserTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:frontend.newOrLoginUser.MsgAddUserTest@4e416cf7]" name="setUp" is-config="true" duration-ms="346" started-at="2014-04-09T23:26:55Z" finished-at="2014-04-09T23:26:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="testExec()[pri:0, instance:frontend.newOrLoginUser.MsgAddUserTest@4e416cf7]" name="testExec" duration-ms="62" started-at="2014-04-09T23:26:55Z" finished-at="2014-04-09T23:26:55Z">
+          <exception class="org.testng.internal.thread.ThreadTimeoutException">
+            <message>
+              <![CDATA[Method org.testng.internal.TestNGMethod.testExec() didn't finish within the time-out 50]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.internal.thread.ThreadTimeoutException: Method org.testng.internal.TestNGMethod.testExec() didn't finish within the time-out 50
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.read(SocketInputStream.java:150)
+	at java.net.SocketInputStream.read(SocketInputStream.java:121)
+	at com.mysql.jdbc.util.ReadAheadInputStream.fill(ReadAheadInputStream.java:114)
+	at com.mysql.jdbc.util.ReadAheadInputStream.readFromUnderlyingStreamIfNecessary(ReadAheadInputStream.java:161)
+	at com.mysql.jdbc.util.ReadAheadInputStream.read(ReadAheadInputStream.java:189)
+	at com.mysql.jdbc.MysqlIO.readFully(MysqlIO.java:3049)
+	at com.mysql.jdbc.MysqlIO.reuseAndReadPacket(MysqlIO.java:3503)
+	at com.mysql.jdbc.MysqlIO.reuseAndReadPacket(MysqlIO.java:3492)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4043)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2503)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2664)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2815)
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:2155)
+	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:2458)
+	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:2375)
+	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:2359)
+	at dbService.TExecutor.addUser(TExecutor.java:48)
+	at dbService.DBServiceImpl.addUDS(DBServiceImpl.java:79)
+	at frontend.newOrLoginUser.MsgAddUser.exec(MsgAddUser.java:23)
+	at messageSystem.MsgToDBService.exec(MsgToDBService.java:17)
+	at messageSystem.MessageSystemImpl.execForAbonent(MessageSystemImpl.java:41)
+	at dbService.DBServiceImpl.run(DBServiceImpl.java:104)
+	at frontend.newOrLoginUser.MsgAddUserTest.testExec(MsgAddUserTest.java:44)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.InvokeMethodRunnable.runOne(InvokeMethodRunnable.java:46)
+	at org.testng.internal.InvokeMethodRunnable.run(InvokeMethodRunnable.java:37)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:334)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:166)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:722)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.internal.thread.ThreadTimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testExec -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:frontend.newOrLoginUser.MsgAddUserTest@4e416cf7]" name="tearDown" is-config="true" duration-ms="329" started-at="2014-04-09T23:26:55Z" finished-at="2014-04-09T23:26:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- frontend.newOrLoginUser.MsgAddUserTest -->
+      <class name="frontend.handler.TestRegUserTargetReg">
+        <test-method status="PASS" signature="setUpHandleNotNewUserTargetRules()[pri:0, instance:frontend.handler.TestRegUserTargetReg@287cbe54]" name="setUpHandleNotNewUserTargetRules" is-config="true" duration-ms="6" started-at="2014-04-09T23:26:58Z" finished-at="2014-04-09T23:26:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpHandleNotNewUserTargetRules -->
+        <test-method status="PASS" signature="testHandleNotNewUserTargetRules()[pri:0, instance:frontend.handler.TestRegUserTargetReg@287cbe54]" name="testHandleNotNewUserTargetRules" duration-ms="10" started-at="2014-04-09T23:26:58Z" finished-at="2014-04-09T23:26:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testHandleNotNewUserTargetRules -->
+        <test-method status="PASS" signature="tearDownHandleNotNewUserTargetRules()[pri:0, instance:frontend.handler.TestRegUserTargetReg@287cbe54]" name="tearDownHandleNotNewUserTargetRules" is-config="true" duration-ms="1" started-at="2014-04-09T23:26:58Z" finished-at="2014-04-09T23:26:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownHandleNotNewUserTargetRules -->
+      </class> <!-- frontend.handler.TestRegUserTargetReg -->
+      <class name="chat.TestGameChatImpl">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:chat.TestGameChatImpl@56c747e8]" name="setUp" is-config="true" duration-ms="1" started-at="2014-04-09T23:26:59Z" finished-at="2014-04-09T23:26:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:chat.TestGameChatImpl@56c747e8]" name="setUp" is-config="true" duration-ms="1" started-at="2014-04-09T23:26:59Z" finished-at="2014-04-09T23:26:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="testGetAddress()[pri:0, instance:chat.TestGameChatImpl@56c747e8]" name="testGetAddress" duration-ms="0" started-at="2014-04-09T23:26:59Z" finished-at="2014-04-09T23:26:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetAddress -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:chat.TestGameChatImpl@56c747e8]" name="tearDown" is-config="true" duration-ms="0" started-at="2014-04-09T23:26:59Z" finished-at="2014-04-09T23:26:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="testRun()[pri:0, instance:chat.TestGameChatImpl@56c747e8]" name="testRun" duration-ms="501" started-at="2014-04-09T23:26:59Z" finished-at="2014-04-09T23:27:00Z">
+          <exception class="org.testng.internal.thread.ThreadTimeoutException">
+            <message>
+              <![CDATA[Method org.testng.internal.TestNGMethod.testRun() didn't finish within the time-out 500]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.internal.thread.ThreadTimeoutException: Method org.testng.internal.TestNGMethod.testRun() didn't finish within the time-out 500
+	at base.MessageSystem$$EnhancerByMockitoWithCGLIB$$4e4aaa08.execForAbonent(<generated>)
+	at chat.GameChatImpl.run(GameChatImpl.java:62)
+	at chat.TestGameChatImpl.testRun(TestGameChatImpl.java:39)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.InvokeMethodRunnable.runOne(InvokeMethodRunnable.java:46)
+	at org.testng.internal.InvokeMethodRunnable.run(InvokeMethodRunnable.java:37)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:334)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:166)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:722)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.internal.thread.ThreadTimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testRun -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:chat.TestGameChatImpl@56c747e8]" name="tearDown" is-config="true" duration-ms="1" started-at="2014-04-09T23:27:00Z" finished-at="2014-04-09T23:27:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:chat.TestGameChatImpl@56c747e8]" name="setUp" is-config="true" duration-ms="0" started-at="2014-04-09T23:27:00Z" finished-at="2014-04-09T23:27:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="testGetMessageSystem()[pri:0, instance:chat.TestGameChatImpl@56c747e8]" name="testGetMessageSystem" duration-ms="0" started-at="2014-04-09T23:27:00Z" finished-at="2014-04-09T23:27:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetMessageSystem -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:chat.TestGameChatImpl@56c747e8]" name="tearDown" is-config="true" duration-ms="2" started-at="2014-04-09T23:27:00Z" finished-at="2014-04-09T23:27:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- chat.TestGameChatImpl -->
+      <class name="frontend.handler.TestRegUserTargetMainPage">
+        <test-method status="PASS" signature="setUpHandleNotNewUserTargetRules()[pri:0, instance:frontend.handler.TestRegUserTargetMainPage@14d1cc61]" name="setUpHandleNotNewUserTargetRules" is-config="true" duration-ms="3" started-at="2014-04-09T23:27:00Z" finished-at="2014-04-09T23:27:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpHandleNotNewUserTargetRules -->
+        <test-method status="PASS" signature="testHandleNotNewUserTargetRules()[pri:0, instance:frontend.handler.TestRegUserTargetMainPage@14d1cc61]" name="testHandleNotNewUserTargetRules" duration-ms="3" started-at="2014-04-09T23:27:00Z" finished-at="2014-04-09T23:27:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testHandleNotNewUserTargetRules -->
+        <test-method status="PASS" signature="tearDownHandleNotNewUserTargetRules()[pri:0, instance:frontend.handler.TestRegUserTargetMainPage@14d1cc61]" name="tearDownHandleNotNewUserTargetRules" is-config="true" duration-ms="0" started-at="2014-04-09T23:27:00Z" finished-at="2014-04-09T23:27:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownHandleNotNewUserTargetRules -->
+      </class> <!-- frontend.handler.TestRegUserTargetMainPage -->
+      <class name="frontend.handler.TestNUTargetAdmin">
+        <test-method status="PASS" signature="setUpHandleNewUserTargeAdmin()[pri:0, instance:frontend.handler.TestNUTargetAdmin@62d438fd]" name="setUpHandleNewUserTargeAdmin" is-config="true" duration-ms="478" started-at="2014-04-09T23:26:57Z" finished-at="2014-04-09T23:26:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpHandleNewUserTargeAdmin -->
+        <test-method status="FAIL" signature="testHandleNewUserTargeAdmin()[pri:0, instance:frontend.handler.TestNUTargetAdmin@62d438fd]" name="testHandleNewUserTargeAdmin" duration-ms="243" started-at="2014-04-09T23:26:58Z" finished-at="2014-04-09T23:26:58Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at frontend.handler.TestNUTargetAdmin.testHandleNewUserTargeAdmin(TestNUTargetAdmin.java:85)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testHandleNewUserTargeAdmin -->
+        <test-method status="PASS" signature="tearDownHandleNewUserTargeAdmin()[pri:0, instance:frontend.handler.TestNUTargetAdmin@62d438fd]" name="tearDownHandleNewUserTargeAdmin" is-config="true" duration-ms="1" started-at="2014-04-09T23:26:58Z" finished-at="2014-04-09T23:26:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownHandleNewUserTargeAdmin -->
+      </class> <!-- frontend.handler.TestNUTargetAdmin -->
+      <class name="messageSystem.MsgToUserDataTest">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:messageSystem.MsgToUserDataTest@2a43a8b8]" name="tearDown" is-config="true" duration-ms="1" started-at="2014-04-09T23:26:56Z" finished-at="2014-04-09T23:26:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:messageSystem.MsgToUserDataTest@2a43a8b8]" name="setUp" is-config="true" duration-ms="0" started-at="2014-04-09T23:26:56Z" finished-at="2014-04-09T23:26:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="testExec()[pri:0, instance:messageSystem.MsgToUserDataTest@2a43a8b8]" name="testExec" duration-ms="0" started-at="2014-04-09T23:26:56Z" finished-at="2014-04-09T23:26:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testExec -->
+      </class> <!-- messageSystem.MsgToUserDataTest -->
+      <class name="messageSystem.MsgToGameChatTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:messageSystem.MsgToGameChatTest@2d4ab6e3]" name="setUp" is-config="true" duration-ms="6" started-at="2014-04-09T23:26:56Z" finished-at="2014-04-09T23:26:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="testExec()[pri:0, instance:messageSystem.MsgToGameChatTest@2d4ab6e3]" name="testExec" duration-ms="51" started-at="2014-04-09T23:26:56Z" finished-at="2014-04-09T23:26:56Z">
+          <exception class="org.testng.internal.thread.ThreadTimeoutException">
+            <message>
+              <![CDATA[Method org.testng.internal.TestNGMethod.testExec() didn't finish within the time-out 50]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.internal.thread.ThreadTimeoutException: Method org.testng.internal.TestNGMethod.testExec() didn't finish within the time-out 50
+	at java.lang.Thread.sleep(Native Method)
+	at utils.TimeHelper.sleep(TimeHelper.java:14)
+	at chat.GameChatImpl.run(GameChatImpl.java:63)
+	at messageSystem.MsgToGameChatTest.testExec(MsgToGameChatTest.java:36)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.InvokeMethodRunnable.runOne(InvokeMethodRunnable.java:46)
+	at org.testng.internal.InvokeMethodRunnable.run(InvokeMethodRunnable.java:37)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:334)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:166)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:722)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.internal.thread.ThreadTimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testExec -->
+      </class> <!-- messageSystem.MsgToGameChatTest -->
+      <class name="userDataImpl.TestUserDataImpl">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:userDataImpl.TestUserDataImpl@3f75c03e]" name="setUp" is-config="true" duration-ms="1" started-at="2014-04-09T23:26:58Z" finished-at="2014-04-09T23:26:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:frontend.handler.TestWebSocketImpl@173ceeb6]" name="setUp" is-config="true" duration-ms="0" started-at="2014-04-09T23:26:58Z" finished-at="2014-04-09T23:26:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:chat.TestNewWSImpl@26767bef]" name="setUp" is-config="true" duration-ms="0" started-at="2014-04-09T23:26:58Z" finished-at="2014-04-09T23:26:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="setUpCheckServerTime()[pri:0, instance:userDataImpl.TestUserDataImpl@3f75c03e]" name="setUpCheckServerTime" is-config="true" duration-ms="0" started-at="2014-04-09T23:26:58Z" finished-at="2014-04-09T23:26:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpCheckServerTime -->
+        <test-method status="PASS" signature="testCheckServerTime()[pri:0, instance:userDataImpl.TestUserDataImpl@3f75c03e]" name="testCheckServerTime" duration-ms="0" started-at="2014-04-09T23:26:58Z" finished-at="2014-04-09T23:26:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCheckServerTime -->
+        <test-method status="PASS" signature="setUpCreateGames()[pri:0, instance:userDataImpl.TestUserDataImpl@3f75c03e]" name="setUpCreateGames" is-config="true" duration-ms="0" started-at="2014-04-09T23:26:58Z" finished-at="2014-04-09T23:26:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpCreateGames -->
+        <test-method status="PASS" signature="testCreateGames()[pri:0, instance:userDataImpl.TestUserDataImpl@3f75c03e]" name="testCreateGames" duration-ms="501" started-at="2014-04-09T23:26:58Z" finished-at="2014-04-09T23:26:59Z">
+          <exception class="org.testng.internal.thread.ThreadTimeoutException">
+            <message>
+              <![CDATA[Method org.testng.internal.TestNGMethod.testCreateGames() didn't finish within the time-out 500]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.internal.thread.ThreadTimeoutException: Method org.testng.internal.TestNGMethod.testCreateGames() didn't finish within the time-out 500
+	at base.MessageSystem$$EnhancerByMockitoWithCGLIB$$4e4aaa08.execForAbonent(<generated>)
+	at frontend.UserDataImpl.run(UserDataImpl.java:263)
+	at userDataImpl.TestUserDataImpl.testCreateGames(TestUserDataImpl.java:200)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.InvokeMethodRunnable.runOne(InvokeMethodRunnable.java:46)
+	at org.testng.internal.InvokeMethodRunnable.run(InvokeMethodRunnable.java:37)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:334)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:166)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:722)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.internal.thread.ThreadTimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCreateGames -->
+        <test-method status="PASS" signature="tearDownCreateGames()[pri:0, instance:userDataImpl.TestUserDataImpl@3f75c03e]" name="tearDownCreateGames" is-config="true" duration-ms="0" started-at="2014-04-09T23:26:59Z" finished-at="2014-04-09T23:26:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownCreateGames -->
+        <test-method status="PASS" signature="setUpPartyEndSecondIsNull()[pri:0, instance:userDataImpl.TestUserDataImpl@3f75c03e]" name="setUpPartyEndSecondIsNull" is-config="true" duration-ms="8" started-at="2014-04-09T23:26:59Z" finished-at="2014-04-09T23:26:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpPartyEndSecondIsNull -->
+        <test-method status="PASS" signature="testPartyEndSecondIsNull()[pri:0, instance:userDataImpl.TestUserDataImpl@3f75c03e]" name="testPartyEndSecondIsNull" duration-ms="1" started-at="2014-04-09T23:26:59Z" finished-at="2014-04-09T23:26:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testPartyEndSecondIsNull -->
+        <test-method status="PASS" signature="setUpPartyEndFirstIsNull()[pri:0, instance:userDataImpl.TestUserDataImpl@3f75c03e]" name="setUpPartyEndFirstIsNull" is-config="true" duration-ms="1" started-at="2014-04-09T23:26:59Z" finished-at="2014-04-09T23:26:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpPartyEndFirstIsNull -->
+        <test-method status="PASS" signature="tearDownPartyEndSecondIsNull()[pri:0, instance:userDataImpl.TestUserDataImpl@3f75c03e]" name="tearDownPartyEndSecondIsNull" is-config="true" duration-ms="0" started-at="2014-04-09T23:26:59Z" finished-at="2014-04-09T23:26:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownPartyEndSecondIsNull -->
+        <test-method status="PASS" signature="testPartyEndFirstIsNull()[pri:0, instance:userDataImpl.TestUserDataImpl@3f75c03e]" name="testPartyEndFirstIsNull" duration-ms="2" started-at="2014-04-09T23:26:59Z" finished-at="2014-04-09T23:26:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testPartyEndFirstIsNull -->
+        <test-method status="PASS" signature="setUpGetSessionIdByUserId()[pri:0, instance:userDataImpl.TestUserDataImpl@3f75c03e]" name="setUpGetSessionIdByUserId" is-config="true" duration-ms="0" started-at="2014-04-09T23:26:59Z" finished-at="2014-04-09T23:26:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpGetSessionIdByUserId -->
+        <test-method status="PASS" signature="testGetSessionIdByUserId()[pri:0, instance:userDataImpl.TestUserDataImpl@3f75c03e]" name="testGetSessionIdByUserId" duration-ms="0" started-at="2014-04-09T23:26:59Z" finished-at="2014-04-09T23:26:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetSessionIdByUserId -->
+        <test-method status="PASS" signature="tearDownPartyEndFirstIsNull()[pri:0, instance:userDataImpl.TestUserDataImpl@3f75c03e]" name="tearDownPartyEndFirstIsNull" is-config="true" duration-ms="0" started-at="2014-04-09T23:26:59Z" finished-at="2014-04-09T23:26:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownPartyEndFirstIsNull -->
+        <test-method status="PASS" signature="tearDownGetSessionIdByUserId()[pri:0, instance:userDataImpl.TestUserDataImpl@3f75c03e]" name="tearDownGetSessionIdByUserId" is-config="true" duration-ms="1" started-at="2014-04-09T23:26:59Z" finished-at="2014-04-09T23:26:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownGetSessionIdByUserId -->
+        <test-method status="PASS" signature="setUpCheckUsers()[pri:0, instance:userDataImpl.TestUserDataImpl@3f75c03e]" name="setUpCheckUsers" is-config="true" duration-ms="1" started-at="2014-04-09T23:26:59Z" finished-at="2014-04-09T23:26:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpCheckUsers -->
+        <test-method status="PASS" signature="testCheckUsers()[pri:0, instance:userDataImpl.TestUserDataImpl@3f75c03e]" name="testCheckUsers" duration-ms="2" started-at="2014-04-09T23:26:59Z" finished-at="2014-04-09T23:26:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCheckUsers -->
+        <test-method status="PASS" signature="tearDownCheckUsers()[pri:0, instance:userDataImpl.TestUserDataImpl@3f75c03e]" name="tearDownCheckUsers" is-config="true" duration-ms="0" started-at="2014-04-09T23:26:59Z" finished-at="2014-04-09T23:26:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownCheckUsers -->
+        <test-method status="PASS" signature="setUpUpdateUserId()[pri:0, instance:userDataImpl.TestUserDataImpl@3f75c03e]" name="setUpUpdateUserId" is-config="true" duration-ms="1" started-at="2014-04-09T23:26:59Z" finished-at="2014-04-09T23:26:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpUpdateUserId -->
+        <test-method status="PASS" signature="testUpdateUserId()[pri:0, instance:userDataImpl.TestUserDataImpl@3f75c03e]" name="testUpdateUserId" duration-ms="2" started-at="2014-04-09T23:26:59Z" finished-at="2014-04-09T23:26:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testUpdateUserId -->
+        <test-method status="PASS" signature="tearDownUpdateUserId()[pri:0, instance:userDataImpl.TestUserDataImpl@3f75c03e]" name="tearDownUpdateUserId" is-config="true" duration-ms="0" started-at="2014-04-09T23:26:59Z" finished-at="2014-04-09T23:26:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownUpdateUserId -->
+        <test-method status="PASS" signature="tearDownUpdateUserIdOldUserIsNull()[pri:0, instance:userDataImpl.TestUserDataImpl@3f75c03e]" name="tearDownUpdateUserIdOldUserIsNull" is-config="true" duration-ms="0" started-at="2014-04-09T23:26:59Z" finished-at="2014-04-09T23:26:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownUpdateUserIdOldUserIsNull -->
+        <test-method status="PASS" signature="setUpKeepAliveWSIsNull()[pri:0, instance:userDataImpl.TestUserDataImpl@3f75c03e]" name="setUpKeepAliveWSIsNull" is-config="true" duration-ms="0" started-at="2014-04-09T23:26:59Z" finished-at="2014-04-09T23:26:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpKeepAliveWSIsNull -->
+        <test-method status="PASS" signature="testKeepAliveWSIsNull()[pri:0, instance:userDataImpl.TestUserDataImpl@3f75c03e]" name="testKeepAliveWSIsNull" duration-ms="1" started-at="2014-04-09T23:26:59Z" finished-at="2014-04-09T23:26:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testKeepAliveWSIsNull -->
+        <test-method status="PASS" signature="setUpPartyEnd()[pri:0, instance:userDataImpl.TestUserDataImpl@3f75c03e]" name="setUpPartyEnd" is-config="true" duration-ms="1" started-at="2014-04-09T23:26:59Z" finished-at="2014-04-09T23:26:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpPartyEnd -->
+        <test-method status="PASS" signature="tearDownKeepAliveWSIsNull()[pri:0, instance:userDataImpl.TestUserDataImpl@3f75c03e]" name="tearDownKeepAliveWSIsNull" is-config="true" duration-ms="0" started-at="2014-04-09T23:26:59Z" finished-at="2014-04-09T23:26:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownKeepAliveWSIsNull -->
+        <test-method status="PASS" signature="testPartyEnd()[pri:0, instance:userDataImpl.TestUserDataImpl@3f75c03e]" name="testPartyEnd" duration-ms="2" started-at="2014-04-09T23:26:59Z" finished-at="2014-04-09T23:26:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testPartyEnd -->
+        <test-method status="PASS" signature="tearDownPartyEnd()[pri:0, instance:userDataImpl.TestUserDataImpl@3f75c03e]" name="tearDownPartyEnd" is-config="true" duration-ms="0" started-at="2014-04-09T23:26:59Z" finished-at="2014-04-09T23:26:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownPartyEnd -->
+        <test-method status="PASS" signature="setUpPutSessionIdAndChatWS()[pri:0, instance:userDataImpl.TestUserDataImpl@3f75c03e]" name="setUpPutSessionIdAndChatWS" is-config="true" duration-ms="0" started-at="2014-04-09T23:26:59Z" finished-at="2014-04-09T23:26:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpPutSessionIdAndChatWS -->
+        <test-method status="FAIL" signature="testPutSessionIdAndChatWS()[pri:0, instance:userDataImpl.TestUserDataImpl@3f75c03e]" name="testPutSessionIdAndChatWS" duration-ms="7" started-at="2014-04-09T23:26:59Z" finished-at="2014-04-09T23:26:59Z">
+          <exception class="org.mockito.exceptions.verification.NeverWantedButInvoked">
+            <message>
+              <![CDATA[
+userDataSet.visit();
+Never wanted here:
+-> at userDataImpl.TestUserDataImpl.testPutSessionIdAndChatWS(TestUserDataImpl.java:293)
+But invoked here:
+-> at frontend.UserDataImpl.putSessionIdAndChatWS(UserDataImpl.java:129)
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.mockito.exceptions.verification.NeverWantedButInvoked: 
+userDataSet.visit();
+Never wanted here:
+-> at userDataImpl.TestUserDataImpl.testPutSessionIdAndChatWS(TestUserDataImpl.java:293)
+But invoked here:
+-> at frontend.UserDataImpl.putSessionIdAndChatWS(UserDataImpl.java:129)
+
+	at userDataImpl.TestUserDataImpl.testPutSessionIdAndChatWS(TestUserDataImpl.java:293)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.mockito.exceptions.verification.NeverWantedButInvoked -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testPutSessionIdAndChatWS -->
+        <test-method status="PASS" signature="tearDownPutSessionIdAndChatWS()[pri:0, instance:userDataImpl.TestUserDataImpl@3f75c03e]" name="tearDownPutSessionIdAndChatWS" is-config="true" duration-ms="0" started-at="2014-04-09T23:26:59Z" finished-at="2014-04-09T23:26:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownPutSessionIdAndChatWS -->
+        <test-method status="PASS" signature="setUpCheckUsersKeepAliveEqualsOne()[pri:0, instance:userDataImpl.TestUserDataImpl@3f75c03e]" name="setUpCheckUsersKeepAliveEqualsOne" is-config="true" duration-ms="1" started-at="2014-04-09T23:26:59Z" finished-at="2014-04-09T23:26:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpCheckUsersKeepAliveEqualsOne -->
+        <test-method status="PASS" signature="testCheckUsersKeepAliveEqualsOne()[pri:0, instance:userDataImpl.TestUserDataImpl@3f75c03e]" name="testCheckUsersKeepAliveEqualsOne" duration-ms="1" started-at="2014-04-09T23:26:59Z" finished-at="2014-04-09T23:26:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCheckUsersKeepAliveEqualsOne -->
+        <test-method status="PASS" signature="tearDownCheckUsersKeepAliveEqualsOne()[pri:0, instance:userDataImpl.TestUserDataImpl@3f75c03e]" name="tearDownCheckUsersKeepAliveEqualsOne" is-config="true" duration-ms="0" started-at="2014-04-09T23:26:59Z" finished-at="2014-04-09T23:26:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownCheckUsersKeepAliveEqualsOne -->
+        <test-method status="PASS" signature="test()[pri:0, instance:userDataImpl.TestUserDataImpl@3f75c03e]" name="test" duration-ms="0" started-at="2014-04-09T23:26:59Z" finished-at="2014-04-09T23:26:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test -->
+        <test-method status="PASS" signature="setUpUpdateUserIdOldUserIsNull()[pri:0, instance:userDataImpl.TestUserDataImpl@3f75c03e]" name="setUpUpdateUserIdOldUserIsNull" is-config="true" duration-ms="1" started-at="2014-04-09T23:26:59Z" finished-at="2014-04-09T23:26:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpUpdateUserIdOldUserIsNull -->
+        <test-method status="PASS" signature="testUpdateUserIdOldUserIsNull()[pri:0, instance:userDataImpl.TestUserDataImpl@3f75c03e]" name="testUpdateUserIdOldUserIsNull" duration-ms="1" started-at="2014-04-09T23:26:59Z" finished-at="2014-04-09T23:26:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testUpdateUserIdOldUserIsNull -->
+        <test-method status="PASS" signature="setUpUpdateUserIdNewUserIsNull()[pri:0, instance:userDataImpl.TestUserDataImpl@3f75c03e]" name="setUpUpdateUserIdNewUserIsNull" is-config="true" duration-ms="1" started-at="2014-04-09T23:26:59Z" finished-at="2014-04-09T23:26:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpUpdateUserIdNewUserIsNull -->
+        <test-method status="PASS" signature="testUpUpdateUserIdNewUserIsNull()[pri:0, instance:userDataImpl.TestUserDataImpl@3f75c03e]" name="testUpUpdateUserIdNewUserIsNull" duration-ms="0" started-at="2014-04-09T23:26:59Z" finished-at="2014-04-09T23:26:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testUpUpdateUserIdNewUserIsNull -->
+        <test-method status="PASS" signature="tearDownUpdateUserIdNewUserIsNull()[pri:0, instance:userDataImpl.TestUserDataImpl@3f75c03e]" name="tearDownUpdateUserIdNewUserIsNull" is-config="true" duration-ms="0" started-at="2014-04-09T23:26:59Z" finished-at="2014-04-09T23:26:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownUpdateUserIdNewUserIsNull -->
+        <test-method status="PASS" signature="setUpPartyEndPartyEndAllIsNull()[pri:0, instance:userDataImpl.TestUserDataImpl@3f75c03e]" name="setUpPartyEndPartyEndAllIsNull" is-config="true" duration-ms="1" started-at="2014-04-09T23:26:59Z" finished-at="2014-04-09T23:26:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpPartyEndPartyEndAllIsNull -->
+        <test-method status="PASS" signature="testPartyEndAllIsNull()[pri:0, instance:userDataImpl.TestUserDataImpl@3f75c03e]" name="testPartyEndAllIsNull" duration-ms="1" started-at="2014-04-09T23:26:59Z" finished-at="2014-04-09T23:26:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testPartyEndAllIsNull -->
+        <test-method status="PASS" signature="setUpCreateNoUsersWantToPlay()[pri:0, instance:userDataImpl.TestUserDataImpl@3f75c03e]" name="setUpCreateNoUsersWantToPlay" is-config="true" duration-ms="0" started-at="2014-04-09T23:26:59Z" finished-at="2014-04-09T23:26:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpCreateNoUsersWantToPlay -->
+        <test-method status="PASS" signature="testCreateGamesNoUsersWantToPlay()[pri:0, instance:userDataImpl.TestUserDataImpl@3f75c03e]" name="testCreateGamesNoUsersWantToPlay" duration-ms="502" started-at="2014-04-09T23:26:59Z" finished-at="2014-04-09T23:26:59Z">
+          <exception class="org.testng.internal.thread.ThreadTimeoutException">
+            <message>
+              <![CDATA[Method org.testng.internal.TestNGMethod.testCreateGamesNoUsersWantToPlay() didn't finish within the time-out 500]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.internal.thread.ThreadTimeoutException: Method org.testng.internal.TestNGMethod.testCreateGamesNoUsersWantToPlay() didn't finish within the time-out 500
+	at java.lang.Object.getClass(Native Method)
+	at org.mockito.internal.creation.cglib.CGLIBHacker.reflectOnCreateInfo(CGLIBHacker.java:37)
+	at org.mockito.internal.creation.cglib.CGLIBHacker.setMockitoNamingPolicy(CGLIBHacker.java:20)
+	at org.mockito.internal.creation.MethodInterceptorFilter.intercept(MethodInterceptorFilter.java:41)
+	at base.MessageSystem$$EnhancerByMockitoWithCGLIB$$4e4aaa08.execForAbonent(<generated>)
+	at frontend.UserDataImpl.run(UserDataImpl.java:263)
+	at userDataImpl.TestUserDataImpl.testCreateGamesNoUsersWantToPlay(TestUserDataImpl.java:175)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.InvokeMethodRunnable.runOne(InvokeMethodRunnable.java:46)
+	at org.testng.internal.InvokeMethodRunnable.run(InvokeMethodRunnable.java:37)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:334)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:166)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:722)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.internal.thread.ThreadTimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCreateGamesNoUsersWantToPlay -->
+        <test-method status="PASS" signature="tearDownPartyEndAllIsNull()[pri:0, instance:userDataImpl.TestUserDataImpl@3f75c03e]" name="tearDownPartyEndAllIsNull" is-config="true" duration-ms="0" started-at="2014-04-09T23:26:59Z" finished-at="2014-04-09T23:26:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownPartyEndAllIsNull -->
+        <test-method status="PASS" signature="tearDownCreateGamesNoUsersWantToPlay()[pri:0, instance:userDataImpl.TestUserDataImpl@3f75c03e]" name="tearDownCreateGamesNoUsersWantToPlay" is-config="true" duration-ms="1" started-at="2014-04-09T23:26:59Z" finished-at="2014-04-09T23:26:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownCreateGamesNoUsersWantToPlay -->
+        <test-method status="PASS" signature="setUpGetChatWSBySessionId()[pri:0, instance:userDataImpl.TestUserDataImpl@3f75c03e]" name="setUpGetChatWSBySessionId" is-config="true" duration-ms="1" started-at="2014-04-09T23:26:59Z" finished-at="2014-04-09T23:26:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpGetChatWSBySessionId -->
+        <test-method status="PASS" signature="testGetChatWSBySessionId()[pri:0, instance:userDataImpl.TestUserDataImpl@3f75c03e]" name="testGetChatWSBySessionId" duration-ms="2" started-at="2014-04-09T23:26:59Z" finished-at="2014-04-09T23:26:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetChatWSBySessionId -->
+        <test-method status="PASS" signature="setUpGetWSBySessionId()[pri:0, instance:userDataImpl.TestUserDataImpl@3f75c03e]" name="setUpGetWSBySessionId" is-config="true" duration-ms="2" started-at="2014-04-09T23:26:59Z" finished-at="2014-04-09T23:26:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpGetWSBySessionId -->
+        <test-method status="PASS" signature="tearDownGetChatWSBySessionId()[pri:0, instance:userDataImpl.TestUserDataImpl@3f75c03e]" name="tearDownGetChatWSBySessionId" is-config="true" duration-ms="0" started-at="2014-04-09T23:26:59Z" finished-at="2014-04-09T23:26:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownGetChatWSBySessionId -->
+        <test-method status="PASS" signature="testGetWSBySessionId()[pri:0, instance:userDataImpl.TestUserDataImpl@3f75c03e]" name="testGetWSBySessionId" duration-ms="1" started-at="2014-04-09T23:26:59Z" finished-at="2014-04-09T23:26:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetWSBySessionId -->
+        <test-method status="PASS" signature="tearDownGetWSBySessionId()[pri:0, instance:userDataImpl.TestUserDataImpl@3f75c03e]" name="tearDownGetWSBySessionId" is-config="true" duration-ms="0" started-at="2014-04-09T23:26:59Z" finished-at="2014-04-09T23:26:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownGetWSBySessionId -->
+        <test-method status="PASS" signature="testGetLogInUserBySessionId()[pri:0, instance:userDataImpl.TestUserDataImpl@3f75c03e]" name="testGetLogInUserBySessionId" duration-ms="1" started-at="2014-04-09T23:26:59Z" finished-at="2014-04-09T23:26:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetLogInUserBySessionId -->
+        <test-method status="PASS" signature="setUpGetLogInUserBySessionId()[pri:0, instance:userDataImpl.TestUserDataImpl@3f75c03e]" name="setUpGetLogInUserBySessionId" is-config="true" duration-ms="0" started-at="2014-04-09T23:26:59Z" finished-at="2014-04-09T23:26:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpGetLogInUserBySessionId -->
+        <test-method status="PASS" signature="tearDownGetLogInUserBySessionId()[pri:0, instance:userDataImpl.TestUserDataImpl@3f75c03e]" name="tearDownGetLogInUserBySessionId" is-config="true" duration-ms="0" started-at="2014-04-09T23:26:59Z" finished-at="2014-04-09T23:26:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownGetLogInUserBySessionId -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:userDataImpl.TestUserDataImpl@3f75c03e]" name="tearDown" is-config="true" duration-ms="0" started-at="2014-04-09T23:26:59Z" finished-at="2014-04-09T23:26:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:chat.TestNewWSImpl@26767bef]" name="tearDown" is-config="true" duration-ms="0" started-at="2014-04-09T23:26:59Z" finished-at="2014-04-09T23:26:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:frontend.handler.TestWebSocketImpl@173ceeb6]" name="tearDown" is-config="true" duration-ms="0" started-at="2014-04-09T23:26:59Z" finished-at="2014-04-09T23:26:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- userDataImpl.TestUserDataImpl -->
+      <class name="gameClasses.FieldTest">
+        <test-method status="PASS" signature="testField()[pri:0, instance:gameClasses.FieldTest@34dea091]" name="testField" duration-ms="0" started-at="2014-04-09T23:27:00Z" finished-at="2014-04-09T23:27:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testField -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:gameClasses.FieldTest@34dea091]" name="setUp" is-config="true" duration-ms="0" started-at="2014-04-09T23:27:00Z" finished-at="2014-04-09T23:27:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:gameClasses.FieldTest@34dea091]" name="tearDown" is-config="true" duration-ms="1" started-at="2014-04-09T23:27:00Z" finished-at="2014-04-09T23:27:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- gameClasses.FieldTest -->
+      <class name="frontend.handler.TestRegUserTargetRules">
+        <test-method status="PASS" signature="setUpHandleNotNewUserTargetRules()[pri:0, instance:frontend.handler.TestRegUserTargetRules@73b228d1]" name="setUpHandleNotNewUserTargetRules" is-config="true" duration-ms="3" started-at="2014-04-09T23:26:58Z" finished-at="2014-04-09T23:26:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpHandleNotNewUserTargetRules -->
+        <test-method status="PASS" signature="testHandleNotNewUserTargetRules()[pri:0, instance:frontend.handler.TestRegUserTargetRules@73b228d1]" name="testHandleNotNewUserTargetRules" duration-ms="10" started-at="2014-04-09T23:26:58Z" finished-at="2014-04-09T23:26:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testHandleNotNewUserTargetRules -->
+        <test-method status="PASS" signature="tearDownHandleNotNewUserTargetRules()[pri:0, instance:frontend.handler.TestRegUserTargetRules@73b228d1]" name="tearDownHandleNotNewUserTargetRules" is-config="true" duration-ms="0" started-at="2014-04-09T23:26:58Z" finished-at="2014-04-09T23:26:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownHandleNotNewUserTargetRules -->
+      </class> <!-- frontend.handler.TestRegUserTargetRules -->
+    </test> <!-- Command line test -->
+  </suite> <!-- Command line suite -->
+</testng-results>
