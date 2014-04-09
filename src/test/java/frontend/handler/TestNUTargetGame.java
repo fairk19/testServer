@@ -12,6 +12,7 @@ import org.testng.annotations.Test;
 import utils.SHA2;
 import utils.SysInfo;
 import utils.TemplateHelper;
+import utils.TimeHelper;
 
 import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;
@@ -84,5 +85,6 @@ public class TestNUTargetGame {
 
     @AfterMethod
     public void tearDownHandleNewUserTargetMainPage() {
+        TimeHelper.sleep(100);
     }
 }

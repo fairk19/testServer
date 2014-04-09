@@ -11,6 +11,7 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import utils.TemplateHelper;
+import utils.TimeHelper;
 
 import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;
@@ -86,5 +87,6 @@ public class TestRegUserTargetReg {
     @AfterMethod
     public void tearDownHandleNotNewUserTargetRules() {
         returnedPage.delete();
+        TimeHelper.sleep(100);
     }
 }

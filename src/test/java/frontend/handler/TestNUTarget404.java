@@ -9,6 +9,7 @@ import org.testng.Assert;
 import org.testng.annotations.*;
 import utils.SHA2;
 import utils.TemplateHelper;
+import utils.TimeHelper;
 
 import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;
@@ -86,5 +87,6 @@ public class TestNUTarget404 {
     @AfterMethod
     public void tearDownHandleNewUserTarget404() {
         returnedPage.delete();
+        TimeHelper.sleep(100);
     }
 }

@@ -12,6 +12,7 @@ import org.testng.annotations.BeforeGroups;
 import org.testng.annotations.Test;
 import utils.SHA2;
 import utils.TemplateHelper;
+import utils.TimeHelper;
 
 import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;
@@ -87,5 +88,6 @@ public class TestRegUserTarget404 {
     @AfterGroups("handleNewUserTarget404")
     public void tearDownHandleNewUserTarget404() {
         returnedPage.delete();
+        TimeHelper.sleep(100);
     }
 }

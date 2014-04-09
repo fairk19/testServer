@@ -12,6 +12,7 @@ import org.testng.annotations.BeforeGroups;
 import org.testng.annotations.Test;
 import utils.SysInfo;
 import utils.TemplateHelper;
+import utils.TimeHelper;
 
 import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;
@@ -99,5 +100,6 @@ public class TestRegUserTargetAdmin {
     @AfterGroups("handleNewUserTargetRules")
     public void tearDownHandleNewUserTargetRules() {
         returnedPage.delete();
+        TimeHelper.sleep(100);
     }
 }

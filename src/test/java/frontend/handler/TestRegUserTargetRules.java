@@ -87,5 +87,6 @@ public class TestRegUserTargetRules {
     @AfterMethod
     public void tearDownHandleNotNewUserTargetRules() {
         returnedPage.delete();
+        TimeHelper.sleep(100);
     }
 }

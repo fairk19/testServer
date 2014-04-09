@@ -45,6 +45,8 @@ public class WebSocketImpl  extends WebSocketAdapter implements WebSocket{
 		if (isNotConnected()) {
 			return; 
 		}
+
+
 		String sessionId=null,startServerTime=null;
 		int from_x=-1, from_y=-1, to_x=-1, to_y=-1;
 		String status=null;
@@ -71,6 +73,7 @@ public class WebSocketImpl  extends WebSocketAdapter implements WebSocket{
 		else if ((sessionId!=null)&&(UserDataImpl.checkServerTime(startServerTime))){
 			addNewWS(sessionId);
 		}
+
 	}
 
 	private void addNewWS(String sessionId){

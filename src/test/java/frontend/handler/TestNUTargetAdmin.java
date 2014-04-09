@@ -98,6 +98,7 @@ public class TestNUTargetAdmin {
     @AfterMethod
     public void tearDownHandleNewUserTargeAdmin() {
         returnedPage.delete();
+        TimeHelper.sleep(100);
     }
 
 }
