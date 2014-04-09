@@ -61,8 +61,12 @@ public class ResourceFactoryTest {
         this.fileRes = new File(absPathRes);
         fileRes.mkdir();
         fileRes.mkdirs();
-        String testResource = "<class type=\"resource.GameSettings\">\n<fieldSize>"
-                + this.fieldSize + "</fieldSize>\n</class>";
+        String testResource = "<class type=\"resource.Rating\">\n" +
+                "<maxDiff>15</maxDiff>\n" +
+                "<avgDiff>8</avgDiff>\n" +
+                "<minDiff>1</minDiff>\n" +
+                "<decreaseThreshold>15</decreaseThreshold>\n" +
+                "</class>";
         this.writeFile(fileRes.getPath() + "/testRes.xml", testResource);
     }
 
@@ -71,9 +75,17 @@ public class ResourceFactoryTest {
         this.deleteFile(this.fileRes);
     }
 
-    @Test
+    @Test(groups = "readResource")
     public void testGetResource() throws Exception {
-        GameSettings gameSettings = (GameSettings) ResourceFactory.instanse().getResource(fileRes.getPath() + "/testRes.xml");
-        Assert.assertTrue(gameSettings.getFieldSize() == this.fieldSize);
+        ResourceFactory.instanse().getResource(fileRes.getPath() + "/testRes.xml");
+        Assert.assertTrue(Rating.getAvgDiff() == 8);
+    }
+
+    @Test(dependsOnGroups = "readResource")
+    public void testRating() throws Exception {
+       Assert.assertTrue(Rating.getDiff(20, 2) == 7);
+
+        Rating.decreaseThreshold = 0;
+        Assert.assertTrue(Rating.getDiff(1, 2) == 8);
     }
 }

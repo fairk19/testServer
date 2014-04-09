@@ -56,6 +56,13 @@ public class GameChatImpl implements GameChat{
 			ChatWSImpl.sendMessage(anotherSessionId, message.json());
 		}
 	}
+    public static void putSessionIdToChat(String sessionId, List<ChatMessage> listChatMessage) {
+        sessionIdToChat.put(sessionId, listChatMessage);
+    }
+    public static void clearAllMaps() {
+        sessionIdToChat.clear();
+        sessionIdToAnotherSessionId.clear();
+    }
 
 	public void run(){
 		while(true){

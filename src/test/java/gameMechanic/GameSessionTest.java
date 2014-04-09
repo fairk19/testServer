@@ -203,18 +203,17 @@ public class GameSessionTest {
         Method kingCanEatRightUpMethod = clazz.getDeclaredMethod("kingCanEatRightUp", paramTypes);
         kingCanEatRightUpMethod.setAccessible(true);
         args = new Object[] {6, 0};
-        currentPositions[0][6].setType(checker.black);
-        currentPositions[1][7].setType(checker.white);
         Boolean kingCanEatRightUp = (Boolean)kingCanEatRightUpMethod.invoke(this.gameSession, args);
         Assert.assertFalse(kingCanEatRightUp);
 
         paramTypes = new Class[] { int.class, int.class};
         Method kingCanEatLeftUpMethod = clazz.getDeclaredMethod("kingCanEatLeftUp", paramTypes);
         kingCanEatLeftUpMethod.setAccessible(true);
-        args = new Object[] {2, 1};
-         currentPositions[1][2].setType(checker.black);
+        args = new Object[] {4, 3};
+        currentPositions[3][4].setType(checker.black);
+        currentPositions[4][3].setType(checker.white);
         Boolean kingCanEatLeftUp = (Boolean)kingCanEatLeftUpMethod.invoke(this.gameSession, args);
-        Assert.assertFalse(kingCanEatLeftUp);
+        Assert.assertTrue(kingCanEatLeftUp);
 
         paramTypes = new Class[] { int.class, int.class};
         Method kingCanEatRightDownMethod = clazz.getDeclaredMethod("kingCanEatRightDown", paramTypes);
@@ -229,6 +228,51 @@ public class GameSessionTest {
         args = new Object[] {3, 2};
         Boolean kingCanEatLeftDown = (Boolean)kingCanEatLeftDownMethod.invoke(this.gameSession, args);
         Assert.assertFalse(kingCanEatLeftDown);
+
+        paramTypes = new Class[] { int.class, int.class, int.class, int.class};
+        Method kingEatingMethod = clazz.getDeclaredMethod("kingEating", paramTypes);
+        kingEatingMethod.setAccessible(true);
+        args = new Object[] {1, 2, 3, 4};
+        currentPositions[2][1].setType(checker.black);
+        Boolean kingEating = (Boolean)kingEatingMethod.invoke(this.gameSession, args);
+        Assert.assertFalse(kingEating);
+
+        paramTypes = new Class[] { checker.class};
+        Method getAnotherColorMethod = clazz.getDeclaredMethod("getAnotherColor", paramTypes);
+        getAnotherColorMethod.setAccessible(true);
+        args = new Object[] {checker.nothing};
+        checker getAnotherColor = (checker)getAnotherColorMethod.invoke(this.gameSession, args);
+        Assert.assertTrue(getAnotherColor.equals(checker.nothing));
+
+        paramTypes = new Class[] { int.class, int.class, int.class, int.class, int.class, int.class};
+        Method checkOtherEatingOpportunityMethod = clazz.getDeclaredMethod("checkOtherEatingOpportunity", paramTypes);
+        checkOtherEatingOpportunityMethod.setAccessible(true);
+        args = new Object[] {1, 2, 3, 4, 1, 2};
+        Boolean checkOtherEatingOpportunity = (Boolean)checkOtherEatingOpportunityMethod.invoke(this.gameSession, args);
+        Assert.assertFalse(checkOtherEatingOpportunity);
+
+        paramTypes = new Class[] { int.class, int.class, int.class, int.class};
+        Method pawnEatingMethod = clazz.getDeclaredMethod("pawnEating", paramTypes);
+        pawnEatingMethod.setAccessible(true);
+        args = new Object[] {1, 2, 4, 5};
+        Boolean pawnEating = (Boolean)pawnEatingMethod.invoke(this.gameSession, args);
+        Assert.assertFalse(pawnEating);
+
+        paramTypes = new Class[] { int.class, int.class};
+        Method canMoveLeftUpMethod = clazz.getDeclaredMethod("canMoveLeftUp", paramTypes);
+        canMoveLeftUpMethod.setAccessible(true);
+        args = new Object[] {3, 4};
+        currentPositions[5][2].setType(checker.nothing);
+        Boolean canMoveLeftUp = (Boolean)canMoveLeftUpMethod.invoke(this.gameSession, args);
+        Assert.assertTrue(canMoveLeftUp);
+
+        paramTypes = new Class[] { int.class, int.class};
+        Method canMoveLeftDownMethod = clazz.getDeclaredMethod("canMoveLeftDown", paramTypes);
+        canMoveLeftDownMethod.setAccessible(true);
+        args = new Object[] {3, 4};
+        currentPositions[3][2].setType(checker.nothing);
+        Boolean canMoveLeftDown = (Boolean)canMoveLeftDownMethod.invoke(this.gameSession, args);
+        Assert.assertTrue(canMoveLeftDown);
     }
 
     @Test

@@ -39,9 +39,62 @@ public class TestRegUserTargetRegPost {
     private String sessionIdValue;
     private String START_SERVER_TIME_FIELD;
     private String startServerTimeValue;
+    private Cookie mockedCookieSessionId;
+    private Cookie mockedCookieServerTime;
 
     private File returnedPage;
     private File expectedPage;
+
+
+    @BeforeGroups("NUTargetGame")
+    public void  setUpNUTargetGame() {
+        SESSION_ID_FIELD = "sessionId";
+        sessionIdValue = "123";
+        START_SERVER_TIME_FIELD = "startServerTime";
+        startServerTimeValue = UserDataImpl.getStartServerTime();
+        mockedMS = mock(MessageSystem.class);
+
+        frontend = new FrontendImpl(mockedMS);
+        response = mock(HttpServletResponse.class);
+        request = mock(HttpServletRequest.class);
+        target = "/game";
+        baseRequest = mock(Request.class);
+        mockedCookieSessionId = mock(Cookie.class);
+        when(mockedCookieSessionId.getName()).thenReturn(SESSION_ID_FIELD);
+        when(mockedCookieSessionId.getValue()).thenReturn(sessionIdValue);
+        mockedCookieServerTime = mock(Cookie.class);
+        when(mockedCookieServerTime.getName()).thenReturn(START_SERVER_TIME_FIELD);
+        when(mockedCookieServerTime.getValue()).thenReturn(startServerTimeValue);
+
+        try {
+            PrintWriter writer = new PrintWriter("returnedPage.html");
+            when(response.getWriter()).thenReturn(writer);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        Cookie[] arrCookies = {mockedCookieSessionId, mockedCookieServerTime};
+        when(request.getCookies()).thenReturn(arrCookies);
+        TemplateHelper.init();
+    }
+
+    @Test(groups = "NUTargetGame")
+    public void testNUTargetGame() throws IOException {
+        frontend.handle(target,baseRequest,request,response);
+
+        verify(response).setStatus(HttpServletResponse.SC_MOVED_TEMPORARILY);
+        verify(response).addHeader("Location", "/");
+
+    }
+
+    @AfterGroups("NUTargetGame")
+    public void tearDownNUTargetGame() {
+    }
+
+
+
+
+
+
 
     @BeforeGroups("NUTargetAdmin")
     public void  setUpNUTargetAdmin() {
@@ -104,64 +157,6 @@ public class TestRegUserTargetRegPost {
     public void tearDownNUTargetAdmin() {
         returnedPage.delete();
     }
-
-
-//    @BeforeGroups("NUTargetAdmin")
-//    public void  setUpNUTargetAdmin() {
-//        mockedMS  = mock(MessageSystem.class);
-//        frontend = new FrontendImpl(mockedMS);
-//        response = mock(HttpServletResponse.class);
-//        request = mock(HttpServletRequest.class);
-//        target = "/admin";
-//        baseRequest = mock(Request.class);
-//        Cookie mockedCookieSessionId = mock(Cookie.class);
-//        when(mockedCookieSessionId.getName()).thenReturn(SESSION_ID_FIELD);
-//        when(mockedCookieSessionId.getValue()).thenReturn(sessionIdValue);
-//        Cookie mockedCookieServerTime = mock(Cookie.class);
-//        when(mockedCookieServerTime.getName()).thenReturn(START_SERVER_TIME_FIELD);
-//        when(mockedCookieServerTime.getValue()).thenReturn(startServerTimeValue);
-//        try {
-//            PrintWriter writer = new PrintWriter("returnedPage.html");
-//            when(response.getWriter()).thenReturn(writer);
-//        } catch (IOException e) {
-//            e.printStackTrace();
-//        }
-//        Cookie[] arrCookies = {mockedCookieSessionId, mockedCookieServerTime};
-//        when(request.getCookies()).thenReturn(arrCookies);
-//        TemplateHelper.init();
-//        SysInfo sysInfo = new SysInfo();
-//    }
-//
-//    @Test( groups = "NUTargetAdmin" )
-//    public void testNUTargetAdmin() throws IOException {
-//        frontend.handle(target,baseRequest,request,response);
-//
-//        sessionIdValue = SHA2.getSHA2(String.valueOf(frontend.getCreatorSessionId().intValue()));
-//        Assert.assertNotNull(UserDataImpl.getUserSessionBySessionId(sessionIdValue));
-//
-//
-//        returnedPage = new File("returnedPage.html");
-//        String returnedPageAsString = new String();
-//        returnedPageAsString = Files.toString(returnedPage, defaultCharset());
-//
-//        expectedPage = new File("./statistic/ccu");
-//        Assert.assertTrue(returnedPageAsString.contains(Files.toString(expectedPage, defaultCharset())));
-//
-//        expectedPage = new File("./statistic/memoryUsage");
-//        Assert.assertTrue(returnedPageAsString.contains(Files.toString(expectedPage, defaultCharset())));
-//
-//        expectedPage = new File("./statistic/time");
-//        Assert.assertTrue(returnedPageAsString.contains(Files.toString(expectedPage, defaultCharset())));
-//
-//        expectedPage = new File("./statistic/totalMemory");
-//        Assert.assertTrue(returnedPageAsString.contains(Files.toString(expectedPage, defaultCharset())));
-//
-//    }
-//
-//    @AfterGroups("NUTargetAdmin")
-//    public void tearDownNUTargetAdmin() {
-//        returnedPage.delete();
-//    }
 
 
 
