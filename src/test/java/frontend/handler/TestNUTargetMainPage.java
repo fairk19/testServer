@@ -53,6 +53,7 @@ public class TestNUTargetMainPage {
         mockedCookieSessionId = mock(Cookie.class);
         when(mockedCookieSessionId.getName()).thenReturn(SESSION_ID_FIELD);
         when(mockedCookieSessionId.getValue()).thenReturn(sessionIdValue);
+
         mockedCookieServerTime = mock(Cookie.class);
         when(mockedCookieServerTime.getName()).thenReturn(START_SERVER_TIME_FIELD);
         when(mockedCookieServerTime.getValue()).thenReturn(startServerTimeValue);

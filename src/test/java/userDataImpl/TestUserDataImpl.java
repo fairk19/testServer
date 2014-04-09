@@ -317,6 +317,8 @@ public class TestUserDataImpl {
 
     @BeforeGroups("PutSessionIdAndChatWS")
     public void setUpPutSessionIdAndChatWS() {
+        UserDataImpl.clearAllMaps();
+
         sessionId1 = "sessionId1";
         chatWS = mock(ChatWSImpl.class);
 
@@ -337,7 +339,7 @@ public class TestUserDataImpl {
 
     @AfterGroups("PutSessionIdAndChatWS")
     public void tearDownPutSessionIdAndChatWS() {
-
+        UserDataImpl.clearAllMaps();
     }
 
 
@@ -347,6 +349,8 @@ public class TestUserDataImpl {
 
     @BeforeGroups("UpdateUserId")
     public void setUpUpdateUserId() {
+        UserDataImpl.clearAllMaps();
+
         mockedMS = mock(MessageSystem.class);
         userDataImpl = new UserDataImpl(mockedMS);
         userID = 1;
@@ -377,7 +381,7 @@ public class TestUserDataImpl {
 
     @AfterGroups("UpdateUserId")
     public void tearDownUpdateUserId() {
-        UserDataImpl.clearSessionIdAndrUserSession();
+        UserDataImpl.clearAllMaps();
     }
 
 
@@ -556,6 +560,7 @@ public class TestUserDataImpl {
 
     @BeforeGroups("PartyEndFirstIsNull")
     public void setUpPartyEndFirstIsNull() {
+        UserDataImpl.clearAllMaps();
         mockedMS = mock(MessageSystem.class);
         chatWS = mock(ChatWSImpl.class);
         userDataImpl = new UserDataImpl(mockedMS);
@@ -574,7 +579,7 @@ public class TestUserDataImpl {
         when(userDataSet2.getId()).thenReturn(userID2);
         UserDataImpl.putSessionIdAndUserSession(sessionId2,userDataSet2);
         UserDataImpl.putSessionIdAndChatWS(sessionId2, chatWS);
-        UserDataImpl.putLogInUser(sessionId1, userDataSet1);
+        UserDataImpl.putLogInUser(sessionId2, userDataSet2);
 
 
     }
@@ -596,6 +601,8 @@ public class TestUserDataImpl {
 
     @BeforeGroups("PartyEndSecondIsNull")
     public void setUpPartyEndSecondIsNull() {
+        UserDataImpl.clearAllMaps();
+
         mockedMS = mock(MessageSystem.class);
         chatWS = mock(ChatWSImpl.class);
         userDataImpl = new UserDataImpl(mockedMS);
@@ -614,7 +621,7 @@ public class TestUserDataImpl {
         userDataSet2 = mock(UserDataSet.class);
         when(userDataSet2.getId()).thenReturn(userID2);
         UserDataImpl.putSessionIdAndChatWS(sessionId2, chatWS);
-        UserDataImpl.putLogInUser(sessionId1, userDataSet1);
+        UserDataImpl.putLogInUser(sessionId2, userDataSet2);
 
 
     }
@@ -651,7 +658,7 @@ public class TestUserDataImpl {
         userDataSet2 = mock(UserDataSet.class);
         when(userDataSet2.getId()).thenReturn(userID2);
         UserDataImpl.putSessionIdAndChatWS(sessionId2, chatWS);
-        UserDataImpl.putLogInUser(sessionId1, userDataSet1);
+        UserDataImpl.putLogInUser(sessionId2, userDataSet2);
 
 
     }
