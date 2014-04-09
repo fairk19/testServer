@@ -49,8 +49,8 @@ public class TestWebSocketImpl {
     private boolean connection;
     private String startServeTime;
     private UserDataImpl mockedUserDataImpl;
-
     private String message;
+
     @BeforeGroups("")
     public void setUp() {
 
