@@ -1,6 +1,7 @@
 package frontend.handler;
 
 
+import base.MessageSystem;
 import base.UserData;
 import dbService.UserDataSet;
 import frontend.UserDataImpl;
@@ -22,22 +23,23 @@ import static org.mockito.Mockito.*;
  */
 public class TestWebSocketImpl {
     private Map<String, String> usersToColors;
+    private String sessionId;
     private String sessionId1;
     private String sessionId2;
     private String colorUser1;
     private String colorUser2;
+    private String color;
     private String color1;
     private String color2;
+    private UserDataSet userDataSet;
     private UserDataSet userDataSet1;
     private UserDataSet userDataSet2;
     private WebSocketImpl mockedWS;
     private RemoteEndpoint mockedRemoteEndpoint;
     private Session mockedSession;
-    private String sessionId;
-    private UserDataSet userDataSet;
-    private String color;
-
-
+    private MessageSystem mockedMS;
+    private WebSocketImpl ws;
+    boolean useMS;
     @BeforeGroups("")
     public void setUp() {
 
@@ -53,6 +55,27 @@ public class TestWebSocketImpl {
 
     }
 
+
+
+    @BeforeGroups("WebSocketImpl")
+    public void setUpWebSocketImpl() {
+        mockedMS = mock(MessageSystem.class);
+        WebSocketImpl.setMS(mockedMS);
+        useMS = true;
+    }
+
+    @Test(groups = "WebSocketImpl")
+    public void testWebSocketImpl() {
+        ws = new WebSocketImpl(useMS);
+        verify(mockedMS).addService(ws, "WebSocket");
+        ws = new WebSocketImpl(!useMS);
+        verify(mockedMS, never()).addService(ws, "WebSocket");
+    }
+
+    @AfterGroups("WebSocketImpl")
+    public void tearDownWebSocketImpl() {
+
+    }
 
     @BeforeGroups("UpdateUsersColor")
     public void setUpUpdateUsersColor() {
@@ -80,7 +103,6 @@ public class TestWebSocketImpl {
         userDataSet1 = mock(UserDataSet.class);
         UserDataImpl.putLogInUser(sessionId1, userDataSet1);
         UserDataImpl.putSessionIdAndWS(sessionId1, mockedWS);
-//        when(userDataSet1.getColor()).thenReturn(colorUser1);
 
         userDataSet2 = mock(UserDataSet.class);
         UserDataImpl.putLogInUser(sessionId2, userDataSet2);
@@ -90,14 +112,10 @@ public class TestWebSocketImpl {
         UserDataImpl.putLogInUser(sessionId, userDataSet);
         UserDataImpl.putSessionIdAndWS(sessionId, mockedWS);
 
-//        when(userDataSet2.getColor()).thenReturn(colorUser2);
-
         usersToColors = new HashMap<String, String>();
         usersToColors.put(sessionId1, color1);
         usersToColors.put(sessionId2, color2);
         usersToColors.put(sessionId, color);
-
-
 
     }
 
