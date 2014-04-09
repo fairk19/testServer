@@ -52,8 +52,8 @@ public class WebSocketImpl  extends WebSocketAdapter implements WebSocket{
 		JSONObject json=null;
 		try{
 			json = (JSONObject) parser.parse(message);
-			sessionId=json.get("sessionId").toString();
-			startServerTime=json.get("startServerTime").toString();
+            startServerTime=json.get("startServerTime").toString();
+            sessionId=json.get("sessionId").toString();
 			from_x=Integer.parseInt(json.get("from_x").toString());
 			from_y=Integer.parseInt(json.get("from_y").toString());
 			to_x=Integer.parseInt(json.get("to_x").toString());

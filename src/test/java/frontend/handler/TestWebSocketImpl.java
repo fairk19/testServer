@@ -68,8 +68,416 @@ public class TestWebSocketImpl {
 
 
 
+
+    @BeforeGroups("OnWebSocketTextAddNewWebSocket")
+    public void setUpOnWebSocketTextAddNewWebSocket() {
+        UserDataImpl.clearAllMaps();
+
+        useMS = true;
+        connection = true;
+
+
+        startServeTime = UserDataImpl.getStartServerTime();
+        sessionId = "sessionId1";
+
+        userDataSet = mock(UserDataSet.class);
+        UserDataImpl.putLogInUser(sessionId, userDataSet);
+
+
+        int from_x = -1;
+        int from_y = 1;
+        int to_x = 2;
+        int to_y = 2;
+        String status = "status";
+        JSONObject js = new JSONObject();
+        js.put("startServerTime", startServeTime);
+        js.put("sessionId", sessionId);
+        js.put("from_x", from_x);
+        js.put("from_y", from_y);
+        js.put("to_x", to_x);
+        js.put("to_y", to_y);
+        js.put("status", status);
+
+
+        message = js.toJSONString();
+
+        mockedMS = mock(MessageSystem.class);
+        ws.setMS(mockedMS);
+        ws = new WebSocketImpl(useMS);
+
+        mockedRemoteEndpoint = mock(RemoteEndpoint.class);
+
+        mockedSession = mock(Session.class);
+        when(mockedSession.isOpen()).thenReturn(connection);
+        when(mockedSession.getRemote()).thenReturn(mockedRemoteEndpoint);
+
+        ws.onWebSocketConnect(mockedSession);
+
+    }
+
+    @Test(groups = "OnWebSocketTextAddNewWebSocket")
+    public void testOnWebSocketTextAddNewWebSocket() {
+        ws.onWebSocketText(message);
+        verify(userDataSet, atLeastOnce()).visit();
+        Assert.assertNotNull(UserDataImpl.getWSBySessionId(sessionId));
+    }
+
+    @AfterGroups("OnWebSocketTextAddNewWebSocket")
+    public void tearDownOnWebSocketTextAddNewWebSocket() {
+        UserDataImpl.clearAllMaps();
+    }
+
+
+
+
+
+
+    @BeforeGroups("OnWebSocketTextCoordinatesAreIncorrectButServerTimeIsOk")
+    public void setUpOnWebSocketTextCoordinatesAreIncorrectButServerTimeIsOk() {
+        UserDataImpl.clearAllMaps();
+
+        useMS = true;
+        connection = true;
+
+        startServeTime = UserDataImpl.getStartServerTime();
+        sessionId = "sessionId1";
+
+        int from_x = -1;
+        int from_y = 1;
+        int to_x = 2;
+        int to_y = 2;
+        String status = "status";
+        JSONObject js = new JSONObject();
+        js.put("startServerTime", startServeTime);
+        js.put("sessionId", sessionId);
+        js.put("from_x", from_x);
+        js.put("from_y", from_y);
+        js.put("to_x", to_x);
+        js.put("to_y", to_y);
+        js.put("status", status);
+
+
+        message = js.toJSONString();
+
+        mockedMS = mock(MessageSystem.class);
+        ws.setMS(mockedMS);
+        ws = new WebSocketImpl(useMS);
+
+        mockedRemoteEndpoint = mock(RemoteEndpoint.class);
+
+        mockedSession = mock(Session.class);
+        when(mockedSession.isOpen()).thenReturn(connection);
+        when(mockedSession.getRemote()).thenReturn(mockedRemoteEndpoint);
+
+        ws.onWebSocketConnect(mockedSession);
+
+    }
+
+    @Test(groups = "OnWebSocketTextCoordinatesAreIncorrectButServerTimeIsOk")
+    public void testOnWebSocketTextCoordinatesAreIncorrectButServerTimeIsOk() {
+        ws.onWebSocketText(message);
+        Assert.assertNull(UserDataImpl.getWSBySessionId(sessionId));
+    }
+
+    @AfterGroups("OnWebSocketTextCoordinatesAreIncorrectButServerTimeIsOk")
+    public void tearDownOnWebSocketTextCoordinatesAreIncorrectButServerTimeIsOk() {
+        UserDataImpl.clearAllMaps();
+    }
+
+
+
+
+
+
+
+
+
+    @BeforeGroups("OnWebSocketTextCoordinatesAreIncorrect5")
+    public void setUpOnWebSocketTextCoordinatesAreIncorrect5() {
+        UserDataImpl.clearAllMaps();
+
+        useMS = true;
+        connection = true;
+
+        startServeTime = "11111111";
+        sessionId = "sessionId1";
+
+        int from_x = 1;
+        int from_y = 1;
+        int to_x = 2;
+        int to_y = 2;
+        String status = "status";
+        JSONObject js = new JSONObject();
+        js.put("startServerTime", startServeTime);
+        js.put("from_x", from_x);
+        js.put("from_y", from_y);
+        js.put("to_x", to_x);
+        js.put("to_y", to_y);
+        js.put("status", status);
+
+
+        message = js.toJSONString();
+
+        mockedMS = mock(MessageSystem.class);
+        ws.setMS(mockedMS);
+        ws = new WebSocketImpl(useMS);
+
+        mockedRemoteEndpoint = mock(RemoteEndpoint.class);
+
+        mockedSession = mock(Session.class);
+        when(mockedSession.isOpen()).thenReturn(connection);
+        when(mockedSession.getRemote()).thenReturn(mockedRemoteEndpoint);
+
+        ws.onWebSocketConnect(mockedSession);
+
+    }
+
+    @Test(groups = "OnWebSocketTextCoordinatesAreIncorrect5")
+    public void testOnWebSocketTextCoordinatesAreIncorrect5() {
+        ws.onWebSocketText(message);
+        Assert.assertNull(UserDataImpl.getWSBySessionId(sessionId));
+    }
+
+    @AfterGroups("OnWebSocketTextCoordinatesAreIncorrect5")
+    public void tearDownOnWebSocketTextCoordinatesAreIncorrect5() {
+        UserDataImpl.clearAllMaps();
+    }
+
+
+
+
+
+    @BeforeGroups("OnWebSocketTextCoordinatesAreIncorrect4")
+    public void setUpOnWebSocketTextCoordinatesAreIncorrect4() {
+        UserDataImpl.clearAllMaps();
+
+        useMS = true;
+        connection = true;
+
+        startServeTime = "11111111";
+        sessionId = "sessionId1";
+        int from_x = 1;
+        int from_y = 1;
+        int to_x = 2;
+        int to_y = -1;
+        String status = "status";
+        JSONObject js = new JSONObject();
+        js.put("startServerTime", startServeTime);
+        js.put("sessionId", sessionId);
+        js.put("from_x", from_x);
+        js.put("from_y", from_y);
+        js.put("to_x", to_x);
+        js.put("to_y", to_y);
+        js.put("status", status);
+
+
+        message = js.toJSONString();
+
+        mockedMS = mock(MessageSystem.class);
+        ws.setMS(mockedMS);
+        ws = new WebSocketImpl(useMS);
+
+        mockedRemoteEndpoint = mock(RemoteEndpoint.class);
+
+        mockedSession = mock(Session.class);
+        when(mockedSession.isOpen()).thenReturn(connection);
+        when(mockedSession.getRemote()).thenReturn(mockedRemoteEndpoint);
+
+        ws.onWebSocketConnect(mockedSession);
+
+    }
+
+    @Test(groups = "OnWebSocketTextCoordinatesAreIncorrect4")
+    public void testOnWebSocketTextCoordinatesAreIncorrect4() {
+        ws.onWebSocketText(message);
+        Assert.assertNull(UserDataImpl.getWSBySessionId(sessionId));
+    }
+
+    @AfterGroups("OnWebSocketTextCoordinatesAreIncorrect4")
+    public void tearDownOnWebSocketTextCoordinatesAreIncorrect4() {
+        UserDataImpl.clearAllMaps();
+    }
+
+
+
+
+
+
+
+    @BeforeGroups("OnWebSocketTextCoordinatesAreIncorrect3")
+    public void setUpOnWebSocketTextCoordinatesAreIncorrect3() {
+        UserDataImpl.clearAllMaps();
+
+        useMS = true;
+        connection = true;
+
+        startServeTime = "11111111";
+        sessionId = "sessionId1";
+        int from_x = 1;
+        int from_y = 1;
+        int to_x = -1;
+        int to_y = 2;
+        String status = "status";
+        JSONObject js = new JSONObject();
+        js.put("startServerTime", startServeTime);
+        js.put("sessionId", sessionId);
+        js.put("from_x", from_x);
+        js.put("from_y", from_y);
+        js.put("to_x", to_x);
+        js.put("to_y", to_y);
+        js.put("status", status);
+
+
+        message = js.toJSONString();
+
+        mockedMS = mock(MessageSystem.class);
+        ws.setMS(mockedMS);
+        ws = new WebSocketImpl(useMS);
+
+        mockedRemoteEndpoint = mock(RemoteEndpoint.class);
+
+        mockedSession = mock(Session.class);
+        when(mockedSession.isOpen()).thenReturn(connection);
+        when(mockedSession.getRemote()).thenReturn(mockedRemoteEndpoint);
+
+        ws.onWebSocketConnect(mockedSession);
+
+    }
+
+    @Test(groups = "OnWebSocketTextCoordinatesAreIncorrect3")
+    public void testOnWebSocketTextCoordinatesAreIncorrect3() {
+        ws.onWebSocketText(message);
+        Assert.assertNull(UserDataImpl.getWSBySessionId(sessionId));
+    }
+
+    @AfterGroups("OnWebSocketTextCoordinatesAreIncorrect3")
+    public void tearDownOnWebSocketTextCoordinatesAreIncorrect3() {
+        UserDataImpl.clearAllMaps();
+    }
+
+
+
+
+    @BeforeGroups("OnWebSocketTextCoordinatesAreIncorrect2")
+    public void setUpOnWebSocketTextCoordinatesAreIncorrect2() {
+        UserDataImpl.clearAllMaps();
+
+        useMS = true;
+        connection = true;
+
+        startServeTime = "11111111";
+        sessionId = "sessionId1";
+        int from_x = 1;
+        int from_y = -1;
+        int to_x = 2;
+        int to_y = 2;
+        String status = "status";
+        JSONObject js = new JSONObject();
+        js.put("startServerTime", startServeTime);
+        js.put("sessionId", sessionId);
+        js.put("from_x", from_x);
+        js.put("from_y", from_y);
+        js.put("to_x", to_x);
+        js.put("to_y", to_y);
+        js.put("status", status);
+
+
+        message = js.toJSONString();
+
+        mockedMS = mock(MessageSystem.class);
+        ws.setMS(mockedMS);
+        ws = new WebSocketImpl(useMS);
+
+        mockedRemoteEndpoint = mock(RemoteEndpoint.class);
+
+        mockedSession = mock(Session.class);
+        when(mockedSession.isOpen()).thenReturn(connection);
+        when(mockedSession.getRemote()).thenReturn(mockedRemoteEndpoint);
+
+        ws.onWebSocketConnect(mockedSession);
+
+    }
+
+    @Test(groups = "OnWebSocketTextCoordinatesAreIncorrect2")
+    public void testOnWebSocketTextCoordinatesAreIncorrect2() {
+        ws.onWebSocketText(message);
+        Assert.assertNull(UserDataImpl.getWSBySessionId(sessionId));
+    }
+
+    @AfterGroups("OnWebSocketTextCoordinatesAreIncorrect2")
+    public void tearDownOnWebSocketTextCoordinatesAreIncorrect2() {
+        UserDataImpl.clearAllMaps();
+    }
+
+
+
+
+
+    @BeforeGroups("OnWebSocketTextCoordinatesAreIncorrect1")
+    public void setUpOnWebSocketTextCoordinatesAreIncorrect1() {
+        UserDataImpl.clearAllMaps();
+
+        useMS = true;
+        connection = true;
+
+        startServeTime = "11111111";
+        sessionId = "sessionId1";
+        int from_x = -1;
+        int from_y = 1;
+        int to_x = 2;
+        int to_y = 2;
+        String status = "status";
+        JSONObject js = new JSONObject();
+        js.put("startServerTime", startServeTime);
+        js.put("sessionId", sessionId);
+        js.put("from_x", from_x);
+        js.put("from_y", from_y);
+        js.put("to_x", to_x);
+        js.put("to_y", to_y);
+        js.put("status", status);
+
+
+        message = js.toJSONString();
+
+        mockedMS = mock(MessageSystem.class);
+        ws.setMS(mockedMS);
+        ws = new WebSocketImpl(useMS);
+
+        mockedRemoteEndpoint = mock(RemoteEndpoint.class);
+
+        mockedSession = mock(Session.class);
+        when(mockedSession.isOpen()).thenReturn(connection);
+        when(mockedSession.getRemote()).thenReturn(mockedRemoteEndpoint);
+
+        ws.onWebSocketConnect(mockedSession);
+
+    }
+
+    @Test(groups = "OnWebSocketTextCoordinatesAreIncorrect1")
+    public void testOnWebSocketTextCoordinatesAreIncorrect1() {
+        ws.onWebSocketText(message);
+        Assert.assertNull(UserDataImpl.getWSBySessionId(sessionId));
+    }
+
+    @AfterGroups("OnWebSocketTextCoordinatesAreIncorrect1")
+    public void tearDownOnWebSocketTextCoordinatesAreIncorrect1() {
+        UserDataImpl.clearAllMaps();
+    }
+
+
+
+
+
+
+
+
+
+
+
     @BeforeGroups("OnWebSocketTextThereAreNoConnection")
     public void setUpOnWebSocketTextThereAreNoConnection() {
+        UserDataImpl.clearAllMaps();
+
         useMS = true;
         connection = false;
 
@@ -96,8 +504,12 @@ public class TestWebSocketImpl {
         ws.setMS(mockedMS);
         ws = new WebSocketImpl(useMS);
 
+        mockedRemoteEndpoint = mock(RemoteEndpoint.class);
+
         mockedSession = mock(Session.class);
         when(mockedSession.isOpen()).thenReturn(connection);
+        when(mockedSession.getRemote()).thenReturn(mockedRemoteEndpoint);
+
         ws.onWebSocketConnect(mockedSession);
 
     }
@@ -114,8 +526,14 @@ public class TestWebSocketImpl {
     }
 
 
+
+
+
+
+
     @BeforeGroups("OnWebSocketTextServerTimeIsNotCorrect")
     public void setUpOnWebSocketTextServerTimeIsNotCorrect() {
+        UserDataImpl.clearAllMaps();
         useMS = true;
         connection = true;
 
@@ -142,8 +560,12 @@ public class TestWebSocketImpl {
         ws.setMS(mockedMS);
         ws = new WebSocketImpl(useMS);
 
+        mockedRemoteEndpoint = mock(RemoteEndpoint.class);
+
         mockedSession = mock(Session.class);
         when(mockedSession.isOpen()).thenReturn(connection);
+        when(mockedSession.getRemote()).thenReturn(mockedRemoteEndpoint);
+
         ws.onWebSocketConnect(mockedSession);
 
     }
