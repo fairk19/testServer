@@ -10,7 +10,9 @@ import org.eclipse.jetty.server.Request;
 import org.testng.Assert;
 import org.testng.annotations.*;
 import utils.SHA2;
+import utils.SysInfo;
 import utils.TemplateHelper;
+import utils.TimeHelper;
 
 import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;
@@ -33,19 +35,198 @@ public class TestRegUserTargetRegPost {
     private Request baseRequest;
     private HttpServletRequest request;
     private HttpServletResponse response;
-    private String SESSION_ID_FIELD = "sessionId";
-    private String sessionIdValue = "123";
-    private String START_SERVER_TIME_FIELD = "startServerTime";
-    private String startServerTimeValue = UserDataImpl.getStartServerTime();
+    private String SESSION_ID_FIELD;
+    private String sessionIdValue;
+    private String START_SERVER_TIME_FIELD;
+    private String startServerTimeValue;
 
     private File returnedPage;
     private File expectedPage;
 
+    @BeforeGroups("NUTargetAdmin")
+    public void  setUpNUTargetAdmin() {
+        SESSION_ID_FIELD = "sessionId";
+        sessionIdValue = "123";
+        START_SERVER_TIME_FIELD = "";
+        startServerTimeValue = UserDataImpl.getStartServerTime();
 
+        mockedMS = mock (MessageSystem.class);
+        frontend = new FrontendImpl(mockedMS);
+        response = mock(HttpServletResponse.class);
+        request = mock(HttpServletRequest.class);
+        target = "/admin";
+        baseRequest = mock(Request.class);
+        Cookie mockedCookieSessionId = mock(Cookie.class);
+        when(mockedCookieSessionId.getName()).thenReturn(SESSION_ID_FIELD);
+        when(mockedCookieSessionId.getValue()).thenReturn(sessionIdValue);
+        Cookie mockedCookieServerTime = mock(Cookie.class);
+        when(mockedCookieServerTime.getName()).thenReturn(START_SERVER_TIME_FIELD);
+        when(mockedCookieServerTime.getValue()).thenReturn(startServerTimeValue);
+        try {
+            PrintWriter writer = new PrintWriter("returnedPage.html");
+            when(response.getWriter()).thenReturn(writer);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        Cookie[] arrCookies = {mockedCookieSessionId, mockedCookieServerTime};
+        when(request.getCookies()).thenReturn(arrCookies);
+        TemplateHelper.init();
+        SysInfo sysInfo = new SysInfo();
+    }
+
+    @Test(groups = "NUTargetAdmin")
+    public void testNUTargetAdmin() throws IOException {
+        frontend.handle(target,baseRequest,request,response);
+
+        sessionIdValue = SHA2.getSHA2(String.valueOf(frontend.getCreatorSessionId().intValue()));
+        Assert.assertNotNull(UserDataImpl.getUserSessionBySessionId(sessionIdValue));
+
+
+        returnedPage = new File("returnedPage.html");
+        String returnedPageAsString = new String();
+        returnedPageAsString = Files.toString(returnedPage, defaultCharset());
+
+        expectedPage = new File("./statistic/ccu");
+        Assert.assertTrue(returnedPageAsString.contains(Files.toString(expectedPage, defaultCharset())));
+
+        expectedPage = new File("./statistic/memoryUsage");
+        Assert.assertTrue(returnedPageAsString.contains(Files.toString(expectedPage, defaultCharset())));
+
+        expectedPage = new File("./statistic/time");
+        Assert.assertTrue(returnedPageAsString.contains(Files.toString(expectedPage, defaultCharset())));
+
+        expectedPage = new File("./statistic/totalMemory");
+        Assert.assertTrue(returnedPageAsString.contains(Files.toString(expectedPage, defaultCharset())));
+
+    }
+
+    @AfterGroups("NUTargetAdmin")
+    public void tearDownNUTargetAdmin() {
+        returnedPage.delete();
+    }
+
+
+//    @BeforeGroups("NUTargetAdmin")
+//    public void  setUpNUTargetAdmin() {
+//        mockedMS  = mock(MessageSystem.class);
+//        frontend = new FrontendImpl(mockedMS);
+//        response = mock(HttpServletResponse.class);
+//        request = mock(HttpServletRequest.class);
+//        target = "/admin";
+//        baseRequest = mock(Request.class);
+//        Cookie mockedCookieSessionId = mock(Cookie.class);
+//        when(mockedCookieSessionId.getName()).thenReturn(SESSION_ID_FIELD);
+//        when(mockedCookieSessionId.getValue()).thenReturn(sessionIdValue);
+//        Cookie mockedCookieServerTime = mock(Cookie.class);
+//        when(mockedCookieServerTime.getName()).thenReturn(START_SERVER_TIME_FIELD);
+//        when(mockedCookieServerTime.getValue()).thenReturn(startServerTimeValue);
+//        try {
+//            PrintWriter writer = new PrintWriter("returnedPage.html");
+//            when(response.getWriter()).thenReturn(writer);
+//        } catch (IOException e) {
+//            e.printStackTrace();
+//        }
+//        Cookie[] arrCookies = {mockedCookieSessionId, mockedCookieServerTime};
+//        when(request.getCookies()).thenReturn(arrCookies);
+//        TemplateHelper.init();
+//        SysInfo sysInfo = new SysInfo();
+//    }
+//
+//    @Test( groups = "NUTargetAdmin" )
+//    public void testNUTargetAdmin() throws IOException {
+//        frontend.handle(target,baseRequest,request,response);
+//
+//        sessionIdValue = SHA2.getSHA2(String.valueOf(frontend.getCreatorSessionId().intValue()));
+//        Assert.assertNotNull(UserDataImpl.getUserSessionBySessionId(sessionIdValue));
+//
+//
+//        returnedPage = new File("returnedPage.html");
+//        String returnedPageAsString = new String();
+//        returnedPageAsString = Files.toString(returnedPage, defaultCharset());
+//
+//        expectedPage = new File("./statistic/ccu");
+//        Assert.assertTrue(returnedPageAsString.contains(Files.toString(expectedPage, defaultCharset())));
+//
+//        expectedPage = new File("./statistic/memoryUsage");
+//        Assert.assertTrue(returnedPageAsString.contains(Files.toString(expectedPage, defaultCharset())));
+//
+//        expectedPage = new File("./statistic/time");
+//        Assert.assertTrue(returnedPageAsString.contains(Files.toString(expectedPage, defaultCharset())));
+//
+//        expectedPage = new File("./statistic/totalMemory");
+//        Assert.assertTrue(returnedPageAsString.contains(Files.toString(expectedPage, defaultCharset())));
+//
+//    }
+//
+//    @AfterGroups("NUTargetAdmin")
+//    public void tearDownNUTargetAdmin() {
+//        returnedPage.delete();
+//    }
+
+
+
+
+
+
+
+
+    @BeforeGroups("NUTarget404")
+    public void  setUpNUTarget404() {
+        SESSION_ID_FIELD = "sessionId";
+        sessionIdValue = "123";
+        START_SERVER_TIME_FIELD = "startServerTime";
+        startServerTimeValue = UserDataImpl.getStartServerTime();
+
+        mockedMS = mock (MessageSystem.class);
+        frontend = new FrontendImpl(mockedMS);
+        response = mock(HttpServletResponse.class);
+        request = mock(HttpServletRequest.class);
+        target = "/notFound";
+        baseRequest = mock(Request.class);
+        Cookie mockedCookieSessionId = mock(Cookie.class);
+        when(mockedCookieSessionId.getName()).thenReturn(SESSION_ID_FIELD);
+        when(mockedCookieSessionId.getValue()).thenReturn(sessionIdValue);
+        Cookie mockedCookieServerTime = mock(Cookie.class);
+        when(mockedCookieServerTime.getName()).thenReturn(START_SERVER_TIME_FIELD);
+        when(mockedCookieServerTime.getValue()).thenReturn(startServerTimeValue);
+        try {
+            PrintWriter writer = new PrintWriter("returnedPage.html");
+            when(response.getWriter()).thenReturn(writer);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        Cookie[] arrCookies = {mockedCookieSessionId, mockedCookieServerTime};
+        when(request.getCookies()).thenReturn(arrCookies);
+        TemplateHelper.init();
+    }
+
+    @Test(groups = "NUTarget404")
+    public void testNUTarget404() throws IOException {
+        frontend.handle(target,baseRequest,request,response);
+
+        returnedPage = new File("returnedPage.html");
+        expectedPage = new File("./static/html/404.html");
+
+        String returnedPageAsString = new String();
+        returnedPageAsString = Files.toString(returnedPage, defaultCharset());
+        sessionIdValue = SHA2.getSHA2(String.valueOf(frontend.getCreatorSessionId().intValue()));
+
+        Assert.assertTrue(returnedPageAsString.contains(Files.toString(expectedPage, defaultCharset())));
+        Assert.assertNotNull(UserDataImpl.getUserSessionBySessionId(sessionIdValue));
+    }
+
+    @AfterGroups("NUTarget404")
+    public void tearDownNUTarget404() {
+        returnedPage.delete();
+    }
 
 
     @BeforeGroups("NickAndPasswd=null")
     public void  setUpRegNickAndPasswdAreNull() {
+        SESSION_ID_FIELD = "sessionId";
+        sessionIdValue = "123";
+        START_SERVER_TIME_FIELD = "startServerTime";
+
         mockedMS = mock (MessageSystem.class);
         frontend = new FrontendImpl(mockedMS);
         response = mock(HttpServletResponse.class);
@@ -76,6 +257,7 @@ public class TestRegUserTargetRegPost {
         frontend.handle(target,baseRequest,request,response);
 
         returnedPage = new File("returnedPage.html");
+        TimeHelper.sleep(200);
         expectedPage = new File("./static/html/reg.html");
 
         String returnedPageAsString = new String();
@@ -96,6 +278,11 @@ public class TestRegUserTargetRegPost {
 
     @BeforeGroups("NickAndPasswordAreNotNull")
     public void setUpNickAndPasswordAreNotNull() {
+        SESSION_ID_FIELD = "sessionId";
+        sessionIdValue = "123";
+        START_SERVER_TIME_FIELD = "startServerTime";
+        startServerTimeValue = UserDataImpl.getStartServerTime();
+
         mockedMS = mock (MessageSystem.class);
         frontend = new FrontendImpl(mockedMS);
         response = mock(HttpServletResponse.class);
@@ -144,6 +331,11 @@ public class TestRegUserTargetRegPost {
 
     @BeforeGroups("RegNickAndPasswordAreNotNull")
     public void setUpRegNickAndPasswordAreNotNull() {
+        SESSION_ID_FIELD = "sessionId";
+        sessionIdValue = "123";
+        START_SERVER_TIME_FIELD = "startServerTime";
+        startServerTimeValue = UserDataImpl.getStartServerTime();
+
         mockedMS = mock (MessageSystem.class);
         frontend = new FrontendImpl(mockedMS);
         response = mock(HttpServletResponse.class);
@@ -193,6 +385,11 @@ public class TestRegUserTargetRegPost {
 
     @BeforeGroups("RegNickAndPasswordAreNull")
     public void setUpRegNickAndPasswordAreNull() {
+        SESSION_ID_FIELD = "sessionId";
+        sessionIdValue = "123";
+        START_SERVER_TIME_FIELD = "startServerTime";
+        startServerTimeValue = UserDataImpl.getStartServerTime();
+
         mockedMS = mock (MessageSystem.class);
         frontend = new FrontendImpl(mockedMS);
         response = mock(HttpServletResponse.class);
@@ -229,6 +426,7 @@ public class TestRegUserTargetRegPost {
         frontend.handle(target,baseRequest,request,response);
 
         returnedPage = new File("returnedPage.html");
+        TimeHelper.sleep(200);
         expectedPage = new File("./static/html/reg.html");
 
         String returnedPageAsString = new String();
@@ -246,6 +444,11 @@ public class TestRegUserTargetRegPost {
 
     @BeforeGroups("TargetWaitAndPostStatusZero")
     public void setUpTargetWaitAndPostStatusZero() {
+        SESSION_ID_FIELD = "sessionId";
+        sessionIdValue = "123";
+        START_SERVER_TIME_FIELD = "startServerTime";
+        startServerTimeValue = UserDataImpl.getStartServerTime();
+
         mockedMS = mock (MessageSystem.class);
         frontend = new FrontendImpl(mockedMS);
         response = mock(HttpServletResponse.class);
@@ -292,6 +495,12 @@ public class TestRegUserTargetRegPost {
 
     @BeforeGroups("TargetWait")
     public void setUpTargetWait() {
+        SESSION_ID_FIELD = "sessionId";
+        sessionIdValue = "123";
+        START_SERVER_TIME_FIELD = "startServerTime";
+        startServerTimeValue = UserDataImpl.getStartServerTime();
+
+
         mockedMS = mock (MessageSystem.class);
         frontend = new FrontendImpl(mockedMS);
         response = mock(HttpServletResponse.class);
@@ -332,6 +541,7 @@ public class TestRegUserTargetRegPost {
         verify(response).setStatus(HttpServletResponse.SC_OK);
 
         returnedPage = new File("returnedPage.html");
+        TimeHelper.sleep(200);
         expectedPage = new File("./static/html/wait.html");
 
         String returnedPageAsString = new String();
@@ -351,6 +561,13 @@ public class TestRegUserTargetRegPost {
 
     @BeforeGroups("StatusReadyTargetGame")
     public void setUpStatusReadyTargetGame() {
+        SESSION_ID_FIELD = "sessionId";
+        sessionIdValue = "123";
+        START_SERVER_TIME_FIELD = "startServerTime";
+        startServerTimeValue = UserDataImpl.getStartServerTime();
+
+
+
         mockedMS = mock (MessageSystem.class);
         frontend = new FrontendImpl(mockedMS);
         response = mock(HttpServletResponse.class);
@@ -407,8 +624,16 @@ public class TestRegUserTargetRegPost {
         returnedPage.delete();
     }
 
+
+
     @BeforeGroups("StatusReadyTargetMainPage")
     public void setUpStatusReadyTargetMainPage() {
+        SESSION_ID_FIELD = "sessionId";
+        sessionIdValue = "123";
+        START_SERVER_TIME_FIELD = "startServerTime";
+        startServerTimeValue = UserDataImpl.getStartServerTime();
+
+
         mockedMS = mock (MessageSystem.class);
         frontend = new FrontendImpl(mockedMS);
         response = mock(HttpServletResponse.class);
@@ -450,6 +675,7 @@ public class TestRegUserTargetRegPost {
         verify(response).setStatus(HttpServletResponse.SC_OK);
 
         returnedPage = new File("returnedPage.html");
+        TimeHelper.sleep(200);
         expectedPage = new File("./static/html/index.html");
 
 
@@ -472,6 +698,13 @@ public class TestRegUserTargetRegPost {
 
     @BeforeGroups("StatusReadyTargetLogout")
     public void setUpStatusReadyTargetLogout() {
+        SESSION_ID_FIELD = "sessionId";
+        sessionIdValue = "123";
+        START_SERVER_TIME_FIELD = "startServerTime";
+        startServerTimeValue = UserDataImpl.getStartServerTime();
+
+
+
         mockedMS = mock (MessageSystem.class);
         frontend = new FrontendImpl(mockedMS);
         response = mock(HttpServletResponse.class);
@@ -534,6 +767,12 @@ public class TestRegUserTargetRegPost {
 
     @BeforeGroups("StatusReadyTargetProfile")
     public void setUpStatusReadyTargetProfile() {
+        SESSION_ID_FIELD = "sessionId";
+        sessionIdValue = "123";
+        START_SERVER_TIME_FIELD = "startServerTime";
+        startServerTimeValue = UserDataImpl.getStartServerTime();
+
+
         mockedMS = mock (MessageSystem.class);
         frontend = new FrontendImpl(mockedMS);
         response = mock(HttpServletResponse.class);
@@ -573,6 +812,7 @@ public class TestRegUserTargetRegPost {
         frontend.handle(target,baseRequest,request,response);
 
         returnedPage = new File("returnedPage.html");
+        TimeHelper.sleep(200);
 
         String returnedPageAsString = new String();
         returnedPageAsString = Files.toString(returnedPage, defaultCharset());
@@ -598,6 +838,11 @@ public class TestRegUserTargetRegPost {
 
     @BeforeGroups("StatusReadyTargetReg")
     public void setUpStatusReadyTargetReg() {
+        SESSION_ID_FIELD = "sessionId";
+        sessionIdValue = "123";
+        START_SERVER_TIME_FIELD = "startServerTime";
+        startServerTimeValue = UserDataImpl.getStartServerTime();
+
         mockedMS = mock (MessageSystem.class);
         frontend = new FrontendImpl(mockedMS);
         response = mock(HttpServletResponse.class);

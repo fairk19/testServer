@@ -61,7 +61,7 @@ public class SysInfoTest {
 
     @BeforeTest
     public void setUpBeforeTest() throws Exception {
-        this.pathMemoryUsage = System.getProperty("user.dir") + "\\statistic\\MemoryUsage";
+        this.pathMemoryUsage = System.getProperty("user.dir") + "/statistic/memoryUsage";
         this.sysInfo = new SysInfo();
         Field fieldTimeOut = this.sysInfo.getClass().getDeclaredField("timeOut");
         fieldTimeOut.setAccessible(true);

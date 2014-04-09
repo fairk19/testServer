@@ -325,6 +325,7 @@ public class TestUserDataImpl {
         sessionId2 = "sessionId2";
 
         userDataSet1 = mock(UserDataSet.class);
+        userDataSet2 = mock(UserDataSet.class);
         UserDataImpl.putLogInUser(sessionId1, userDataSet1);
 
     }
