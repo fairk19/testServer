@@ -33,7 +33,6 @@ public class AddressServiceImpl implements AddressService{
 		if (!nameToQuantity.containsKey(name)){
 			System.err.println("Service "+name+" not found");
 			System.err.println("Shutdown");
-			System.exit(-1);
 			return null;
 		}
 		String number = String.valueOf(nameToLast.get(name));

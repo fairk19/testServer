@@ -26,17 +26,12 @@ public class TestChatWSIpml {
     private ChatWSImpl mockedChatWS;
     @BeforeMethod
     public void setUp() {
-        System.out.println("Before Method");
+
         chatWS = new ChatWSImpl();
         mockedUserData = mock(UserDataImpl.class);
-        System.out.println(TimeHelper.getCurrentTime());
-//        PowerMockito.mockStatic(UserDataImpl.class);
-//        PowerMockito.when(UserDataImpl.checkServerTime("current_date")).thenReturn(true);
-
     }
     @Test
     public void testConstructor() {
-        System.out.println("Test Method");
         Assert.assertNotNull(chatWS);
     }
 
@@ -69,12 +64,5 @@ public class TestChatWSIpml {
        ChatWSImpl.sendMessage(null, null);
 
     }
-    @Test
-    public void testAddNewChater() {
-//        verify(mockedUserData, times(1)).putSessionIdAndChatWS(sessionId, chatWS);
-    }
-    @AfterMethod
-    public void shutDown() {
-        System.out.println("After Method");
-    }
+
 }

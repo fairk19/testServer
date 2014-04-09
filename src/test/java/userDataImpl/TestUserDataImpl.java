@@ -366,15 +366,11 @@ public class TestUserDataImpl {
         when(userDataSet2.getId()).thenReturn(userID);
         UserDataImpl.putSessionIdAndUserSession(sessionId2, userDataSet2);
 
-        System.out.println("before 1= " + userDataSet1.hashCode());
-        System.out.println("before 2= " + userDataSet2.hashCode());
     }
 
     @Test(groups = "UpdateUserId")
     public void testUpdateUserId() {
         userDataImpl.updateUserId(sessionId2, userDataSet2);
-        System.out.println("after 1= " + userDataSet1.hashCode());
-        System.out.println("after 2= " + userDataSet2.hashCode());
         verify(userDataSet2).makeLike(userDataSet2);
         verify(userDataSet2).setPostStatus(0);
     }
@@ -383,11 +379,6 @@ public class TestUserDataImpl {
     public void tearDownUpdateUserId() {
         UserDataImpl.clearAllMaps();
     }
-
-
-
-
-
 
     @BeforeGroups("UpdateUserIdOldUserIsNull")
     public void setUpUpdateUserIdOldUserIsNull() {
