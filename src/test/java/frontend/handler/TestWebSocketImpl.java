@@ -6,12 +6,17 @@ import base.UserData;
 import dbService.UserDataSet;
 import frontend.UserDataImpl;
 import frontend.WebSocketImpl;
+import junit.framework.Assert;
 import org.eclipse.jetty.server.Authentication;
 import org.eclipse.jetty.websocket.api.RemoteEndpoint;
 import org.eclipse.jetty.websocket.api.Session;
+import org.json.simple.JSONObject;
 import org.testng.annotations.AfterGroups;
 import org.testng.annotations.BeforeGroups;
 import org.testng.annotations.Test;
+
+
+import org.powermock.core.classloader.annotations.PrepareForTest;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -21,6 +26,7 @@ import static org.mockito.Mockito.*;
 /**
  * Created by vanik on 09.04.14.
  */
+
 public class TestWebSocketImpl {
     private Map<String, String> usersToColors;
     private String sessionId;
@@ -39,7 +45,12 @@ public class TestWebSocketImpl {
     private Session mockedSession;
     private MessageSystem mockedMS;
     private WebSocketImpl ws;
-    boolean useMS;
+    private boolean useMS;
+    private boolean connection;
+    private String startServeTime;
+    private UserDataImpl mockedUserDataImpl;
+
+    private String message;
     @BeforeGroups("")
     public void setUp() {
 
@@ -53,6 +64,99 @@ public class TestWebSocketImpl {
     @AfterGroups("")
     public void tearDown() {
 
+    }
+
+
+
+    @BeforeGroups("OnWebSocketTextThereAreNoConnection")
+    public void setUpOnWebSocketTextThereAreNoConnection() {
+        useMS = true;
+        connection = false;
+
+        startServeTime = "11111111";
+        sessionId = "sessionId1";
+        int from_x = 1;
+        int from_y = 1;
+        int to_x = 2;
+        int to_y = 2;
+        String status = "status";
+        JSONObject js = new JSONObject();
+        js.put("startServerTime", startServeTime);
+        js.put("sessionId", sessionId);
+        js.put("from_x", from_x);
+        js.put("from_y", from_y);
+        js.put("to_x", to_x);
+        js.put("to_y", to_y);
+        js.put("status", status);
+
+
+        message = js.toJSONString();
+
+        mockedMS = mock(MessageSystem.class);
+        ws.setMS(mockedMS);
+        ws = new WebSocketImpl(useMS);
+
+        mockedSession = mock(Session.class);
+        when(mockedSession.isOpen()).thenReturn(connection);
+        ws.onWebSocketConnect(mockedSession);
+
+    }
+
+    @Test(groups = "OnWebSocketTextThereAreNoConnection")
+    public void testOnWebSocketTextThereAreNoConnection() {
+        ws.onWebSocketText(message);
+        Assert.assertNull(UserDataImpl.getWSBySessionId(sessionId));
+    }
+
+    @AfterGroups("OnWebSocketTextThereAreNoConnection")
+    public void tearDownOnWebSocketTextThereAreNoConnection() {
+        UserDataImpl.clearAllMaps();
+    }
+
+
+    @BeforeGroups("OnWebSocketTextServerTimeIsNotCorrect")
+    public void setUpOnWebSocketTextServerTimeIsNotCorrect() {
+        useMS = true;
+        connection = true;
+
+        startServeTime = "11111111";
+        sessionId = "sessionId1";
+        int from_x = 1;
+        int from_y = 1;
+        int to_x = 2;
+        int to_y = 2;
+        String status = "status";
+        JSONObject js = new JSONObject();
+        js.put("startServerTime", startServeTime);
+        js.put("sessionId", sessionId);
+        js.put("from_x", from_x);
+        js.put("from_y", from_y);
+        js.put("to_x", to_x);
+        js.put("to_y", to_y);
+        js.put("status", status);
+
+
+        message = js.toJSONString();
+
+        mockedMS = mock(MessageSystem.class);
+        ws.setMS(mockedMS);
+        ws = new WebSocketImpl(useMS);
+
+        mockedSession = mock(Session.class);
+        when(mockedSession.isOpen()).thenReturn(connection);
+        ws.onWebSocketConnect(mockedSession);
+
+    }
+
+    @Test(groups = "OnWebSocketTextServerTimeIsNotCorrect")
+    public void testOnWebSocketText() {
+        ws.onWebSocketText(message);
+        Assert.assertNull(UserDataImpl.getWSBySessionId(sessionId));
+    }
+
+    @AfterGroups("OnWebSocketTextServerTimeIsNotCorrect")
+    public void tearDownOnWebSocketTextServerTimeIsNotCorrect() {
+        UserDataImpl.clearAllMaps();
     }
 
 
