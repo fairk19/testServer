@@ -53,6 +53,66 @@ public class TestNewChatWSImpl {
     }
 
 
+
+
+
+    @BeforeGroups("OnWebSocketTextAddMessageUserIsNull")
+    public void setUpOnWebSocketTextAddMessageUserIsNull() {
+        UserDataImpl.clearAllMaps();
+        GameChatImpl.clearAllMaps();
+
+        sessionId1 = "sessionId1";
+        sessionId2 = "sessionId2";
+
+        text = "textFortest";
+        connection = true;
+        nick1 = "nick1";
+
+        mockedRemoteEndpoint = mock(RemoteEndpoint.class);
+
+        mockedSession = mock(Session.class);
+        when(mockedSession.isOpen()).thenReturn(connection);
+        when(mockedSession.getRemote()).thenReturn(mockedRemoteEndpoint);
+
+        userDataSet1 = mock(UserDataSet.class);
+        when(userDataSet1.getNick()).thenReturn(nick1);
+//        UserDataImpl.putLogInUser(sessionId1, userDataSet1);
+
+        startServerTime = UserDataImpl.getStartServerTime();
+        JSONObject js = new JSONObject();
+        js.put("sessionId", sessionId1);
+        js.put("startServerTime", startServerTime);
+        js.put("text", text);
+        message = js.toJSONString();
+        chatWS = new ChatWSImpl();
+        chatWS.onWebSocketConnect(mockedSession);
+
+        mockedMS = mock(MessageSystem.class);
+        gameChat = new GameChatImpl(mockedMS);
+        gameChat.createChat(sessionId1, sessionId2);
+    }
+
+    @Test(groups = "OnWebSocketTextAddMessageUserIsNull")
+    public void testOnWebSocketTextAddMessageUserIsNull() {
+        chatWS.onWebSocketText(message);
+        verify(userDataSet1, never()).visit();
+        verify(mockedSession, never()).getRemote();
+    }
+
+    @AfterGroups("OnWebSocketTextAddMessageUserIsNull")
+    public void tearDownOnWebSocketTextAddMessageUserIsNull() {
+        UserDataImpl.clearAllMaps();
+        GameChatImpl.clearAllMaps();
+    }
+    
+    
+    
+    
+    
+    
+    
+
+
     @BeforeGroups("OnWebSocketTextTextIsEmpty")
     public void setUpOnWebSocketTextTextIsEmpty() {
         UserDataImpl.clearAllMaps();
