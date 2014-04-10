@@ -213,8 +213,64 @@ public class TestRegUserTargetRegPost {
 
 
 
+    @BeforeGroups("RegUserTargetReg")
+    public void  setUpRegUserTargetReg() {
 
-    @BeforeGroups("HandleNotNewUserTargetRules")
+        UserDataImpl.clearAllMaps();
+
+        SESSION_ID_FIELD = "sessionId";
+        sessionIdValue = "123";
+        START_SERVER_TIME_FIELD = "startServerTime";
+        startServerTimeValue = UserDataImpl.getStartServerTime();
+
+        frontend = new FrontendImpl(mockedMS);
+        response = mock(HttpServletResponse.class);
+        request = mock(HttpServletRequest.class);
+        target = "/reg";
+        baseRequest = mock(Request.class);
+        Cookie mockedCookieSessionId = mock(Cookie.class);
+        when(mockedCookieSessionId.getName()).thenReturn(SESSION_ID_FIELD);
+        when(mockedCookieSessionId.getValue()).thenReturn(sessionIdValue);
+        Cookie mockedCookieServerTime = mock(Cookie.class);
+        when(mockedCookieServerTime.getName()).thenReturn(START_SERVER_TIME_FIELD);
+        when(mockedCookieServerTime.getValue()).thenReturn(startServerTimeValue);
+        try {
+            PrintWriter writer = new PrintWriter("returnedPage.html");
+            when(response.getWriter()).thenReturn(writer);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        Cookie[] arrCookies = {mockedCookieSessionId, mockedCookieServerTime};
+        when(request.getCookies()).thenReturn(arrCookies);
+        when(request.getMethod()).thenReturn("GET");
+        TemplateHelper.init();
+        UserDataImpl.putSessionIdAndUserSession(sessionIdValue, new UserDataSet());
+    }
+
+    @Test(groups = "RegUserTargetReg")
+    public void testRegUserTargetReg() throws IOException {
+        frontend.handle(target,baseRequest,request,response);
+
+        returnedPage = new File("returnedPage.html");
+        expectedPage = new File("./static/html/reg.html");
+
+        String returnedPageAsString = new String();
+        returnedPageAsString = Files.toString(returnedPage, defaultCharset());
+        Assert.assertTrue(returnedPageAsString.contains(Files.toString(expectedPage, defaultCharset())));
+        Assert.assertNotNull(UserDataImpl.getUserSessionBySessionId(sessionIdValue));
+    }
+
+    @AfterGroups("RegUserTargetReg")
+    public void tearDownRegUserTargetReg() {
+        returnedPage.delete();
+        UserDataImpl.clearAllMaps();
+    }
+
+
+
+
+
+    @BeforeGroups("RegUserTargetReg")
     public void  setUpRegUserTargetMainPage() {
         UserDataImpl.clearAllMaps();
 
@@ -248,7 +304,7 @@ public class TestRegUserTargetRegPost {
         UserDataImpl.putSessionIdAndUserSession(sessionIdValue, new UserDataSet());
     }
 
-    @Test(groups = "HandleNotNewUserTargetRules")
+    @Test(groups = "RegUserTargetReg")
     public void testRegUserTargetMainPage() throws IOException {
         frontend.handle(target,baseRequest,request,response);
 
@@ -261,7 +317,7 @@ public class TestRegUserTargetRegPost {
         Assert.assertNotNull(UserDataImpl.getUserSessionBySessionId(sessionIdValue));
     }
 
-    @AfterGroups("HandleNotNewUserTargetRules")
+    @AfterGroups("RegUserTargetReg")
     public void tearDownRegUserTargetMainPage() {
         returnedPage.delete();
         UserDataImpl.clearAllMaps();
