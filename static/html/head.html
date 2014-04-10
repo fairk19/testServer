@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<head>
+    <link href="/css/head.css" rel="stylesheet">
+</head>
+<body>
+    <div class="navbar-wrapper">
+        <div class="container">
+            <div class="navbar navbar-inverse">
+                <div class="navbar-inner">
+                    <a class="brand" href="#">Шашки@Технопарк</a>
+                    <div class="nav-collapse collapse">
+                        <ul class="nav">
+                            <li><a href="/">Главная</a></li>
+                            <#if id != '0'>
+                            <li><a href="/game">Играть</a></li>
+                            <#else>
+                            <li><a href="/reg">Регистрация</a></li>
+                            </#if>
+                            <li><a href="/rules">Правила</a></li>
+                            <li><a href="/admin">Статистика</a></li>
+                            <li><a href="/temp">temp</a> </li>
+                        </ul>
+                    </div>
+                    <#if id == '0'>
+                    <form class="pull-right form-inline" method="POST">
+                        <input name="nick" type="text" class="input-small" placeholder="Login">
+                        <input name="password" type="password" class="input-small" placeholder="Password">
+                        <button type="submit" class="btn">Войти</button>
+                    </form>
+                    <#else>
+                    <div class="pull-right data">
+                            <a href='/profile' >${nick}</a>
+                            <a href="/logout" >
+                                <button class="btn">Выйти</button>
+                            </a>
+                        <p class='rating'>${rating}</p>
+                    </div>
+                    </#if>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>

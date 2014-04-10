@@ -1,0 +1,6 @@
+<class type="resource.Rating">
+	<maxDiff>15</maxDiff>
+	<avgDiff>8</avgDiff>
+	<minDiff>1</minDiff>
+	<decreaseThreshold>15</decreaseThreshold>
+</class>

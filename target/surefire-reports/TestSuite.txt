@@ -1,61 +1,17 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 105, Failures: 8, Errors: 0, Skipped: 0, Time elapsed: 7.482 sec <<< FAILURE!
-testHandleNewUserTargeAdmin(frontend.handler.TestNUTargetAdmin)  Time elapsed: 0.246 sec  <<< FAILURE!
+Tests run: 98, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 7.742 sec <<< FAILURE!
+testExec(messageSystem.MsgToWebSocketTest)  Time elapsed: 0.034 sec  <<< FAILURE!
+java.lang.NullPointerException
+	at gameClasses.Snapshot.<init>(Snapshot.java:16)
+	at messageSystem.MsgToWebSocketTest.testExec(MsgToWebSocketTest.java:36)
+
+testStatusReadyTargetGame(frontend.handler.TestRegUserTargetRegPost)  Time elapsed: 0.067 sec  <<< FAILURE!
 java.lang.AssertionError: expected [true] but found [false]
 	at org.testng.Assert.fail(Assert.java:94)
 	at org.testng.Assert.failNotEquals(Assert.java:494)
 	at org.testng.Assert.assertTrue(Assert.java:42)
 	at org.testng.Assert.assertTrue(Assert.java:52)
-	at frontend.handler.TestNUTargetAdmin.testHandleNewUserTargeAdmin(TestNUTargetAdmin.java:85)
-
-testHandleNewUserTargetRules(frontend.handler.TestRegUserTargetAdmin)  Time elapsed: 0.007 sec  <<< FAILURE!
-java.lang.AssertionError: expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:94)
-	at org.testng.Assert.failNotEquals(Assert.java:494)
-	at org.testng.Assert.assertTrue(Assert.java:42)
-	at org.testng.Assert.assertTrue(Assert.java:52)
-	at frontend.handler.TestRegUserTargetAdmin.testHandleNewUserTargetRules(TestRegUserTargetAdmin.java:84)
-
-testStatusReadyTargetGame(frontend.handler.TestRegUserTargetRegPost)  Time elapsed: 0.013 sec  <<< FAILURE!
-java.lang.AssertionError: expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:94)
-	at org.testng.Assert.failNotEquals(Assert.java:494)
-	at org.testng.Assert.assertTrue(Assert.java:42)
-	at org.testng.Assert.assertTrue(Assert.java:52)
-	at frontend.handler.TestRegUserTargetRegPost.testStatusReadyTargetGame(TestRegUserTargetRegPost.java:400)
-
-testPutSessionIdAndChatWS(userDataImpl.TestUserDataImpl)  Time elapsed: 0.007 sec  <<< FAILURE!
-org.mockito.exceptions.verification.NeverWantedButInvoked: 
-userDataSet.visit();
-Never wanted here:
--> at userDataImpl.TestUserDataImpl.testPutSessionIdAndChatWS(TestUserDataImpl.java:293)
-But invoked here:
--> at frontend.UserDataImpl.putSessionIdAndChatWS(UserDataImpl.java:129)
-
-	at userDataImpl.TestUserDataImpl.testPutSessionIdAndChatWS(TestUserDataImpl.java:293)
-
-testHandleNewUserTargetMainPage(frontend.handler.TestNUTargetGame)  Time elapsed: 0.003 sec  <<< FAILURE!
-java.lang.NullPointerException
-	at frontend.FrontendImpl.getStatus(FrontendImpl.java:68)
-	at frontend.FrontendImpl.handle(FrontendImpl.java:237)
-	at frontend.handler.TestNUTargetGame.testHandleNewUserTargetMainPage(TestNUTargetGame.java:77)
-
-testHandleNewUserTargetRules(frontend.handler.TestNUTargetRules)  Time elapsed: 0.004 sec  <<< FAILURE!
-java.lang.NullPointerException
-	at frontend.FrontendImpl.getStatus(FrontendImpl.java:68)
-	at frontend.FrontendImpl.handle(FrontendImpl.java:237)
-	at frontend.handler.TestNUTargetRules.testHandleNewUserTargetRules(TestNUTargetRules.java:72)
-
-tearDownHandleNewUserTargetRules(frontend.handler.TestNUTargetRules)  Time elapsed: 0.005 sec  <<< FAILURE!
-java.lang.NullPointerException
-	at frontend.handler.TestNUTargetRules.tearDownHandleNewUserTargetRules(TestNUTargetRules.java:87)
-
-testHandleNewUserTarget404(frontend.handler.TestNUTarget404)  Time elapsed: 0.005 sec  <<< FAILURE!
-java.lang.AssertionError: expected object to not be null
-	at org.testng.Assert.fail(Assert.java:94)
-	at org.testng.Assert.assertNotNull(Assert.java:404)
-	at org.testng.Assert.assertNotNull(Assert.java:389)
-	at frontend.handler.TestNUTarget404.testHandleNewUserTarget404(TestNUTarget404.java:83)
+	at frontend.handler.TestRegUserTargetRegPost.testStatusReadyTargetGame(TestRegUserTargetRegPost.java:612)
 

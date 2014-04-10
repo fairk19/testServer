@@ -1,0 +1,1 @@
+CREATE TABLE Users(id integer primary key, nickname varchar(20) not null unique, password char(64) not null, last_visit timestamp not null, registration_date timestamp not null, rating int unsigned not null default 1500, win_quantity int unsigned not null default 0, lose_quantity int unsigned not null default 0,unique(nickname));

@@ -1,0 +1,6 @@
+./statistic/.*
+target/
+/log/.*
+*.ipr
+*.iws
+*.iml
