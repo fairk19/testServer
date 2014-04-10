@@ -156,6 +156,120 @@ public class TestRegUserTargetRegPost {
 //        pwTM.close();
 //    }
 
+//
+//    @BeforeGroups("NUTargetRules")
+//    public void  setUpNUTargetRuless() {
+//        UserDataImpl.clearAllMaps();
+//        mockedMS = mock(MessageSystem.class);
+//
+//        SESSION_ID_FIELD = "sessionId";
+//        sessionIdValue = "123";
+//        START_SERVER_TIME_FIELD = "startServerTime";
+//        startServerTimeValue = UserDataImpl.getStartServerTime();
+//        frontend = new FrontendImpl(mockedMS);
+//        response = mock(HttpServletResponse.class);
+//        request = mock(HttpServletRequest.class);
+//        target = "/rules";
+//        baseRequest = mock(Request.class);
+//        Cookie mockedCookieSessionId = mock(Cookie.class);
+//        when(mockedCookieSessionId.getName()).thenReturn(SESSION_ID_FIELD);
+//        when(mockedCookieSessionId.getValue()).thenReturn(sessionIdValue);
+//        Cookie mockedCookieServerTime = mock(Cookie.class);
+//        when(mockedCookieServerTime.getName()).thenReturn(START_SERVER_TIME_FIELD);
+//        when(mockedCookieServerTime.getValue()).thenReturn(startServerTimeValue);
+//        try {
+//            PrintWriter writer = new PrintWriter("returnedPage.html");
+//            when(response.getWriter()).thenReturn(writer);
+//        } catch (IOException e) {
+//            e.printStackTrace();
+//        }
+//        Cookie[] arrCookies = {mockedCookieSessionId, mockedCookieServerTime};
+//        when(request.getCookies()).thenReturn(arrCookies);
+//        TemplateHelper.init();
+//    }
+//
+//    @Test(groups = "NUTargetRules")
+//    public void testNUTargetRuless() throws IOException {
+//        frontend.handle(target,baseRequest,request,response);
+//
+//        returnedPage = new File("returnedPage.html");
+//        expectedPage = new File("./static/html/rules.html");
+//
+//        String returnedPageAsString = new String();
+//        returnedPageAsString = Files.toString(returnedPage, defaultCharset());
+//        sessionIdValue = SHA2.getSHA2(String.valueOf(frontend.getCreatorSessionId().intValue()));
+//
+//        Assert.assertTrue(returnedPageAsString.contains(Files.toString(expectedPage, defaultCharset())));
+//        Assert.assertNotNull(UserDataImpl.getUserSessionBySessionId(sessionIdValue));
+//    }
+//
+//    @AfterGroups("NUTargetRules")
+//    public void tearDownNUTargetRuless() {
+//        UserDataImpl.clearAllMaps();
+//        returnedPage.delete();
+//    }
+
+
+
+
+
+
+    @BeforeGroups("HandleNotNewUserTargetRules")
+    public void  setUpRegUserTargetMainPage() {
+        UserDataImpl.clearAllMaps();
+
+        SESSION_ID_FIELD = "sessionId";
+        sessionIdValue = "123";
+        START_SERVER_TIME_FIELD = "startServerTime";
+        startServerTimeValue = UserDataImpl.getStartServerTime();
+
+
+        frontend = new FrontendImpl(mockedMS);
+        response = mock(HttpServletResponse.class);
+        request = mock(HttpServletRequest.class);
+        target = "/";
+        baseRequest = mock(Request.class);
+        Cookie mockedCookieSessionId = mock(Cookie.class);
+        when(mockedCookieSessionId.getName()).thenReturn(SESSION_ID_FIELD);
+        when(mockedCookieSessionId.getValue()).thenReturn(sessionIdValue);
+        Cookie mockedCookieServerTime = mock(Cookie.class);
+        when(mockedCookieServerTime.getName()).thenReturn(START_SERVER_TIME_FIELD);
+        when(mockedCookieServerTime.getValue()).thenReturn(startServerTimeValue);
+        try {
+            PrintWriter writer = new PrintWriter("returnedPage.html");
+            when(response.getWriter()).thenReturn(writer);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        Cookie[] arrCookies = {mockedCookieSessionId, mockedCookieServerTime};
+        when(request.getCookies()).thenReturn(arrCookies);
+        when(request.getMethod()).thenReturn("GET");
+        TemplateHelper.init();
+        UserDataImpl.putSessionIdAndUserSession(sessionIdValue, new UserDataSet());
+    }
+
+    @Test(groups = "HandleNotNewUserTargetRules")
+    public void testRegUserTargetMainPage() throws IOException {
+        frontend.handle(target,baseRequest,request,response);
+
+        returnedPage = new File("returnedPage.html");
+        expectedPage = new File("./static/html/index.html");
+
+        String returnedPageAsString = new String();
+        returnedPageAsString = Files.toString(returnedPage, defaultCharset());
+        Assert.assertTrue(returnedPageAsString.contains(Files.toString(expectedPage, defaultCharset())));
+        Assert.assertNotNull(UserDataImpl.getUserSessionBySessionId(sessionIdValue));
+    }
+
+    @AfterGroups("HandleNotNewUserTargetRules")
+    public void tearDownRegUserTargetMainPage() {
+        returnedPage.delete();
+        UserDataImpl.clearAllMaps();
+
+    }
+
+
+
 
 
 
