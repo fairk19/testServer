@@ -18,6 +18,7 @@ public abstract class MsgToUserData extends Msg{
 			exec((UserData)abonent);
 		}
         System.out.println("2!!");
+
 	}
 	public abstract void exec(UserData frontend);
 }

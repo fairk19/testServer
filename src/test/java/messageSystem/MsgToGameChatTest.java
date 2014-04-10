@@ -33,3 +33,4 @@ public class MsgToGameChatTest {
         gameChat.methodRun(0);
     }
 }
+

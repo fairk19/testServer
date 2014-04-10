@@ -25,6 +25,7 @@ public class MsgAddUser extends MsgToDBService{
 		}
 		Address to=getFrom();
 		MsgUpdateUser msg = new MsgUpdateUser(dbService.getAddress(),to,sessionId,uds);
+
 		dbService.getMessageSystem().putMsg(to, msg);
 	}
 }

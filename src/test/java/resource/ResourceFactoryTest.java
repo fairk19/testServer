@@ -89,3 +89,4 @@ public class ResourceFactoryTest {
         Assert.assertTrue(Rating.getDiff(1, 2) == 8);
     }
 }
+

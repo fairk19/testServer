@@ -71,6 +71,7 @@ public class GameChatImpl implements GameChat{
 	public void run(){
 		while(true){
 			methodRun(200);
+
 		}
 	}
 }

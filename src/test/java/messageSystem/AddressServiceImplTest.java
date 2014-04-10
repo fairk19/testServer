@@ -14,3 +14,4 @@ public class AddressServiceImplTest {
         Assert.assertNull(addressService.getAddressByName("test"));
     }
 }
+

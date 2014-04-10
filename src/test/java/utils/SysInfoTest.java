@@ -82,3 +82,4 @@ public class SysInfoTest {
         Assert.assertTrue(memoryUsage.equals("[test memory usage]"));
     }
 }
+

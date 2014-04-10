@@ -32,7 +32,10 @@ public class DBServiceImpl implements DataAccessObject{
             System.exit(-1);
         }
 
-        String url="jdbc:mysql://localhost:3306/qualityTestDB?user=root&password=qwerty";
+
+//    String url="jdbc:mysql://localhost:3307/qualityTestDB?user=root&password=qwerty";
+        String url="jdbc:mysql://localhost:3306/qualityTestDB?user=root&password=110708";
+
         try{
             connection = DriverManager.getConnection(url);
         }
@@ -97,6 +100,7 @@ public class DBServiceImpl implements DataAccessObject{
             TExecutor.deleteUser(connection, login);
         return (rows != 0);
     }
+
 
 	public void methodRun(int timeOut){
         messageSystem.execForAbonent(this);

@@ -208,6 +208,7 @@ public class GameMechanicImpl implements GameMechanic{
 		wantToPlay.remove(sessionId);
 	}
 
+
     public void methodRun(int timeOut){
         messageSystem.execForAbonent(this);
         removeDeadGames();

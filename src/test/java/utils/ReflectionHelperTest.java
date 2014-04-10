@@ -53,3 +53,4 @@ public class ReflectionHelperTest {
         Assert.assertTrue(this.testClass.getTestIntField() == 5);
     }
 }
+

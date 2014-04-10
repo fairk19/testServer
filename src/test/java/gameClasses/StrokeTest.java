@@ -57,3 +57,4 @@ public class StrokeTest {
         Assert.assertTrue(strokeSt.getStatus().equals(status));
     }
 }
+
