@@ -15,9 +15,9 @@ public abstract class MsgToGameMechanic extends Msg{
 	public void exec(Abonent abonent){
 		if (abonent instanceof GameMechanic){
 			exec((GameMechanic)abonent);
-            System.out.println("1!!");
+
 		}
-        System.out.println("2!!");
+
 	}
 	public abstract void exec(GameMechanic gameMechanic);
 }

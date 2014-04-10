@@ -48,7 +48,7 @@ public class GameChatImpl implements GameChat{
 	public static void sendMessage(String sessionId, String text){
 		UserDataSet sender = UserDataImpl.getLogInUserBySessionId(sessionId);
 		ChatMessage message = new ChatMessage(sender.getNick(), text);
-        System.out.println("text"+text);
+
 		if(sessionIdToChat.get(sessionId)!=null){
 			sessionIdToChat.get(sessionId).add(message);
 			ChatWSImpl.sendMessage(sessionId, message.json());

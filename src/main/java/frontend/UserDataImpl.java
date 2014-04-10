@@ -221,8 +221,6 @@ public class UserDataImpl implements UserData{
 
 	private boolean exitedUser(UserDataSet userSession){
 		long curTime = TimeHelper.getCurrentTime();
-        System.out.println(userSession.getLastVisit());
-        System.out.println(TimeSettings.getExitTime());
 		return (curTime-userSession.getLastVisit()>TimeSettings.getExitTime());
 	}
 

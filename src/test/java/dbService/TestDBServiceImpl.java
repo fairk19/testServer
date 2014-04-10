@@ -36,7 +36,7 @@ public class TestDBServiceImpl {
     }
     @Test(groups = "testAddUDS")
     public void testAddUDS() {
-        System.out.println("nick"+dbService.getUDS(login, password).getNick());
+
         Assert.assertEquals(login, dbService.getUDS(login, password).getNick());
     }
     @AfterGroups("testAddUDS")
@@ -69,7 +69,7 @@ public class TestDBServiceImpl {
         login = "user";
         password = "passwd";
         users = new ArrayList<UserDataSet>();
-        System.out.println(login);
+
         dbService.addUDS(login, password);
         users.add(dbService.getUDS(login,password));
     }

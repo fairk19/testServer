@@ -14,10 +14,10 @@ public abstract class MsgToUserData extends Msg{
 
 	public void exec(Abonent abonent){
 		if (abonent instanceof UserData){
-            System.out.println("1!!");
+
 			exec((UserData)abonent);
 		}
-        System.out.println("2!!");
+
 
 	}
 	public abstract void exec(UserData frontend);

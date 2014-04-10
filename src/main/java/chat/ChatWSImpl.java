@@ -17,12 +17,11 @@ public class ChatWSImpl  extends WebSocketAdapter{
         if (isNotConnected()) {
             return;
         }
-		System.out.println(message);
 		String sessionId=null,startServerTime=null;
 		String text=null;
 		JSONParser parser = new JSONParser();
 		JSONObject json=null;
-        System.out.println("message: " +message);
+
 		try{
 			json = (JSONObject) parser.parse(message);
 			sessionId=json.get("sessionId").toString();
