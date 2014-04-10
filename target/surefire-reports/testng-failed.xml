@@ -3,62 +3,101 @@
 <suite verbose="0" name="Failed suite [Command line suite]">
   <test name="Command line test(failed)">
     <classes>
-      <class name="messageSystem.MsgToGameChatTest">
+      <class name="frontend.handler.TestRegUserTargetRegPost">
         <methods>
-          <include name="setUp"/>
+          <include name="setUpRegNickAndPasswordAreNotNull"/>
+          <include name="tearDownRegDownNickAndPasswordAreNotNull"/>
+          <include name="setUpRegNickAndPasswdAreNull"/>
+          <include name="tearDownTargetWait"/>
+          <include name="setUpStatusReadyTargetReg"/>
+          <include name="tearDownRegNickAndPasswdAreNull"/>
+          <include name="setUpStatusReadyTargetLogout"/>
+          <include name="setUpNUTarget404"/>
+          <include name="tearDownRegUserTargetGame"/>
+          <include name="tearDownTargetWaitAndPostStatusZero"/>
+          <include name="tearDownNUTarget404"/>
+          <include name="tearDownRegDownNickAndPasswordAreNull"/>
+          <include name="tearDownNUTargetGame"/>
+          <include name="setUpStatusReadyTargetProfile"/>
+          <include name="tearDownRegUserTarget404"/>
+          <include name="tearDownStatusReadyTargetGame"/>
+          <include name="setUpRegUserTargetGame"/>
+          <include name="setUpRegUserTargetMainPage"/>
+          <include name="setUpNUTargetGame"/>
+          <include name="tearDownRegUserTargetMainPage"/>
+          <include name="setUpStatusReadyTargetGame"/>
+          <include name="setUpRegNickAndPasswordAreNull"/>
+          <include name="setUpNickAndPasswordAreNotNull"/>
+          <include name="tearDownNickAndPasswordAreNotNull"/>
+          <include name="setUpTargetWaitAndPostStatusZero"/>
+          <include name="tearDownStatusReadyTargetProfile"/>
+          <include name="tearDownStatusReadyTargetReg"/>
+          <include name="setUpTargetWait"/>
+          <include name="setUpRegUserTarget404"/>
+          <include name="tearDownStatusReadyTargetMainPage"/>
+          <include name="tearDownNUTargetMainPage"/>
+          <include name="tearDownStatusReadyTargetLogout"/>
+          <include name="setUpStatusReadyTargetMainPage"/>
+          <include name="setUpNUTargetMainPage"/>
         </methods>
-      </class> <!-- messageSystem.MsgToGameChatTest -->
-      <class name="frontend.newOrLoginUser.MsgAddUserTest">
+      </class> <!-- frontend.handler.TestRegUserTargetRegPost -->
+      <class name="gameClasses.StrokeTest">
         <methods>
           <include name="tearDown"/>
           <include name="setUp"/>
         </methods>
-      </class> <!-- frontend.newOrLoginUser.MsgAddUserTest -->
-      <class name="resource.ResourceFactoryTest">
+      </class> <!-- gameClasses.StrokeTest -->
+      <class name="dbService.TestTExecutor">
         <methods>
-          <include name="setUp"/>
           <include name="tearDown"/>
+          <include name="setUpFindUser"/>
         </methods>
-      </class> <!-- resource.ResourceFactoryTest -->
-      <class name="utils.VFSTest">
-        <methods>
-          <include name="setUp"/>
-          <include name="tearDown"/>
-        </methods>
-      </class> <!-- utils.VFSTest -->
+      </class> <!-- dbService.TestTExecutor -->
       <class name="utils.SysInfoTest">
         <methods>
           <include name="setUpBeforeTest"/>
         </methods>
       </class> <!-- utils.SysInfoTest -->
-      <class name="dbService.TestDBServiceImpl">
-        <methods>
-          <include name="tearDownUpdateUDS"/>
-          <include name="setUpGEtNoneExistUDS"/>
-          <include name="setUpAddUDS"/>
-          <include name="setUpAddExistsUDS"/>
-          <include name="tearDownAddUDS"/>
-          <include name="tearDownDeleteNoneExistsUDS"/>
-          <include name="tearDownRun"/>
-          <include name="tearDownGetNoneExistUDS"/>
-          <include name="tearDownAddExistsUDS"/>
-          <include name="setUpDeleteNoneExistsUDS"/>
-          <include name="setUp"/>
-          <include name="setUpUpdateUDS"/>
-          <include name="setUpRun"/>
-        </methods>
-      </class> <!-- dbService.TestDBServiceImpl -->
-      <class name="gameClasses.SnapshotTest">
-        <methods>
-          <include name="setUp"/>
-        </methods>
-      </class> <!-- gameClasses.SnapshotTest -->
       <class name="gameClasses.FieldTest">
         <methods>
           <include name="setUp"/>
           <include name="tearDown"/>
         </methods>
       </class> <!-- gameClasses.FieldTest -->
+      <class name="messageSystem.MsgToUserDataTest">
+        <methods>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- messageSystem.MsgToUserDataTest -->
+      <class name="messageSystem.vanikMessageSystem.TestMsgAddUser">
+        <methods>
+          <include name="setUpAddUser"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- messageSystem.vanikMessageSystem.TestMsgAddUser -->
+      <class name="messageSystem.MsgToGameChatTest">
+        <methods>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- messageSystem.MsgToGameChatTest -->
+      <class name="utils.VFSTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- utils.VFSTest -->
+      <class name="utils.ReflectionHelperTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- utils.ReflectionHelperTest -->
+      <class name="frontend.newOrLoginUser.MsgAddUserTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- frontend.newOrLoginUser.MsgAddUserTest -->
       <class name="userDataImpl.TestUserDataImpl">
         <methods>
           <include name="tearDownUpdateUserIdOldUserIsNull"/>
@@ -75,8 +114,8 @@
           <include name="tearDownCreateGames"/>
           <include name="tearDownUpdateUserId"/>
           <include name="setUpUpdateUserIdNewUserIsNull"/>
-          <include name="tearDownPartyEndAllIsNull"/>
           <include name="setUpUpdateUserIdOldUserIsNull"/>
+          <include name="tearDownPartyEndAllIsNull"/>
           <include name="setUpPutSessionIdAndChatWS"/>
           <include name="setUp"/>
           <include name="setUpCheckUsersKeepAliveEqualsOne"/>
@@ -85,8 +124,8 @@
           <include name="setUpGetSessionIdByUserId"/>
           <include name="setUpKeepAliveWSIsNull"/>
           <include name="tearDownPartyEndSecondIsNull"/>
-          <include name="setUpGetChatWSBySessionId"/>
           <include name="tearDownGetSessionIdByUserId"/>
+          <include name="setUpGetChatWSBySessionId"/>
           <include name="setUpPartyEndFirstIsNull"/>
           <include name="setUpCheckServerTime"/>
           <include name="tearDownKeepAliveWSIsNull"/>
@@ -100,18 +139,28 @@
           <include name="setUpCreateGames"/>
         </methods>
       </class> <!-- userDataImpl.TestUserDataImpl -->
-      <class name="gameClasses.StrokeTest">
+      <class name="dbService.TestDBServiceImpl">
         <methods>
-          <include name="tearDown"/>
+          <include name="tearDownUpdateUDS"/>
+          <include name="setUpGEtNoneExistUDS"/>
+          <include name="setUpAddExistsUDS"/>
+          <include name="setUpAddUDS"/>
+          <include name="tearDownAddUDS"/>
+          <include name="tearDownDeleteNoneExistsUDS"/>
+          <include name="tearDownRun"/>
+          <include name="tearDownGetNoneExistUDS"/>
+          <include name="tearDownAddExistsUDS"/>
+          <include name="setUpDeleteNoneExistsUDS"/>
+          <include name="setUp"/>
+          <include name="setUpUpdateUDS"/>
+          <include name="setUpRun"/>
+        </methods>
+      </class> <!-- dbService.TestDBServiceImpl -->
+      <class name="gameMechanic.GameMechanicImplTest">
+        <methods>
           <include name="setUp"/>
         </methods>
-      </class> <!-- gameClasses.StrokeTest -->
-      <class name="dbService.TestTExecutor">
-        <methods>
-          <include name="tearDown"/>
-          <include name="setUpFindUser"/>
-        </methods>
-      </class> <!-- dbService.TestTExecutor -->
+      </class> <!-- gameMechanic.GameMechanicImplTest -->
       <class name="messageSystem.MsgToGameMechanicTest">
         <methods>
           <include name="setUp"/>
@@ -141,57 +190,12 @@
           <include name="tearDownOnWebSocketTextStartServerTimeIsNull"/>
         </methods>
       </class> <!-- chat.TestNewChatWSImpl -->
-      <class name="frontend.handler.TestRegUserTargetRegPost">
+      <class name="resource.ResourceFactoryTest">
         <methods>
-          <include name="setUpRegNickAndPasswordAreNotNull"/>
-          <include name="tearDownRegDownNickAndPasswordAreNotNull"/>
-          <include name="setUpRegNickAndPasswdAreNull"/>
-          <include name="tearDownTargetWait"/>
-          <include name="setUpStatusReadyTargetReg"/>
-          <include name="tearDownRegNickAndPasswdAreNull"/>
-          <include name="setUpStatusReadyTargetLogout"/>
-          <include name="setUpNUTarget404"/>
-          <include name="tearDownTargetWaitAndPostStatusZero"/>
-          <include name="tearDownNUTarget404"/>
-          <include name="tearDownRegDownNickAndPasswordAreNull"/>
-          <include name="setUpStatusReadyTargetProfile"/>
-          <include name="tearDownNUTargetGame"/>
-          <include name="tearDownNUTargetAdmin"/>
-          <include name="tearDownStatusReadyTargetGame"/>
-          <include name="setUpNUTargetGame"/>
-          <include name="setUpNUTargetAdmin"/>
-          <include name="setUpStatusReadyTargetGame"/>
-          <include name="setUpRegNickAndPasswordAreNull"/>
-          <include name="testStatusReadyTargetGame"/>
-          <include name="setUpNickAndPasswordAreNotNull"/>
-          <include name="tearDownNickAndPasswordAreNotNull"/>
-          <include name="setUpTargetWaitAndPostStatusZero"/>
-          <include name="tearDownStatusReadyTargetProfile"/>
-          <include name="tearDownStatusReadyTargetReg"/>
-          <include name="setUpTargetWait"/>
-          <include name="tearDownStatusReadyTargetMainPage"/>
-          <include name="tearDownStatusReadyTargetLogout"/>
-          <include name="setUpStatusReadyTargetMainPage"/>
-        </methods>
-      </class> <!-- frontend.handler.TestRegUserTargetRegPost -->
-      <class name="utils.ReflectionHelperTest">
-        <methods>
+          <include name="setUp"/>
           <include name="tearDown"/>
-          <include name="setUp"/>
         </methods>
-      </class> <!-- utils.ReflectionHelperTest -->
-      <class name="messageSystem.MsgToWebSocketTest">
-        <methods>
-          <include name="testExec"/>
-          <include name="tearDown"/>
-          <include name="setUp"/>
-        </methods>
-      </class> <!-- messageSystem.MsgToWebSocketTest -->
-      <class name="messageSystem.MsgToUserDataTest">
-        <methods>
-          <include name="setUp"/>
-        </methods>
-      </class> <!-- messageSystem.MsgToUserDataTest -->
+      </class> <!-- resource.ResourceFactoryTest -->
       <class name="frontend.handler.TestWebSocketImpl">
         <methods>
           <include name="tearDownOnWebSocketTextAddNewWebSocket"/>
@@ -220,21 +224,28 @@
           <include name="setUpWebSocketImpl"/>
           <include name="setUpOnWebSocketTextCoordinatesAreIncorrect2"/>
           <include name="setUpOnWebSocketTextCoordinatesAreIncorrect1"/>
-          <include name="tearDownOnWebSocketTextCoordinatesAreOkSessionIdIsNull"/>
           <include name="setUpOnWebSocketTextCoordinatesAreIncorrect3"/>
+          <include name="tearDownOnWebSocketTextCoordinatesAreOkSessionIdIsNull"/>
         </methods>
       </class> <!-- frontend.handler.TestWebSocketImpl -->
+      <class name="messageSystem.MsgToWebSocketTest">
+        <methods>
+          <include name="testExec"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- messageSystem.MsgToWebSocketTest -->
+      <class name="gameClasses.SnapshotTest">
+        <methods>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- gameClasses.SnapshotTest -->
       <class name="gameMechanic.GameSessionTest">
         <methods>
           <include name="tearDown"/>
           <include name="setUpBeforeTest"/>
         </methods>
       </class> <!-- gameMechanic.GameSessionTest -->
-      <class name="gameMechanic.GameMechanicImplTest">
-        <methods>
-          <include name="setUp"/>
-        </methods>
-      </class> <!-- gameMechanic.GameMechanicImplTest -->
     </classes>
   </test> <!-- Command line test(failed) -->
 </suite> <!-- Failed suite [Command line suite] -->

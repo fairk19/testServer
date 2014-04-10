@@ -7,11 +7,8 @@ import frontend.UserDataImpl;
 
 public class SysInfo implements Runnable{
 
-<<<<<<< HEAD
+
     private final int TIME_OUT = 10000;
-=======
-    private int timeOut = 10000;
->>>>>>> fixingFrontend
 	private Runtime runtime = Runtime.getRuntime();
 	private String lastDate;
 	private static Map<String, String> data =
@@ -28,7 +25,7 @@ public class SysInfo implements Runnable{
 		return ("["+VFS.readFile(data.get(service))+"]");
 	}
 
-<<<<<<< HEAD
+
     public void methodRun(int timeOut){
         for(String service:data.keySet()){
             lastDate=TimeHelper.getTime();
@@ -68,41 +65,5 @@ public class SysInfo implements Runnable{
         while (true){
 		    methodRun(TIME_OUT);
         }
-=======
-	public void run(){
-		for(String service:data.keySet()){
-			lastDate=TimeHelper.getTime();
-			if(service.equals("MemoryUsage")){
-				VFS.writeToFile(data.get(service), String.valueOf((int) (runtime.totalMemory()-runtime.freeMemory())));
-			}
-			else if(service.equals("TotalMemory")){
-				VFS.writeToFile(data.get(service), String.valueOf((int) (runtime.totalMemory())));
-			}
-			else if(service.equals("Time")){
-				VFS.writeToFile(data.get(service), lastDate);
-			}
-			else if(service.equals("CCU")){
-				VFS.writeToFile(data.get(service), String.valueOf(UserDataImpl.ccu()));
-			}
-		}
-		while (true){
-			TimeHelper.sleep(this.timeOut);
-			for(String service:data.keySet()){
-				lastDate=TimeHelper.getTime();
-				if(service.equals("MemoryUsage")){
-					VFS.writeToEndOfFile(data.get(service), ","+String.valueOf((int) (runtime.totalMemory()-runtime.freeMemory())));
-				}
-				else if(service.equals("TotalMemory")){
-					VFS.writeToEndOfFile(data.get(service), ","+String.valueOf((int) (runtime.totalMemory())));
-				}
-				else if(service.equals("Time")){
-					VFS.writeToEndOfFile(data.get(service), ","+lastDate);
-				}
-				else if(service.equals("CCU")){
-					VFS.writeToEndOfFile(data.get(service), ","+String.valueOf(UserDataImpl.ccu()));
-				}
-			}
-		}
->>>>>>> fixingFrontend
 	}
 }

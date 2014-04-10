@@ -1,17 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 98, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 7.742 sec <<< FAILURE!
-testExec(messageSystem.MsgToWebSocketTest)  Time elapsed: 0.034 sec  <<< FAILURE!
+Tests run: 102, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 6.832 sec <<< FAILURE!
+testExec(messageSystem.MsgToWebSocketTest)  Time elapsed: 0.004 sec  <<< FAILURE!
 java.lang.NullPointerException
 	at gameClasses.Snapshot.<init>(Snapshot.java:16)
-	at messageSystem.MsgToWebSocketTest.testExec(MsgToWebSocketTest.java:36)
-
-testStatusReadyTargetGame(frontend.handler.TestRegUserTargetRegPost)  Time elapsed: 0.067 sec  <<< FAILURE!
-java.lang.AssertionError: expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:94)
-	at org.testng.Assert.failNotEquals(Assert.java:494)
-	at org.testng.Assert.assertTrue(Assert.java:42)
-	at org.testng.Assert.assertTrue(Assert.java:52)
-	at frontend.handler.TestRegUserTargetRegPost.testStatusReadyTargetGame(TestRegUserTargetRegPost.java:612)
-
+	at messageSystem.MsgToWebSocketTest.testExec(MsgToWebSocketTest.java:35)

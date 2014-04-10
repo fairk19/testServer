@@ -2,37 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b512f83c-efae-4c18-9b4c-f09121c4cdb1" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/messageSystem/MsgToFrontend.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/messageSystem/vanikMessageSystem/TestMsgAddUser.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/returnedPage.html" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/messageSystem/AddressServiceImplTest.java" afterPath="$PROJECT_DIR$/src/test/java/messageSystem/AddressServiceImplTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/dbService/DBServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/dbService/DBServiceImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/gameClasses/FieldTest.java" afterPath="$PROJECT_DIR$/src/test/java/gameClasses/FieldTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/chat/GameChatImpl.java" afterPath="$PROJECT_DIR$/src/main/java/chat/GameChatImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/gameMechanic/GameMechanicImpl.java" afterPath="$PROJECT_DIR$/src/main/java/gameMechanic/GameMechanicImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/gameMechanic/GameMechanicImplTest.java" afterPath="$PROJECT_DIR$/src/test/java/gameMechanic/GameMechanicImplTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/gameMechanic/GameSessionTest.java" afterPath="$PROJECT_DIR$/src/test/java/gameMechanic/GameSessionTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/frontend/newOrLoginUser/MsgAddUser.java" afterPath="$PROJECT_DIR$/src/main/java/frontend/newOrLoginUser/MsgAddUser.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/frontend/newOrLoginUser/MsgAddUserTest.java" afterPath="$PROJECT_DIR$/src/test/java/frontend/newOrLoginUser/MsgAddUserTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/messageSystem/MsgToGameChatTest.java" afterPath="$PROJECT_DIR$/src/test/java/messageSystem/MsgToGameChatTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/messageSystem/MsgToGameMechanicTest.java" afterPath="$PROJECT_DIR$/src/test/java/messageSystem/MsgToGameMechanicTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/messageSystem/MsgToUserData.java" afterPath="$PROJECT_DIR$/src/main/java/messageSystem/MsgToUserData.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/utils/ReflectionHelperTest.java" afterPath="$PROJECT_DIR$/src/test/java/utils/ReflectionHelperTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/resource/ResourceFactoryTest.java" afterPath="$PROJECT_DIR$/src/test/java/resource/ResourceFactoryTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/gameClasses/SnapshotTest.java" afterPath="$PROJECT_DIR$/src/test/java/gameClasses/SnapshotTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/gameClasses/StrokeTest.java" afterPath="$PROJECT_DIR$/src/test/java/gameClasses/StrokeTest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/utils/SysInfo.java" afterPath="$PROJECT_DIR$/src/main/java/utils/SysInfo.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/utils/SysInfoTest.java" afterPath="$PROJECT_DIR$/src/test/java/utils/SysInfoTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/frontend/handler/TestRegUserTargetRegPost.java" afterPath="$PROJECT_DIR$/src/test/java/frontend/handler/TestRegUserTargetRegPost.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/statistic/ccu" afterPath="$PROJECT_DIR$/statistic/ccu" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db.sql" afterPath="$PROJECT_DIR$/db.sql" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/css/game.css" afterPath="$PROJECT_DIR$/static/css/game.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/js/game.js" afterPath="$PROJECT_DIR$/static/js/game.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/statistic/memoryUsage" afterPath="$PROJECT_DIR$/statistic/memoryUsage" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/js/rules.js" afterPath="$PROJECT_DIR$/static/js/rules.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/js/template.js" afterPath="$PROJECT_DIR$/static/js/template.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/statistic/time" afterPath="$PROJECT_DIR$/statistic/time" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/statistic/totalMemory" afterPath="$PROJECT_DIR$/statistic/totalMemory" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="java-server.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -391,10 +366,28 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="MsgToWebSocketTest.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="MsgToWebSocketTest.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/messageSystem/MsgToWebSocketTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="34" column="35" selection-start="896" selection-end="896" vertical-scroll-proportion="0.65968585" vertical-offset="27" max-vertical-offset="600">
+            <state line="34" column="35" selection-start="896" selection-end="896" vertical-scroll-proportion="0.0" vertical-offset="27" max-vertical-offset="600">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SysInfo.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/utils/SysInfo.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="67" column="0" selection-start="2318" selection-end="2318" vertical-scroll-proportion="0.0" vertical-offset="505" max-vertical-offset="1065">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TestRegUserTargetRegPost.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/frontend/handler/TestRegUserTargetRegPost.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="530" column="35" selection-start="20177" selection-end="20194" vertical-scroll-proportion="17.627028" vertical-offset="1068" max-vertical-offset="19455">
               <folding />
             </state>
           </provider>
@@ -446,7 +439,6 @@
         <option value="$PROJECT_DIR$/src/test/java/gameMechanic/GameSessionTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/gameMechanic/GameMechanicImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/chat/GameChatImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/utils/SysInfo.java" />
         <option value="$PROJECT_DIR$/src/test/java/utils/SysInfoTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/messageSystem/MsgToGameChatTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/messageSystem/MsgToGameMechanic.java" />
@@ -457,15 +449,11 @@
         <option value="$PROJECT_DIR$/src/main/java/dbService/DBServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/test/java/messageSystem/MsgToUserDataTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/messageSystem/MsgToWebSocketTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/utils/SysInfo.java" />
       </list>
     </option>
   </component>
   <component name="MavenImportPreferences">
-    <option name="generalSettings">
-      <MavenGeneralSettings>
-        <option name="mavenHome" value="C:\Program Files (x86)\apache-maven-3.2.1" />
-      </MavenGeneralSettings>
-    </option>
     <option name="importingSettings">
       <MavenImportingSettings>
         <option name="importAutomatically" value="true" />
@@ -575,6 +563,32 @@
               <option name="myItemId" value="java" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="utils" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java-server" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="serverFromGitToFix" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -598,7 +612,63 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="messageSystem" />
+              <option name="myItemId" value="frontend" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java-server" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="serverFromGitToFix" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="frontend" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="handler" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java-server" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="serverFromGitToFix" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="utils" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1216,12 +1286,12 @@
       <workItem from="1397062781852" duration="1178000" />
       <workItem from="1397065425997" duration="15017000" />
       <workItem from="1397127523947" duration="8033000" />
-      <workItem from="1397157127299" duration="25000" />
+      <workItem from="1397157127299" duration="1138000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="95538000" />
+    <option name="totallyTimeSpent" value="96651000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -1244,8 +1314,8 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="65" y="24" width="1301" height="744" extended-state="4" />
-    <editor active="true" />
+    <frame x="65" y="24" width="1301" height="744" extended-state="5" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1263,10 +1333,10 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32857144" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.14879154" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.11535402" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.4319809" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4241908" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.36674622" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26923078" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1364,13 +1434,6 @@
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2910" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/frontend/handler/TestRegUserTargetRegPost.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="126" column="21" selection-start="4466" selection-end="4466" vertical-scroll-proportion="0.0" vertical-offset="945" max-vertical-offset="13125">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/mockito/mockito-all/1.8.4/mockito-all-1.8.4-sources.jar!/org/mockito/internal/creation/MockSettingsImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="75" column="0" selection-start="2101" selection-end="2101" vertical-scroll-proportion="0.0" vertical-offset="556" max-vertical-offset="1095" />
@@ -1388,7 +1451,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/dbService/UserDataSet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.7390511" vertical-offset="405" max-vertical-offset="1215" />
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.7390511" vertical-offset="405" max-vertical-offset="1215">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/chat/ChatMessage.java">
@@ -1424,7 +1489,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="8" column="13" selection-start="145" selection-end="145" vertical-scroll-proportion="0.24242425" vertical-offset="0" max-vertical-offset="561">
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1437,11 +1502,6 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/base/GameChat.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="2" column="17" selection-start="32" selection-end="32" vertical-scroll-proportion="0.062962964" vertical-offset="0" max-vertical-offset="540" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/utils/SysInfo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="63" column="32" selection-start="2305" selection-end="2305" vertical-scroll-proportion="0.0" vertical-offset="625" max-vertical-offset="1173" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/utils/VFSTest.java">
@@ -1552,7 +1612,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="28" column="34" selection-start="864" selection-end="864" vertical-scroll-proportion="0.0" vertical-offset="81" max-vertical-offset="629">
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1580,7 +1640,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="8" column="26" selection-start="133" selection-end="133" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="476">
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1599,7 +1659,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/frontend/FrontendImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="166" column="13" selection-start="5920" selection-end="5920" vertical-scroll-proportion="0.0" vertical-offset="2242" max-vertical-offset="4182" />
+        <state line="166" column="13" selection-start="5920" selection-end="5920" vertical-scroll-proportion="0.0" vertical-offset="2242" max-vertical-offset="4182">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/gameMechanic/gameCreating/MsgUpdateColors.java">
@@ -1638,7 +1700,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/messageSystem/MsgToWebSocketTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="35" selection-start="896" selection-end="896" vertical-scroll-proportion="0.65968585" vertical-offset="27" max-vertical-offset="600">
+        <state line="34" column="35" selection-start="896" selection-end="896" vertical-scroll-proportion="0.0" vertical-offset="27" max-vertical-offset="600">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/utils/SysInfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="67" column="0" selection-start="2318" selection-end="2318" vertical-scroll-proportion="0.0" vertical-offset="505" max-vertical-offset="1065">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/frontend/handler/TestRegUserTargetRegPost.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="530" column="35" selection-start="20177" selection-end="20194" vertical-scroll-proportion="17.627028" vertical-offset="1068" max-vertical-offset="19455">
           <folding />
         </state>
       </provider>
