@@ -48,7 +48,7 @@ public class TestTExecutor {
         password = "user1passwd";
 
         mockedMS = mock(MessageSystem.class);
-        dbService = new DBServiceImpl(mockedMS, MysqlConnectionCreator.getConnection());
+        dbService = new DBServiceImpl(mockedMS, SQLiteConnectionCreator.getConnection());
         dbService.addUDS(login, password);
 
 

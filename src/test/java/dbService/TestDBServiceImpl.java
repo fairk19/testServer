@@ -7,6 +7,7 @@ import org.junit.Ignore;
 import org.testng.Assert;
 import org.testng.annotations.*;
 
+import java.sql.Connection;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.ListIterator;
@@ -18,7 +19,6 @@ import static org.mockito.Mockito.mock;
  */
 public class TestDBServiceImpl {
     private MessageSystem mockedMS = mock(MessageSystem.class);
-//    private String url = "jdbc:mysql://localhost:3306/qualityTestDB?user=root&password=110708";
     private DBServiceImpl dbService;
     private String login;
     private String password;
@@ -27,7 +27,8 @@ public class TestDBServiceImpl {
 
     @BeforeClass
     public void setUp() {
-        dbService = new DBServiceImpl(mockedMS, MysqlConnectionCreator.getConnection());
+        Connection connection = SQLiteConnectionCreator.getConnection();
+        dbService = new DBServiceImpl(mockedMS, SQLiteConnectionCreator.getConnection());
     }
 
     @BeforeGroups("testAddUDS")

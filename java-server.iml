@@ -26,6 +26,7 @@
     <orderEntry type="library" name="Maven: org.eclipse.jetty.websocket:websocket-server:9.0.0.v20130308" level="project" />
     <orderEntry type="library" name="Maven: org.eclipse.jetty.websocket:websocket-common:9.0.0.v20130308" level="project" />
     <orderEntry type="library" name="Maven: mysql:mysql-connector-java:5.1.24" level="project" />
+    <orderEntry type="library" name="Maven: org.xerial:sqlite-jdbc:3.7.2" level="project" />
     <orderEntry type="library" name="Maven: org.mockito:mockito-all:1.8.4" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: org.powermock:powermock-module-testng:1.5.4" level="project" />
     <orderEntry type="library" name="Maven: org.testng:testng:6.8.7" level="project" />

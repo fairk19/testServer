@@ -71,8 +71,10 @@ public class TExecutor {
 			stmt.setString(1, login);
 			stmt.execute();
 			ResultSet resultSet = stmt.getResultSet();
-			if(resultSet.first())
-				rows=resultSet.getInt("C");
+            resultSet.next();
+			if(resultSet.getInt("C") != 0 ) {
+                rows=1;
+            }
 			stmt.close();
 		}
 		catch(Exception e){

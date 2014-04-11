@@ -2,18 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b512f83c-efae-4c18-9b4c-f09121c4cdb1" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/dbService/MysqlConnectionCreator.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/dbService/SQLiteConnectionCreator.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/dbService/DBServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/dbService/DBServiceImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/main/Main.java" afterPath="$PROJECT_DIR$/src/main/java/main/Main.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/frontend/newOrLoginUser/MsgAddUserTest.java" afterPath="$PROJECT_DIR$/src/test/java/frontend/newOrLoginUser/MsgAddUserTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/messageSystem/MsgToUserDataTest.java" afterPath="$PROJECT_DIR$/src/test/java/messageSystem/MsgToUserDataTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_xerial_sqlite_jdbc_3_7_2.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/dbService/MysqlConnectionCreator.java" afterPath="$PROJECT_DIR$/src/main/java/dbService/MysqlConnectionCreator.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/dbService/SQLiteConnectionCreator.java" afterPath="$PROJECT_DIR$/src/main/java/dbService/SQLiteConnectionCreator.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/dbService/TExecutor.java" afterPath="$PROJECT_DIR$/src/main/java/dbService/TExecutor.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/dbService/TestDBServiceImpl.java" afterPath="$PROJECT_DIR$/src/test/java/dbService/TestDBServiceImpl.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/dbService/TestTExecutor.java" afterPath="$PROJECT_DIR$/src/test/java/dbService/TestTExecutor.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/statistic/ccu" afterPath="$PROJECT_DIR$/statistic/ccu" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/java-server.iml" afterPath="$PROJECT_DIR$/java-server.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/statistic/memoryUsage" afterPath="$PROJECT_DIR$/statistic/memoryUsage" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/statistic/time" afterPath="$PROJECT_DIR$/statistic/time" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/statistic/totalMemory" afterPath="$PROJECT_DIR$/statistic/totalMemory" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="java-server.iws" />
@@ -49,21 +47,6 @@
         <option name="LOG_MESSAGE" value="&#13;&#13;JAVA" />
       </breakpoint>
       <breakpoint url="file://$PROJECT_DIR$/src/test/java/userDataImpl/TestUserDataImpl.java" line="143" class="userDataImpl.TestUserDataImpl" package="userDataImpl">
-        <option name="ENABLED" value="false" />
-        <option name="LOG_ENABLED" value="false" />
-        <option name="LOG_EXPRESSION_ENABLED" value="false" />
-        <option name="REMOVE_AFTER_HIT" value="false" />
-        <option name="SUSPEND_POLICY" value="SuspendAll" />
-        <option name="SUSPEND" value="true" />
-        <option name="COUNT_FILTER_ENABLED" value="false" />
-        <option name="COUNT_FILTER" value="0" />
-        <option name="CONDITION_ENABLED" value="true" />
-        <option name="CLASS_FILTERS_ENABLED" value="false" />
-        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="&#13;&#13;JAVA" />
-        <option name="LOG_MESSAGE" value="&#13;&#13;JAVA" />
-      </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/src/test/java/dbService/TestTExecutor.java" line="58" class="dbService.TestTExecutor" package="dbService">
         <option name="ENABLED" value="false" />
         <option name="LOG_ENABLED" value="false" />
         <option name="LOG_EXPRESSION_ENABLED" value="false" />
@@ -303,6 +286,126 @@
         <option name="CONDITION" value="" />
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/src/test/java/dbService/TestDBServiceImpl.java" line="30" class="dbService.TestDBServiceImpl" package="dbService">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/src/test/java/dbService/TestDBServiceImpl.java" line="29" class="dbService.TestDBServiceImpl" package="dbService">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/src/test/java/dbService/TestDBServiceImpl.java" line="35" class="dbService.TestDBServiceImpl" package="dbService">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/src/test/java/dbService/TestDBServiceImpl.java" line="40" class="dbService.TestDBServiceImpl" package="dbService">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/src/test/java/dbService/TestDBServiceImpl.java" line="46" class="dbService.TestDBServiceImpl" package="dbService">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/src/test/java/dbService/TestDBServiceImpl.java" line="42" class="dbService.TestDBServiceImpl" package="dbService">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/src/test/java/dbService/TestTExecutor.java" line="58" class="dbService.TestTExecutor" package="dbService">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/src/main/java/dbService/TExecutor.java" line="71" class="dbService.TExecutor" package="dbService">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
     </line_breakpoints>
     <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true">
       <breakpoint>
@@ -372,25 +475,25 @@
     <favorites_list name="java-server" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.7001034">
+    <splitter split-orientation="horizontal" split-proportion="0.49842933">
       <split-first>
         <leaf>
           <file leaf-file-name="MysqlConnectionCreator.java" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/main/java/dbService/MysqlConnectionCreator.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="22" column="16" selection-start="729" selection-end="729" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="465">
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                  </folding>
+                <state line="9" column="30" selection-start="175" selection-end="175" vertical-scroll-proportion="0.0" vertical-offset="135" max-vertical-offset="450">
+                  <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="SQLiteConnectionCreator.java" pinned="false" current="true" current-in-tab="true">
+          <file leaf-file-name="SQLiteConnectionCreator.java" pinned="false" current="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/main/java/dbService/SQLiteConnectionCreator.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="8" column="0" selection-start="103" selection-end="103" vertical-scroll-proportion="0.24590164" vertical-offset="0" max-vertical-offset="488">
-                  <folding />
+                <state line="18" column="115" selection-start="794" selection-end="796" vertical-scroll-proportion="0.4032258" vertical-offset="0" max-vertical-offset="558">
+                  <folding>
+                    <marker date="1397207433062" expanded="true" signature="555:893" placeholder="create table..if..." />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -399,67 +502,43 @@
       </split-first>
       <split-second>
         <leaf>
-          <file leaf-file-name="DBServiceImpl.java" pinned="false" current="false" current-in-tab="false">
+          <file leaf-file-name="DBServiceImpl.java" pinned="false" current="true" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/main/java/dbService/DBServiceImpl.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="15" column="21" selection-start="340" selection-end="340" vertical-scroll-proportion="0.0" vertical-offset="180" max-vertical-offset="1410">
+                <state line="25" column="0" selection-start="695" selection-end="695" vertical-scroll-proportion="-0.30783582" vertical-offset="375" max-vertical-offset="1245">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="TestTExecutor.java" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/test/java/dbService/TestTExecutor.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="58" column="0" selection-start="1522" selection-end="1522" vertical-scroll-proportion="0.0" vertical-offset="671" max-vertical-offset="1650">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="TExecutor.java" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/java/dbService/TExecutor.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="71" column="0" selection-start="1650" selection-end="1650" vertical-scroll-proportion="0.0" vertical-offset="956" max-vertical-offset="2520">
                   <folding>
-                    <element signature="imports" expanded="true" />
-                    <element signature="method#getConnction#0;class#DBServiceImpl#0" expanded="true" />
+                    <marker date="1397220425904" expanded="true" signature="908:1001" placeholder="INSERT INTO ..." />
+                    <marker date="1397220425904" expanded="true" signature="1517:1565" placeholder="SELECT COUNT..Users..." />
+                    <marker date="1397220425904" expanded="true" signature="2290:2376" placeholder="SELECT id,ra..Users..." />
+                    <marker date="1397220425904" expanded="true" signature="2990:3026" placeholder="DELETE FROM ..." />
+                    <marker date="1397220425904" expanded="true" signature="3438:3539" placeholder="UPDATE Users..." />
                   </folding>
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="TestDBServiceImpl.java" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/test/java/dbService/TestDBServiceImpl.java">
+          <file leaf-file-name="Unused.java" pinned="false" current="false" current-in-tab="false">
+            <entry file="jar://$MAVEN_REPOSITORY$/org/xerial/sqlite-jdbc/3.7.2/sqlite-jdbc-3.7.2-sources.jar!/org/sqlite/Unused.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="21" column="12" selection-start="566" selection-end="566" vertical-scroll-proportion="0.0" vertical-offset="62" max-vertical-offset="2070">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="MsgAddUserTest.java" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/test/java/frontend/newOrLoginUser/MsgAddUserTest.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="29" column="96" selection-start="978" selection-end="978" vertical-scroll-proportion="0.0" vertical-offset="208" max-vertical-offset="645">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="Main.java" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/java/main/Main.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="45" column="108" selection-start="1452" selection-end="1452" vertical-scroll-proportion="0.0" vertical-offset="155" max-vertical-offset="840">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="MsgToUserDataTest.java" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/test/java/messageSystem/MsgToUserDataTest.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="23" column="91" selection-start="713" selection-end="713" vertical-scroll-proportion="0.0" vertical-offset="218" max-vertical-offset="525">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="TestMsgAddUser.java" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/test/java/messageSystem/vanikMessageSystem/TestMsgAddUser.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="49" column="31" selection-start="1235" selection-end="1235" vertical-scroll-proportion="0.0" vertical-offset="544" max-vertical-offset="1080">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="TestTExecutor.java" pinned="false" current="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/test/java/dbService/TestTExecutor.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="50" column="86" selection-start="1402" selection-end="1402" vertical-scroll-proportion="0.5043732" vertical-offset="442" max-vertical-offset="1650">
+                <state line="139" column="45" selection-start="6170" selection-end="6187" vertical-scroll-proportion="0.0" vertical-offset="2085" max-vertical-offset="3750">
                   <folding />
                 </state>
               </provider>
@@ -483,8 +562,6 @@
         <option value="$PROJECT_DIR$/src/test/java/utils/VFSTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/resource/TimeSettings.java" />
         <option value="$PROJECT_DIR$/src/main/java/utils/TemplateHelper.java" />
-        <option value="$PROJECT_DIR$/src/main/java/dbService/TExecutor.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/test/java/frontend/handler/TestNUTarget404.java" />
         <option value="$PROJECT_DIR$/src/test/java/frontend/handler/TestRegUserTargetGame.java" />
         <option value="$PROJECT_DIR$/src/test/java/frontend/handler/TestRegUserTargetMainPage.java" />
@@ -520,14 +597,16 @@
         <option value="$PROJECT_DIR$/src/main/java/messageSystem/MsgToGameMechanic.java" />
         <option value="$PROJECT_DIR$/src/main/java/messageSystem/MsgToUserData.java" />
         <option value="$PROJECT_DIR$/src/test/java/userDataImpl/TestUserDataImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/dbService/MysqlConnectionCreator.java" />
         <option value="$PROJECT_DIR$/src/main/java/dbService/DBServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/test/java/dbService/TestDBServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/test/java/frontend/newOrLoginUser/MsgAddUserTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/main/Main.java" />
         <option value="$PROJECT_DIR$/src/test/java/messageSystem/MsgToUserDataTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/dbService/TestTExecutor.java" />
+        <option value="$PROJECT_DIR$/src/main/java/dbService/MysqlConnectionCreator.java" />
         <option value="$PROJECT_DIR$/src/main/java/dbService/SQLiteConnectionCreator.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/test/java/dbService/TestTExecutor.java" />
+        <option value="$PROJECT_DIR$/src/test/java/dbService/TestDBServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/dbService/TExecutor.java" />
       </list>
     </option>
   </component>
@@ -569,7 +648,7 @@
   <component name="ProjectFrameBounds">
     <option name="x" value="65" />
     <option name="y" value="24" />
-    <option name="width" value="1301" />
+    <option name="width" value="1285" />
     <option name="height" value="744" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
@@ -600,7 +679,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -878,6 +956,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -887,11 +966,11 @@
     <property name="MemberChooser.sorted" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="MemberChooser.copyJavadoc" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../AddedMysqlConnection/serverFromGitToFix" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="recentsLimit" value="5" />
     <property name="dynamic.classpath" value="false" />
-    <property name="SearchEverywhereHistory" value="U" />
+    <property name="SearchEverywhereHistory" value="&#10;U" />
     <property name="TODO_SCOPE" value="Project Files" />
     <property name="options.lastSelected" value="MavenSettings" />
     <property name="options.splitter.main.proportions" value="0.3" />
@@ -899,6 +978,7 @@
     <property name="options.searchVisible" value="true" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="TestNG" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.includeInheritedMembers" value="false" />
+    <property name="FullScreen" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.Recents.Supers">
@@ -915,77 +995,7 @@
       <recent name="chat" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main">
-    <configuration default="false" name="MsgToGameMechanicTest.testExec" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="messageSystem.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="java-server" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="SUITE_NAME" />
-      <option name="PACKAGE_NAME" value="messageSystem" />
-      <option name="MAIN_CLASS_NAME" value="messageSystem.MsgToGameMechanicTest" />
-      <option name="METHOD_NAME" value="testExec" />
-      <option name="GROUP_NAME" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="OUTPUT_DIRECTORY" />
-      <option name="ANNOTATION_TYPE" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <option name="USE_DEFAULT_REPORTERS" value="false" />
-      <option name="PROPERTIES_FILE" />
-      <envs />
-      <properties />
-      <listeners />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
-    <configuration default="false" name="MsgToGameMechanicTest" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="messageSystem.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="java-server" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="SUITE_NAME" />
-      <option name="PACKAGE_NAME" value="messageSystem" />
-      <option name="MAIN_CLASS_NAME" value="messageSystem.MsgToGameMechanicTest" />
-      <option name="METHOD_NAME" />
-      <option name="GROUP_NAME" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="OUTPUT_DIRECTORY" />
-      <option name="ANNOTATION_TYPE" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <option name="USE_DEFAULT_REPORTERS" value="false" />
-      <option name="PROPERTIES_FILE" />
-      <envs />
-      <properties />
-      <listeners />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="TestNG.TestTExecutor">
     <configuration default="false" name="MsgToUserDataTest.testExec" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -1075,6 +1085,88 @@
       <module name="java-server" />
       <envs />
       <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="TestTExecutor" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="dbService.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="java-server" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" value="dbService" />
+      <option name="MAIN_CLASS_NAME" value="dbService.TestTExecutor" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="40788" />
+        <option name="TRANSPORT" value="0" />
+        <option name="LOCAL" value="true" />
+      </RunnerSettings>
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Debug" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="TestDBServiceImpl" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="dbService.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="java-server" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" value="dbService" />
+      <option name="MAIN_CLASS_NAME" value="dbService.TestDBServiceImpl" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="61000" />
+        <option name="TRANSPORT" value="0" />
+        <option name="LOCAL" value="true" />
+      </RunnerSettings>
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Debug" />
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
@@ -1396,19 +1488,19 @@
     <list size="7">
       <item index="0" class="java.lang.String" itemvalue="TestNG.TestWebSocketImpl" />
       <item index="1" class="java.lang.String" itemvalue="TestNG.TestUserDataImpl" />
-      <item index="2" class="java.lang.String" itemvalue="TestNG.MsgToGameMechanicTest.testExec" />
-      <item index="3" class="java.lang.String" itemvalue="TestNG.MsgToGameMechanicTest" />
-      <item index="4" class="java.lang.String" itemvalue="TestNG.MsgToUserDataTest.testExec" />
-      <item index="5" class="java.lang.String" itemvalue="TestNG.MsgToWebSocketTest" />
-      <item index="6" class="java.lang.String" itemvalue="Application.Main" />
+      <item index="2" class="java.lang.String" itemvalue="TestNG.MsgToUserDataTest.testExec" />
+      <item index="3" class="java.lang.String" itemvalue="TestNG.MsgToWebSocketTest" />
+      <item index="4" class="java.lang.String" itemvalue="Application.Main" />
+      <item index="5" class="java.lang.String" itemvalue="TestNG.TestTExecutor" />
+      <item index="6" class="java.lang.String" itemvalue="TestNG.TestDBServiceImpl" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Application.Main" />
-        <item index="1" class="java.lang.String" itemvalue="TestNG.MsgToWebSocketTest" />
-        <item index="2" class="java.lang.String" itemvalue="TestNG.MsgToUserDataTest.testExec" />
-        <item index="3" class="java.lang.String" itemvalue="TestNG.MsgToGameMechanicTest" />
-        <item index="4" class="java.lang.String" itemvalue="TestNG.MsgToGameMechanicTest.testExec" />
+        <item index="0" class="java.lang.String" itemvalue="TestNG.TestTExecutor" />
+        <item index="1" class="java.lang.String" itemvalue="TestNG.TestDBServiceImpl" />
+        <item index="2" class="java.lang.String" itemvalue="Application.Main" />
+        <item index="3" class="java.lang.String" itemvalue="TestNG.MsgToWebSocketTest" />
+        <item index="4" class="java.lang.String" itemvalue="TestNG.MsgToUserDataTest.testExec" />
       </list>
     </recent_temporary>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
@@ -1429,12 +1521,14 @@
       <workItem from="1397062781852" duration="1178000" />
       <workItem from="1397065425997" duration="15017000" />
       <workItem from="1397127523947" duration="8033000" />
-      <workItem from="1397157127299" duration="6123000" />
+      <workItem from="1397157127299" duration="9421000" />
+      <workItem from="1397210235327" duration="1424000" />
+      <workItem from="1397220196844" duration="369000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="101636000" />
+    <option name="totallyTimeSpent" value="106727000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -1457,34 +1551,34 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="65" y="24" width="1301" height="744" extended-state="4" />
+    <frame x="65" y="24" width="1285" height="744" extended-state="4" />
     <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32967034" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.13043478" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32943144" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.35037273" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.44983277" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32943144" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.6688963" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32857144" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3277592" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.11535402" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23070803" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.13879599" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2304593" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.34949833" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.13043478" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
@@ -1541,109 +1635,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/chat/ChatMessage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="0" selection-start="282" selection-end="282" vertical-scroll-proportion="0.40106952" vertical-offset="0" max-vertical-offset="561">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/chat/TestNewChatWSImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="100" column="37" selection-start="2876" selection-end="2876" vertical-scroll-proportion="-0.5340314" vertical-offset="1700" max-vertical-offset="9129">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/eclipse/jetty/websocket/websocket-api/9.0.0.v20130308/websocket-api-9.0.0.v20130308-sources.jar!/org/eclipse/jetty/websocket/api/WebSocketAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="48" column="0" selection-start="1478" selection-end="1478" vertical-scroll-proportion="0.0" vertical-offset="623" max-vertical-offset="1173" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/messageSystem/AddressServiceImplTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="13" selection-start="145" selection-end="145" vertical-scroll-proportion="0.24242425" vertical-offset="0" max-vertical-offset="561">
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/base/GameChat.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="17" selection-start="32" selection-end="32" vertical-scroll-proportion="0.062962964" vertical-offset="0" max-vertical-offset="540" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/utils/VFSTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="61" column="13" selection-start="1636" selection-end="1636" vertical-scroll-proportion="0.77554744" vertical-offset="510" max-vertical-offset="2958">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/messageSystem/MsgToGameChatTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="0" selection-start="748" selection-end="748" vertical-scroll-proportion="0.53467155" vertical-offset="149" max-vertical-offset="697">
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/utils/SysInfoTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="74" column="9" selection-start="2002" selection-end="2002" vertical-scroll-proportion="2.0474453" vertical-offset="0" max-vertical-offset="1394">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/gameMechanic/GameSessionTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="202" column="63" selection-start="9061" selection-end="9061" vertical-scroll-proportion="0.0" vertical-offset="1630" max-vertical-offset="4607">
-          <folding>
-            <element signature="method#stepsToKing#0;class#GameSessionTest#0" expanded="false" />
-            <element signature="method#readFile#0;class#GameSessionTest#0" expanded="false" />
-            <element signature="method#deleteFile#0;class#GameSessionTest#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/gameMechanic/Stroke/MsgPartyEnd.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="21" selection-start="283" selection-end="283" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="391" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/gameMechanic/gameCreating/MsgCreateChat.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="24" selection-start="392" selection-end="392" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="391" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/messageSystem/MessageSystemImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="13" selection-start="253" selection-end="253" vertical-scroll-proportion="0.0" vertical-offset="102" max-vertical-offset="663">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/messageSystem/MsgToDBService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="1" selection-start="418" selection-end="418" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="391">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/messageSystem/MsgToGameChat.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="5" selection-start="334" selection-end="334" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="391">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/gameClasses/Field.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="5" selection-start="230" selection-end="230" vertical-scroll-proportion="-0.3030303" vertical-offset="391" max-vertical-offset="952" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/base/GameMechanic.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="12" column="16" selection-start="333" selection-end="333" vertical-scroll-proportion="0.22037037" vertical-offset="0" max-vertical-offset="540" />
@@ -1661,18 +1652,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/gameMechanic/gameCreating/MsgCreateGames.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="36" selection-start="215" selection-end="215" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="425">
-          <folding />
-        </state>
+        <state line="11" column="36" selection-start="215" selection-end="215" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="425" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/messageSystem/MsgToGameMechanicTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="34" selection-start="864" selection-end="864" vertical-scroll-proportion="0.0" vertical-offset="81" max-vertical-offset="629">
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
+        <state line="28" column="34" selection-start="864" selection-end="864" vertical-scroll-proportion="0.0" vertical-offset="81" max-vertical-offset="629" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/base/Msg.java">
@@ -1682,23 +1667,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/frontend/newOrLoginUser/MsgUpdateUser.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="16" selection-start="274" selection-end="274" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="408">
-          <folding />
-        </state>
+        <state line="12" column="16" selection-start="274" selection-end="274" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="408" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/frontend/newOrLoginUser/MsgAddUser.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="17" selection-start="311" selection-end="311" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="544">
-          <folding />
-        </state>
+        <state line="13" column="17" selection-start="311" selection-end="311" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="544" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/frontend/FrontendImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="166" column="13" selection-start="5920" selection-end="5920" vertical-scroll-proportion="0.0" vertical-offset="2242" max-vertical-offset="4182">
-          <folding />
-        </state>
+        <state line="166" column="13" selection-start="5920" selection-end="5920" vertical-scroll-proportion="0.0" vertical-offset="2242" max-vertical-offset="4182" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/gameMechanic/gameCreating/MsgUpdateColors.java">
@@ -1730,16 +1709,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/gameClasses/Snapshot.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="70" selection-start="179" selection-end="179" vertical-scroll-proportion="0.18324608" vertical-offset="0" max-vertical-offset="1590">
-          <folding />
-        </state>
+        <state line="7" column="70" selection-start="179" selection-end="179" vertical-scroll-proportion="0.18324608" vertical-offset="0" max-vertical-offset="1590" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/messageSystem/MsgToWebSocketTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="35" selection-start="896" selection-end="896" vertical-scroll-proportion="0.0" vertical-offset="27" max-vertical-offset="600">
-          <folding />
-        </state>
+        <state line="34" column="35" selection-start="896" selection-end="896" vertical-scroll-proportion="0.0" vertical-offset="27" max-vertical-offset="600" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/utils/SysInfo.java">
@@ -1758,27 +1733,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/chat/ChatWSImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="0" selection-start="539" selection-end="539" vertical-scroll-proportion="0.0" vertical-offset="126" max-vertical-offset="930">
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
+        <state line="23" column="0" selection-start="539" selection-end="539" vertical-scroll-proportion="0.0" vertical-offset="126" max-vertical-offset="930" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/chat/GameChatImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="50" column="0" selection-start="1407" selection-end="1407" vertical-scroll-proportion="0.0" vertical-offset="414" max-vertical-offset="990">
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#405#432#0" expanded="false" />
-            <element signature="e#523#539#0" expanded="false" />
-            <element signature="e#791#792#0" expanded="false" />
-            <element signature="e#812#813#0" expanded="false" />
-            <element signature="e#855#856#0" expanded="false" />
-            <element signature="e#882#883#0" expanded="false" />
-            <element signature="e#985#998#0" expanded="false" />
-          </folding>
-        </state>
+        <state line="50" column="0" selection-start="1407" selection-end="1407" vertical-scroll-proportion="0.0" vertical-offset="414" max-vertical-offset="990" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/userDataImpl/TestUserDataImpl.java">
@@ -1818,40 +1778,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/frontend/newOrLoginUser/MsgAddUserTest.java.orig">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="7" selection-start="69" selection-end="69" vertical-scroll-proportion="0.3125" vertical-offset="0" max-vertical-offset="1515">
-          <folding />
-        </state>
+        <state line="4" column="7" selection-start="69" selection-end="69" vertical-scroll-proportion="0.3125" vertical-offset="0" max-vertical-offset="1515" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/messageSystem/MsgToUserDataTest.java.orig">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="7" selection-start="65" selection-end="65" vertical-scroll-proportion="0.3125" vertical-offset="0" max-vertical-offset="1035">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dbService/DBServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="21" selection-start="340" selection-end="340" vertical-scroll-proportion="0.0" vertical-offset="180" max-vertical-offset="1410">
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#getConnction#0;class#DBServiceImpl#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/dbService/TestDBServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="12" selection-start="566" selection-end="566" vertical-scroll-proportion="0.0" vertical-offset="62" max-vertical-offset="2070">
-          <folding />
-        </state>
+        <state line="4" column="7" selection-start="65" selection-end="65" vertical-scroll-proportion="0.3125" vertical-offset="0" max-vertical-offset="1035" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/frontend/newOrLoginUser/MsgAddUserTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="96" selection-start="978" selection-end="978" vertical-scroll-proportion="0.0" vertical-offset="208" max-vertical-offset="645">
-          <folding />
-        </state>
+        <state line="29" column="96" selection-start="978" selection-end="978" vertical-scroll-proportion="0.0" vertical-offset="208" max-vertical-offset="645" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/main/Main.java">
@@ -1863,37 +1800,136 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/messageSystem/MsgToUserDataTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="91" selection-start="713" selection-end="713" vertical-scroll-proportion="0.0" vertical-offset="218" max-vertical-offset="525">
-          <folding />
-        </state>
+        <state line="23" column="91" selection-start="713" selection-end="713" vertical-scroll-proportion="0.0" vertical-offset="218" max-vertical-offset="525" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/messageSystem/vanikMessageSystem/TestMsgAddUser.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="49" column="31" selection-start="1235" selection-end="1235" vertical-scroll-proportion="0.0" vertical-offset="544" max-vertical-offset="1080">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/dbService/TestTExecutor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="50" column="86" selection-start="1402" selection-end="1402" vertical-scroll-proportion="0.5043732" vertical-offset="442" max-vertical-offset="1650">
-          <folding />
-        </state>
+        <state line="49" column="31" selection-start="1235" selection-end="1235" vertical-scroll-proportion="0.0" vertical-offset="544" max-vertical-offset="1080" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/dbService/MysqlConnectionCreator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="16" selection-start="729" selection-end="729" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="465">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state line="9" column="30" selection-start="175" selection-end="175" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="450">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="132" column="0" selection-start="4576" selection-end="4576" vertical-scroll-proportion="1.4375" vertical-offset="1336" max-vertical-offset="2790">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/xerial/sqlite-jdbc/3.7.2/sqlite-jdbc-3.7.2.jar!/org/sqlite/Stmt.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="34" column="15" selection-start="1240" selection-end="1240" vertical-scroll-proportion="-4.64" vertical-offset="379" max-vertical-offset="1470" />
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/testng/testng/6.8.7/testng-6.8.7-sources.jar!/org/testng/internal/TestMethodWorker.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="110" column="0" selection-start="3598" selection-end="3598" vertical-scroll-proportion="0.0" vertical-offset="1316" max-vertical-offset="4365" />
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/testng/testng/6.8.7/testng-6.8.7-sources.jar!/org/testng/TestRunner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="620" column="0" selection-start="22989" selection-end="22989" vertical-scroll-proportion="0.0" vertical-offset="8126" max-vertical-offset="22470" />
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/testng/testng/6.8.7/testng-6.8.7-sources.jar!/org/testng/SuiteRunner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="242" column="0" selection-start="7666" selection-end="7666" vertical-scroll-proportion="0.0" vertical-offset="2974" max-vertical-offset="9060" />
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/testng/testng/6.8.7/testng-6.8.7-sources.jar!/org/testng/remote/RemoteTestNG.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="111" column="0" selection-start="3937" selection-end="3937" vertical-scroll-proportion="0.33215547" vertical-offset="1151" max-vertical-offset="3690" />
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/testng/testng/6.8.7/testng-6.8.7-sources.jar!/org/testng/SuiteRunnerWorker.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="86" column="0" selection-start="2776" selection-end="2776" vertical-scroll-proportion="0.0" vertical-offset="1061" max-vertical-offset="2490" />
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/xerial/sqlite-jdbc/3.7.2/sqlite-jdbc-3.7.2-sources.jar!/org/sqlite/Conn.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="355" column="0" selection-start="11819" selection-end="11819" vertical-scroll-proportion="0.0" vertical-offset="4666" max-vertical-offset="6150" />
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/xerial/sqlite-jdbc/3.7.2/sqlite-jdbc-3.7.2-sources.jar!/org/sqlite/Stmt.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="161" column="0" selection-start="4659" selection-end="4659" vertical-scroll-proportion="0.0" vertical-offset="2004" max-vertical-offset="4650" />
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/testng/testng/6.8.7/testng-6.8.7-sources.jar!/org/testng/internal/MethodInvocationHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="83" column="0" selection-start="3241" selection-end="3241" vertical-scroll-proportion="0.33224756" vertical-offset="798" max-vertical-offset="4320" />
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/xerial/sqlite-jdbc/3.7.2/sqlite-jdbc-3.7.2-sources.jar!/org/sqlite/PrepStmt.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="61" column="0" selection-start="1954" selection-end="1954" vertical-scroll-proportion="0.0" vertical-offset="430" max-vertical-offset="4650" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/dbService/TestDBServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="113" column="10" selection-start="2862" selection-end="2863" vertical-scroll-proportion="0.39756098" vertical-offset="1352" max-vertical-offset="2070">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/testng/testng/6.8.7/testng-6.8.7-sources.jar!/org/testng/internal/Invoker.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="731" column="0" selection-start="28881" selection-end="28881" vertical-scroll-proportion="0.33258426" vertical-offset="10112" max-vertical-offset="28470" />
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/xerial/sqlite-jdbc/3.7.2/sqlite-jdbc-3.7.2-sources.jar!/org/sqlite/Unused.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="139" column="45" selection-start="6170" selection-end="6187" vertical-scroll-proportion="0.0" vertical-offset="1732" max-vertical-offset="3480">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/dbService/SQLiteConnectionCreator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="0" selection-start="103" selection-end="103" vertical-scroll-proportion="0.24590164" vertical-offset="0" max-vertical-offset="488">
+        <state line="18" column="115" selection-start="794" selection-end="796" vertical-scroll-proportion="0.4032258" vertical-offset="0" max-vertical-offset="558">
+          <folding>
+            <marker date="1397207433062" expanded="true" signature="555:893" placeholder="create table..if..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/lib/jvm/jdk1.7.0_25/src.zip!/java/sql/ResultSet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1139" column="12" selection-start="53456" selection-end="53456" vertical-scroll-proportion="0.33251834" vertical-offset="16559" max-vertical-offset="61785">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dbService/TExecutor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="71" column="0" selection-start="1650" selection-end="1650" vertical-scroll-proportion="0.0" vertical-offset="956" max-vertical-offset="2520">
+          <folding>
+            <marker date="1397220425904" expanded="true" signature="908:1001" placeholder="INSERT INTO ..." />
+            <marker date="1397220425904" expanded="true" signature="1517:1565" placeholder="SELECT COUNT..Users..." />
+            <marker date="1397220425904" expanded="true" signature="2290:2376" placeholder="SELECT id,ra..Users..." />
+            <marker date="1397220425904" expanded="true" signature="2990:3026" placeholder="DELETE FROM ..." />
+            <marker date="1397220425904" expanded="true" signature="3438:3539" placeholder="UPDATE Users..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/dbService/TestTExecutor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="58" column="0" selection-start="1522" selection-end="1522" vertical-scroll-proportion="0.0" vertical-offset="540" max-vertical-offset="1650">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dbService/DBServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="0" selection-start="695" selection-end="695" vertical-scroll-proportion="-0.30783582" vertical-offset="375" max-vertical-offset="1245">
           <folding />
         </state>
       </provider>
