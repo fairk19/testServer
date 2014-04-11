@@ -32,15 +32,6 @@ public class TestTExecutor {
     public void setUpFindUser() {
         mockedConnection = mock(Connection.class);
 
-//        url="jdbc:mysql://localhost:3306/qualityTestDB?user=root&password=110708";
-//        try{
-//            Driver driver = (Driver) Class.forName("com.mysql.jdbc.Driver").newInstance();
-//            DriverManager.registerDriver(driver);
-//            connection = DriverManager.getConnection(url);
-//        } catch (Exception e) {
-//            e.printStackTrace();
-//        }
-
 
         uncknownLogin = "asdfsdf";
 
@@ -65,49 +56,4 @@ public class TestTExecutor {
         dbService.deleteUser(login);
     }
 
-
-
-//
-//    @BeforeGroups("execQuery")
-//    public void setUpExecQuery() {
-//        query = "select * from Users where id = 10";
-//        mockedConnection = mock(Connection.class);
-//        mockedHandler = mock(TResultHandler.class);
-//        mockedStatement = mock(Statement.class);
-//        mockedResultSet = mock(ResultSet.class);
-//        uds = new UserDataSet(10,"name",11 , 2 , 2);
-//        try {
-//            when(mockedConnection.createStatement()).thenReturn(mockedStatement);
-//            when(mockedStatement.getResultSet()).thenReturn(mockedResultSet);
-//        } catch (SQLException e) {
-//            e.printStackTrace();
-//        }
-//        when(mockedHandler.handle(mockedResultSet)).thenReturn(uds);
-//    }
-//    @Test(groups = "execQuery")
-//    public void testExecQuery() {
-//        Assert.assertEquals(TExecutor.execQuery(mockedConnection,query,mockedHandler).getClass(),uds.getClass());
-//    }
-//
-//
-//    @BeforeGroups("ExecQueryWithIncorrectSQL")
-//    public void setUpExecQueryWithIncorrectSQL() {
-//        mockedConnection = mock(Connection.class);
-//        mockedHandler = mock(TResultHandler.class);
-//        mockedStatement = mock(Statement.class);
-//        query = "select * from Users were id = 10";
-//
-//        try {
-//            when(mockedConnection.createStatement()).thenReturn(mockedStatement);
-//            when(mockedStatement.execute(query)).thenThrow(new SQLException());
-//        } catch (SQLException e) {
-//            e.printStackTrace();
-//        }
-//        when(mockedHandler.handle(mockedResultSet)).thenReturn(uds);
-//    }
-//
-//    @Test(groups = "ExecQueryWithIncorrectSQL")
-//    public void testExecQueryWithIncorrectSQL(){
-//        Assert.assertNull(TExecutor.execQuery(mockedConnection, query, mockedHandler));
-//    }
 }

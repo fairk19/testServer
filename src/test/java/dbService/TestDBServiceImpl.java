@@ -136,9 +136,4 @@ public class TestDBServiceImpl {
     public void tearDownRun(){
 
     }
-
-//    @AfterTest
-//    public void tearDown() {
-//        dbService.deleteUser(login);
-//    }
 }

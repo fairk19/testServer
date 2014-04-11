@@ -19,16 +19,13 @@ import resource.ResourceFactory;
 
 import utils.SysInfo;
 import utils.TemplateHelper;
-//import utils.VFS;
+
 import frontend.UserDataImpl;
 import frontend.WebSocketImpl;
 import frontend.WebSocketServletImpl;
 
 import frontend.FrontendImpl;
 import gameMechanic.GameMechanicImpl;
-
-//import accountService.AccountServiceImpl;
-//import base.AccountService;
 import base.DataAccessObject;
 import base.GameChat;
 import base.GameMechanic;

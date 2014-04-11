@@ -246,7 +246,6 @@ public class TestNewChatWSImpl {
         JSONObject js = new JSONObject();
         js.put("sessionId", sessionId1);
         js.put("startServerTime", startServerTime);
-//        js.put("text", text);
         message = js.toJSONString();
         chatWS = new ChatWSImpl();
         chatWS.onWebSocketConnect(mockedSession);

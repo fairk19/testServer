@@ -329,79 +329,6 @@ public class TestRegUserTargetRegPost {
 
 
 
-
-
-
-
-//    @BeforeGroups("NUTargetAdmin")
-//    public void  setUpNUTargetAdmin() {
-//        SESSION_ID_FIELD = "sessionId";
-//        sessionIdValue = "123";
-//        START_SERVER_TIME_FIELD = "";
-//        startServerTimeValue = UserDataImpl.getStartServerTime();
-//
-//        mockedMS = mock (MessageSystem.class);
-//        frontend = new FrontendImpl(mockedMS);
-//        response = mock(HttpServletResponse.class);
-//        request = mock(HttpServletRequest.class);
-//        target = "/admin";
-//        baseRequest = mock(Request.class);
-//        Cookie mockedCookieSessionId = mock(Cookie.class);
-//        when(mockedCookieSessionId.getName()).thenReturn(SESSION_ID_FIELD);
-//        when(mockedCookieSessionId.getValue()).thenReturn(sessionIdValue);
-//        Cookie mockedCookieServerTime = mock(Cookie.class);
-//        when(mockedCookieServerTime.getName()).thenReturn(START_SERVER_TIME_FIELD);
-//        when(mockedCookieServerTime.getValue()).thenReturn(startServerTimeValue);
-//        try {
-//            PrintWriter writer = new PrintWriter("returnedPage.html");
-//            when(response.getWriter()).thenReturn(writer);
-//        } catch (IOException e) {
-//            e.printStackTrace();
-//        }
-//        Cookie[] arrCookies = {mockedCookieSessionId, mockedCookieServerTime};
-//        when(request.getCookies()).thenReturn(arrCookies);
-//        TemplateHelper.init();
-//        SysInfo sysInfo = new SysInfo();
-//    }
-//
-//    @Test(groups = "NUTargetAdmin")
-//    public void testNUTargetAdmin() throws IOException {
-//        frontend.handle(target,baseRequest,request,response);
-//
-//        sessionIdValue = SHA2.getSHA2(String.valueOf(frontend.getCreatorSessionId().intValue()));
-//        Assert.assertNotNull(UserDataImpl.getUserSessionBySessionId(sessionIdValue));
-//
-//
-//        returnedPage = new File("returnedPage.html");
-//        String returnedPageAsString = new String();
-//        returnedPageAsString = Files.toString(returnedPage, defaultCharset());
-//
-//        expectedPage = new File("./statistic/ccu");
-//        Assert.assertTrue(returnedPageAsString.contains(Files.toString(expectedPage, defaultCharset())));
-//
-//        expectedPage = new File("./statistic/memoryUsage");
-//        Assert.assertTrue(returnedPageAsString.contains(Files.toString(expectedPage, defaultCharset())));
-//
-//        expectedPage = new File("./statistic/time");
-//        Assert.assertTrue(returnedPageAsString.contains(Files.toString(expectedPage, defaultCharset())));
-//
-//        expectedPage = new File("./statistic/totalMemory");
-//        Assert.assertTrue(returnedPageAsString.contains(Files.toString(expectedPage, defaultCharset())));
-//
-//    }
-//
-//    @AfterGroups("NUTargetAdmin")
-//    public void tearDownNUTargetAdmin() {
-//        returnedPage.delete();
-//    }
-
-
-
-
-
-
-
-
     @BeforeGroups("NUTarget404")
     public void  setUpNUTarget404() {
         UserDataImpl.clearAllMaps();
@@ -1076,7 +1003,6 @@ public class TestRegUserTargetRegPost {
         Assert.assertTrue(returnedPageAsString.contains(expectedRating));
 
         Assert.assertNotNull(UserDataImpl.getUserSessionBySessionId(sessionIdValue));
-//        Assert.assertNotNull(UserDataImpl.getLogInUserBySessionId(sessionIdValue));
 
     }
     @AfterGroups("StatusReadyTargetProfile")

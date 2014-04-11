@@ -90,7 +90,6 @@ public class TestWebSocketImpl {
         String status = "status";
         JSONObject js = new JSONObject();
         js.put("startServerTime", startServeTime);
-//        js.put("sessionId", sessionId);
         js.put("from_x", from_x);
         js.put("from_y", from_y);
         js.put("to_x", to_x);
