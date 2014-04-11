@@ -3,6 +3,7 @@ package frontend.newOrLoginUser;
 import base.*;
 import dbService.DBServiceImpl;
 import dbService.MysqlConnectionCreator;
+import dbService.SQLiteConnectionCreator;
 import frontend.FrontendImpl;
 import frontend.UserDataImpl;
 import messageSystem.MessageSystemImpl;
@@ -27,7 +28,7 @@ public class MsgAddUserTest {
         this.messageSystem = new MessageSystemImpl();
         this.frontend = new FrontendImpl(messageSystem);
         this.userData = new UserDataImpl(messageSystem);
-        this.dbService = new DBServiceImpl(messageSystem, MysqlConnectionCreator.getConnection());
+        this.dbService = new DBServiceImpl(messageSystem, SQLiteConnectionCreator.getConnection());
     }
 
     @AfterMethod

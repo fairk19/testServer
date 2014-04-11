@@ -1,4 +1,4 @@
-package messageSystem.vanikMessageSystem;
+package messageSystem;
 
 import base.Address;
 import base.MessageSystem;
