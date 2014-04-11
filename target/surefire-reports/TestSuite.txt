@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 102, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 6.832 sec <<< FAILURE!
-testExec(messageSystem.MsgToWebSocketTest)  Time elapsed: 0.004 sec  <<< FAILURE!
+Tests run: 102, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 5.403 sec <<< FAILURE!
+testExec(messageSystem.MsgToWebSocketTest)  Time elapsed: 0.003 sec  <<< FAILURE!
 java.lang.NullPointerException
 	at gameClasses.Snapshot.<init>(Snapshot.java:16)
 	at messageSystem.MsgToWebSocketTest.testExec(MsgToWebSocketTest.java:35)

@@ -39,7 +39,7 @@ public class DBServiceImpl implements DataAccessObject{
 			@Override
 			public UserDataSet handle(ResultSet result){
 				try {
-					if(result.first()){
+					if(result.next()){
 						int id = result.getInt("id");
 						int rating = result.getInt("rating");
 						int winQuantity = result.getInt("win_quantity");
