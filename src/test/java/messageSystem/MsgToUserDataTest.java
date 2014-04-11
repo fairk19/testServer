@@ -2,6 +2,7 @@ package messageSystem;
 
 import base.Address;
 import dbService.DBServiceImpl;
+import dbService.MysqlConnectionCreator;
 import frontend.UserDataImpl;
 import frontend.newOrLoginUser.MsgAddUser;
 import org.testng.annotations.AfterMethod;
@@ -20,7 +21,7 @@ public class MsgToUserDataTest {
     @BeforeMethod
     public void setUp() throws Exception {
         messageSystem = new MessageSystemImpl();
-        dbService = new DBServiceImpl(messageSystem);
+        dbService = new DBServiceImpl(messageSystem, MysqlConnectionCreator.getConnection());
         userData = new UserDataImpl(messageSystem);
     }
 

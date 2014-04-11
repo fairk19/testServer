@@ -17,31 +17,11 @@ public class DBServiceImpl implements DataAccessObject{
 	private final MessageSystem messageSystem;
 	private final Address address;
 	private Connection connection;
-	public DBServiceImpl(MessageSystem msgSystem){
+	public DBServiceImpl(MessageSystem msgSystem, Connection connection){
 		address=new Address();
 		messageSystem = msgSystem;
 		messageSystem.addService(this,"DBService");
-        try{
-            Driver driver = (Driver) Class.forName("com.mysql.jdbc.Driver").newInstance();
-            DriverManager.registerDriver(driver);
-        }
-        catch(Exception e){
-            System.err.println("\nError");
-            System.err.println("DVServiceImpl, run1");
-            System.err.println(e.getMessage());
-            System.exit(-1);
-        }
-
-
-//    String url="jdbc:mysql://localhost:3307/qualityTestDB?user=root&password=qwerty";
-        String url="jdbc:mysql://localhost:3306/qualityTestDB?user=root&password=110708";
-
-        try{
-            connection = DriverManager.getConnection(url);
-        }
-        catch(Exception e){
-            e.printStackTrace();
-        }
+        this.connection = connection;
 	}
     public Connection getConnction() {return connection ;}
 

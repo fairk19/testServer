@@ -1,5 +1,6 @@
 package main;
 
+import dbService.MysqlConnectionCreator;
 import messageSystem.MessageSystemImpl;
 
 import org.eclipse.jetty.server.Handler;
@@ -42,7 +43,7 @@ public class Main{
 //		AccountService accountService = new AccountServiceImpl(messageSystem);
 		GameMechanic gameMechanic = new GameMechanicImpl(messageSystem);
 		UserData userData = new UserDataImpl(messageSystem);
-		DataAccessObject dbService = new DBServiceImpl(messageSystem);
+		DataAccessObject dbService = new DBServiceImpl(messageSystem, MysqlConnectionCreator.getConnection());
 		SysInfo sysInfo = new SysInfo();
 		
 		Server server = new Server(8000);

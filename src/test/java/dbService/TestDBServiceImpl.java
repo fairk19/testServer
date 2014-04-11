@@ -23,9 +23,11 @@ public class TestDBServiceImpl {
     private String login;
     private String password;
     private ArrayList<UserDataSet> users;
+
+
     @BeforeClass
     public void setUp() {
-        dbService = new DBServiceImpl(mockedMS);
+        dbService = new DBServiceImpl(mockedMS, MysqlConnectionCreator.getConnection());
     }
 
     @BeforeGroups("testAddUDS")
