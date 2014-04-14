@@ -774,29 +774,18 @@ public class TestRegUserTargetRegPost {
         when(request.getParameter("regNick")).thenReturn(null);
         when(request.getParameter("regPassword")).thenReturn(null);
 
-
-
     }
     @Test(groups = "StatusReadyTargetGame")
     public void testStatusReadyTargetGame() throws IOException{
         frontend.handle(target,baseRequest,request,response);
 
         verify(response).setStatus(HttpServletResponse.SC_OK);
-
-        returnedPage = new File("returnedPage.html");
-        expectedPage = new File("./static/html/game.html");
-
-
-        String returnedPageAsString = new String();
-        returnedPageAsString = Files.toString(returnedPage, defaultCharset());
-        Assert.assertTrue(returnedPageAsString.contains(Files.toString(expectedPage, defaultCharset())));
         Assert.assertNotNull(UserDataImpl.getUserSessionBySessionId(sessionIdValue));
         Assert.assertNotNull(UserDataImpl.getLogInUserBySessionId(sessionIdValue));
     }
     @AfterGroups("StatusReadyTargetGame")
     public void tearDownStatusReadyTargetGame() {
         UserDataImpl.clearAllMaps();
-        returnedPage.delete();
     }
 
 

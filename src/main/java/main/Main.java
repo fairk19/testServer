@@ -43,18 +43,18 @@ public class Main{
 		DataAccessObject dbService = new DBServiceImpl(messageSystem, MysqlConnectionCreator.getConnection());
 		SysInfo sysInfo = new SysInfo();
 		
-		Server server = new Server(8000);
+		Server server = new Server(9000);
 		ResourceHandler resource_handler = new ResourceHandler();
 		resource_handler.setDirectoriesListed(true);
 		resource_handler.setResourceBase("static");
 
-		Server serverWS = new Server(8050);
+		Server serverWS = new Server(9050);
 		ServletContextHandler context = new ServletContextHandler(ServletContextHandler.SESSIONS); 
 		serverWS.setHandler(context); 
 		context.addServlet(new ServletHolder(new WebSocketServletImpl(messageSystem)),"/*");
 		serverWS.start();
 
-		Server chatServer = new Server(8010);
+		Server chatServer = new Server(9010);
 		ServletContextHandler context2 = new ServletContextHandler(ServletContextHandler.SESSIONS);
 		chatServer.setHandler(context2);
 		context2.addServlet(new ServletHolder(new ChatWSServletImpl()),"/*");
